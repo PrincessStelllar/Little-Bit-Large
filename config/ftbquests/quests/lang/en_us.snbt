@@ -20,7 +20,6 @@
 	chapter.46FE3A44D3ECB19B.title: "Apothic Exploration"
 	chapter.4A53A54E581CD0B3.title: "&a&lUseful&f Mods"
 	chapter.4BF27D0A53F14584.title: "Mekanism: The Basics"
-	chapter.4E8B9F24557935B3.title: "Apothic Enchanting"
 	chapter.4ECE52DB829D7DC4.title: "Sophisticated Storage"
 	chapter.558E65AB78354674.title: "Energized Power"
 	chapter.60E93AB6224A9369.title: "Apotheosis"
@@ -1928,7 +1927,7 @@
 		"We should have the &astorage bus&r on the &cnext step&r of the ore processing, just I couldn't fit the image while the text still visible"
 		""
 		"{@pagebreak}"
-		"{image:catalyst:textures/quest_images/applied_energetic/ore_processing.png width:100 height:100 align:center fit:true}"
+		"{image:catalyst:textures/quest_images/applied_energetic/ore_processing.png width:200 height:150 align:center fit:true}"
 	]
 	quest.2992DF31EA2F37F1.quest_subtitle: "From ores to raw ores"
 	quest.2992DF31EA2F37F1.title: "Ore processing"
@@ -4444,8 +4443,6 @@
 		""
 		"However, you still need to wait for the villagers to restock their supplies!"
 		""
-		"&n&lImportant note&r: The &cIron Farm&r from this mod was disabled, so we have to find another way to farm iron!"
-		""
 		"Mod created by: &9Henkelmax"
 	]
 	quest.642651867EA91259.quest_subtitle: "easier than vanilla"
@@ -5793,6 +5790,7 @@
 	task.111AAFA4BDCD1C7C.title: "Any Wrench"
 	task.1234CBD155863564.title: "Get a Draconic Bee"
 	task.12ECFA02F54ED5E6.title: "Yuh huh"
+	task.12FAC712243F640A.title: "AE2 My Beloved"
 	task.13B113B203CD6BA6.title: "Quantum"
 	task.170D1E9E011EEAAD.title: "Any #c:foods/soups"
 	task.17FDA62C6FC7A94A.title: "Get a Neon Cuckoo Bee"
