@@ -841,6 +841,11 @@
 					item: { count: 1, id: "easy_villagers:trader" }
 					type: "item"
 				}
+				{
+					id: "2CF6E17F694ACBB1"
+					item: { count: 1, id: "easy_villagers:iron_farm" }
+					type: "item"
+				}
 			]
 			x: 0.0d
 			y: -2.5d

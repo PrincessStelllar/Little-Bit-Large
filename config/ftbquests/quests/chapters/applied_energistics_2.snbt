@@ -34,7 +34,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["338CC8C7E220FC3A"]
+			dependencies: ["02286BA0F16600B1"]
 			hide_until_deps_complete: true
 			icon: {
 				id: "ae2:meteorite_compass"
@@ -263,7 +263,7 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["338CC8C7E220FC3A"]
+			dependencies: ["02286BA0F16600B1"]
 			hide_until_deps_complete: true
 			id: "4276CB4072A6F022"
 			rewards: [{
@@ -281,7 +281,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["338CC8C7E220FC3A"]
+			dependencies: ["02286BA0F16600B1"]
 			hide_until_deps_complete: true
 			icon: {
 				id: "ae2:crystal_resonance_generator"
@@ -4113,25 +4113,6 @@
 			}]
 			x: 2.0d
 			y: 3.5d
-		}
-		{
-			dependencies: ["5E635799470EEF47"]
-			hide_dependency_lines: true
-			icon: {
-				components: {
-					"ftbquests:icon": "pneumaticcraft:textures/gui/icon/gui_warning.png"
-				}
-				id: "ftbquests:custom_icon"
-			}
-			id: "59BD494887222971"
-			invisible: true
-			optional: true
-			tasks: [{
-				id: "306D2F8FE783F313"
-				type: "checkmark"
-			}]
-			x: 64.0d
-			y: -4.5d
 		}
 	]
 }
