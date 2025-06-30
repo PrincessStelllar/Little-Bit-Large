@@ -203,6 +203,11 @@
     "modId": "catalytictweaks",
     "version": "0.1"
   },
+  "cc-tweaked-1.21.1-forge-1.113.1.jar": {
+    "jarName": "cc-tweaked-1.21.1-forge-1.113.1.jar",
+    "modId": "computercraft",
+    "version": "1.113.1"
+  },
   "cc-tweaked-1.21.1-forge-1.115.1.jar": {
     "jarName": "cc-tweaked-1.21.1-forge-1.115.1.jar",
     "modId": "computercraft",
@@ -352,6 +357,16 @@
     "jarName": "cupboard-1.21-2.9.jar",
     "modId": "cupboard",
     "version": "2.9"
+  },
+  "curios-neoforge-9.0.15+1.21.1.jar": {
+    "jarName": "curios-neoforge-9.0.15+1.21.1.jar",
+    "modId": "curios",
+    "version": "9.0.15+1.21.1"
+  },
+  "curios-neoforge-9.1.4+1.21.0.jar": {
+    "jarName": "curios-neoforge-9.1.4+1.21.0.jar",
+    "modId": "curios",
+    "version": "9.1.4+1.21.0"
   },
   "curios-neoforge-9.5.1+1.21.1.jar": {
     "jarName": "curios-neoforge-9.5.1+1.21.1.jar",
