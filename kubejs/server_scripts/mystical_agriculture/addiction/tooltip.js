@@ -11,7 +11,15 @@ ItemEvents.modifyTooltips(event => {
         const essenceId = `mysticalagriculture:${itemName}_essence`;
         const seedsId = `mysticalagriculture:${itemName}_seeds`;
         
-        if(Item.exists(essenceId))
+        const excludedEssences = [
+            'mysticalagriculture:inferium_essence',
+            'mysticalagriculture:prudentium_essence',
+            'mysticalagriculture:imperium_essence',
+            'mysticalagriculture:supremium_essence',
+            'mysticalagriculture:tertium_essence'
+        ];
+
+        if(Item.exists(essenceId) && !excludedEssences.includes(essenceId))
         {
             event.modify(essenceId, text => {
                 text.removeLine(1);
