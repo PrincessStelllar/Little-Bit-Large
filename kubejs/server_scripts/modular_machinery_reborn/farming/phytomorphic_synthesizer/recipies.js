@@ -33,12 +33,12 @@ ServerEvents.recipes(catalyst => {
         // Common recipe configuration
         const baseRecipeConfig = (recipe) => recipe
             .progressX(54)
-            .progressY(15)
+            .progressY(20)
             .width(110)
-            .height(80)
-            .requireEnergy(10000, 0, 0)
+            .height(60)
+            .requireEnergy(10000, 0, 4)
             .requireItem(`1x ${modifiedName}_seeds`, 25, 0)
-            .requireFluid('1000x minecraft:water', 25, 20);
+            .requireFluid('1000x minecraft:water', 25, 40);
 
         // Special case for cognizant
         
@@ -53,7 +53,7 @@ ServerEvents.recipes(catalyst => {
         )
         .produceItem(`${base_production_essence*1}x ${essenceOutput}`, 90, 20)
         .produceItem(`1x ${modifiedName}_seeds`, 90, 0)
-        .produceItem(`${fertelizer_production_multiplier}x mysticalagriculture:fertilized_essence`, 0.02, 90, 50);
+        .produceItem(`${fertelizer_production_multiplier}x mysticalagriculture:fertilized_essence`, 0.02, 90, 40);
 
         // Bone meal recipe
         baseRecipeConfig(
@@ -69,7 +69,7 @@ ServerEvents.recipes(catalyst => {
         baseRecipeConfig(
             catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:phytomorphic_synthesiszer", time*2)
         )
-        .requireItem(`10x mysticalagriculture:mystical_fertilizer`, 0.5, 25, 20)
+        .requireItem(`5x mysticalagriculture:mystical_fertilizer`, 0.1, 25, 20)
         .produceItem(`${base_production_essence*4}x ${essenceOutput}`, 90, 20)
         .produceItem(`1x ${modifiedName}_seeds`, 90, 0)
         .produceItem(`${fertelizer_production_multiplier}x mysticalagriculture:fertilized_essence`, 0.1, 90, 40)
