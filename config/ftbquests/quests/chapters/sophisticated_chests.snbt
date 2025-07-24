@@ -35,14 +35,6 @@
 			y: -5.5d
 		}
 		{
-			height: 5.0d
-			image: "sophisticatedstorage:block/break/oak_chest"
-			rotation: 0.0d
-			width: 5.0d
-			x: -11.5d
-			y: 5.0d
-		}
-		{
 			height: 3.0d
 			image: "sophisticatedstorage:item/crafting_upgrade"
 			rotation: 0.0d
@@ -107,16 +99,19 @@
 			y: -3.5d
 		}
 	]
-	order_index: 1
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
+			hide_dependent_lines: true
 			id: "2B58BBF81515DD48"
 			rewards: [{
 				id: "7C327C0ADAB28114"
 				type: "xp"
 				xp: 5
 			}]
+			shape: "rsquare"
+			size: 2.0d
 			tasks: [{
 				id: "6EB388CE0FB3F0B4"
 				type: "checkmark"
@@ -239,7 +234,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["5C5FFD4BD4FE34A2"]
+			dependencies: [
+				"5C5FFD4BD4FE34A2"
+				"2B58BBF81515DD48"
+			]
 			id: "33F13B95FF0DB5E1"
 			optional: true
 			rewards: [{
@@ -256,7 +254,10 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["37FEFBA176B0E030"]
+			dependencies: [
+				"37FEFBA176B0E030"
+				"2B58BBF81515DD48"
+			]
 			id: "22CD879855746D48"
 			rewards: [{
 				id: "66DE5B12AEB46472"
@@ -271,6 +272,8 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
+			hide_dependency_lines: true
 			id: "2EFCF9D468B4807E"
 			rewards: [{
 				count: 3
@@ -366,6 +369,7 @@
 			y: 5.0d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "40732110998F3FF3"
 			rewards: [{
 				id: "2C01E02EB9D2A89D"
@@ -458,6 +462,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "44E4EDC88E6809F6"
 			rewards: [{
 				id: "4EFB0DB257FDA5F5"
@@ -490,6 +495,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "4815C1536BE93552"
 			rewards: [{
 				id: "25F603A288DC315B"
@@ -522,6 +528,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "66BC6A0B809EABCA"
 			rewards: [{
 				id: "70A6A63E4025761A"
@@ -554,6 +561,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "1BA34FB110F0EA0F"
 			rewards: [{
 				id: "044357F0DA7CCA55"
@@ -569,6 +577,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "6403DA4C09139414"
 			rewards: [{
 				id: "0F7002622A640504"
@@ -584,6 +593,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "05AB87A66A21B3AB"
 			rewards: [{
 				id: "31E1CEED8BD64651"
@@ -599,6 +609,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "609A6A3D7542871A"
 			rewards: [{
 				id: "09CE2EA02E04F2E3"
@@ -614,6 +625,7 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "752F656ED9169978"
 			rewards: [{
 				id: "29A85792F45F3EF7"
@@ -646,6 +658,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "425AD25A26199AD6"
 			rewards: [{
 				id: "41C5189AE886277C"
@@ -678,6 +691,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "442CEC2F432D28A7"
 			rewards: [{
 				id: "06CF9E80FCDE75DD"
@@ -710,6 +724,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "7004FCBFA061310B"
 			rewards: [{
 				id: "229E535D932D0D4B"
@@ -742,6 +757,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "1A1243998651F777"
 			rewards: [{
 				id: "63E5CA5F0BB5AAE1"
@@ -774,6 +790,7 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "759A9E106F6E1F0E"
 			rewards: [{
 				id: "22EABD2536AE706D"
@@ -806,54 +823,7 @@
 			y: -0.5d
 		}
 		{
-			id: "5F38A42EAC5CBEE4"
-			rewards: [{
-				id: "6240C57AEBC72495"
-				type: "xp"
-				xp: 5
-			}]
-			tasks: [{
-				id: "39F6884AAF2F2D71"
-				item: { count: 1, id: "sophisticatedstorage:pump_upgrade" }
-				type: "item"
-			}]
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["5F38A42EAC5CBEE4"]
-			hide_until_deps_complete: true
-			id: "6148A11816038280"
-			rewards: [{
-				id: "28E043CFA2A59558"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [{
-				id: "4CDB2931C3DF4749"
-				item: { count: 1, id: "sophisticatedstorage:advanced_pump_upgrade" }
-				type: "item"
-			}]
-			x: 2.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["6148A11816038280"]
-			id: "30AB1D921EF3B9D0"
-			rewards: [{
-				id: "3ED2096B9A9BC42E"
-				type: "xp"
-				xp: 15
-			}]
-			tasks: [{
-				id: "11C82B6959F1676A"
-				item: { count: 1, id: "sophisticatedstorage:xp_pump_upgrade" }
-				type: "item"
-			}]
-			x: 3.5d
-			y: 1.5d
-		}
-		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "1DA250D8C7194C82"
 			tasks: [{
 				id: "0E5558CCA49863A9"
@@ -864,16 +834,7 @@
 			y: -6.0d
 		}
 		{
-			id: "6DD38D85958BD89E"
-			tasks: [{
-				id: "27BC4F68889E38D8"
-				item: { count: 1, id: "sophisticatedstorage:debug_tool" }
-				type: "item"
-			}]
-			x: 5.0d
-			y: -6.0d
-		}
-		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "5429848AD5250CF6"
 			tasks: [{
 				id: "503368060ED10F65"
@@ -884,6 +845,7 @@
 			y: -4.5d
 		}
 		{
+			dependencies: ["2B58BBF81515DD48"]
 			id: "237F1340DB1B1FEE"
 			tasks: [{
 				id: "3A156D997CDB6485"
@@ -894,48 +856,14 @@
 			y: -4.5d
 		}
 		{
-			id: "6695BA1E89B7E47B"
-			tasks: [{
-				id: "58895004DB52801C"
-				item: { count: 1, id: "sophisticatedstorage:storage_input" }
-				type: "item"
-			}]
-			x: 6.0d
-			y: -4.5d
-		}
-		{
-			id: "3EB6F2F40B74D06B"
-			tasks: [{
-				id: "718DA539A83CD836"
-				item: { count: 1, id: "sophisticatedstorage:storage_output" }
-				type: "item"
-			}]
-			x: 7.0d
-			y: -4.5d
-		}
-		{
 			id: "37FEFBA176B0E030"
 			tasks: [{
-				id: "21A8A464C446422C"
-				item: { components: { "ftbfiltersystem:filter": "or(item(sophisticatedstorage:chest))", "minecraft:custom_name": "\"Wood Chest\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				id: "44C4C63879E7EED2"
+				item: { components: { "ftbfiltersystem:filter": "or(item(sophisticatedstorage:chest)item(minecraft:chest))", "minecraft:custom_name": "\"Wood Chest\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -8.5d
 			y: 5.0d
-		}
-		{
-			id: "0AE298AB3D27D20D"
-			rewards: [{
-				id: "0A9731B2D0547130"
-				type: "xp"
-				xp: 5
-			}]
-			tasks: [{
-				id: "2599866BC2867B1E"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 0.5d
 		}
 		{
 			dependencies: ["7F64B800348E4694"]
@@ -956,6 +884,36 @@
 			}]
 			x: -2.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["2B58BBF81515DD48"]
+			id: "56A68BF3F4021002"
+			tasks: [{
+				id: "5D719CF5449AD220"
+				item: { count: 1, id: "sophisticatedstorage:controller" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -6.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbfiltersystem:textures/gui/sprites/info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "32E928CCA34C266B"
+			invisible: true
+			optional: true
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "4640C51AADBC5E1C"
+				type: "checkmark"
+			}]
+			x: -12.75d
+			y: 1.5d
 		}
 	]
 }

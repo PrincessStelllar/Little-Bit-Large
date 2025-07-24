@@ -1,4 +1,5 @@
 {
+	autofocus_id: "7FFD86864E64AB0F"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "modular_machinery_reborn"
@@ -7,43 +8,139 @@
 		id: "modular_machinery_reborn:modularium"
 	}
 	id: "3C17CB8FF9BF24E3"
-	images: [{
-		height: 6.0d
-		image: "catalyst:textures/quest_images/modular_machinery_reborn/logomodularmachienry.png"
-		rotation: 0.0d
-		width: 6.0d
-		x: -3.0d
-		y: -14.5d
-	}]
-	order_index: 12
+	images: [
+		{
+			height: 6.0d
+			image: "catalyst:textures/quest_images/modular_machinery_reborn/logomodularmachienry.png"
+			rotation: -25.0d
+			width: 6.0d
+			x: -1.1071428571428612d
+			y: -17.714285714285715d
+		}
+		{
+			height: 2.0d
+			image: "modular_machinery_reborn:block/overlay_energyinputhatch_big"
+			rotation: 25.0d
+			width: 2.0d
+			x: 12.0d
+			y: -11.5d
+		}
+	]
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["7FFD86864E64AB0F"]
 			icon: {
 				id: "minecraft:reinforced_deepslate"
 			}
 			id: "70398E97AAD8E677"
-			tasks: [{
-				id: "0B3156C02C8B98AB"
-				observe_type: 0
-				timer: 0L
-				to_observe: "minecraft:reinforced_deepslate"
-				type: "observation"
+			rewards: [{
+				id: "634166A2C1D5955B"
+				item: {
+					count: 1
+					id: "minecraft:reinforced_deepslate"
+				}
+				random_bonus: 2
+				type: "item"
 			}]
-			x: 2.0d
-			y: -15.5d
+			shape: "rsquare"
+			size: 2.0d
+			tasks: [
+				{
+					icon: {
+						id: "minecraft:reinforced_deepslate"
+					}
+					id: "0B3156C02C8B98AB"
+					observe_type: 0
+					timer: 0L
+					to_observe: "minecraft:reinforced_deepslate"
+					type: "observation"
+				}
+				{
+					id: "150DB005C48E7517"
+					item: { count: 1, id: "minecraft:polished_deepslate" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "61217A2B5DFA6095"
+					item: { count: 6, id: "mekanism:steel_casing" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "65B7A4CD51F37C2D"
+					item: { count: 6, id: "eternalores:plate_netherite" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["70398E97AAD8E677"]
+			icon: {
+				id: "modular_machinery_reborn:modularium"
+			}
 			id: "75C6A646E2DB4905"
-			tasks: [{
-				count: 8L
-				id: "5807A15CB730344E"
-				item: { count: 1, id: "modular_machinery_reborn:modularium" }
+			rewards: [{
+				count: 4
+				id: "62E1A26F6F2107E2"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
 				type: "item"
 			}]
-			x: 2.0d
-			y: -14.0d
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 8L
+					id: "5807A15CB730344E"
+					item: { count: 1, id: "modular_machinery_reborn:modularium" }
+					type: "item"
+				}
+				{
+					id: "50A2353293494F9C"
+					item: { count: 1, id: "justdirethings:gooblock_tier3" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4865FFBD2FFD1D30"
+					item: { components: { "ftbfiltersystem:filter": "or(item(justdirethings:raw_celestigem_ore)item(minecraft:diamond_block))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "269C9E7CC64874FD"
+					item: { count: 6, id: "actuallyadditions:empowered_emeradic_crystal_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "3DBA0D92E2E1C5C8"
+					item: { count: 4, id: "advanced_ae:quantum_alloy_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0FBFFBBA9BAB1D6F"
+					item: { count: 4, id: "powah:nitro_crystal_block" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4EB71AA7D9F866BD"
+					item: { count: 64, id: "justdirethings:polymorphic_catalyst" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["62F77CA28BF9653C"]
@@ -54,19 +151,35 @@
 				id: "modular_machinery_reborn:controller"
 			}
 			id: "628C96098631C123"
-			tasks: [
+			rewards: [
 				{
-					id: "71CD2C3A1912D5C2"
-					item: { components: { "modular_machinery_reborn:machine": "mmr:data_extractor" }, count: 1, id: "modular_machinery_reborn:controller" }
+					count: 5
+					id: "4F74FEF00F5D02B5"
+					item: {
+						count: 1
+						id: "modular_machinery_reborn:modularium"
+					}
+					random_bonus: 7
 					type: "item"
 				}
 				{
-					id: "27736FC91FE0E223"
-					type: "checkmark"
+					count: 16
+					id: "7A047DF748CDBC5D"
+					item: {
+						count: 1
+						id: "hostilenetworks:prediction_matrix"
+					}
+					random_bonus: 32
+					type: "item"
 				}
 			]
-			x: 4.5d
-			y: -13.0d
+			tasks: [{
+				id: "71CD2C3A1912D5C2"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:data_extractor" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -13.5d
 		}
 		{
 			dependencies: ["62F77CA28BF9653C"]
@@ -77,19 +190,35 @@
 				id: "modular_machinery_reborn:controller"
 			}
 			id: "3F958599EBAEBFD8"
-			tasks: [
+			rewards: [
 				{
-					id: "4225E1F095F210A4"
-					item: { components: { "modular_machinery_reborn:machine": "mmr:phytomorphic_synthesiszer" }, count: 1, id: "modular_machinery_reborn:controller" }
+					count: 5
+					id: "6BF18BEA946F0C1C"
+					item: {
+						count: 1
+						id: "modular_machinery_reborn:modularium"
+					}
+					random_bonus: 7
 					type: "item"
 				}
 				{
-					id: "4E45CBB7109C96FC"
-					type: "checkmark"
+					count: 4
+					id: "5675382A5B81B339"
+					item: {
+						count: 1
+						id: "mysticalagriculture:supremium_essence"
+					}
+					random_bonus: 3
+					type: "item"
 				}
 			]
-			x: 6.0d
-			y: -15.5d
+			tasks: [{
+				id: "4225E1F095F210A4"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:phytomorphic_synthesiszer" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["62F77CA28BF9653C"]
@@ -100,19 +229,35 @@
 				id: "modular_machinery_reborn:controller"
 			}
 			id: "6943723147A58727"
-			tasks: [
+			rewards: [
 				{
-					id: "7FD04C076B23F3A0"
-					item: { components: { "modular_machinery_reborn:machine": "mmr:arboretum" }, count: 1, id: "modular_machinery_reborn:controller" }
+					count: 5
+					id: "30646F6C4A733721"
+					item: {
+						count: 1
+						id: "modular_machinery_reborn:modularium"
+					}
+					random_bonus: 7
 					type: "item"
 				}
 				{
-					id: "4035C71EE14A0999"
-					type: "checkmark"
+					count: 16
+					id: "37064AC8FA84FE82"
+					item: {
+						count: 1
+						id: "minecraft:oak_log"
+					}
+					random_bonus: 32
+					type: "item"
 				}
 			]
-			x: 7.5d
-			y: -13.0d
+			tasks: [{
+				id: "7FD04C076B23F3A0"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:arboretum" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -16.5d
 		}
 		{
 			dependencies: ["75C6A646E2DB4905"]
@@ -120,45 +265,383 @@
 				id: "modular_machinery_reborn:blueprint"
 			}
 			id: "7E3B739D277A3254"
-			tasks: [
-				{
-					id: "236A756A7D82BAA6"
-					item: { count: 1, id: "modular_machinery_reborn:blueprint" }
-					type: "item"
+			rewards: [{
+				id: "4D9B668C6AB3BF58"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:casing_plain"
 				}
-				{
-					id: "35EB087A79794E2F"
-					type: "checkmark"
-				}
-			]
-			x: 3.5d
-			y: -13.0d
+				random_bonus: 1
+				type: "item"
+			}]
+			tasks: [{
+				id: "236A756A7D82BAA6"
+				item: { count: 1, id: "modular_machinery_reborn:blueprint" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -15.0d
 		}
 		{
-			dependencies: ["75C6A646E2DB4905"]
+			dependencies: ["44CC0C8C57F6BFCC"]
 			icon: {
 				id: "modular_machinery_reborn:casing_reinforced"
 			}
 			id: "0FC0C0A568BF1BAB"
-			tasks: [{
-				id: "010278CC3CAB67AE"
-				item: { count: 1, id: "modular_machinery_reborn:casing_reinforced" }
+			rewards: [{
+				count: 10
+				id: "6BF281877DBB5BF0"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 5
 				type: "item"
 			}]
-			x: 0.5d
-			y: -13.0d
+			tasks: [
+				{
+					count: 8L
+					id: "010278CC3CAB67AE"
+					item: { count: 1, id: "modular_machinery_reborn:casing_reinforced" }
+					type: "item"
+				}
+				{
+					id: "75A2083FEEC2DA2B"
+					item: { count: 1, id: "justdirethings:gooblock_tier4" }
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2E49FF31DB3DE084"
+					item: { components: { "ftbfiltersystem:filter": "or(item(minecraft:netherite_block)item(justdirethings:raw_eclipsealloy_ore))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "73B88E0CAA57AA86"
+					item: { count: 4, id: "powah:spirited_crystal_block" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "256A87A4210AE40F"
+					item: { count: 4, id: "mekanism:block_refined_obsidian" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0515691088CC503C"
+					item: { count: 4, id: "mysticalagriculture:prudentium_block" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "79A20D061ECFD20C"
+					item: { count: 64, id: "justdirethings:portal_fluid_catalyst" }
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -10.0d
 		}
 		{
+			dependencies: ["676F526FA911C55D"]
 			icon: {
 				id: "minecraft:oak_sapling"
 			}
 			id: "62F77CA28BF9653C"
+			rewards: [{
+				id: "0D3DBA2D98836FD4"
+				type: "xp"
+				xp: 100
+			}]
 			tasks: [{
 				id: "1BC7955BA427A484"
 				type: "checkmark"
 			}]
+			x: 12.5d
+			y: -15.0d
+		}
+		{
+			dependencies: ["75C6A646E2DB4905"]
+			id: "44CC0C8C57F6BFCC"
+			rewards: [{
+				count: 3
+				id: "3576ED08FB92A122"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4C1C096482D2710B"
+				item: { count: 1, id: "modular_machinery_reborn:casing_plain" }
+				type: "item"
+			}]
+			x: 4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "1038B0243A3058E1"
+			rewards: [{
+				count: 2
+				id: "31694EE9CB21B29F"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "41208EAE63829956"
+				item: { count: 1, id: "modular_machinery_reborn:casing_vent" }
+				type: "item"
+			}]
+			x: 0.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "7CC0BCB656C937C6"
+			rewards: [{
+				count: 2
+				id: "30B529EC8B703E2C"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "1436BEFD3D0B8A26"
+				item: { count: 1, id: "modular_machinery_reborn:casing_firebox" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "20EC1F975386CB53"
+			rewards: [{
+				count: 2
+				id: "307A507C8D232151"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "5FFF29B929153086"
+				item: { count: 1, id: "modular_machinery_reborn:casing_gearbox" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "196092FE5F1B24DC"
+			rewards: [{
+				id: "4842E80FE3E1274A"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0E29331EA95EA06E"
+				item: { count: 1, id: "modular_machinery_reborn:casing_circuitry" }
+				optional_task: true
+				type: "item"
+			}]
+			x: 7.5d
+			y: -12.0d
+		}
+		{
+			dependencies: ["75C6A646E2DB4905"]
+			id: "676F526FA911C55D"
+			rewards: [{
+				id: "214A6C5718BD750F"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "504FC218552776C1"
+				type: "checkmark"
+			}]
+			x: 11.0d
+			y: -15.0d
+		}
+		{
+			icon: {
+				id: "modular_machinery_reborn:blueprint"
+			}
+			id: "7FFD86864E64AB0F"
+			rewards: [{
+				id: "5E81FA83FD4CB7A6"
+				type: "xp"
+				xp: 1000
+			}]
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "5C6E60FBA249F910"
+				type: "checkmark"
+			}]
+			x: 4.0d
+			y: -20.5d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "3AA097774DBE736A"
+			rewards: [{
+				count: 3
+				id: "571E6778B0702991"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "76C2B09887DC8C6F"
+				item: { count: 1, id: "modular_machinery_reborn:energyinputhatch_tiny" }
+				type: "item"
+			}]
+			x: 1.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "45F55CEE9207B7BF"
+			rewards: [{
+				count: 3
+				id: "7E309A00CBC3B30C"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "151CF298B452B157"
+				item: { count: 1, id: "modular_machinery_reborn:inputbus_tiny" }
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "3B233A03E5BDA0C8"
+			rewards: [{
+				count: 3
+				id: "04715E504695351E"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "0FB7828BCC7EA5D3"
+				item: { count: 1, id: "modular_machinery_reborn:fluidinputhatch_tiny" }
+				type: "item"
+			}]
 			x: 6.0d
-			y: -14.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "4CAE0BA4CDDDA49A"
+			rewards: [{
+				count: 3
+				id: "4FD428418841DF61"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "17980BB83BE05563"
+				item: { count: 1, id: "modular_machinery_reborn:energyoutputhatch_tiny" }
+				type: "item"
+			}]
+			x: 7.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "152EBD55C3003AE5"
+			rewards: [{
+				count: 3
+				id: "2691072B2D922C14"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "6674B575E6785574"
+				item: { count: 1, id: "modular_machinery_reborn:outputbus_tiny" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["44CC0C8C57F6BFCC"]
+			id: "3E2E150597BB7C65"
+			rewards: [{
+				count: 3
+				id: "79B57431172784CD"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 2
+				type: "item"
+			}]
+			tasks: [{
+				id: "05FDF2CCE3C8D57D"
+				item: { count: 1, id: "modular_machinery_reborn:fluidoutputhatch_tiny" }
+				type: "item"
+			}]
+			x: 5.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["5E635799470EEF47"]
+			hide_dependency_lines: true
+			icon: {
+				components: {
+					"ftbquests:icon": "pneumaticcraft:textures/gui/icon/gui_warning.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "3D67D9948E936DC4"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "620ADABB0C43898A"
+				type: "checkmark"
+			}]
+			x: 7.5d
+			y: -18.0d
 		}
 	]
 }

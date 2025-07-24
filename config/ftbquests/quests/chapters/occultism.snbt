@@ -118,7 +118,7 @@
 			y: -12.5d
 		}
 		{
-			dependency: "781D98EE5538B3F8"
+			dependency: "7ACE109B69EDE436"
 			height: 25.0d
 			image: "catalyst:textures/quest_images/occultism/sigil2.png"
 			order: -6
@@ -421,6 +421,8 @@
 			y: -6.5d
 		}
 		{
+			dependencies: ["7ACE109B69EDE436"]
+			hide_dependency_lines: true
 			icon: {
 				id: "occultism:tallow"
 			}
@@ -466,7 +468,9 @@
 			y: -9.749999999999986d
 		}
 		{
+			dependencies: ["7ACE109B69EDE436"]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			id: "48A0DC661D3F37C7"
 			shape: "diamond"
 			tasks: [
@@ -515,6 +519,8 @@
 			y: 2.5d
 		}
 		{
+			dependencies: ["7ACE109B69EDE436"]
+			hide_dependency_lines: true
 			icon: {
 				id: "minecraft:crafter"
 			}
@@ -713,6 +719,8 @@
 			y: -3.2023809523809845d
 		}
 		{
+			dependencies: ["7ACE109B69EDE436"]
+			hide_dependency_lines: true
 			id: "6EBB0FDF36D7CC3A"
 			shape: "diamond"
 			tasks: [{

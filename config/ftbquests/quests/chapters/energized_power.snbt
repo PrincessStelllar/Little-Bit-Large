@@ -7,9 +7,15 @@
 		id: "energizedpower:energized_copper_ingot"
 	}
 	id: "558E65AB78354674"
-	order_index: 5
+	order_index: 2
 	quest_links: [ ]
 	quests: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "ftblibrary:icons/check"
+			}
+			id: "ftbquests:custom_icon"
+		}
 		id: "595C57935DCCD08E"
 		rewards: [{
 			id: "0E2406F9F78A47FA"

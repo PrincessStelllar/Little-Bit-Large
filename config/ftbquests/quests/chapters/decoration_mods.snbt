@@ -7,6 +7,12 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "ftblibrary:icons/check"
+			}
+			id: "ftbquests:custom_icon"
+		}
 		id: "085E44B17EB87E71"
 		tasks: [{
 			id: "39001B6D46A193DF"

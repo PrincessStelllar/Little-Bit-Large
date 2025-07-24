@@ -1,4 +1,5 @@
 {
+	autofocus_id: "4C89C5F7446C15CD"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	default_quest_size: 0.7d
@@ -24,7 +25,7 @@
 			order: -6
 			rotation: 0.0d
 			width: 40.0d
-			x: 0.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -780,16 +781,17 @@
 			image: "pneumaticcraft:item/manometer"
 			rotation: 0.0d
 			width: 1.0d
-			x: -14.5d
+			x: -15.0d
 			y: 2.0d
 		}
 	]
-	order_index: 8
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			id: "4C89C5F7446C15CD"
-			shape: "diamond"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "30FB8A6641FB60D4"
 				item: { count: 1, id: "pneumaticcraft:ingot_iron_compressed" }
@@ -1075,7 +1077,7 @@
 				type: "checkmark"
 			}]
 			x: -11.9d
-			y: 1.05d
+			y: 1.55d
 		}
 		{
 			dependencies: ["387749084DD040D9"]
@@ -1086,7 +1088,7 @@
 				type: "item"
 			}]
 			x: -13.65d
-			y: 1.05d
+			y: 1.55d
 		}
 		{
 			dependencies: ["32CA71F95A2FE5D3"]
@@ -1619,7 +1621,7 @@
 				type: "item"
 			}]
 			x: -10.5d
-			y: -1.05d
+			y: -1.4d
 		}
 		{
 			icon: {
@@ -1638,8 +1640,8 @@
 					type: "item"
 				}
 			]
-			x: -3.15d
-			y: -1.05d
+			x: -3.16836734693878d
+			y: -0.9260204081632892d
 		}
 		{
 			id: "4B59110691340891"
@@ -1648,8 +1650,8 @@
 				item: { count: 1, id: "pneumaticcraft:pneumatic_cylinder" }
 				type: "item"
 			}]
-			x: -5.25d
-			y: -1.05d
+			x: -5.239795918367349d
+			y: -0.9260204081632892d
 		}
 		{
 			dependencies: ["4C89C5F7446C15CD"]
@@ -1671,7 +1673,7 @@
 				type: "item"
 			}]
 			x: -11.9d
-			y: -1.05d
+			y: -1.4d
 		}
 		{
 			dependencies: ["01AC9F09A84155B8"]
