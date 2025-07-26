@@ -178,6 +178,12 @@
 		}
 		{
 			dependencies: ["7BCDEFB84468CC16"]
+			icon: {
+				components: {
+					"ftbquests:icon": "modular_machinery_reborn:textures/gui/check.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "62D20F94DACD2B85"
 			shape: "diamond"
 			size: 1.5d
@@ -204,6 +210,12 @@
 			y: -6.75d
 		}
 		{
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/check"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "556E67EC57457744"
 			shape: "diamond"
 			size: 1.5d
