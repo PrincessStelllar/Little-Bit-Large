@@ -86,6 +86,11 @@ ServerEvents.recipes(catalyst => {
             beeType: "productivebees:spawn_egg_quarry_bee",
             output: '1x minecraft:stone',
             onEnd: "apiary_recipe_end_quarry"
+        },
+        {
+            beeType: "minecraft:bee_spawn_egg",
+            output: '128x minecraft:honeycomb_block',
+            onEnd: "apiary_recipe_end_bee"
         }
     ];
 
@@ -565,6 +570,106 @@ MMREvents.recipeFunction("apiary_recipe_end_creeper", event => {
     }
 });
 
+MMREvents.recipeFunction("apiary_recipe_end_bee", event => {
+    let controller = event.machine;
+    let inputItems = controller.getItemsStored(IOType.INPUT);
+    let combBonus = 0;
+    let upgradeCount = 0;
+
+    for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivelib:upgrade_productivity_4')
+        {
+            upgradeCount += item.count;
+            if(upgradeCount > 4)
+            {
+                upgradeCount = 4;
+                break;
+            }
+        }
+    }
+
+    if(upgradeCount > 0) combBonus += upgradeCount * 16;
+    let productivityTrait = null;
+    for (let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:honey_treat')
+        {
+            let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
+            if(geneGroupList)
+            {
+                productivityTrait = null;
+                
+                for(let j = 0; j < geneGroupList.size(); j++)
+                {
+                    let geneGroup = geneGroupList.get(j);
+                    let attribute = geneGroup.attribute();
+                    let value = geneGroup.value();
+                    let purity = geneGroup.purity();
+                    
+                    if(purity.equals($Integer.valueOf("100")))
+                    {
+                        let traitValue = value.includes(".") 
+                            ? value.toString().split("[.]")[1] 
+                            : value;
+                            
+                        if (attribute == "productivity")
+                        {
+                            productivityTrait = traitValue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if(productivityTrait)
+    {
+        switch(productivityTrait)
+        {
+            case "very_high": 
+                combBonus += 192;
+                break;
+            case "high": 
+                combBonus += 128;
+                break;
+            case "medium": 
+                combBonus += 64;
+                break;
+        }
+    }
+
+    for(let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:sugarbag_honeycomb')
+        {
+            combBonus += 64;
+            break;
+        }
+    }
+
+    if(combBonus > 0)
+    {
+        let fullStacks = Math.floor(combBonus / 64);
+        let remainder = combBonus % 64;
+
+        for(let i = 0; i < fullStacks; i++)
+        {
+            let stack = Item.of('minecraft:honeycomb_block', 64);
+            event.machine.addItem(stack);
+        }
+        
+        if(remainder > 0)
+        {
+            let stack = Item.of('minecraft:honeycomb_block', remainder);
+            event.machine.addItem(stack);
+        }
+    }
+});
+
 MMREvents.recipeFunction("apiary_recipe_end_wanna", event => {
     let controller = event.machine;
     let level = event.getBlock().getLevel();
@@ -762,7 +867,10 @@ MMREvents.recipeFunction("apiary_recipe_end_quarry", event => {
         }
     }
 
-    let quarry_tag = Ingredient.of('#productivebees:flowers/quarry').getStacks().toList().filter(e => !(e.toString().includes("chipped:") || e.toString().includes("evilcraft:") || e.toString().includes("pneumati") || e.toString().includes("create:")));
+    let quarry_tag = Ingredient.of('#productivebees:flowers/quarry').getStacks().toList().filter(e => !(e.toString().includes("chipped:") || 
+                                                                                                          e.toString().includes("evilcraft:") || 
+                                                                                                          e.toString().includes("pneumati") || 
+                                                                                                          e.toString().includes("create:")));
     console.log(quarry_tag)
     
     // Repetir 5 veces
