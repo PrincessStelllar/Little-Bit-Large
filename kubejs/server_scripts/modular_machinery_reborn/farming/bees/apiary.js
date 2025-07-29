@@ -1,5 +1,56 @@
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:advanced_apiary")
+        .color("#ff603b91")
+        .name("Magical Apiary")
+        .structure(
+            MMRStructureBuilder.create()
+                .pattern([
+                    ["aaaaaaaaa","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","aaaaaaaaa"],
+                    ["c       c"," d  i  d ","         ","    c    "," h cgc f ","    c    ","         "," d  e  d ","c       c"],
+                    ["         "," d  i  d ","         ","         "," h  g  f ","         ","         "," d  e  d ","         "],
+                    ["         "," kkkmkkk "," jlllllj "," jlllllj "," jlllllj "," jlllllj "," jlllllj "," kkkkkkj ","         "],
+                    ["         "," nnnnnnn "," nooooon "," nopppon "," nopqpon "," nopppon "," nooooon "," nnnnnnn ","         "],
+                    ["         "," raaraar "," aoooooa "," aosssoa "," rosqsor "," aosssoa "," aoooooa "," raaraar ","         "],
+                    ["         "," nnnnnnn "," nooooon "," nopppon "," nopqpon "," nopppon "," nooooon "," nnnnnnn ","         "],
+                    ["         "," gkkkggg "," glllllg "," glllllg "," glllllg "," glllllg "," glllllg "," ggggggg ","         "],
+                    ["         ","         ","  tt tt  ","  t   t  ","    c    ","  t   t  ","  tt tt  ","         ","         "]
+                ])
+                .keys({
+                    "a": [
+                        "#modular_machinery_reborn:energyoutputhatch",
+                        "#modular_machinery_reborn:energyinputhatch",
+                        "#modular_machinery_reborn:fluidoutputhatch",
+                        "#modular_machinery_reborn:outputbus",
+                        "#modular_machinery_reborn:fluidinputhatch",
+                        "#modular_machinery_reborn:inputbus",
+                        "#modular_machinery_reborn:parallelhatch",
+                        "modular_machinery_reborn:casing_plain"
+                    ],
+                    "b": ["ars_nouveau:sourcestone_large_bricks"],
+                    "c": ["ars_additions:polished_sourcestone_lantern"],
+                    "d": ["ars_elemental:stripped_yellow_archwood_log"],
+                    "e": ["ars_nouveau:stripped_red_archwood_log"],
+                    "f": ["ars_nouveau:stripped_green_archwood_log"],
+                    "g": ["ars_nouveau:archwood_planks"],
+                    "h": ["ars_nouveau:stripped_blue_archwood_log"],
+                    "i": ["ars_nouveau:stripped_purple_archwood_log"],
+                    "j": ["ars_nouveau:archwood_planks"],
+                    "k": ['ars_nouveau:archwood_planks'],
+                    "l": ["ars_nouveau:archwood_planks"],
+                    "n": ["productivebees:configurable_comb"],
+                    "o": ["minecraft:honey_block"],
+                    "p": ["ars_nouveau:source_gem_block"],
+                    "q": ["modular_machinery_reborn:casing_firebox"],
+                    "r": ["modular_machinery_reborn:casing_reinforced"],
+                    "s": ["minecraft:honeycomb_block"],
+                    "t": ["ars_nouveau:archwood_slab[type=bottom]"]
+                })
+        );
+});
+
+
+/*MMREvents.machines(catalyst => {
+    catalyst.create("mmr:advanced_apiary")
     .color("#ffc9780a")
     .name("Advanced Apiary")
     .structure(
@@ -40,4 +91,4 @@ MMREvents.machines(catalyst => {
             }
         )
     )
-})
+})*/
