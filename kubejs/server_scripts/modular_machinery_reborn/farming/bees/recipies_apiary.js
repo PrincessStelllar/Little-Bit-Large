@@ -82,11 +82,11 @@ ServerEvents.recipes(catalyst => {
             output: '64x productivebees:comb_powdery',
             onEnd: "apiary_recipe_end_creeper"
         },
-        {
+        /*{
             beeType: "productivebees:spawn_egg_quarry_bee",
             output: '1x minecraft:stone',
             onEnd: "apiary_recipe_end_quarry"
-        },
+        },*/
         {
             beeType: "minecraft:bee_spawn_egg",
             output: '128x minecraft:honeycomb_block',
@@ -109,6 +109,327 @@ ServerEvents.recipes(catalyst => {
         .requireFunctionOnEnd(recipe.onEnd)
         
     });
+
+    //phil
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:phil"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 1.0,
+            "item": {
+                "item": "minecraft:white_concrete"
+            },
+            "max": 4,
+            "min": 1
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //pollen
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:allergy"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 1.0,
+            "item": {
+                "item": "productivetrees:pollen"
+            },
+            "max": 6,
+            "min": 2
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //sponge
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:sponge"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 0.25,
+            "item": {
+                "item": "minecraft:sponge"
+            },
+            "max": 1,
+            "min": 1
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //sus gravel and sand
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:sussy"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:suspicious_gravel"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:suspicious_sand"
+            },
+            "max": 1,
+            "min": 1
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //sugarbag
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:sugarbag"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 1,
+            "item": {
+                "item": "productivebees:sugarbag_honeycomb"
+            },
+            "max": 2,
+            "min": 1
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //froglight
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:ribbeet"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:ochre_froglight"
+            },
+            "max": 2,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:pearlescent_froglight"
+            },
+            "max": 2,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:verdant_froglight"
+            },
+            "max": 2,
+            "min": 1
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //water
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:water"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:cod"
+            },
+            "max": 4,
+            "min": 1
+            },
+            {
+            "chance": 0.35,
+            "item": {
+                "item": "minecraft:pufferfish"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 1,
+            "item": {
+                "item": "minecraft:kelp"
+            },
+            "max": 6,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:salmon"
+            },
+            "max": 4,
+            "min": 1
+            },
+            {
+            "chance": 0.75,
+            "item": {
+                "item": "minecraft:tropical_fish"
+            },
+            "max": 4,
+            "min": 1
+            }
+        ],
+        "processingTime": 20
+    })
+
+    //pepto
+    catalyst.custom({
+        type: "productivebees:centrifuge",
+        fluid: {
+            amount: 40,
+            fluid: "productivebees:honey"
+        },
+        ingredient: {
+            "type": "productivebees:component",
+            "components": {
+            "productivebees:bee_type": "productivebees:pepto_bismol"
+            },
+            "items": "productivebees:configurable_comb"
+        },
+        outputs: [{
+            "chance": 1.0,
+            "item": {
+                "tag": "c:waxes"
+            },
+            "max": 1,
+            "min": 1
+            },
+            {
+            "chance": 1,
+            "item": {
+                "item": "productivebees:sugarbag_honeycomb"
+            },
+            "max": 4,
+            "min": 2
+            }
+        ],
+        "processingTime": 20
+    })
 })
 
 MMREvents.recipeFunction("apiary_recipe_each", event => {
@@ -774,7 +1095,7 @@ MMREvents.recipeFunction("apiary_recipe_end_wanna", event => {
     entity.discard();
 });
 
-MMREvents.recipeFunction("apiary_recipe_end_quarry", event => {
+/*MMREvents.recipeFunction("apiary_recipe_end_quarry", event => {
     let controller = event.machine;
     let level = event.getBlock().getLevel();
     let inputItems = controller.getItemsStored(IOType.INPUT);
@@ -871,10 +1192,8 @@ MMREvents.recipeFunction("apiary_recipe_end_quarry", event => {
                                                                                                           e.toString().includes("evilcraft:") || 
                                                                                                           e.toString().includes("pneumati") || 
                                                                                                           e.toString().includes("create:")));
-    console.log(quarry_tag)
-    
     // Repetir 5 veces
-    for(let cycle = 0; cycle < 5; cycle++)
+    for(let cycle = 0; cycle < (5+(combBonus%8)); cycle++)
     {
         let randomItem = quarry_tag[Math.floor(Math.random() * quarry_tag.length)].getId();
         
@@ -895,4 +1214,4 @@ MMREvents.recipeFunction("apiary_recipe_end_quarry", event => {
             event.machine.addItem(stack);
         }
     }
-})
+})*/
