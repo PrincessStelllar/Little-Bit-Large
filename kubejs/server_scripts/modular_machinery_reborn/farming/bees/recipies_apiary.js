@@ -1,25 +1,25 @@
-const $BeeProvider = Java.loadClass("cy.jdkdigital.productivebees.setup.BeeReloadListener");
-const IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
-const $Integer = Java.loadClass("java.lang.Integer");
-const $String = Java.loadClass("java.lang.String");
-const LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable');
-const LootParams = Java.loadClass('net.minecraft.world.level.storage.loot.LootParams');
-const LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams');
-const FakePlayerFactory = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayerFactory');
-const GameProfile = Java.loadClass('com.mojang.authlib.GameProfile');
-const Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3');
-const ModTags = Java.loadClass('cy.jdkdigital.productivebees.init.ModTags');
-const ModEntities = Java.loadClass('cy.jdkdigital.productivebees.init.ModEntities');
-const Mob = Java.loadClass("net.minecraft.world.entity.Mob");
-const EntityType = Java.loadClass('net.minecraft.world.entity.EntityType');
-const ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
-const LootContextParamSets = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParamSets')
-const InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
+let $BeeProvider = Java.loadClass("cy.jdkdigital.productivebees.setup.BeeReloadListener");
+let IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
+let $Integer = Java.loadClass("java.lang.Integer");
+let $String = Java.loadClass("java.lang.String");
+let LootTable = Java.loadClass('net.minecraft.world.level.storage.loot.LootTable');
+let LootParams = Java.loadClass('net.minecraft.world.level.storage.loot.LootParams');
+let LootContextParams = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParams');
+let FakePlayerFactory = Java.loadClass('net.neoforged.neoforge.common.util.FakePlayerFactory');
+let GameProfile = Java.loadClass('com.mojang.authlib.GameProfile');
+let Vec3 = Java.loadClass('net.minecraft.world.phys.Vec3');
+let ModTags = Java.loadClass('cy.jdkdigital.productivebees.init.ModTags');
+let ModEntities = Java.loadClass('cy.jdkdigital.productivebees.init.ModEntities');
+let Mob = Java.loadClass("net.minecraft.world.entity.Mob");
+let EntityType = Java.loadClass('net.minecraft.world.entity.EntityType');
+let ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack')
+let LootContextParamSets = Java.loadClass('net.minecraft.world.level.storage.loot.parameters.LootContextParamSets')
+let InteractionHand = Java.loadClass('net.minecraft.world.InteractionHand')
 
 
 ServerEvents.recipes(catalyst => {
 
-    const skip = [
+    let skip = [
         "kamikaz",
         "beebee",
         "villager",
@@ -28,8 +28,8 @@ ServerEvents.recipes(catalyst => {
         "wanna"
     ]
 
-    const time = 1200 //ticks
-    const bees = $BeeProvider.INSTANCE.getData();
+    let time = 1200 //ticks
+    let bees = $BeeProvider.INSTANCE.getData();
 
     bees.forEach((value, key) => {
         let keyword = value.toString().split(":")[1];
@@ -66,7 +66,7 @@ ServerEvents.recipes(catalyst => {
         }
     });
 
-    const specialRecipes = [
+    let specialRecipes = [
         {
             beeType: "productivebees:spawn_egg_dye_bee",
             output: "1x minecraft:white_dye",
@@ -80,11 +80,15 @@ ServerEvents.recipes(catalyst => {
         {
             beeType: "productivebees:spawn_egg_creeper_bee",
             output: '64x productivebees:comb_powdery',
-            onEnd: "apiary_recipe_end_rancher"
+            onEnd: "apiary_recipe_end_creeper"
+        },
+        {
+            beeType: "productivebees:spawn_egg_quarry_bee",
+            output: '1x minecraft:stone',
+            onEnd: "apiary_recipe_end_quarry"
         }
     ];
 
-    // Añadir recetas especiales
     specialRecipes.forEach(recipe => {
         catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_apiary", time)
         .progressX(54)
@@ -110,12 +114,10 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
     let isDay = timeOfDay >= 0 && timeOfDay < 12000;
     let paused = true;
 
-    // Traits POR DEFECTO (se usarán si no hay treat válido)
     let weatherTrait = "none";
     let dayTrait = "diurnal";
     let productivityTrait = "normal";
 
-    // Buscar honey_treat con NBT específico
     let inputItems = controler.getItemsStored(IOType.INPUT);
     for (let i = 0; i < inputItems.size(); i++)
     {
@@ -125,7 +127,6 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
             let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
             if(geneGroupList)
             {
-                // Reiniciar traits a valores por defecto para este treat
                 weatherTrait = "none";
                 dayTrait = "diurnal";
                 productivityTrait = "normal";
@@ -137,7 +138,6 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
                     let value = geneGroup.value();
                     let purity = geneGroup.purity();
                     
-                    // Solo procesar genes con pureza 100
                     if(purity.equals($Integer.valueOf("100")))
                     {
                         let traitValue = value.includes(".") 
@@ -162,7 +162,6 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
         }
     }
 
-    // Lógica de clima (siempre se aplica, con traits actuales)
     if(isRaining)
     {
         paused = !(weatherTrait === "any" || weatherTrait === "rain");
@@ -172,7 +171,6 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
         paused = !(weatherTrait === "any" || weatherTrait === "none");
     }
 
-    // Lógica de ciclo diurno (solo si no está pausado por clima)
     if(!paused)
     {
         if(isDay)
@@ -185,7 +183,6 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
         }
     }
 
-    // Ajustar velocidad si no está pausada
     if(!paused)
     {
         switch(productivityTrait)
@@ -199,14 +196,14 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
             case "very_high":
                 event.setBaseSpeed(4.0);
                 break;
-            default: // "normal"
+            default:
                 event.setBaseSpeed(1.0);
         }
     }
 
     if(paused)
     {
-        event.setBaseSpeed(0.0) //not really 0, just very slow
+        event.setBaseSpeed(0.0)
     }
 
 });
@@ -214,24 +211,20 @@ MMREvents.recipeFunction("apiary_recipe_each", event => {
 MMREvents.recipeFunction("apiary_recipe_end", event => {
     let controller = event.machine;
     let inputItems = controller.getItemsStored(IOType.INPUT);
-    let combBonus = 0; // Acumulador de bonificaciones
+    let combBonus = 0;
     let beeType = null;
 
-    // Buscar el tipo de abeja del spawn egg
     for(let i = 0; i < inputItems.size(); i++)
     {
         let item = inputItems.get(i);
         if(item && item.id == 'productivebees:spawn_egg_configurable_bee')
         {
-            // Acceder al componente minecraft:entity_data
             if (item.componentMap.has("minecraft:entity_data"))
             {
                 let entityData = item.componentMap.get("minecraft:entity_data");
                 if(entityData)
                 {
-                    // Obtener el tipo de abeja (ej: "slimy")
                     beeType = entityData.toString().split("[,]")[1];
-                    // Eliminar namespace si está presente
                     if(beeType && beeType.includes(':'))
                     {
                         beeType = beeType.split(':')[2].split("\"")[0];
@@ -242,7 +235,6 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
         }
     }
 
-    // 1. Contar upgrades de productividad (hasta 4)
     let upgradeCount = 0;
     for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
     {
@@ -258,8 +250,7 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
         }
     }
 
-    if(upgradeCount > 0) combBonus += upgradeCount * 16; // +16 por cada upgrade
-    // 2. Buscar honey_treat con NBT para extraer 'productivity'
+    if(upgradeCount > 0) combBonus += upgradeCount * 16;
     let productivityTrait = null;
     for (let i = 0; i < inputItems.size(); i++)
     {
@@ -269,7 +260,6 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
             let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
             if(geneGroupList)
             {
-                // Reiniciar traits para cada treat
                 productivityTrait = null;
                 
                 for(let j = 0; j < geneGroupList.size(); j++)
@@ -295,7 +285,6 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
         }
     }
 
-    // Aplicar bonificación por trait de productividad
     if(productivityTrait)
     {
         switch(productivityTrait)
@@ -312,7 +301,6 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
         }
     }
 
-    // 3. Verificar sugarbag con stack no múltiplo de 8 (prioridad)
     for(let i = 0; i < inputItems.size(); i++)
     {
         let item = inputItems.get(i);
@@ -323,24 +311,21 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
         }
     }
 
-    //Añadir los extra combs
-    if (beeType && combBonus > 0)
+    if(beeType && combBonus > 0)
     {
-        // Calcular cuántos stacks completos de 64 necesitamos
-        const fullStacks = Math.floor(combBonus / 64);
-        const remainder = combBonus % 64;
+        let fullStacks = Math.floor(combBonus / 64);
+        let remainder = combBonus % 64;
 
-        // Añadir stacks completos de 64
         for(let i = 0; i < fullStacks; i++)
         {
-            const stack = Item.of(`productivebees:configurable_comb[productivebees:bee_type="productivebees:${beeType}"]`, 64);
+            let stack = Item.of(`productivebees:configurable_comb[productivebees:bee_type="productivebees:${beeType}"]`, 64);
             event.machine.addItem(stack);
         }
         
-        // Añadir el resto si hay
+
         if(remainder > 0)
         {
-            const stack = Item.of(`productivebees:configurable_comb[productivebees:bee_type="productivebees:${beeType}"]`, remainder);
+            let stack = Item.of(`productivebees:configurable_comb[productivebees:bee_type="productivebees:${beeType}"]`, remainder);
             event.machine.addItem(stack);
         }
     }
@@ -349,25 +334,22 @@ MMREvents.recipeFunction("apiary_recipe_end", event => {
 });
 
 MMREvents.recipeFunction("apiary_recipe_end_dye", event => {
-    // Obtener todos los items del output
     let outputItems = event.machine.getItemsStored(IOType.OUTPUT);
 
-    // Buscar y eliminar el white_dye (si existe)
     for(let i = 0; i < outputItems.size(); i++)
     {
         let item = outputItems.get(i);
         if(item && item.id == 'minecraft:white_dye')
         {
-            if (item.count >= 1) {
+            if(item.count >= 1)
+            {
                 item.count = item.count - 1;
             }
             break;
         }
     }
 
-    // Producir 32 tintes aleatorios del tag
-    const dyeTag = Ingredient.of('#c:dyes');
-    const dyes = dyeTag.getStacks().toArray();
+    let dyes = Ingredient.of('#c:dyes').getStacks().toArray();
     
     if(dyes.length === 0)
     {
@@ -384,13 +366,210 @@ MMREvents.recipeFunction("apiary_recipe_end_dye", event => {
 });
 
 MMREvents.recipeFunction("apiary_recipe_end_rancher", event => {
+    let controller = event.machine;
+    let inputItems = controller.getItemsStored(IOType.INPUT);
+    let combBonus = 0;
+    let upgradeCount = 0;
+
+    for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivelib:upgrade_productivity_4')
+        {
+            upgradeCount += item.count;
+            if(upgradeCount > 4)
+            {
+                upgradeCount = 4;
+                break;
+            }
+        }
+    }
+
+    if(upgradeCount > 0) combBonus += upgradeCount * 16;
+    let productivityTrait = null;
+    for (let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:honey_treat')
+        {
+            let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
+            if(geneGroupList)
+            {
+                productivityTrait = null;
+                
+                for(let j = 0; j < geneGroupList.size(); j++)
+                {
+                    let geneGroup = geneGroupList.get(j);
+                    let attribute = geneGroup.attribute();
+                    let value = geneGroup.value();
+                    let purity = geneGroup.purity();
+                    
+                    if(purity.equals($Integer.valueOf("100")))
+                    {
+                        let traitValue = value.includes(".") 
+                            ? value.toString().split("[.]")[1] 
+                            : value;
+                            
+                        if (attribute == "productivity")
+                        {
+                            productivityTrait = traitValue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if(productivityTrait)
+    {
+        switch(productivityTrait)
+        {
+            case "very_high": 
+                combBonus += 128;
+                break;
+            case "high": 
+                combBonus += 64;
+                break;
+            case "medium": 
+                combBonus += 32;
+                break;
+        }
+    }
+
+    for(let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:sugarbag_honeycomb')
+        {
+            combBonus += 16;
+            break;
+        }
+    }
+
+    if(combBonus > 0)
+    {
+        let fullStacks = Math.floor(combBonus / 64);
+        let remainder = combBonus % 64;
+
+        for(let i = 0; i < fullStacks; i++)
+        {
+            let stack = Item.of(`productivebees:comb_milky`, 64);
+            event.machine.addItem(stack);
+        }
+        
+        if(remainder > 0)
+        {
+            let stack = Item.of(`productivebees:comb_milky`, remainder);
+            event.machine.addItem(stack);
+        }
+    }
+});
+
+MMREvents.recipeFunction("apiary_recipe_end_creeper", event => {
+    let controller = event.machine;
+    let inputItems = controller.getItemsStored(IOType.INPUT);
+    let combBonus = 0;
+    let upgradeCount = 0;
+
+    for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivelib:upgrade_productivity_4')
+        {
+            upgradeCount += item.count;
+            if(upgradeCount > 4)
+            {
+                upgradeCount = 4;
+                break;
+            }
+        }
+    }
+
+    if(upgradeCount > 0) combBonus += upgradeCount * 16;
+    let productivityTrait = null;
+    for (let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:honey_treat')
+        {
+            let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
+            if(geneGroupList)
+            {
+                productivityTrait = null;
+                
+                for(let j = 0; j < geneGroupList.size(); j++)
+                {
+                    let geneGroup = geneGroupList.get(j);
+                    let attribute = geneGroup.attribute();
+                    let value = geneGroup.value();
+                    let purity = geneGroup.purity();
+                    
+                    if(purity.equals($Integer.valueOf("100")))
+                    {
+                        let traitValue = value.includes(".") 
+                            ? value.toString().split("[.]")[1] 
+                            : value;
+                            
+                        if (attribute == "productivity")
+                        {
+                            productivityTrait = traitValue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if(productivityTrait)
+    {
+        switch(productivityTrait)
+        {
+            case "very_high": 
+                combBonus += 128;
+                break;
+            case "high": 
+                combBonus += 64;
+                break;
+            case "medium": 
+                combBonus += 32;
+                break;
+        }
+    }
+
+    for(let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:sugarbag_honeycomb')
+        {
+            combBonus += 16;
+            break;
+        }
+    }
+
+    if(combBonus > 0)
+    {
+        let fullStacks = Math.floor(combBonus / 64);
+        let remainder = combBonus % 64;
+
+        for(let i = 0; i < fullStacks; i++)
+        {
+            let stack = Item.of(`productivebees:comb_powdery`, 64);
+            event.machine.addItem(stack);
+        }
+        
+        if(remainder > 0)
+        {
+            let stack = Item.of(`productivebees:comb_powdery`, remainder);
+            event.machine.addItem(stack);
+        }
+    }
 });
 
 MMREvents.recipeFunction("apiary_recipe_end_wanna", event => {
-    const controller = event.machine;
-    const level = event.getBlock().getLevel();
-    const inputItems = controller.getItemsStored(IOType.INPUT);
-    const outputItems = controller.getItemsStored(IOType.OUTPUT);
+    let controller = event.machine;
+    let level = event.getBlock().getLevel();
+    let inputItems = controller.getItemsStored(IOType.INPUT);
+    let outputItems = controller.getItemsStored(IOType.OUTPUT);
 
     for(let i = 0; i < outputItems.size(); i++)
     {
@@ -464,9 +643,9 @@ MMREvents.recipeFunction("apiary_recipe_end_wanna", event => {
             machinePos.getZ() + 0.5
         ));
 
-    const lootContext = lootContextBuilder.create(LootContextParamSets.ENTITY);
-    const loot = lootTable.getRandomItems(lootContext);
-    const filteredLoot = loot.stream()
+    let lootContext = lootContextBuilder.create(LootContextParamSets.ENTITY);
+    let loot = lootTable.getRandomItems(lootContext);
+    let filteredLoot = loot.stream()
         .filter(itemStack => {
             try {
                 return !itemStack.is(ModTags.WANNABEE_LOOT_BLACKLIST);
@@ -489,3 +668,123 @@ MMREvents.recipeFunction("apiary_recipe_end_wanna", event => {
 
     entity.discard();
 });
+
+MMREvents.recipeFunction("apiary_recipe_end_quarry", event => {
+    let controller = event.machine;
+    let level = event.getBlock().getLevel();
+    let inputItems = controller.getItemsStored(IOType.INPUT);
+    let outputItems = controller.getItemsStored(IOType.OUTPUT);
+    let combBonus = 0;
+    let upgradeCount = 0;
+
+    for(let i = 0; i < outputItems.size(); i++)
+    {
+        let item = outputItems.get(i);
+        if(item && item.id === 'minecraft:stone')
+        {
+            item.count = item.count - 1;
+            break;
+        }
+    }
+
+    for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivelib:upgrade_productivity_4')
+        {
+            upgradeCount += item.count;
+            if(upgradeCount > 4)
+            {
+                upgradeCount = 4;
+                break;
+            }
+        }
+    }
+
+    if(upgradeCount > 0) combBonus += upgradeCount * 16;
+    let productivityTrait = null;
+    for (let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:honey_treat')
+        {
+            let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
+            if(geneGroupList)
+            {
+                productivityTrait = null;
+                
+                for(let j = 0; j < geneGroupList.size(); j++)
+                {
+                    let geneGroup = geneGroupList.get(j);
+                    let attribute = geneGroup.attribute();
+                    let value = geneGroup.value();
+                    let purity = geneGroup.purity();
+                    
+                    if(purity.equals($Integer.valueOf("100")))
+                    {
+                        let traitValue = value.includes(".") 
+                            ? value.toString().split("[.]")[1] 
+                            : value;
+                            
+                        if (attribute == "productivity")
+                        {
+                            productivityTrait = traitValue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    if(productivityTrait)
+    {
+        switch(productivityTrait)
+        {
+            case "very_high": 
+                combBonus += 128;
+                break;
+            case "high": 
+                combBonus += 64;
+                break;
+            case "medium": 
+                combBonus += 32;
+                break;
+        }
+    }
+
+    for(let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item && item.id == 'productivebees:sugarbag_honeycomb')
+        {
+            combBonus += 16;
+            break;
+        }
+    }
+
+    let quarry_tag = Ingredient.of('#productivebees:flowers/quarry').getStacks().toList().filter(e => !(e.toString().includes("chipped:") || e.toString().includes("evilcraft:") || e.toString().includes("pneumati") || e.toString().includes("create:")));
+    console.log(quarry_tag)
+    
+    // Repetir 5 veces
+    for(let cycle = 0; cycle < 5; cycle++)
+    {
+        let randomItem = quarry_tag[Math.floor(Math.random() * quarry_tag.length)].getId();
+        
+        let randomAmount = Math.floor(Math.random() * 25) + 24;
+        
+        let fullStacks = Math.floor(randomAmount / 64);
+        let remainder = randomAmount % 64;
+
+        for(let i = 0; i < fullStacks; i++)
+        {
+            let stack = Item.of(randomItem, 64);
+            event.machine.addItem(stack);
+        }
+        
+        if(remainder > 0)
+        {
+            let stack = Item.of(randomItem, remainder);
+            event.machine.addItem(stack);
+        }
+    }
+})
