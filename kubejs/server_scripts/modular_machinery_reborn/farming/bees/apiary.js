@@ -37,12 +37,12 @@ MMREvents.machines(catalyst => {
                     "j": ["ars_nouveau:archwood_planks"],
                     "k": ['ars_nouveau:archwood_planks'],
                     "l": ["ars_nouveau:archwood_planks"],
-                    "n": ["productivebees:configurable_comb"],
+                    "n": ["#c:storage_blocks/honeycombs"],
                     "o": ["minecraft:honey_block"],
                     "p": ["ars_nouveau:source_gem_block"],
                     "q": ["modular_machinery_reborn:casing_firebox"],
                     "r": ["modular_machinery_reborn:casing_reinforced"],
-                    "s": ["minecraft:honeycomb_block"],
+                    "s": ["#c:storage_blocks/honeycombs"],
                     "t": ["ars_nouveau:archwood_slab[type=bottom]"]
                 })
         );
