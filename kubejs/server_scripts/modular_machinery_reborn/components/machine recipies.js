@@ -74,6 +74,30 @@ ServerEvents.recipes((catalyst) => {
         C: 'industrialforegoing:plant_sower'
     
         });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:apis_mutandis"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/honeycombs',
+        C: 'ars_nouveau:arcane_core'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:advanced_apiary"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/honeycombs',
+        C: '#productivebees:advanced_beehives'
+    
+        });
     
 
     

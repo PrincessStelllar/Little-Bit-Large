@@ -8,9 +8,9 @@ MMREvents.machines(catalyst => {
                     ["aaaaaaaaa","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","abbbbbbba","aaaaaaaaa"],
                     ["c       c"," d  i  d ","         ","    c    "," h cgc f ","    c    ","         "," d  e  d ","c       c"],
                     ["         "," d  i  d ","         ","         "," h  g  f ","         ","         "," d  e  d ","         "],
-                    ["         "," kkkmkkk "," jlllllj "," jlllllj "," jlllllj "," jlllllj "," jlllllj "," kkkkkkj ","         "],
+                    ["         "," kkkkkkk "," jlllllj "," jlllllj "," jlllllj "," jlllllj "," jlllllj "," kkkkkkj ","         "],
                     ["         "," nnnnnnn "," nooooon "," nopppon "," nopqpon "," nopppon "," nooooon "," nnnnnnn ","         "],
-                    ["         "," raaraar "," aoooooa "," aosssoa "," rosqsor "," aosssoa "," aoooooa "," raaraar ","         "],
+                    ["         "," raamaar "," aoooooa "," aosssoa "," rosqsor "," aosssoa "," aoooooa "," raaraar ","         "],
                     ["         "," nnnnnnn "," nooooon "," nopppon "," nopqpon "," nopppon "," nooooon "," nnnnnnn ","         "],
                     ["         "," gkkkggg "," glllllg "," glllllg "," glllllg "," glllllg "," glllllg "," ggggggg ","         "],
                     ["         ","         ","  tt tt  ","  t   t  ","    c    ","  t   t  ","  tt tt  ","         ","         "]
