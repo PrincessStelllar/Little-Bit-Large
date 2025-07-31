@@ -38,7 +38,7 @@ MMREvents.machines(catalyst => {
                     "f": ["ars_nouveau:archwood_stairs[facing=north,half=bottom,shape=inner_right,waterlogged=false]"],
                     "g": ["modular_machinery_reborn:casing_reinforced"],
                     "h": ["ars_nouveau:sourcestone_large_bricks"],
-                    "i": ["minecraft:honeycomb_block"],
+                    "i": ["#c:storage_blocks/honeycombs"],
                     "j": ["ars_nouveau:archwood_stairs[facing=north,half=bottom,shape=outer_right,waterlogged=false]"],
                     "k": ["ars_nouveau:archwood_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]"],
                     "l": ["ars_nouveau:archwood_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]"],
