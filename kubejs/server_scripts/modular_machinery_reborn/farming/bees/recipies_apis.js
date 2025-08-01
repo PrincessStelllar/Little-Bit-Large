@@ -498,12 +498,12 @@ ServerEvents.recipes(catalyst => {
                 }
                 catch(error)
                 {
-                    console.warn(`BeeType not found = ${beeType}, ${keyword}, ${ingredients}`)
+                    //console.warn(`BeeType not found = ${beeType}, ${keyword}, ${ingredients}`)
                 }
             }
             else
             {
-                console.warn(`BeeType not found = ${beeType}, ${keyword}, ${ingredients}`)
+                //console.warn(`BeeType not found = ${beeType}, ${keyword}, ${ingredients}`)
             }
         }
         
