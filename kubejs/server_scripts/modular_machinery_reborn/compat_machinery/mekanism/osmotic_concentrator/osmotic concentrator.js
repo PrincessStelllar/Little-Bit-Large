@@ -25,7 +25,7 @@ MMREvents.machines(catalyst => {
             .pattern([
                 ["a   a","     ","     ","     ","a   a"],
                 ["bcmcb","cbbbc","cbbbc","cbbbc","bcccb"],
-                ["dfhfd","e   e","f   f","e   e","defed"],
+                ["dfhfd","exxxe","fxxxf","exxxe","defed"],
                 ["jklkj","k   k","l   l","k   k","jklkj"],
                 ["jklkj","k   k","l   l","k   k","jklkj"],
                 ["jklkj","k   k","l   l","k   k","jklkj"],
@@ -55,7 +55,8 @@ MMREvents.machines(catalyst => {
                 "k":["glassential:glass_light"],
                 "l":["minecraft:magma_block"],
                 "n":["glassential:obsidian_glass"],
-                "o":["minecraft:blue_ice"]
+                "o":["minecraft:blue_ice"],
+                "x": ['rechiseled:copper_block_shafts_connecting']
             }))
        
 })
