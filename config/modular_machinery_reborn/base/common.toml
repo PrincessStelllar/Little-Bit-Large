@@ -50,12 +50,12 @@
 		#on the icon in the jei recipe.
 		# Default: 10000
 		# Range: > 1
-		structure_render_time = 200
+		structure_render_time = 300
 		#The time in milliseconds each blocks will be shown
 		#when using a block tag in a structure.
 		# Default: 1000
 		# Range: > 1
-		block_tag_cycle_time = 20
+		block_tag_cycle_time = 90
 
 	[general.Directories]
 		#A folder name where MMR will load machine structure json.
