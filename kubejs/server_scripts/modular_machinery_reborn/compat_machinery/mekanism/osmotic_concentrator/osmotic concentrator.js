@@ -16,7 +16,7 @@ MMREvents.machines(catalyst => {
         /**
          * The name that the machine should display in the controller item and in the controller GUI -> default localized with the id of the creation
          */
-        .name('Osmotic Consentrator WIP')
+        .name('Osmotic Consentrator')
         /**
          * The multiblock definition
          */
@@ -48,6 +48,7 @@ MMREvents.machines(catalyst => {
                 "f":[
                     "#modular_machinery_reborn_mekanism:chemicaloutputhatch",
                     "#modular_machinery_reborn:fluidinputhatch",
+                    "#modular_machinery_reborn:energyinputhatch",
                     "#modular_machinery_reborn_mekanism:chemicalinputhatch"
                 ],
                 "h":["modular_machinery_reborn:casing_circuitry"],
