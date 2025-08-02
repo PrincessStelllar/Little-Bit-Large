@@ -77,6 +77,12 @@ CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_big', 'modular
 CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_huge', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_ludicrous', 'pipez:advanced_upgrade', 'mekanism:elite_chemical_tank', 'mekanism:elite_pressurized_tube')
 CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_ludicrous', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_vacuum', 'pipez:ultimate_upgrade', 'mekanism:ultimate_chemical_tank', 'mekanism:ultimate_pressurized_tube')
 
+// Receta para chemicalinputhatch_small (casing + gas_pipe)
+CreatePort('modular_machinery_reborn:casing_plain', 'modular_machinery_reborn_mekanism:chemicalinputhatch_small', 'pipez:gas_pipe', 'pipez:gas_pipe', 'pipez:gas_pipe')
+
+// Receta para chemicaloutputhatch_small (casing + gas_pipe)
+CreatePort('modular_machinery_reborn:casing_plain', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_small', 'pipez:gas_pipe', 'pipez:gas_pipe','pipez:gas_pipe')
+
 //vent
 CreatePort("minecraft:redstone_block",'modular_machinery_reborn:casing_vent',"modular_machinery_reborn:casing_plain",'stevescarts:component_cleaning_fan','stevescarts:component_cleaning_fan')
 CreatePort("minecraft:paper",'modular_machinery_reborn:blueprint',"modular_machinery_reborn:casing_plain","minecraft:blue_dye",'minecraft:blue_dye')
