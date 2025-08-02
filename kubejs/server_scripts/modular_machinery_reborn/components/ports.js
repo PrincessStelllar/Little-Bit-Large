@@ -74,6 +74,34 @@ CreatePort("minecraft:paper",'modular_machinery_reborn:blueprint',"modular_machi
 
 
 });
+
+ItemEvents.modifyTooltips(catalyst => {
+    // Define tank sizes for each tier
+    const tankSizes = {
+        tiny: 1000,
+        small: 10000,
+        normal: 50000,
+        reinforced: 200000,
+        big: 1000000,
+        huge: 5000000,
+        ludicrous: 20000000,
+        vacuum: 2147483647
+    };
+
+    // Process both input and output hatches for all tiers
+    ['input', 'output'].forEach(ioType => {
+        Object.keys(tankSizes).forEach(tier => {
+            const targetId = `modular_machinery_reborn_mekanism:chemical${ioType}hatch_${tier}`;
+            
+            if (Item.exists(targetId)) {
+                catalyst.modify(targetId, text => {
+                    text.removeLine(1); // Remove default line
+                    text.add(Text.of("Stores ").append(Text.of(tankSizes[tier]).red()).append(Text.of(" chemicals")));
+                });
+            }
+        });
+    });
+});
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
