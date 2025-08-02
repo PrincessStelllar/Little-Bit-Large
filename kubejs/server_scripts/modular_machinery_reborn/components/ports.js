@@ -60,6 +60,23 @@ CreatePort('modular_machinery_reborn:fluidoutputhatch_reinforced','modular_machi
 CreatePort('modular_machinery_reborn:fluidoutputhatch_big','modular_machinery_reborn:fluidoutputhatch_huge','pipez:improved_upgrade','mekanism:advanced_fluid_tank','mekanism:advanced_mechanical_pipe')
 CreatePort('modular_machinery_reborn:fluidoutputhatch_huge','modular_machinery_reborn:fluidoutputhatch_ludicrous','pipez:advanced_upgrade','mekanism:elite_fluid_tank','mekanism:elite_mechanical_pipe')
 CreatePort('modular_machinery_reborn:fluidoutputhatch_ludicrous','modular_machinery_reborn:fluidoutputhatch_vacuum','pipez:ultimate_upgrade','mekanism:ultimate_fluid_tank','mekanism:ultimate_mechanical_pipe')
+
+//chemical in
+CreatePort('modular_machinery_reborn_mekanism:chemicalinputhatch_small', 'modular_machinery_reborn_mekanism:chemicalinputhatch_normal', 'pipez:basic_upgrade', 'mekanism:basic_pressurized_tube', 'mekanism:basic_chemical_tank')
+CreatePort('modular_machinery_reborn_mekanism:chemicalinputhatch_normal', 'modular_machinery_reborn_mekanism:chemicalinputhatch_reinforced', 'pipez:basic_upgrade', 'mekanism:basic_pressurized_tube', 'mekanism:basic_chemical_tank')
+CreatePort('modular_machinery_reborn_mekanism:chemicalinputhatch_reinforced', 'modular_machinery_reborn_mekanism:chemicalinputhatch_big', 'pipez:improved_upgrade', 'mekanism:advanced_pressurized_tube', 'mekanism:advanced_chemical_tank')
+CreatePort('modular_machinery_reborn_mekanism:chemicalinputhatch_big', 'modular_machinery_reborn_mekanism:chemicalinputhatch_huge', 'pipez:improved_upgrade', 'mekanism:advanced_pressurized_tube', 'mekanism:advanced_chemical_tank')
+CreatePort('modular_machinery_reborn_mekanism:chemicalinputhatch_huge', 'modular_machinery_reborn_mekanism:chemicalinputhatch_ludicrous', 'pipez:advanced_upgrade', 'mekanism:elite_pressurized_tube', 'mekanism:elite_chemical_tank')
+CreatePort('modular_machinery_reborn_mekanism:chemicalinputhatch_ludicrous', 'modular_machinery_reborn_mekanism:chemicalinputhatch_vacuum', 'pipez:ultimate_upgrade', 'mekanism:ultimate_pressurized_tube', 'mekanism:ultimate_chemical_tank')
+
+//chemical out
+CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_small', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_normal', 'pipez:basic_upgrade', 'mekanism:basic_chemical_tank', 'mekanism:basic_pressurized_tube')
+CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_normal', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_reinforced', 'pipez:basic_upgrade', 'mekanism:basic_chemical_tank', 'mekanism:basic_pressurized_tube')
+CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_reinforced', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_big', 'pipez:improved_upgrade', 'mekanism:advanced_chemical_tank', 'mekanism:advanced_pressurized_tube')
+CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_big', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_huge', 'pipez:improved_upgrade', 'mekanism:advanced_chemical_tank', 'mekanism:advanced_pressurized_tube')
+CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_huge', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_ludicrous', 'pipez:advanced_upgrade', 'mekanism:elite_chemical_tank', 'mekanism:elite_pressurized_tube')
+CreatePort('modular_machinery_reborn_mekanism:chemicaloutputhatch_ludicrous', 'modular_machinery_reborn_mekanism:chemicaloutputhatch_vacuum', 'pipez:ultimate_upgrade', 'mekanism:ultimate_chemical_tank', 'mekanism:ultimate_pressurized_tube')
+
 //vent
 CreatePort("minecraft:redstone_block",'modular_machinery_reborn:casing_vent',"modular_machinery_reborn:casing_plain",'stevescarts:component_cleaning_fan','stevescarts:component_cleaning_fan')
 CreatePort("minecraft:paper",'modular_machinery_reborn:blueprint',"modular_machinery_reborn:casing_plain","minecraft:blue_dye",'minecraft:blue_dye')
