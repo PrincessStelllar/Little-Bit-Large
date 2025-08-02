@@ -41,7 +41,7 @@ MMREvents.machines(catalyst => {
             ])
             .keys({
                 "a":["chipped:gilded_basalt_bone_block[axis=y]"],
-                "b":["minecraft:deepslate_tile_stairs[facing=north,half=bottom,shape=straight]"],
+                "b":["minecraft:deepslate_brick_slab[type=bottom]"],
                 "c":[
                     "#modular_machinery_reborn_mekanism:chemicalinputhatch",
                     "#modular_machinery_reborn_mekanism:chemicaloutputhatch",
@@ -49,15 +49,15 @@ MMREvents.machines(catalyst => {
                     "modular_machinery_reborn:casing_plain"
                 ],
                 "d":["chipped:basalt_bricks"],
-                "f":["minecraft:deepslate_tile_stairs[facing=west,half=bottom,shape=straight]"],
-                "h":["minecraft:deepslate_tile_stairs[facing=east,half=bottom,shape=straight]"],
+                "f":["minecraft:deepslate_brick_slab[type=bottom]"],
+                "h":["minecraft:deepslate_brick_slab[type=bottom]"],
                 "i":[
                     "mekanism:basic_energy_cube",
                     "mekanism:advanced_energy_cube",
                     "mekanism:elite_energy_cube",
                     "mekanism:ultimate_energy_cube",
                 ],
-                "j":["minecraft:deepslate_tile_stairs[facing=south,half=bottom,shape=straight]"],
+                "j":["minecraft:deepslate_brick_slab[type=bottom]"],
                 "k":["mekanism:laser[active=true,facing=up]"],
                 "l":["modular_machinery_reborn:casing_reinforced"],
                 "n":["chisel:ornatesteel/glass"],
