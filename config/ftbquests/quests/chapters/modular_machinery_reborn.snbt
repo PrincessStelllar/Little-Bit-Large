@@ -23,7 +23,7 @@
 			rotation: 25.0d
 			width: 2.0d
 			x: 12.0d
-			y: -11.5d
+			y: -18.0d
 		}
 	]
 	order_index: 8
@@ -451,9 +451,14 @@
 			dependencies: ["44CC0C8C57F6BFCC"]
 			id: "196092FE5F1B24DC"
 			rewards: [{
-				id: "4842E80FE3E1274A"
-				type: "xp"
-				xp: 100
+				count: 2
+				id: "44BF89C8AF7DB4AF"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 4
+				type: "item"
 			}]
 			tasks: [{
 				id: "0E29331EA95EA06E"
@@ -466,6 +471,12 @@
 		}
 		{
 			dependencies: ["75C6A646E2DB4905"]
+			icon: {
+				components: {
+					"ftbquests:icon": "ftblibrary:icons/check"
+				}
+				id: "ftbquests:custom_icon"
+			}
 			id: "676F526FA911C55D"
 			rewards: [{
 				id: "214A6C5718BD750F"
@@ -642,6 +653,149 @@
 			}]
 			x: 7.5d
 			y: -18.0d
+		}
+		{
+			dependencies: ["62F77CA28BF9653C"]
+			hide_dependency_lines: true
+			id: "25CED87D758A6D0C"
+			rewards: [{
+				count: 16
+				id: "685C6024B45F15FC"
+				item: {
+					count: 1
+					id: "minecraft:bee_spawn_egg"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C10F4B5BBC2B95E"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:apis_mutandis" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 15.3d
+			y: -15.75d
+		}
+		{
+			dependencies: ["62F77CA28BF9653C"]
+			hide_dependency_lines: true
+			id: "596F28EF0EB7002F"
+			rewards: [{
+				id: "2DE13156BCB4CFEF"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:parallel_hatch_basic"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A4BD13A33036932"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:advanced_apiary" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 15.3d
+			y: -14.07142857142857d
+		}
+		{
+			dependencies: ["4539BB25257AE9CF"]
+			icon: {
+				id: "mekanism:steel_casing"
+			}
+			id: "7E35C161848F343F"
+			rewards: [{
+				id: "74F25041C1643567"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0B368CDAD8D899F4"
+				type: "checkmark"
+			}]
+			x: 12.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7E35C161848F343F"]
+			id: "03F51220CD6E38E1"
+			rewards: [{
+				count: 16
+				id: "4DFE449020262A3A"
+				item: {
+					count: 1
+					id: "mekanism:heavy_water_bucket"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "769FF86F152C9DCB"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:abyssal_pump" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7E35C161848F343F"]
+			id: "2A16DB89E273DC47"
+			rewards: [{
+				count: 64
+				id: "72493FEF91326686"
+				item: {
+					count: 1
+					id: "mekanism:dust_lithium"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "07EAA9EF97C1F3C9"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:osmotic_concentrator" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7E35C161848F343F"]
+			id: "324DF9C2A54FF7D8"
+			rewards: [
+				{
+					count: 16
+					id: "6FA5492FE7551DF8"
+					item: {
+						count: 1
+						id: "mekanism:radioactive_waste_barrel"
+					}
+					type: "item"
+				}
+				{
+					id: "550EDED3D1812895"
+					item: {
+						components: {
+							"minecraft:entity_data": {
+								id: "productivebees:configurable_bee"
+								type: "productivebees:wasted_radioactive"
+							}
+						}
+						count: 1
+						id: "productivebees:spawn_egg_configurable_bee"
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "55EA56839BBA3DE6"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:neutron_injector" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 14.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["676F526FA911C55D"]
+			hide_lock_icon: true
+			id: "4539BB25257AE9CF"
+			size: 0.25d
+			x: 11.0d
+			y: -10.5d
 		}
 	]
 }

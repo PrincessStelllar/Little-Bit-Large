@@ -266,6 +266,14 @@
 	]
 	quest.03DE539ACCBB0BFA.quest_subtitle: "&cLava&r fueled"
 	quest.03F4B189616EDCBC.quest_desc: ["Adds more nuanced distribution options. Allows for Round Robin configuration, Nearest First, Furthest First, and Random distribution."]
+	quest.03F51220CD6E38E1.quest_desc: [
+		"Pumping &3heavy&r water from the &aground&r was hard, but not &canymore&r."
+		""
+		"Using &6ancient&r deposits of &3heavy&r water, you can &eextract&r it easily."
+		""
+		"{image:catalyst:textures/quest_images/modular_machinery_reborn/abyssal_pump.png width:100 height:100 align:center fit:true}"
+	]
+	quest.03F51220CD6E38E1.quest_subtitle: "Pumping here we go"
 	quest.03F8DB89EBBE19F9.quest_desc: [
 		"In this &amodpack&r, they are made a lot &dcheaper&r to start with compared to previous versions, but &charder&r to progress, equally to &aseeds&r"
 		""
@@ -2474,6 +2482,16 @@
 	quest.2577E2D827AC5D6C.quest_subtitle: "in Life and Death "
 	quest.25AA7045FE48B0C6.quest_desc: ["Stores 2000 &aitems&r, but can store 4 &ddifferent&r type of &6items&r, 512 &eitems&r of each type."]
 	quest.25AA7045FE48B0C6.quest_subtitle: "In 4 pieces, please"
+	quest.25CED87D758A6D0C.quest_desc: [
+		"\"Using &elost&r knowlegde, we were able to &dtransform&r bees into different &ctypes&r, once thought to be lost &6forever&r\" - &dMagical&r Engineer 1256"
+		""
+		"This &6multiblock&r as &asimple&r as it gets. Put 1 &6bee&r spawn egg, some &ehoney&r fluid and some &amaterial&r to get an egg for that bee."
+		""
+		"Note: You can use any &6comb&r for the building"
+		""
+		"{image:catalyst:textures/quest_images/modular_machinery_reborn/apis.png width:100 height:100 align:center fit:true}"
+	]
+	quest.25CED87D758A6D0C.quest_subtitle: "One for another"
 	quest.261C1726C965B33F.quest_desc: ["There are basically &3useless&r, since you have &aMekanism&r for the canner and you don't use the repair for buds, since you either have &6bees&r or &ddupe&r for &aEntro&r crystal or &eflawless&r bud for &bcertus&r "]
 	quest.26726F3439B381DD.quest_desc: ["Magma cream.... and &4The Nether&r, perfect combo for this bee"]
 	quest.26726F3439B381DD.quest_subtitle: "Turn off the fire PLEASE"
@@ -2681,6 +2699,16 @@
 		"output to <label> slots 1-7 &7--slots from 1 to 7 are affected&r"
 	]
 	quest.29DF1D629BE2DEBD.title: "Slots / Sides"
+	quest.2A16DB89E273DC47.quest_desc: [
+		"&6Thermal Evaporation Towers&r has one downside, &camount&r of &dchemicals&r you can get per second."
+		""
+		"This new &emultiblock&r changes that, even &cdeleting&r the &4heat&r requirements, because it's built in to be &amore efficient&r."
+		""
+		"This &6multiblock&r needs the &ehighers&r tier of chemical and fluid ports in &border&r for it to work due to the huge &aamounts&r."
+		""
+		"{image:catalyst:textures/quest_images/modular_machinery_reborn/osmotic.png width:100 height:100 align:center fit:true}"
+	]
+	quest.2A16DB89E273DC47.quest_subtitle: "Thermal Evaporation Tower"
 	quest.2A30ED06F03EAD50.quest_desc: [
 		"With 10 of these 1K &cStorage&r &6Components&r, you should be able to fit most of your early &cstorage&r and then you can easily upgrade it to higher capacity."
 		""
@@ -3182,6 +3210,17 @@
 	]
 	quest.324AD9884D4F75E8.quest_desc: ["It &dallows&r you to &cstore&r 16 times more in each &6slots&r"]
 	quest.324AD9884D4F75E8.quest_subtitle: "Universium ingot"
+	quest.324DF9C2A54FF7D8.quest_desc: [
+		"This &6multiblock&r sustitute the &eSolar&r &bNeutron Inyector&r for a &d\"all day\"&r one."
+		""
+		"The &6multiblock&r has one &arequirement&r, the &clasers&r needs to be on!"
+		"Don't worry, it &4won't&r break stuff, but it will &brequires&r some energy always."
+		""
+		"The &aenergy&r for the &clasers&r is distribuited using &aenergy cubes&r below them"
+		""
+		"{image:catalyst:textures/quest_images/modular_machinery_reborn/neutron_inyector.png width:100 height:100 align:center fit:true}"
+	]
+	quest.324DF9C2A54FF7D8.quest_subtitle: "Solar power... or laser powah"
 	quest.325AD48FA7A279AB.quest_desc: [
 		"Once you have 32 &aentro&r crystal, you can dupe it or get a &6bee&r, whatever you like the most."
 		"The easiest one is &6bee&r."
@@ -4271,6 +4310,7 @@
 	quest.44D5D328F4A7375B.title: "&l&cChisels"
 	quest.44E4EDC88E6809F6.quest_desc: ["&6Feeding&r the player with &afood&r? What is this? A &dbackpack&r?"]
 	quest.44E4EDC88E6809F6.quest_subtitle: "Feeder"
+	quest.4539BB25257AE9CF.title: " "
 	quest.45486AC8954F26C1.quest_desc: [
 		"Increases the range in which mobs spawn."
 		""
@@ -5301,6 +5341,43 @@
 		"Sorry for the Inconvinience."
 	]
 	quest.595C57935DCCD08E.title: "Questline Under Work"
+	quest.596F28EF0EB7002F.quest_desc: [
+		"\"These &6bees&r needs a &dmagical&r enviroment for them to &awork&r, yet it seems that they can &5work&r on &3parallel&r to each other\" - &5Magical&r Executor 1"
+		""
+		"This is a normal &abeehive&r, but with a few changes:"
+		""
+		"- It can only do &n&b1 bee type&r per &6multiblock&r and produces 64 combs block per recipe"
+		""
+		"- It needs the &n&dspawn egg&r for it to work"
+		""
+		"- &bParallelism&r -> Multiple &6bees&r of the same &atype&r can work at the same time"
+		""
+		"- Acts as a normal &bhive&r but with &aenergy&r needs (20kfe per tick)"
+		""
+		"&2More info on the next page&r"
+		"{@pagebreak}"
+		"It's an &dexpensive&r hive, but what's the catch?"
+		""
+		"- If you put a &6honey treat&r with the &btraits&r you want, it will acts as the bee has it"
+		""
+		"   -> &dVery High&r -> Produce 128 &n&cextra&r combs block per recipe and &aspeeds&r up the &brecipe&r time by 4"
+		""
+		"   -> &dMetaturna&rl -> Works at any &6time&r of the day. If you put &3nocturnal&r, it will work only for the &anight&r"
+		""
+		"   -> &dAny&r -> Works on any &aweather&r. If you put &3rain&r, it will work only during a &brainstorm&r"
+		""
+		"- &5Omega upgrades&r -> If you put up to 4 &aupgrades&r, it will produce an &n&cextra&r 64 combs blocks"
+		""
+		"- &5Sugarbag comb&r -> Produce an &n&cextra&r 16 combs block. Because of that &aextra sugar&r ;)"
+		""
+		"This gives that a &6bee&r can do the job of 5 &6bees&r, and add &aparallelism&r and you can do &einsane&r amount of combs per second compared to &abeehives&r"
+		"{@pagebreak}"
+		"You can use any &dcomb&r on the &bbuilding&r, don't worry"
+		"&eLight&r is include in the price"
+		""
+		"{image:catalyst:textures/quest_images/modular_machinery_reborn/apiary.png width:100 height:100 align:center fit:true}"
+	]
+	quest.596F28EF0EB7002F.quest_subtitle: "Beehive on steroids"
 	quest.59E3899D372E1089.quest_desc: [
 		"&cSuper Factory Manager&r or &6SFM&r is the most powerful &alogistical&r system out there, yet it's the most &bcomplicated&r one."
 		""
@@ -5790,7 +5867,9 @@
 	quest.62F77CA28BF9653C.quest_desc: [
 		"These &emultiblock&r are centered around &dresources&r generation"
 		""
-		"I would check the &bHNN&r and &aMA&r ones mainly for &efarming&r resources or if you are a &abuilder&r and need a lot of &6wood&r, the Arboletum"
+		"I would check the &bHNN&r and &aMA&r ones mainly for &efarming&r resources or if you are a &abuilder&r and need a lot of &6wood&r, the Arboletum."
+		""
+		"Or the &6bees&r...."
 	]
 	quest.62F77CA28BF9653C.quest_subtitle: "Farming on the go?"
 	quest.62F77CA28BF9653C.title: "Farming"
@@ -7572,6 +7651,15 @@
 	quest.7DDA8F8BFCB5F3EC.title: "No Ai"
 	quest.7DF7DE4654985DE5.quest_desc: ["&aArs Nouveau&r &cStorage&r for &dsource&r, what in the world needs 50000000000000 &dsource&r?"]
 	quest.7DF7DE4654985DE5.quest_subtitle: "Wait, source too?"
+	quest.7E35C161848F343F.quest_desc: [
+		"These &emultiblock&r are centered around saving &clag&r from later &aMekanism&r gameplay."
+		""
+		"Or to solve the &aspam&r issue."
+		""
+		"These &6multiblocks&r uses a lot of &7steel&r and &cmodularium&r. You should &apassive&r it"
+	]
+	quest.7E35C161848F343F.quest_subtitle: "Pumping"
+	quest.7E35C161848F343F.title: "Mekanism"
 	quest.7E3B739D277A3254.quest_desc: [
 		"There are a lot of &amultiblocks&r that can be made, but they varies from &dsize&r to &6materials&r."
 		"To solve this, there is a little &btool&r that can form the multiblock, the &9blueprint&r!"
