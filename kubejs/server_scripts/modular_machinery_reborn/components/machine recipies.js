@@ -98,6 +98,42 @@ ServerEvents.recipes((catalyst) => {
         C: '#productivebees:advanced_beehives'
     
         });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:abyssal_pump"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/steel',
+        C: 'mekanism:electric_pump'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:neutron_injector"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/steel',
+        C: 'mekanism:solar_neutron_activator'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:osmotic_concentrator"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/steel',
+        C: 'mekanism:thermal_evaporation_controller'
+    
+        });
     
 
     
