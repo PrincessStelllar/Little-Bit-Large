@@ -797,5 +797,26 @@
 			x: 11.0d
 			y: -10.5d
 		}
+		{
+			dependencies: ["676F526FA911C55D"]
+			id: "3B1AF89E06B178D4"
+			rewards: [{
+				count: 4
+				id: "445157F300DEAAC2"
+				item: {
+					count: 1
+					id: "modular_machinery_reborn:modularium"
+				}
+				random_bonus: 4
+				type: "item"
+			}]
+			tasks: [{
+				id: "3F6955BADB9EE442"
+				item: { count: 1, id: "modular_machinery_reborn:parallel_hatch_basic" }
+				type: "item"
+			}]
+			x: 11.0d
+			y: -16.5d
+		}
 	]
 }

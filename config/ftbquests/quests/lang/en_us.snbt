@@ -1666,8 +1666,8 @@
 	]
 	quest.1901D8DE0A627FE0.quest_subtitle: "To the &dvoid"
 	quest.190A7DE08C550C97.quest_desc: ["Please, use other thing more &dreliable&r than these."]
-	quest.196092FE5F1B24DC.quest_desc: ["There is no &ccrafting&r for these, but I needed to include it ;)"]
-	quest.196092FE5F1B24DC.quest_subtitle: "No crafting"
+	quest.196092FE5F1B24DC.quest_desc: ["Using some &bboards&r from your &dtrain&r, you can &6control&r your machines"]
+	quest.196092FE5F1B24DC.quest_subtitle: "No crafting, unless you use your imagination"
 	quest.1967006A4AFEE71C.quest_desc: ["The upcoming creatures need to be created with the tablet of awakening."]
 	quest.1967006A4AFEE71C.quest_subtitle: "Expanding the labor force"
 	quest.19846B3A3240F6B9.quest_desc: [
@@ -3719,6 +3719,13 @@
 		"You &ecan&r select an &bslot&r if your drawer has &dmore&r than 1"
 	]
 	quest.3AE420164B082C74.quest_subtitle: "Redstone controller"
+	quest.3B1AF89E06B178D4.quest_desc: [
+		"For now, the &6apiary&r is the only &amultiblock&r that can support &dparallels&r."
+		""
+		"&5Parallels&r means doing more &bwork&r on the same machine, but without &cbuilding&r more."
+		"This &ameans&r you just need to &bchange&r a block and good to go"
+	]
+	quest.3B1AF89E06B178D4.quest_subtitle: "Parallelism, not concurrency"
 	quest.3B233A03E5BDA0C8.quest_desc: [
 		"Pump some &bfluids&r here for recipes to use!"
 		""
@@ -5362,7 +5369,7 @@
 		""
 		"   -> &dVery High&r -> Produce 128 &n&cextra&r combs block per recipe and &aspeeds&r up the &brecipe&r time by 4"
 		""
-		"   -> &dMetaturna&rl -> Works at any &6time&r of the day. If you put &3nocturnal&r, it will work only for the &anight&r"
+		"   -> &dMetaturnal&r -> Works at any &6time&r of the day. If you put &3nocturnal&r, it will work only for the &anight&r"
 		""
 		"   -> &dAny&r -> Works on any &aweather&r. If you put &3rain&r, it will work only during a &brainstorm&r"
 		""
