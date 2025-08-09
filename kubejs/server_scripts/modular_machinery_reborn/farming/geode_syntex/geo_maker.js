@@ -24,7 +24,7 @@ MMREvents.machines(catalyst => {
                     "d": ["crystalix:black_crystalix_glass"],
                     "e": ["ae2:quartz_block"],
                     "f": ["modular_machinery_reborn:energyinputhatch_ultimate"],
-                    "g": ["modular_machinery_reborn:fluidinputhatch_tiny"],
+                    "g": ["chipped:rough_quartz_block"],
                     "h": ["chipped:curly_quartz_block_pillar[axis=y]"],
                     "i": ["chipped:bordered_obsidian"],
                     "j": ["chipped:pillar_obsidian_bricks"],
