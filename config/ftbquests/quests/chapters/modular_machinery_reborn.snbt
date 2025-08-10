@@ -818,5 +818,50 @@
 			x: 11.0d
 			y: -16.5d
 		}
+		{
+			dependencies: ["62F77CA28BF9653C"]
+			hide_dependency_lines: true
+			id: "5A0300A336B698ED"
+			rewards: [{
+				id: "772696B0BBC8C63B"
+				item: {
+					count: 1
+					id: "ars_nouveau:amethyst_golem_charm"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "02FE3EA7617CE227"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:geo_syntex" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["62F77CA28BF9653C"]
+			hide_dependency_lines: true
+			id: "5EA2660475664A48"
+			rewards: [{
+				id: "37F1F85773466F74"
+				item: {
+					components: {
+						"mekanism:energy": {
+							energy_containers: [L;64000000L]
+						}
+					}
+					count: 1
+					id: "mekanism:elite_energy_cube"
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F9EFD7E5A1E94E2"
+				item: { components: { "modular_machinery_reborn:machine": "mmr:crystalline_fabricator" }, count: 1, id: "modular_machinery_reborn:controller" }
+				type: "item"
+			}]
+			x: 16.5d
+			y: -13.5d
+		}
 	]
 }
