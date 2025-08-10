@@ -55,7 +55,7 @@
 		#when using a block tag in a structure.
 		# Default: 1000
 		# Range: > 1
-		block_tag_cycle_time = 90
+		block_tag_cycle_time = 1000
 
 	[general.Directories]
 		#A folder name where MMR will load machine structure json.

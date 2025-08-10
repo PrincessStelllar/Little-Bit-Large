@@ -32,39 +32,47 @@ ServerEvents.recipes(catalyst => {
     let bees = $BeeProvider.INSTANCE.getData();
 
     bees.forEach((value, key) => {
-        let keyword = value.toString().split(":")[1];
-        if(!skip.includes(keyword))
-        {
-            catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_apiary", time)
-            .progressX(54)
-            .progressY(20)
-            .width(110)
-            .height(60)
-            .requireEnergy(20000, 0, 4)
-            .requireFluid('1000x productivebees:honey', 25, 40)
-            .requireItem(`1x productivebees:spawn_egg_configurable_bee[entity_data={id:"productivebees:configurable_bee",type:"productivebees:${keyword}"}]`, 0, 25, 0)
-            .requireItem(`32x minecraft:honeycomb`, 25, 20)
-            .produceItem(`64x productivebees:configurable_comb[productivebees:bee_type="productivebees:${keyword}"]`, 90, 0)
-            .requireFunctionEachTick("apiary_recipe_each")
-            .requireFunctionOnEnd("apiary_recipe_end")
+        try {
+            let keyword = value.toString().split(":")[1];
+            if(!skip.includes(keyword))
+            {
+                catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_apiary", time)
+                .progressX(54)
+                .progressY(20)
+                .width(110)
+                .height(60)
+                .requireEnergy(20000, 0, 4)
+                .requireFluid('1000x productivebees:honey', 25, 40)
+                .requireItem(`1x productivebees:spawn_egg_configurable_bee[entity_data={id:"productivebees:configurable_bee",type:"productivebees:${keyword}"}]`, 0, 25, 0)
+                .requireItem(`32x minecraft:honeycomb`, 25, 20)
+                .produceItem(`64x productivebees:configurable_comb[productivebees:bee_type="productivebees:${keyword}"]`, 90, 0)
+                .requireFunctionEachTick("apiary_recipe_each")
+                .requireFunctionOnEnd("apiary_recipe_end")
+            }
+    
+            if(keyword === "wanna")
+            {
+                catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_apiary", time)
+                .progressX(54)
+                .progressY(20)
+                .width(110)
+                .height(60)
+                .requireEnergy(20000, 0, 4)
+                .requireFluid('1000x productivebees:honey', 25, 40)
+                .requireItem(`1x productivebees:spawn_egg_configurable_bee[entity_data={id:"productivebees:configurable_bee",type:"productivebees:${keyword}"}]`, 0, 25, 0)
+                .requireItem(`32x minecraft:honeycomb`, 25, 20)
+                .produceItem('1x minecraft:rotten_flesh', 90, 0)
+                .requireFunctionEachTick("apiary_recipe_each")
+                .requireFunctionOnEnd("apiary_recipe_end_wanna")
+            }
         }
-
-        if(keyword === "wanna")
+        catch(error)
         {
-            catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_apiary", time)
-            .progressX(54)
-            .progressY(20)
-            .width(110)
-            .height(60)
-            .requireEnergy(20000, 0, 4)
-            .requireFluid('1000x productivebees:honey', 25, 40)
-            .requireItem(`1x productivebees:spawn_egg_configurable_bee[entity_data={id:"productivebees:configurable_bee",type:"productivebees:${keyword}"}]`, 0, 25, 0)
-            .requireItem(`32x minecraft:honeycomb`, 25, 20)
-            .produceItem('1x minecraft:rotten_flesh', 90, 0)
-            .requireFunctionEachTick("apiary_recipe_each")
-            .requireFunctionOnEnd("apiary_recipe_end_wanna")
+            console.warn(`Error on bee ${value}`)
         }
     });
+
+    console.log("Finished configurable bees")
 
     let specialRecipes = [
         {
@@ -109,6 +117,8 @@ ServerEvents.recipes(catalyst => {
         .requireFunctionOnEnd(recipe.onEnd)
         
     });
+
+    console.log("Finished special bees")
 
     //phil
     catalyst.custom({

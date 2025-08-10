@@ -134,6 +134,32 @@ ServerEvents.recipes((catalyst) => {
         C: 'mekanism:thermal_evaporation_controller'
     
         });
+
+    //syntex
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:geo_syntex"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: 'minecraft:amethyst_cluster',
+        C: 'mysticalagriculture:awakened_supremium_growth_accelerator'
+    
+        });
+    
+    //maker
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:crystalline_fabricator"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: 'minecraft:amethyst_cluster',
+        C: 'pneumaticcraft:pressure_chamber_interface'
+    
+        });
     
 
     

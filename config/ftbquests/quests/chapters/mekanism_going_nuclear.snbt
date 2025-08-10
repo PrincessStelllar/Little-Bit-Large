@@ -282,13 +282,16 @@
 				id: "5AF2B9829571C72B"
 				item: {
 					count: 1
-					id: "mekanism:pellet_plutonium"
+					id: "eternalores:plutonium_ingot"
 				}
 				type: "item"
 			}]
 			tasks: [{
+				icon: {
+					id: "eternalores:plutonium_ingot"
+				}
 				id: "74DE9D66FA636171"
-				item: { count: 1, id: "mekanism:pellet_plutonium" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:pellets/plutonium)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: -4.5d

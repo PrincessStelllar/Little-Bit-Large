@@ -2157,8 +2157,11 @@
 				xp: 100
 			}]
 			tasks: [{
+				icon: {
+					id: "eternalores:uranium_ingot"
+				}
 				id: "53511511729B1810"
-				item: { count: 1, id: "oritech:uranium_pellet" }
+				item: { components: { "ftbfiltersystem:filter": "ftbfiltersystem:item_tag(c:ingots/uranium)" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 21.0d

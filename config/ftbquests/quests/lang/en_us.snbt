@@ -15,6 +15,7 @@
 	chapter.315076A74ED3C0B4.title: "Ars Nouveau"
 	chapter.31F87E6CA6813107.title: " &l&bOriTech"
 	chapter.32BF091D8E42CFC8.title: "&aMystical &bAgriculture&r"
+	chapter.32EBEDA362E693A6.title: "[{\"text\":\"\"},{\"text\":\"Ge\",\"color\":\"#7327F5\"},{\"text\":\"Ore\",\"color\":\"#F52742\"}]"
 	chapter.33BD2251DF8E61AA.title: "Hostile Neural Networks"
 	chapter.376B718EFCF5AACE.title: "[{\"text\":\"\"},{\"text\":\"Functional\",\"color\":\"#29e6ca\"},{\"text\":\" Storage!\"}]"
 	chapter.3C17CB8FF9BF24E3.title: "Modular Machinery Reborn"
@@ -224,6 +225,8 @@
 	quest.02E409957CF1A24F.title: "Essence Crafting"
 	quest.0335AE18355F438B.quest_desc: ["Molten plastic is made in the thermopneumatic processing plant and is made with either lpg or biodiesel along with coal."]
 	quest.0335AE18355F438B.quest_subtitle: "Nothing like the smell of burnt plastic in the morning"
+	quest.035A0DF4D25650B3.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &baluminium&r"]
+	quest.035A0DF4D25650B3.quest_subtitle: "Aluminium"
 	quest.036C58E2C3423F58.quest_desc: [
 		"&dArs Nouveau&r has to be one of the best magic mods Modded Minecraft has recieved over the years. We will not talk about much of the mod in this section, due to there being a &lwhole questline&r for it."
 		""
@@ -414,6 +417,11 @@
 		"[{\"text\":\"Max capacity is \",\"color\":\"#FFFFFF\"},{\"text\":\"max integer \",\"color\":\"#25e62e\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"Click here to open the webpage for more info\"}},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#MAX_VALUE\"}}]"
 	]
 	quest.0633DAA68EA70CB9.quest_subtitle: "durus"
+	quest.067BD05FD233EEB3.quest_desc: [
+		"&5Magical&r creatures guides you to these &dbuddings&r, giving you &dtungsten&r"
+		""
+		"No use"
+	]
 	quest.06BB747C353B7A3B.quest_desc: [
 		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
 		""
@@ -690,6 +698,8 @@
 	quest.0AE5D4C43C7C4C8C.quest_subtitle: "Final NAS: &cON&r"
 	quest.0AE5D4C43C7C4C8C.title: "256M Storage Component"
 	quest.0B590548E1FA4E1A.title: "Chocolate Mining Bee"
+	quest.0B66741748BDAFCC.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &auraninite&r"]
+	quest.0B66741748BDAFCC.quest_subtitle: "Clara Uranium"
 	quest.0B6D864866C886A0.quest_desc: [
 		"While these are AE2 machines, they only needs 1 channel, but now we have a little problem, if you did the whole block version, it can be used on dense cables, if not, only on smart cables."
 		""
@@ -1112,6 +1122,8 @@
 		"Well, you might &dneed&r these"
 	]
 	quest.1038B0243A3058E1.quest_subtitle: "Steam!?!"
+	quest.1040A7B9610C87CB.quest_desc: ["To &dimprove&r &bAE2&r"]
+	quest.1040A7B9610C87CB.quest_subtitle: "The concurrent beast"
 	quest.104632D15E3A3270.quest_subtitle: "A mix of Netherite and Platinum"
 	quest.104632D15E3A3270.title: "&l&0Duratium Ingot"
 	quest.109871D7E0FD1BF3.quest_desc: ["The stack upgrade increases the number of items sent per operation and applies to all compatible modules in the router (granted the module doesn't have stack augments). Each upgrade doubles the amount of items that can be sent per operation, meaning the maximum effective upgrades are 6 (2⁶)."]
@@ -1441,6 +1453,8 @@
 		"You will need to use &eJEI / EMI&r for placing fluids and chemicals, because you &cwon't&r use buckets or chemical tanks. I hope...."
 	]
 	quest.15466FC285B74785.quest_subtitle: "The most used"
+	quest.1550C1A086D41FAB.quest_desc: ["You would &aneed&r a lot if you use &bAE2&r"]
+	quest.1550C1A086D41FAB.quest_subtitle: "The storage specialist"
 	quest.157B2B9583F18AB7.quest_desc: [
 		"&aTransporters&r don't have a &credstone&r control built-in like the &eothers&r, but you can &6change&r them by this one."
 		""
@@ -1611,6 +1625,8 @@
 	quest.170499F17B55FDCD.quest_desc: ["&bSpirit Attuned Crystals&r from Occultism give &a+3 Eterna&r up to a max of &a45 Eterna&r."]
 	quest.170499F17B55FDCD.quest_subtitle: "Crystals really do give you powers..."
 	quest.170499F17B55FDCD.title: "&aMore Eterna!"
+	quest.1712CAAB3262BFD4.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &bdiamonds&r"]
+	quest.1712CAAB3262BFD4.quest_subtitle: "Adamas"
 	quest.17715EC2B27B20A4.quest_desc: [
 		"With a bit of &3fluorite&r, you can get &7Hydrofluric&r Acid."
 		""
@@ -1655,6 +1671,8 @@
 		"&4NOTE!!&r"
 		"&4Destination filters are side spesific so do make sure you get the correct side that the pipe connects to if not the filter wont work.&r"
 	]
+	quest.18BB09BEDC657466.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &6tin&r"]
+	quest.18BB09BEDC657466.quest_subtitle: "Stannum"
 	quest.18C0DACF162F84E7.quest_desc: ["Basically, a &7furnace&r"]
 	quest.18C0DACF162F84E7.quest_subtitle: "Furnace"
 	quest.1901D8DE0A627FE0.quest_desc: [
@@ -2177,6 +2195,8 @@
 		"They consume a lot of &apower&r the further they are to each other. One way to solve this issue is using &dEnergy Card&r, but still, they growth at an exponential rate."
 	]
 	quest.213712F8CA65B2ED.quest_subtitle: "Wireless? More or less"
+	quest.214357114B171CFB.quest_desc: ["&dMagic&r and &etechonology&r are combined to get &7nickel&r"]
+	quest.214357114B171CFB.quest_subtitle: "Kupfernickel"
 	quest.215E69CFA0425ADF.quest_subtitle: "NASv8: ON"
 	quest.215E69CFA0425ADF.title: "16M Storage Component"
 	quest.2164219E306DCCEA.quest_desc: [
@@ -2611,6 +2631,8 @@
 	quest.289EAB703FB95F5F.quest_subtitle: "Your local storage"
 	quest.28BF9F410AEC0FEE.quest_desc: ["Charge the &ccrystal&r on a &dcharger&r or similar ;)"]
 	quest.28BF9F410AEC0FEE.quest_subtitle: "Step 2"
+	quest.28CAF974575B6F8E.quest_desc: ["The &doriginal&r bud, making a need in many &amods&r, you should have &cat least&r one"]
+	quest.28CAF974575B6F8E.quest_subtitle: "The original, amethystus"
 	quest.28DBC2EA4DEB13C1.quest_desc: ["More &dfiltering&r!"]
 	quest.28F7E7830637F31D.quest_desc: ["Basically, it &dallows&r you to &cstore&r 4 times more in each &6slots&r"]
 	quest.28F7E7830637F31D.quest_subtitle: "Even more?"
@@ -2748,6 +2770,8 @@
 	quest.2A46F5B21C3B8949.quest_subtitle: "\"Storage for dummies\" - &bAE2&r Things"
 	quest.2A4E391D344BCAEA.quest_desc: ["Again, on &4The Nether&r, and this bee also love gold ingots"]
 	quest.2A4E391D344BCAEA.quest_subtitle: "Gold Rush"
+	quest.2A597AD2A3A6EB6A.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &bplatinum&r"]
+	quest.2A597AD2A3A6EB6A.quest_subtitle: "Plata"
 	quest.2ABDA47F00454485.quest_desc: [
 		"This Item can only be obtained by slaying a &dvengeance spirit&r... Yeah, I know that it sounds weird, due to this mob being a spirit so its technically dead, but you gotta slay it to get this specific Item?"
 		""
@@ -3251,6 +3275,8 @@
 		"But produces more? No? Oh well, you can skip this tier if you want until the next upgrade"
 	]
 	quest.32B17FE87968D864.quest_subtitle: "Higher tier?"
+	quest.32B6C79F8F43C6A4.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &7zink&r ;)"]
+	quest.32B6C79F8F43C6A4.quest_subtitle: "Zink"
 	quest.32CA71F95A2FE5D3.quest_desc: ["These bricks are used in various blocks in this mod like compressors and chargers etc."]
 	quest.32CA71F95A2FE5D3.quest_subtitle: "Though rock"
 	quest.32CA71F95A2FE5D3.title: "Reinforced stone"
@@ -3357,6 +3383,8 @@
 	]
 	quest.348C191492897716.title: "The &cDarkest&r of Gems"
 	quest.34A001109ABA014F.quest_desc: ["moves gasses/chemicals akak everything in mek that isnt a fluid or item."]
+	quest.34A2BDA58FF92BAC.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &bsappharite&r"]
+	quest.34A2BDA58FF92BAC.quest_subtitle: "Lapis"
 	quest.34AABAD892695D37.quest_desc: ["Compress &eitems&r, &conly&r those who has a 2x2 version, like &damethyst&r"]
 	quest.34C914F96A3A1A27.quest_desc: [
 		"This relay functions much like a splitter in that it can send to multiple locations."
@@ -3512,6 +3540,15 @@
 	quest.369F69559064623C.title: "Extracting Biomes"
 	quest.36C15F3B3A08A36B.quest_desc: ["If you don't have Hostile Neural Networks or Reliquary, this is one of the hardest bee. Also needs to be on &4The Nether&r"]
 	quest.36C15F3B3A08A36B.quest_subtitle: "\"Why is there a ghost behind you\""
+	quest.37266203681133DD.quest_desc: [
+		"For this &emethod&r to work, you need to find some &6materials&r first for the &5geode&r that you are looking"
+		""
+		"Then, you &astart&r exploring a bit on &dcaves&r and use the &6dowsing rod&r to check for that geode."
+		""
+		"My &arecommendation&r is to make a &bquarry&r, like the &cBuilder&r from &aRFtools&r, and ignore all &5geodes&r budding when &cmining&r"
+	]
+	quest.37266203681133DD.quest_subtitle: "On the caves we go"
+	quest.37266203681133DD.title: "Exploring"
 	quest.374D3F10FD46CC21.quest_desc: [
 		"Is this a loop? Or did I had a Déjà vu?"
 		""
@@ -3531,8 +3568,20 @@
 	quest.37729D29364F83F5.title: "Entro Crystal"
 	quest.377756F8402AEEB7.quest_desc: ["Since the other doll don't have a craft, here is a quest for you to get it ;)"]
 	quest.37BB91466242EB01.quest_desc: ["More &dfiltering&r!"]
+	quest.37C0C77F3C32FEC9.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &7quartz&r"]
+	quest.37C0C77F3C32FEC9.quest_subtitle: "Quarz"
 	quest.37C2435E327EFF1B.quest_desc: ["3 &abarrels&r in 1 blocks? And only some &egold&r?"]
 	quest.37C2435E327EFF1B.quest_subtitle: "A lot of space"
+	quest.37D7AE4EFE0B3333.quest_desc: [
+		"These &aquests&r will guide you to find some &dgeodes&r and another powerful way to generate &6resources&r."
+		""
+		"Even more than &dseeds&r and &6bees&r, but you will need to &5explore&r a bit"
+		""
+		"Most &bquests&r are optional, just there to show all &dpossibilities&r"
+	]
+	quest.37D7AE4EFE0B3333.quest_subtitle: "A small quest line"
+	quest.37DE6EC80C0C7B5E.quest_desc: ["Found on &cunderground&r mines, you can &amine&r these clusters to get &2emeralds&r"]
+	quest.37DE6EC80C0C7B5E.quest_subtitle: "Smaragdus"
 	quest.37FEFBA176B0E030.quest_desc: [
 		"This is &dprobably&r your first &cstorage&r, if you haven't found another while &aexploring&r."
 		""
@@ -3771,6 +3820,8 @@
 		"If you &aplace&r them on the &5bottom&r of the world, they produce &cless&r than if you &6place&r them on the &dtop&r"
 	]
 	quest.3BFAB6A6C6AB3B2A.quest_subtitle: "The Y level"
+	quest.3C007F533690A714.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &6topaz&r"]
+	quest.3C007F533690A714.quest_subtitle: "Lapis flavo"
 	quest.3C33DFE38E9097FA.quest_desc: [
 		"The camo upgrade lets you disguise the router as almost any block (yes, even cake). "
 		""
@@ -4170,6 +4221,8 @@
 		"32x Bottles: &95x Echoing Sculkshelf&r, &93x Soul-Touched Sculkshelf&r, and &d1x Draconic Endshelf&r"
 	]
 	quest.413527F17F167F3F.quest_subtitle: "Alchemy at its finest"
+	quest.4137E1D4F6395AAF.quest_desc: ["Found on &cunderground&r mines, you can &amine&r these clusters to get &cruby"]
+	quest.4137E1D4F6395AAF.quest_subtitle: "Lapis rubrum"
 	quest.41808246B6D14D0A.quest_desc: ["Transports items"]
 	quest.4186A6EC2E0EFC82.quest_desc: ["These pipes are necessary to move the heat around our reactor, by their own they do nothing, but with the correct setup they can save lifes!"]
 	quest.4186A6EC2E0EFC82.title: "&lReactor Heat Pipe"
@@ -4408,6 +4461,8 @@
 	quest.473487EE12C5C9AF.quest_subtitle: "Tier ∞"
 	quest.473487EE12C5C9AF.title: "&dCreative&r Essence"
 	quest.474762067F687EC6.quest_desc: ["&dElectrolize&r some &9heavy&r water"]
+	quest.476C999A8BF52CF8.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &egold&r"]
+	quest.476C999A8BF52CF8.quest_subtitle: "Aurum"
 	quest.477D1FD7543A473E.quest_desc: [
 		"&7Silicon&r is used a lot in &bAE2&r, since most machines uses some kind of processor."
 		""
@@ -4494,6 +4549,10 @@
 	quest.49968399FA309A2C.quest_subtitle: "Gives more"
 	quest.499D9BD47A14B0F4.quest_desc: ["For this bee, you need slimeballs"]
 	quest.499D9BD47A14B0F4.quest_subtitle: "Slimy"
+	quest.49A56AA70AC97E6F.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &eosmium&r"]
+	quest.49A56AA70AC97E6F.quest_subtitle: "Osmium"
+	quest.49BBEDF4375C1D79.quest_desc: ["&5Magical&r creatures guides you to these &dbuddings&r, giving you &7lead&r"]
+	quest.49BBEDF4375C1D79.quest_subtitle: "Plumbum"
 	quest.49BCF1CF622DE723.quest_desc: [
 		"Filter entities, useful for making &2wasted&r bees"
 		""
@@ -4561,6 +4620,10 @@
 	quest.4AB6901D51226E1B.title: "Heat 103"
 	quest.4AEB916826B71BD3.quest_desc: ["The &2Overworld&r will be the start of your Apotheosis adventure."]
 	quest.4AEB916826B71BD3.title: "Visit the Overworld"
+	quest.4AF3718554C73E66.quest_desc: ["&dMagic&r and &etechonology&r are combined to get &6copper&r"]
+	quest.4AF3718554C73E66.quest_subtitle: "Cuprum"
+	quest.4B09911DB0E2C361.quest_desc: ["&dMagic&r and &etechonology&r are combined to get &9lapis&r"]
+	quest.4B09911DB0E2C361.quest_subtitle: "Lapis"
 	quest.4B09BF91C8CBFBD3.quest_desc: [
 		"[ \"You probably want to start \", { \"text\": \"bee quests\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"232345A9C9EFDC9B\" } }, \", before doing this one.\" ]"
 		""
@@ -4755,6 +4818,12 @@
 	]
 	quest.4E23B188C32FFAE5.quest_subtitle: "BookWorm"
 	quest.4E27F22442362105.quest_desc: ["Used to Store Source will keep its stored Source if broken and moved."]
+	quest.4E2D2BAF18076A65.quest_desc: [
+		"There are really 3 &amethods&r, but 2 of them are &bpretty&r much similar, so we will &cskip&r one of them"
+		""
+		"You &dshould&r have a lot of &apower&r for one of them, and for the &eother&r, a lot of &cpacience&r"
+	]
+	quest.4E2D2BAF18076A65.quest_subtitle: "You start with 1 and then the other method"
 	quest.4E37D81ACF606726.quest_desc: ["Picks items from the &aground&r when you &dpass&r near them, instead of you &bpicking&r them"]
 	quest.4E37D81ACF606726.quest_subtitle: "Picking"
 	quest.4E4EB5E9324A5432.quest_desc: [
@@ -5209,6 +5278,8 @@
 		""
 		"Use a dominion wand to set the drop off location."
 	]
+	quest.56020F8AC90CDF14.quest_desc: ["Found on &cunderground&r mines, you can &amine&r these clusters to get &7iron&r"]
+	quest.56020F8AC90CDF14.quest_subtitle: "Ferrum"
 	quest.5604B8154E8EF7CE.quest_desc: ["Since summoning a demon for the single purpose of making a single crushed end stone is no fun let's do a trade and skip the middle demon."]
 	quest.5604B8154E8EF7CE.title: "Backroom deal"
 	quest.562FCF662B270719.quest_desc: [
@@ -5250,6 +5321,8 @@
 	]
 	quest.56A68BF3F4021002.quest_desc: ["Acts similar to a &aFunctional&r Drawers' &dcontroller&r"]
 	quest.56A68BF3F4021002.quest_subtitle: "Controller"
+	quest.56AD97AFC4A7C7BD.quest_desc: ["&dMagic&r and &etechonology&r are combined to get &6ancient debris&r"]
+	quest.56AD97AFC4A7C7BD.quest_subtitle: "Quisquiliarum vetus"
 	quest.56E3056DD3640FB6.title: " "
 	quest.56F7FA60DE771901.quest_desc: [
 		"Tier 4, &bimperium&r"
@@ -5402,6 +5475,26 @@
 	]
 	quest.59E3899D372E1089.quest_subtitle: "The &dUltimate&r logistical system"
 	quest.59E3899D372E1089.title: "&cSuper&r Factory Manager"
+	quest.5A0300A336B698ED.quest_desc: [
+		"This &6multiblock&r is unlike any other:"
+		""
+		"- You need a &dbudding&r and 6 &5cluster&r of the same &ctype&r on the &bcenter&r"
+		""
+		"- It do&cesn't&r produce &eitems&r without some other &6item&r to help it"
+		""
+		"To &6start&r getting &bshards&r, you would need the &efollowing&r (at least one):"
+		""
+		"- &dAmethyst&r &5Golem Charm&r (4 &eitems&r to get the max effect, gives &n&c10&r per item)"
+		""
+		"- &dAmethyst&r &6Budding&r (8 &eitems&r to get the max effect, gives &n&c3&r per time)"
+		""
+		"- &dAmethyst&r &5Clusters&r (16 &eitems&r to get the max effect, gives &n&c1&r per item)"
+		""
+		"If you meet all &arequirements&r, you will start &6producing&r between 1 and 80 &5shards&r every &bminute&r, making it comparable to bees or seeds"
+		"{@pagebreak}"
+		"{image:catalyst:textures/quest_images/geore/syntex.png width:100 height:100 align:center fit:true}"
+	]
+	quest.5A0300A336B698ED.quest_subtitle: "Farming on the world"
 	quest.5A15961FC3022333.quest_desc: ["Will attempt to pull from any adjacent inventory in the configured direction."]
 	quest.5A83782E4EB80DB5.quest_desc: [
 		"The Spiritual Guide book is both a keeper of knowledge and a tool to bind spirits to your binding books."
@@ -5485,6 +5578,12 @@
 	quest.5BC01A68BD6802A7.title: "Patterns"
 	quest.5BD1004FF3460C89.quest_subtitle: "A mix of Fluxite and Nickel"
 	quest.5BD1004FF3460C89.title: "&l&dEnergite Ingot"
+	quest.5C0670121CB7EA65.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &7black quartz&r"]
+	quest.5C18C8E2B8C1B63C.quest_desc: [
+		"Found on &cunderground&r mines, you can &amine&r these clusters to get &5monazite&r"
+		""
+		"No use"
+	]
 	quest.5C5BF198EA21687B.quest_desc: [
 		"The Dark Temple is the only structure we will find from Evilcraft... But don't let your eyes decieve you, this temple has one of the \"machines\" that will come in handy later on."
 		""
@@ -5631,12 +5730,24 @@
 	quest.5E718194252CA698.quest_subtitle: "More water"
 	quest.5E81A419306A7840.quest_desc: ["Quartz + &4The Nether&r, perfect combo"]
 	quest.5E81A419306A7840.quest_subtitle: "The shiny bee"
+	quest.5EA2660475664A48.quest_desc: [
+		"[{\"text\":\"\"},{\"text\":\"\\\"Using great \"},{\"text\":\"power\",\"color\":\"#55FF55\"},{\"text\":\" and \"},{\"text\":\"magic\",\"color\":\"#FF55FF\"},{\"text\":\", we are able to \"},{\"text\":\"convert\",\"color\":\"#BEE07B\"},{\"text\":\" some \"},{\"text\":\"ancient\",\"color\":\"#A17BE0\"},{\"text\":\" rocks to \"},{\"text\":\"magical\",\"color\":\"#AA00AA\"},{\"text\":\" rocks, \"},{\"text\":\"but adadad eeew aaa\",\"obfuscated\":true},{\"text\":\"\\\" - \"},{\"text\":\"Magical\",\"color\":\"#FF55FF\"},{\"text\":\" Engineer 2\"}]"
+		""
+		"It seems that the &6log&r is &acorrupted&r, but we can guess that we need to &dfind&r a &bgeode&r with some of their &eblocks&r to convert it to a &5budding&r, but it needs a lot of &dmagic&r and &aenergy&r to do that"
+		""
+		"&2Next page for structure&r"
+		"{@pagebreak}"
+		"{image:catalyst:textures/quest_images/geore/maker.png width:200 height:100 align:center fit:true}"
+	]
+	quest.5EA2660475664A48.quest_subtitle: "Crushing power"
 	quest.5ED01B81E79BBAA5.quest_desc: [
 		"Cheap but &ballows&r you to activate the altar only when &e&nneeded&r"
 		""
 		"This can save in &clag&r!"
 	]
 	quest.5ED01B81E79BBAA5.quest_subtitle: "Open the magic!"
+	quest.5EDC974185877C30.quest_desc: ["&2Wibbly Wobbly&r"]
+	quest.5EDC974185877C30.quest_subtitle: "&aTimey Wimey"
 	quest.5F20D723D9E6CE02.quest_desc: [
 		"The most &6painful&r material to get in your &ahand&r, just because of nuclear."
 		""
@@ -5703,6 +5814,8 @@
 	quest.5F74C9140032D5A8.quest_desc: ["This section will explain how you may automate Ars Nouveau"]
 	quest.5F74C9140032D5A8.title: "Autocrafting Ars"
 	quest.5F7CDD5FFB77E70D.quest_subtitle: "Compressium storage"
+	quest.5F89D359B5B172FA.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &credstone&r"]
+	quest.5F89D359B5B172FA.quest_subtitle: "Lapis rubrum"
 	quest.5F8B4DA147FFBF10.quest_desc: ["For example, you enter redstone dust on your network and this card convert it to redstone blocks"]
 	quest.5F8B4DA147FFBF10.quest_subtitle: "Compress"
 	quest.5FDA7D01FC747349.quest_desc: [
@@ -6112,6 +6225,8 @@
 	]
 	quest.6609A4E0D6EE9C8D.quest_desc: ["useful for removing chalk"]
 	quest.6609A4E0D6EE9C8D.quest_subtitle: "Get scrubbing"
+	quest.66426D5B6E54F737.quest_desc: ["Found on &cunderground&r mines, you can &amine&r these clusters to get silver"]
+	quest.66426D5B6E54F737.quest_subtitle: "Plattus"
 	quest.6698EBDC4EE4D39A.title: "Neon Bee"
 	quest.66BC6A0B809EABCA.quest_desc: ["With this &dupgrade&r, you have a vaccum but in a &6chest&r/&abarrel&r"]
 	quest.66BC6A0B809EABCA.quest_subtitle: "Wireless walking"
@@ -6473,6 +6588,8 @@
 		"Some processes might take a bit longer, but I highly suggest giving this lovely machine some &6Speed Addons&r!"
 	]
 	quest.6B959ECB2BE3A6B2.title: "&lFragment Forge"
+	quest.6BC3B2101B9FD737.quest_desc: ["&eTechnological&r advancements have found some &5magical&r structures, capable of giving &8carbon&r"]
+	quest.6BC3B2101B9FD737.quest_subtitle: "Carbo"
 	quest.6C10C757F924E1DD.quest_desc: [
 		"The &bEnchantment Library&r allows you to store enchantment books. "
 		""
@@ -6563,6 +6680,8 @@
 	]
 	quest.6CBD797B715195F9.quest_subtitle: "The Beginning"
 	quest.6CBD797B715195F9.title: "&lLeadstone Solar Panel"
+	quest.6CE09C4855A1B42F.quest_desc: ["&dMagic&r and &etechonology&r are combined to get &2uranium&r"]
+	quest.6CE09C4855A1B42F.quest_subtitle: "Uranium"
 	quest.6D00948588B44926.quest_desc: ["Vanilla &bcandles&r give &5+1.25% Arcana&r per candle while Occultism &blarge candles&r give &5+4% Arcana&r per candle."]
 	quest.6D00948588B44926.quest_subtitle: "What is pink sand even supposed to smell like?"
 	quest.6D00948588B44926.title: "&5More Arcana!"
@@ -7634,6 +7753,12 @@
 		"But, being an enchanted item, we can only apply more enchants using an anvil... We may find a way to &bdisenchant&r items using blood soon™..."
 	]
 	quest.7D75C832762D3851.title: "Extra Blood Collection"
+	quest.7D95B999EE286B44.quest_desc: [
+		"There are &aonly&r 2 ways to &bfarm&r these &dautomatically&r, using &bAE2&r (because you can put &2fortune&r on the &dannihilation planes&r) and another &6multiblock&r."
+		""
+		"[{\"text\":\"\"},{\"text\":\"You \"},{\"text\":\"need\",\"color\":\"#FF5555\"},{\"text\":\" to get to the \"},{\"text\":\"certus farm\",\"color\":\"#55FFFF\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6B50E447E97394A8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Click here to change to the certus farm quest\"}}},{\"text\":\" to see it!\"}]"
+	]
+	quest.7D95B999EE286B44.quest_subtitle: "There are 2 ways"
 	quest.7D9A534A53DB60E2.quest_desc: [
 		"If you don't already have all the different saplings you can make them using another sapling and a manipulation essence."
 		""
@@ -7848,6 +7973,7 @@
 	task.060E3DA4CBADE3A5.title: "Can it be done?"
 	task.063236CDD724A650.title: "Any MA leggings"
 	task.065D7932A755F400.title: "Cages"
+	task.07C0B645E9F81502.title: "Farming"
 	task.07DEF24772DF8253.title: "Any Wool Block"
 	task.093E833D415B663B.title: "Centrifuges"
 	task.0945FABB3B320E12.title: "Get a Chocolate Minining Bee"
@@ -7970,15 +8096,18 @@
 	task.522BDA67BFD0F34D.title: "Useful Links and Tips"
 	task.525E3F6850DF6FB5.title: "&lClick Me! I dare you!"
 	task.52A8530F08C45E1F.title: "How to get genes"
+	task.53511511729B1810.title: "Uranium Ingot"
 	task.542A0A5934FF7AE3.title: "Any #curios:crafting_on_a_stick"
 	task.542A6E72EE8BAE2F.title: "Metanocturnall"
 	task.554BC51447A6AEBE.title: "Welcome to &aFunctional&r Storage"
+	task.55E9EDA6BF0811B9.title: "Getting them"
 	task.56252BC830BE12D4.title: "Safety Comes First"
 	task.57F27ECDAB0BD1DF.title: "Get a gold bee"
 	task.593505002D7FB206.title: "Sulfur Trioxide"
 	task.59BFDB47F4003D7E.title: "Any #c:ingots/steel"
 	task.5B0AADC3E7194977.title: "Observe a Water Bee"
 	task.5B3BFF0F4A102264.title: "Any #c:raw_materials/uranium"
+	task.5B4A4D26760C8047.title: "[{\"text\":\"\"},{\"text\":\"Welcome to \"},{\"text\":\"Ge\",\"color\":\"#7327F5\"},{\"text\":\"Ore\",\"color\":\"#F52742\"}]"
 	task.5BEBB33EF139549D.title: "Any #c:silicon"
 	task.5C2550532A72D2A1.title: "Any fence that you can use a lead"
 	task.5C6E60FBA249F910.title: "To continue?"
@@ -8006,10 +8135,12 @@
 	task.6ADD8CA326D91C66.title: "Any Hammock"
 	task.6E08378CF30A85D7.title: "Empowered Exalted Crafters"
 	task.6EEB18B1566985C0.title: "Block of Fluorite"
+	task.6F4B2913BA23765A.title: "Any Dowsing rod"
 	task.6FD079E34978FD9D.title: "Base"
 	task.7252ABEA2A23498A.title: "Information"
 	task.72AB69FAE7968DA3.title: "Sulfuric Acid"
 	task.73F2DC67AACAE16C.title: "Mod created by: &bSuperMartijn642"
+	task.74DE9D66FA636171.title: "Plutonium Ingot"
 	task.75078DC5A54AC93B.title: "Getting the best"
 	task.759C3E8B338464C4.title: "Uranium Ingot"
 	task.76EE390FF80FA6E2.title: "&aChisel Reborn&r mod was created by: &eSlaincow"
