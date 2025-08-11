@@ -2093,5 +2093,23 @@
 			x: 4.8999999999999995d
 			y: -2.8d
 		}
+		{
+			hide_text_until_complete: false
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/font/icons/warn.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "0BBC615579A094E2"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "41B79FAF42978922"
+				type: "checkmark"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
 	]
 }

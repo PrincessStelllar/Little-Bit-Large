@@ -469,5 +469,24 @@
 			x: -4.0d
 			y: 3.0d
 		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "fancymenu:textures/not_allowed.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "774CE2BD7D113C3C"
+			invisible: true
+			optional: true
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1814774BC36B4B21"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
 	]
 }

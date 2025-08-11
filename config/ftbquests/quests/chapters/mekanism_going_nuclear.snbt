@@ -42,6 +42,14 @@
 			x: -1.5d
 			y: 10.5d
 		}
+		{
+			id: "63D180FD3FAC1775"
+			linked_quest: "34F729363576DB9C"
+			shape: "gear"
+			size: 2.0d
+			x: -1.5d
+			y: -3.0d
+		}
 	]
 	quests: [
 		{

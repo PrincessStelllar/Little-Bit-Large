@@ -746,6 +746,15 @@
 	]
 	quest.0BB636E9C6105134.quest_subtitle: "Easy travel"
 	quest.0BB636E9C6105134.title: "&l&dWaystones"
+	quest.0BBC615579A094E2.quest_desc: [
+		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
+		""
+		"&ePneumaticCraft&r questline made by: &aRadz&7Ratz&r"
+		""
+		"If you are seeing this, it means you are in editing mode."
+	]
+	quest.0BBC615579A094E2.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.0BBC615579A094E2.title: "&l&4Catalyst Studios Quests"
 	quest.0BC89903FE272EF2.quest_desc: ["Upgrades are used to enhance the performance of the entire router. All applicable modules will receive the effect, as long as they don't have an augment that overrides it."]
 	quest.0BEF4D86A933CE47.quest_desc: [
 		"This is &6almost&r a &cmandatory&r item to &6use&r, because of the &eamount&r used in recipes."
@@ -2788,6 +2797,8 @@
 		""
 		"If you are seeing this, it means you are in editing mode"
 	]
+	quest.2AC25C2A0F0A8043.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.2AC25C2A0F0A8043.title: "&l&4Catalyst Studios Quests"
 	quest.2AE4D5671C45025B.quest_desc: [
 		"Works like both a Builder and a Breaker module. When given a redstone signal (behavior can be altered), it places blocks in the configured direction from the router's buffer. These are actual blocks, not ghost blocks like MK2. It can also be used for farming, such as planting rows of cocoa or other fruits on logs, etc."
 		""
@@ -4223,6 +4234,15 @@
 	quest.413527F17F167F3F.quest_subtitle: "Alchemy at its finest"
 	quest.4137E1D4F6395AAF.quest_desc: ["Found on &cunderground&r mines, you can &amine&r these clusters to get &cruby"]
 	quest.4137E1D4F6395AAF.quest_subtitle: "Lapis rubrum"
+	quest.417AEFA04AA2B40A.quest_desc: [
+		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
+		""
+		"&bSuper Factory Manager&r questline made by: &cTi&etop&c54"
+		""
+		"If you are seeing this, it means you are in editing mode."
+	]
+	quest.417AEFA04AA2B40A.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.417AEFA04AA2B40A.title: "&l&4Catalyst Studios Quests"
 	quest.41808246B6D14D0A.quest_desc: ["Transports items"]
 	quest.4186A6EC2E0EFC82.quest_desc: ["These pipes are necessary to move the heat around our reactor, by their own they do nothing, but with the correct setup they can save lifes!"]
 	quest.4186A6EC2E0EFC82.title: "&lReactor Heat Pipe"
@@ -4770,6 +4790,15 @@
 		"Can be used on &6machines&r that has a &dfactory&r version"
 	]
 	quest.4D3922AE72FBECC7.quest_subtitle: "EV unlocked, full power"
+	quest.4D3F2DA049C32098.quest_desc: [
+		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
+		""
+		"&4EvilCraft&r questline made by: &aRadz&7Ratz&r"
+		""
+		"If you are seeing this, it means you are in editing mode."
+	]
+	quest.4D3F2DA049C32098.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.4D3F2DA049C32098.title: "&l&4Catalyst Studios Quests"
 	quest.4D71091DD793653C.quest_desc: [
 		"You need honey in industrial quantities....."
 		""
@@ -5324,6 +5353,15 @@
 	quest.56AD97AFC4A7C7BD.quest_desc: ["&dMagic&r and &etechonology&r are combined to get &6ancient debris&r"]
 	quest.56AD97AFC4A7C7BD.quest_subtitle: "Quisquiliarum vetus"
 	quest.56E3056DD3640FB6.title: " "
+	quest.56E3D43BA11853B0.quest_desc: [
+		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
+		""
+		"&dOccultism&r questline made by: &aApex&r &dSlayer&r"
+		""
+		"If you are seeing this, it means you are in editing mode."
+	]
+	quest.56E3D43BA11853B0.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.56E3D43BA11853B0.title: "&l&4Catalyst Studios Quests"
 	quest.56F7FA60DE771901.quest_desc: [
 		"Tier 4, &bimperium&r"
 		""
@@ -6991,6 +7029,15 @@
 		"&eWarning&r, not all bees can be breeded, check JEI"
 	]
 	quest.73413868FF107681.quest_subtitle: "Getting more bees"
+	quest.734A9ED160D5E5DD.quest_desc: [
+		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
+		""
+		"&5GeOre&r questline made by: &cTito&ep&c54&r"
+		""
+		"If you are seeing this, it means you are in editing mode."
+	]
+	quest.734A9ED160D5E5DD.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.734A9ED160D5E5DD.title: "&l&4Catalyst Studios Quests"
 	quest.735E22D294EF8E7A.quest_desc: [
 		"This is a &6multiblock&r that can store any &9fluid&r or &dchemical&r, but only one type."
 		""
@@ -7264,6 +7311,15 @@
 	]
 	quest.7743458DF29237C3.quest_subtitle: "NASv.2: ON"
 	quest.7743458DF29237C3.title: "4K Storage Component"
+	quest.774CE2BD7D113C3C.quest_desc: [
+		"You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios."
+		""
+		"&bModular Router&r questline made by: &aApex&r &dSlayer&r"
+		""
+		"If you are seeing this, it means you are in editing mode."
+	]
+	quest.774CE2BD7D113C3C.quest_subtitle: "These amazing quests were made for &4Catalyst Studios&r"
+	quest.774CE2BD7D113C3C.title: "&l&4Catalyst Studios Quests"
 	quest.774EF435A320B705.quest_desc: [
 		"&bApothic Attributes&r adds potion charms that are very convient and break pretty easily, but you can &binfuse&r them to make them &bUnbreakable.&r"
 		""
