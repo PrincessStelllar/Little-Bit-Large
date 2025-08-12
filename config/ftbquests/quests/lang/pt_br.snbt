@@ -225,6 +225,8 @@
 	quest.02E409957CF1A24F.title: "Criação de Essência"
 	quest.0335AE18355F438B.quest_desc: ["O plástico derretido é feito na planta de processamento termopneumático e é feito com GLP ou biodiesel junto com carvão."]
 	quest.0335AE18355F438B.quest_subtitle: "Nada como o cheiro de plástico queimado pela manhã"
+	quest.035A0DF4D25650B3.quest_desc: ["Avanços &etecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &balumínio&r"]
+	quest.035A0DF4D25650B3.quest_subtitle: "Alumínio"
 	quest.036C58E2C3423F58.quest_desc: [
 		"&dArs Nouveau&r tem que ser um dos melhores mods de magia que o Minecraft Modificado recebeu ao longo dos anos. Não falaremos muito sobre o mod nesta seção, pois há uma &lquestline inteira&r para ele."
 		""
@@ -415,6 +417,11 @@
 		"[{\"text\":\"A capacidade máxima é \",\"color\":\"#FFFFFF\"},{\"text\":\"o valor máximo de um inteiro \",\"color\":\"#25e62e\",\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"Clique aqui para abrir a página web para mais informações\"}},\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html#MAX_VALUE\"}}]"
 	]
 	quest.0633DAA68EA70CB9.quest_subtitle: "durus"
+	quest.067BD05FD233EEB3.quest_desc: [
+		"Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &dtungstênio&r"
+		""
+		"Sem uso"
+	]
 	quest.06BB747C353B7A3B.quest_desc: [
 		"Você &lnão&r tem permissão para usar estas missões em nenhum modpack público sem &4&npermissão explícita&r da Catalyst Studios."
 		""
@@ -691,6 +698,8 @@
 	quest.0AE5D4C43C7C4C8C.quest_subtitle: "NAS Final: &cLIGADO&r"
 	quest.0AE5D4C43C7C4C8C.title: "Componente de Armazenamento de 256M"
 	quest.0B590548E1FA4E1A.title: "Abelha Mineradora de Chocolate"
+	quest.0B66741748BDAFCC.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &auraninita&r"]
+	quest.0B66741748BDAFCC.quest_subtitle: "Urânio Clara"
 	quest.0B6D864866C886A0.quest_desc: [
 		"Embora estas sejam máquinas do AE2, elas precisam de apenas 1 canal, mas agora temos um pequeno problema, se você fez a versão de bloco inteiro, pode ser usada em cabos densos, se não, apenas em cabos inteligentes."
 		""
@@ -737,6 +746,15 @@
 	]
 	quest.0BB636E9C6105134.quest_subtitle: "Viagem fácil"
 	quest.0BB636E9C6105134.title: "&l&dWaystones"
+	quest.0BBC615579A094E2.quest_desc: [
+		"Você &lnão&r tem permissão para usar estas missões em qualquer modpack público sem &4&npermissão explícita&r da Catalyst Studios."
+		""
+		"Linha de missões do &ePneumaticCraft&r feita por: &aRadz&7Ratz&r"
+		""
+		"Se você está vendo isso, significa que está no modo de edição."
+	]
+	quest.0BBC615579A094E2.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.0BBC615579A094E2.title: "&l&4Missões da Catalyst Studios"
 	quest.0BC89903FE272EF2.quest_desc: ["As melhorias são usadas para aprimorar o desempenho de todo o router. Todos os módulos aplicáveis receberão o efeito, desde que não tenham um augment que o anule."]
 	quest.0BEF4D86A933CE47.quest_desc: [
 		"Este é &6quase&r um item &cobrigatório&r para &6usar&r, por causa da &equantidade&r usada em receitas."
@@ -1113,6 +1131,8 @@
 		"Bem, você pode &dprecisar&r destes."
 	]
 	quest.1038B0243A3058E1.quest_subtitle: "Vapor!?!"
+	quest.1040A7B9610C87CB.quest_desc: ["Para &dimprovisar&r o &bAE2&r"]
+	quest.1040A7B9610C87CB.quest_subtitle: "A besta concorrente"
 	quest.104632D15E3A3270.quest_subtitle: "Uma mistura de Netherita e Platina"
 	quest.104632D15E3A3270.title: "&l&0Barra de Duratium"
 	quest.109871D7E0FD1BF3.quest_desc: ["O Aprimoramento de Pilha aumenta o número de itens enviados por operação e se aplica a todos os módulos compatíveis no roteador (desde que o módulo não tenha aumentos de pilha). Cada aprimoramento dobra a quantidade de itens que podem ser enviados por operação, o que significa que o número máximo de aprimoramentos eficazes é 6 (2⁶)."]
@@ -1442,6 +1462,8 @@
 		"Você precisará usar &eJEI / EMI&r para colocar fluidos e produtos químicos, porque você &cnão vai&r usar baldes ou tanques químicos. Eu espero...."
 	]
 	quest.15466FC285B74785.quest_subtitle: "O mais usado"
+	quest.1550C1A086D41FAB.quest_desc: ["Você &aprecisaria&r de muitos se usar o &bAE2&r"]
+	quest.1550C1A086D41FAB.quest_subtitle: "O especialista em armazenamento"
 	quest.157B2B9583F18AB7.quest_desc: [
 		"&aTransportadores&r não têm um controle de &credstone&r embutido como os &eoutros&r, mas você pode &6trocá-los&r por este aqui."
 		""
@@ -1612,6 +1634,8 @@
 	quest.170499F17B55FDCD.quest_desc: ["&bCristais Sintonizados com Espírito&r do Occultism dão &a+3 Eterna&r até um máximo de &a45 Eterna&r."]
 	quest.170499F17B55FDCD.quest_subtitle: "Cristais realmente te dão poderes..."
 	quest.170499F17B55FDCD.title: "&aMais Eterna!"
+	quest.1712CAAB3262BFD4.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &bdiamantes&r"]
+	quest.1712CAAB3262BFD4.quest_subtitle: "Adamas"
 	quest.17715EC2B27B20A4.quest_desc: [
 		"Com um pouco de &3fluorita&r, você pode obter Ácido &7Hidrofluórico&r."
 		""
@@ -1656,6 +1680,8 @@
 		"&4NOTA!!&r"
 		"&4Os filtros de destino são específicos do lado, portanto, certifique-se de obter o lado correto ao qual o cano se conecta, caso contrário, o filtro não funcionará.&r"
 	]
+	quest.18BB09BEDC657466.quest_desc: ["Avanços &etecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &6estanho&r"]
+	quest.18BB09BEDC657466.quest_subtitle: "Stannum"
 	quest.18C0DACF162F84E7.quest_desc: ["Basicamente, uma &7fornalha&r"]
 	quest.18C0DACF162F84E7.quest_subtitle: "Fornalha"
 	quest.1901D8DE0A627FE0.quest_desc: [
@@ -2178,6 +2204,8 @@
 		"Eles consomem muita &aenergia&r quanto mais distantes estiverem um do outro. Uma maneira de resolver esse problema é usando &dCartões de Energia&r, mas ainda assim, o consumo cresce a uma taxa exponencial."
 	]
 	quest.213712F8CA65B2ED.quest_subtitle: "Sem fio? Mais ou menos"
+	quest.214357114B171CFB.quest_desc: ["&dMagia&r e &eTecnologia&r são combinadas para obter &7Níquel&r"]
+	quest.214357114B171CFB.quest_subtitle: "Kupfernickel"
 	quest.215E69CFA0425ADF.quest_subtitle: "NASv8: LIGADO"
 	quest.215E69CFA0425ADF.title: "Componente de Armazenamento de 16M"
 	quest.2164219E306DCCEA.quest_desc: [
@@ -2612,6 +2640,8 @@
 	quest.289EAB703FB95F5F.quest_subtitle: "Seu armazenamento local"
 	quest.28BF9F410AEC0FEE.quest_desc: ["Carregue o &ccristal&r em um &dcarregador&r ou similar ;)"]
 	quest.28BF9F410AEC0FEE.quest_subtitle: "Passo 2"
+	quest.28CAF974575B6F8E.quest_desc: ["O broto &doriginal&r, sendo necessário em muitos &amods&r, você deve ter &cpelo menos&r um"]
+	quest.28CAF974575B6F8E.quest_subtitle: "O original, Amethystus"
 	quest.28DBC2EA4DEB13C1.quest_desc: ["Mais &dfiltragem&r!"]
 	quest.28F7E7830637F31D.quest_desc: ["Basicamente, &dpermite&r que você &carmazene&r 4 vezes mais em cada &6slot&r"]
 	quest.28F7E7830637F31D.quest_subtitle: "Ainda mais?"
@@ -2749,6 +2779,8 @@
 	quest.2A46F5B21C3B8949.quest_subtitle: "\"Armazenamento para leigos\" - &bAE2&r Things"
 	quest.2A4E391D344BCAEA.quest_desc: ["Novamente, no &4Nether&r, e esta abelha também adora barras de ouro"]
 	quest.2A4E391D344BCAEA.quest_subtitle: "Corrida do Ouro"
+	quest.2A597AD2A3A6EB6A.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &bplatina&r"]
+	quest.2A597AD2A3A6EB6A.quest_subtitle: "Prata"
 	quest.2ABDA47F00454485.quest_desc: [
 		"Este Item só pode ser obtido matando um &despírito da vingança&r... Sim, eu sei que soa estranho, já que este mob é um espírito, então tecnicamente está morto, mas você tem que matá-lo para obter este Item específico?"
 		""
@@ -2765,6 +2797,8 @@
 		""
 		"Se você está vendo isso, significa que está no modo de edição"
 	]
+	quest.2AC25C2A0F0A8043.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.2AC25C2A0F0A8043.title: "&l&4Missões da Catalyst Studios"
 	quest.2AE4D5671C45025B.quest_desc: [
 		"Funciona como um módulo Construtor e um Quebrador. Quando recebe um sinal de redstone (o comportamento pode ser alterado), ele coloca blocos na direção configurada a partir do buffer do roteador. Estes são blocos reais, não blocos fantasmas como o MK2. Também pode ser usado para agricultura, como plantar fileiras de cacau ou outras frutas em troncos, etc."
 		""
@@ -3252,6 +3286,8 @@
 		"Mas produz mais? Não? Ah, bem, você pode pular este nível se quiser, até a próxima melhoria"
 	]
 	quest.32B17FE87968D864.quest_subtitle: "Nível mais alto?"
+	quest.32B6C79F8F43C6A4.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &7zinco&r ;)"]
+	quest.32B6C79F8F43C6A4.quest_subtitle: "Zinco"
 	quest.32CA71F95A2FE5D3.quest_desc: ["Esses tijolos são usados em vários blocos neste mod, como compressores, carregadores, etc."]
 	quest.32CA71F95A2FE5D3.quest_subtitle: "Pedra dura"
 	quest.32CA71F95A2FE5D3.title: "Pedra reforçada"
@@ -3358,6 +3394,8 @@
 	]
 	quest.348C191492897716.title: "A mais &cEscura&r das Gemas"
 	quest.34A001109ABA014F.quest_desc: ["move gases/químicos, ou seja, tudo no mek que não é um fluido ou item."]
+	quest.34A2BDA58FF92BAC.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &bsafirita&r"]
+	quest.34A2BDA58FF92BAC.quest_subtitle: "Lapis"
 	quest.34AABAD892695D37.quest_desc: ["Comprime &eitens&r, &csomente&r aqueles que têm uma versão 2x2, como &dametista&r"]
 	quest.34C914F96A3A1A27.quest_desc: [
 		"Este relé funciona de forma muito parecida com um divisor, pois pode enviar para vários locais."
@@ -3513,6 +3551,15 @@
 	quest.369F69559064623C.title: "Extraindo Biomas"
 	quest.36C15F3B3A08A36B.quest_desc: ["Se você não tem Hostile Neural Networks ou Reliquary, esta é uma das abelhas mais difíceis. Também precisa estar no &4Nether&r"]
 	quest.36C15F3B3A08A36B.quest_subtitle: "\"Por que há um fantasma atrás de você\""
+	quest.37266203681133DD.quest_desc: [
+		"Para que este &emétodo&r funcione, você precisa encontrar alguns &6materiais&r primeiro para o &5geodo&r que você está procurando"
+		""
+		"Então, você &acomeça&r a explorar um pouco em &dcavernas&r e usa a &6vara de radiestesia&r para procurar por esse geodo."
+		""
+		"Minha &arecomendação&r é fazer uma &bpedreira&r, como o &cBuilder&r do &aRFtools&r, e ignorar todos os &5geodos&r brotando ao &cminerar&r"
+	]
+	quest.37266203681133DD.quest_subtitle: "Lá vamos nós para as cavernas"
+	quest.37266203681133DD.title: "Explorando"
 	quest.374D3F10FD46CC21.quest_desc: [
 		"Isso é um loop? Ou eu tive um Déjà vu?"
 		""
@@ -3532,8 +3579,20 @@
 	quest.37729D29364F83F5.title: "Cristal de Entropia"
 	quest.377756F8402AEEB7.quest_desc: ["Já que a outra boneca não tem uma receita, aqui está uma missão para você obtê-la ;)"]
 	quest.37BB91466242EB01.quest_desc: ["Mais &dfiltragem&r!"]
+	quest.37C0C77F3C32FEC9.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &7quartzo&r"]
+	quest.37C0C77F3C32FEC9.quest_subtitle: "Quarz"
 	quest.37C2435E327EFF1B.quest_desc: ["3 &abarris&r em 1 bloco? E só um pouco de &eouro&r?"]
 	quest.37C2435E327EFF1B.quest_subtitle: "Muito espaço"
+	quest.37D7AE4EFE0B3333.quest_desc: [
+		"Estas &amissões&r irão guiá-lo para encontrar alguns &dgeodos&r e outra maneira poderosa de gerar &6recursos&r."
+		""
+		"Ainda mais do que &dsementes&r e &6abelhas&r, mas você precisará &5explorar&r um pouco"
+		""
+		"A maioria das &bmissões&r é opcional, apenas para mostrar todas as &dpossibilidades&r"
+	]
+	quest.37D7AE4EFE0B3333.quest_subtitle: "Uma pequena linha de missão"
+	quest.37DE6EC80C0C7B5E.quest_desc: ["Encontrados em minas &csubterrâneas&r, você pode &aminerar&r esses aglomerados para obter &2esmeraldas&r"]
+	quest.37DE6EC80C0C7B5E.quest_subtitle: "Smaragdus"
 	quest.37FEFBA176B0E030.quest_desc: [
 		"Este é &dprovavelmente&r seu primeiro &carmazenamento&r, se você não encontrou outro enquanto &aexplorava&r."
 		""
@@ -3772,6 +3831,8 @@
 		"Se você os &acolocar&r no &5fundo&r do mundo, eles produzem &cmenos&r do que se você os &6colocar&r no &dtopo&r"
 	]
 	quest.3BFAB6A6C6AB3B2A.quest_subtitle: "O nível Y"
+	quest.3C007F533690A714.quest_desc: ["Avanços &eTecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &6topázio&r"]
+	quest.3C007F533690A714.quest_subtitle: "Lapis flavo"
 	quest.3C33DFE38E9097FA.quest_desc: [
 		"A melhoria de camuflagem permite disfarçar o roteador como quase qualquer bloco (sim, até mesmo bolo)."
 		""
@@ -4171,6 +4232,16 @@
 		"32x Frascos: &95x Estante de Livros Ecoante de Sculk&r, &93x Estante de Livros de Sculk Tocado pela Alma&r e &d1x Estante de Livros Dracônica do End&r"
 	]
 	quest.413527F17F167F3F.quest_subtitle: "A alquimia em sua melhor forma"
+	quest.4137E1D4F6395AAF.quest_subtitle: "Lapis rubrum"
+	quest.417AEFA04AA2B40A.quest_desc: [
+		"Você &lnão&r tem permissão para usar estas missões em qualquer modpack público sem &4&npermissão explícita&r da Catalyst Studios."
+		""
+		"Linha de missões do &bSuper Factory Manager&r feita por: &cTi&etop&c54"
+		""
+		"Se você está vendo isso, significa que está no modo de edição."
+	]
+	quest.417AEFA04AA2B40A.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.417AEFA04AA2B40A.title: "&l&4Missões da Catalyst Studios"
 	quest.41808246B6D14D0A.quest_desc: ["Transporta itens"]
 	quest.4186A6EC2E0EFC82.quest_desc: ["Estes canos são necessários para mover o calor em nosso reator, por si só não fazem nada, mas com a configuração correta podem salvar vidas!"]
 	quest.4186A6EC2E0EFC82.title: "&lCano de Calor do Reator"
@@ -4409,6 +4480,8 @@
 	quest.473487EE12C5C9AF.quest_subtitle: "Nível ∞"
 	quest.473487EE12C5C9AF.title: "Essência &dCriativa&r"
 	quest.474762067F687EC6.quest_desc: ["&dEletrolise&r um pouco de água &9pesada&r"]
+	quest.476C999A8BF52CF8.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &eouro&r"]
+	quest.476C999A8BF52CF8.quest_subtitle: "Aurum"
 	quest.477D1FD7543A473E.quest_desc: [
 		"O &7Silício&r é muito usado no &bAE2&r, já que a maioria das máquinas usa algum tipo de processador."
 		""
@@ -4495,6 +4568,10 @@
 	quest.49968399FA309A2C.quest_subtitle: "Dá mais"
 	quest.499D9BD47A14B0F4.quest_desc: ["Para esta abelha, você precisa de bolas de slime"]
 	quest.499D9BD47A14B0F4.quest_subtitle: "Gosmenta"
+	quest.49A56AA70AC97E6F.quest_desc: ["Avanços &etecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &eósmio&r"]
+	quest.49A56AA70AC97E6F.quest_subtitle: "Ósmio"
+	quest.49BBEDF4375C1D79.quest_desc: ["Criaturas &5mágicas&r guiam você para estes &dbuddings&r, dando-lhe &7chumbo&r"]
+	quest.49BBEDF4375C1D79.quest_subtitle: "Plumbum"
 	quest.49BCF1CF622DE723.quest_desc: [
 		"Filtra entidades, útil para fazer abelhas &2desperdiçadas&r"
 		""
@@ -4562,6 +4639,10 @@
 	quest.4AB6901D51226E1B.title: "Calor 103"
 	quest.4AEB916826B71BD3.quest_desc: ["O &2Mundo Superior&r será o começo da sua aventura no Apotheosis."]
 	quest.4AEB916826B71BD3.title: "Visite o Mundo Superior"
+	quest.4AF3718554C73E66.quest_desc: ["&dMagia&r e &etecnologia&r são combinadas para obter &6cobre&r"]
+	quest.4AF3718554C73E66.quest_subtitle: "Cuprum"
+	quest.4B09911DB0E2C361.quest_desc: ["&dMagia&r e &etecnologia&r são combinadas para obter &9lápis-lazúli&r"]
+	quest.4B09911DB0E2C361.quest_subtitle: "Lapis"
 	quest.4B09BF91C8CBFBD3.quest_desc: [
 		"[ \"Você provavelmente vai querer começar as \", { \"text\": \"missões das abelhas\", \"underlined\": true, \"clickEvent\": { \"action\": \"change_page\", \"value\": \"232345A9C9EFDC9B\" } }, \", antes de fazer esta.\" ]"
 		""
@@ -4708,6 +4789,15 @@
 		"Pode ser usado em &6máquinas&r que têm uma versão de &dfábrica&r"
 	]
 	quest.4D3922AE72FBECC7.quest_subtitle: "EV desbloqueado, potência total"
+	quest.4D3F2DA049C32098.quest_desc: [
+		"Você &lnão&r tem permissão para usar estas missões em qualquer modpack público sem &4&npermissão explícita&r da Catalyst Studios."
+		""
+		"Linha de missões do &4EvilCraft&r feita por: &aRadz&7Ratz&r"
+		""
+		"Se você está vendo isso, significa que está no modo de edição."
+	]
+	quest.4D3F2DA049C32098.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.4D3F2DA049C32098.title: "&l&4Missões da Catalyst Studios"
 	quest.4D71091DD793653C.quest_desc: [
 		"Você precisa de mel em quantidades industriais....."
 		""
@@ -4756,6 +4846,12 @@
 	]
 	quest.4E23B188C32FFAE5.quest_subtitle: "Leitor Ávido"
 	quest.4E27F22442362105.quest_desc: ["Usado para Armazenar Source, manterá a Source armazenada se quebrado e movido."]
+	quest.4E2D2BAF18076A65.quest_desc: [
+		"Existem na verdade 3 &amétodos&r, mas 2 deles são &bpraticamente&r similares, então vamos &cpular&r um deles"
+		""
+		"Você &ddeve&r ter muita &aenergia&r para um deles, e para o &eoutro&r, muita &cpaciência&r"
+	]
+	quest.4E2D2BAF18076A65.quest_subtitle: "Você começa com um e depois o outro método"
 	quest.4E37D81ACF606726.quest_desc: ["Pega itens do &achão&r quando você &dpassa&r perto deles, em vez de você &bpegá-los&r"]
 	quest.4E37D81ACF606726.quest_subtitle: "Coletando"
 	quest.4E4EB5E9324A5432.quest_desc: [
@@ -5210,6 +5306,8 @@
 		""
 		"Use uma varinha de domínio para definir o local de entrega."
 	]
+	quest.56020F8AC90CDF14.quest_desc: ["Encontrados em minas &csubterrâneas&r, você pode &aminerar&r esses aglomerados para obter &7ferro&r"]
+	quest.56020F8AC90CDF14.quest_subtitle: "Ferrum"
 	quest.5604B8154E8EF7CE.quest_desc: ["Já que invocar um demônio com o único propósito de fazer uma única pedra do fim triturada não é divertido, vamos fazer uma troca e pular o demônio intermediário."]
 	quest.5604B8154E8EF7CE.title: "Acordo de bastidores"
 	quest.562FCF662B270719.quest_desc: [
@@ -5251,7 +5349,18 @@
 	]
 	quest.56A68BF3F4021002.quest_desc: ["Age de forma semelhante a um &dcontrolador&r de Gavetas &aFuncionais&r"]
 	quest.56A68BF3F4021002.quest_subtitle: "Controlador"
+	quest.56AD97AFC4A7C7BD.quest_desc: ["&dMagia&r e &etecnologia&r são combinadas para obter &6detritos ancestrais&r"]
+	quest.56AD97AFC4A7C7BD.quest_subtitle: "Quisquiliarum vetus"
 	quest.56E3056DD3640FB6.title: " "
+	quest.56E3D43BA11853B0.quest_desc: [
+		"Você &lnão&r tem permissão para usar estas missões em qualquer modpack público sem &4&npermissão explícita&r da Catalyst Studios."
+		""
+		"Linha de missões do &dOccultism&r feita por: &aApex&r &dSlayer&r"
+		""
+		"Se você está vendo isso, significa que está no modo de edição."
+	]
+	quest.56E3D43BA11853B0.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.56E3D43BA11853B0.title: "&l&4Missões da Catalyst Studios"
 	quest.56F7FA60DE771901.quest_desc: [
 		"Nível 4, &bimperium&r"
 		""
@@ -5403,6 +5512,26 @@
 	]
 	quest.59E3899D372E1089.quest_subtitle: "O sistema logístico &dDefinitivo&r"
 	quest.59E3899D372E1089.title: "&cSuper&r Factory Manager"
+	quest.5A0300A336B698ED.quest_desc: [
+		"Este &6multibloco&r é diferente de qualquer outro:"
+		""
+		"- Você precisa de um &dbudding&r e 6 &5aglomerados&r do mesmo &ctipo&r no &bcentro&r"
+		""
+		"- Ele n&cão&r produz &eitens&r sem algum outro &6item&r para ajudá-lo"
+		""
+		"Para &6começar&r a obter &bcacos&r, você precisará do &eseguinte&r (pelo menos um):"
+		""
+		"- &dAmuleto de Golem&r de &5Ametista&r (4 &eitens&r para obter o efeito máximo, dá &n&c10&r por item)"
+		""
+		"- &dBrotamento&r de &6Ametista&r (8 &eitens&r para obter o efeito máximo, dá &n&c3&r por vez)"
+		""
+		"- &dAglomerados&r de &5Ametista&r (16 &eitens&r para obter o efeito máximo, dá &n&c1&r por item)"
+		""
+		"Se você atender a todos os &arequisitos&r, começará a &6produzir&r entre 1 e 80 &5cacos&r a cada &bminuto&r, tornando-o comparável a abelhas ou sementes"
+		"{@pagebreak}"
+		"{image:catalyst:textures/quest_images/geore/syntex.png width:100 height:100 align:center fit:true}"
+	]
+	quest.5A0300A336B698ED.quest_subtitle: "Cultivando no mundo"
 	quest.5A15961FC3022333.quest_desc: ["Tentará puxar de qualquer inventário adjacente na direção configurada."]
 	quest.5A83782E4EB80DB5.quest_desc: [
 		"O livro Guia Espiritual é tanto um guardião do conhecimento quanto uma ferramenta para vincular espíritos aos seus livros de vinculação."
@@ -5486,6 +5615,12 @@
 	quest.5BC01A68BD6802A7.title: "Padrões"
 	quest.5BD1004FF3460C89.quest_subtitle: "Uma mistura de Fluxite e Níquel"
 	quest.5BD1004FF3460C89.title: "Barra de &l&dEnergite"
+	quest.5C0670121CB7EA65.quest_desc: ["Avanços &etecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &7quartzo negro&r"]
+	quest.5C18C8E2B8C1B63C.quest_desc: [
+		"Encontrados em minas &csubterrâneas&r, você pode &aminerar&r esses aglomerados para obter &5monazita&r"
+		""
+		"Sem uso"
+	]
 	quest.5C5BF198EA21687B.quest_desc: [
 		"O Templo Sombrio é a única estrutura que encontraremos de Evilcraft... Mas não se deixe enganar, este templo tem uma das \"máquinas\" que será útil mais tarde."
 		""
@@ -5632,12 +5767,24 @@
 	quest.5E718194252CA698.quest_subtitle: "Mais água"
 	quest.5E81A419306A7840.quest_desc: ["Quartzo + &4O Nether&r, combinação perfeita"]
 	quest.5E81A419306A7840.quest_subtitle: "A abelha brilhante"
+	quest.5EA2660475664A48.quest_desc: [
+		"[{\"text\":\"\"},{\"text\":\"\\\"Usando grande \"},{\"text\":\"poder\",\"color\":\"#55FF55\"},{\"text\":\" e \"},{\"text\":\"magia\",\"color\":\"#FF55FF\"},{\"text\":\", somos capazes de \"},{\"text\":\"converter\",\"color\":\"#BEE07B\"},{\"text\":\" algumas rochas \"},{\"text\":\"antigas\",\"color\":\"#A17BE0\"},{\"text\":\" em rochas \"},{\"text\":\"mágicas\",\"color\":\"#AA00AA\"},{\"text\":\", \"},{\"text\":\"mas adadad eeew aaa\",\"obfuscated\":true},{\"text\":\"\\\" - \"},{\"text\":\"Engenheiro\",\"color\":\"#FF55FF\"},{\"text\":\" Mágico 2\"}]"
+		""
+		"Parece que o &6registro&r está &acorrompido&r, mas podemos adivinhar que precisamos &dencontrar&r um &bgeodo&r com alguns de seus &eblocos&r para convertê-lo em um &5brotamento&r, mas isso requer muita &dmagia&r e &aenergia&r"
+		""
+		"&2Próxima página para estrutura&r"
+		"{@pagebreak}"
+		"{image:catalyst:textures/quest_images/geore/maker.png width:200 height:100 align:center fit:true}"
+	]
+	quest.5EA2660475664A48.quest_subtitle: "Poder de esmagamento"
 	quest.5ED01B81E79BBAA5.quest_desc: [
 		"Barato, mas &bpermite&r que você ative o altar apenas quando &e&nnecessário&r"
 		""
 		"Isso pode economizar em &clag&r!"
 	]
 	quest.5ED01B81E79BBAA5.quest_subtitle: "Abra a magia!"
+	quest.5EDC974185877C30.quest_desc: ["&2Wibbly Wobbly&r"]
+	quest.5EDC974185877C30.quest_subtitle: "&aTimey Wimey"
 	quest.5F20D723D9E6CE02.quest_desc: [
 		"O material mais &6doloroso&r de se ter em &amãos&r, apenas por causa do nuclear."
 		""
@@ -5704,6 +5851,8 @@
 	quest.5F74C9140032D5A8.quest_desc: ["Esta seção explicará como você pode automatizar o Ars Nouveau"]
 	quest.5F74C9140032D5A8.title: "Criação Automática do Ars"
 	quest.5F7CDD5FFB77E70D.quest_subtitle: "Armazenamento de Compressium"
+	quest.5F89D359B5B172FA.quest_desc: ["Avanços &etecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &credstone&r"]
+	quest.5F89D359B5B172FA.quest_subtitle: "Lapis rubrum"
 	quest.5F8B4DA147FFBF10.quest_desc: ["Por exemplo, você insere pó de redstone em sua rede e este cartão o converte em blocos de redstone"]
 	quest.5F8B4DA147FFBF10.quest_subtitle: "Comprimir"
 	quest.5FDA7D01FC747349.quest_desc: [
@@ -6113,6 +6262,8 @@
 	]
 	quest.6609A4E0D6EE9C8D.quest_desc: ["útil para remover giz"]
 	quest.6609A4E0D6EE9C8D.quest_subtitle: "Comece a esfregar"
+	quest.66426D5B6E54F737.quest_desc: ["Encontrados em minas &csubterrâneas&r, você pode &aminerar&r esses aglomerados para obter prata"]
+	quest.66426D5B6E54F737.quest_subtitle: "Plattus"
 	quest.6698EBDC4EE4D39A.title: "Abelha de Neon"
 	quest.66BC6A0B809EABCA.quest_desc: ["Com esta &dmelhoria&r, você tem um vácuo, mas em um &6baú&r/&abarril&r"]
 	quest.66BC6A0B809EABCA.quest_subtitle: "Caminhada sem fio"
@@ -6474,6 +6625,8 @@
 		"Alguns processos podem demorar um pouco mais, mas eu sugiro fortemente dar a esta adorável máquina alguns &6Adicionais de Velocidade&r!"
 	]
 	quest.6B959ECB2BE3A6B2.title: "&lForja de Fragmentos"
+	quest.6BC3B2101B9FD737.quest_desc: ["Avanços &etecnológicos&r encontraram algumas estruturas &5mágicas&r, capazes de fornecer &8carbono&r"]
+	quest.6BC3B2101B9FD737.quest_subtitle: "Carbo"
 	quest.6C10C757F924E1DD.quest_desc: [
 		"A &bBiblioteca de Encantamentos&r permite que você armazene livros de encantamento."
 		""
@@ -6564,6 +6717,8 @@
 	]
 	quest.6CBD797B715195F9.quest_subtitle: "O Começo"
 	quest.6CBD797B715195F9.title: "&lPainel Solar de Leadstone"
+	quest.6CE09C4855A1B42F.quest_desc: ["&dMagia&r e &etecnologia&r são combinadas para obter &2urânio&r"]
+	quest.6CE09C4855A1B42F.quest_subtitle: "Urânio"
 	quest.6D00948588B44926.quest_desc: ["As &bvelas&r da vanilla dão &5+1.25% de Arcana&r por vela, enquanto as &bvelas grandes&r do Occultism dão &5+4% de Arcana&r por vela."]
 	quest.6D00948588B44926.quest_subtitle: "Qual é o cheiro de areia rosa, afinal?"
 	quest.6D00948588B44926.title: "&5Mais Arcana!"
@@ -6873,6 +7028,15 @@
 		"&eAviso&r, nem todas as abelhas podem ser reproduzidas, verifique no JEI"
 	]
 	quest.73413868FF107681.quest_subtitle: "Obtendo mais abelhas"
+	quest.734A9ED160D5E5DD.quest_desc: [
+		"Você &lnão&r tem permissão para usar estas missões em qualquer modpack público sem &4&npermissão explícita&r da Catalyst Studios."
+		""
+		"Linha de missões do &5GeOre&r feita por: &cTito&ep&c54&r"
+		""
+		"Se você está vendo isso, significa que está no modo de edição."
+	]
+	quest.734A9ED160D5E5DD.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.734A9ED160D5E5DD.title: "&l&4Missões da Catalyst Studios"
 	quest.735E22D294EF8E7A.quest_desc: [
 		"Este é um &6multibloco&r que pode armazenar qualquer &9fluido&r ou &dquímico&r, mas apenas um tipo."
 		""
@@ -7146,6 +7310,15 @@
 	]
 	quest.7743458DF29237C3.quest_subtitle: "NASv.2: LIGADO"
 	quest.7743458DF29237C3.title: "Componente de Armazenamento de 4K"
+	quest.774CE2BD7D113C3C.quest_desc: [
+		"Você &lnão&r tem permissão para usar estas missões em qualquer modpack público sem &4&npermissão explícita&r da Catalyst Studios."
+		""
+		"Linha de missões do &bModular Router&r feita por: &aApex&r &dSlayer&r"
+		""
+		"Se você está vendo isso, significa que está no modo de edição."
+	]
+	quest.774CE2BD7D113C3C.quest_subtitle: "Estas missões incríveis foram feitas para a &4Catalyst Studios&r"
+	quest.774CE2BD7D113C3C.title: "&l&4Missões da Catalyst Studios"
 	quest.774EF435A320B705.quest_desc: [
 		"&bApothic Attributes&r adiciona amuletos de poção que são muito convenientes e quebram com bastante facilidade, mas você pode &binfundi-los&r para torná-los &bInquebráveis.&r"
 		""
@@ -7375,7 +7548,7 @@
 		""
 		"- &eFissão&r para &aenergia&r?"
 		"{@pagebreak}"
-		"O &ainterior&r é um padrão de &dxadrez&r, com o topo sendo uma &aHaste de Controle&r"
+		"O &ainterior&r é um padrão de &dxadrez&r, com o topo sendo uma &aVara de Controle&r"
 		""
 		"É &dassim&r que &bse parece&r:"
 		""
@@ -7635,6 +7808,12 @@
 		"Mas, sendo um item encantado, só podemos aplicar mais encantamentos usando uma bigorna... Podemos encontrar uma maneira de &bdesencantar&r itens usando sangue em breve™..."
 	]
 	quest.7D75C832762D3851.title: "Coleta Extra de Sangue"
+	quest.7D95B999EE286B44.quest_desc: [
+		"Existem &asomente&r 2 maneiras de &bfarmar&r estes &dautomaticamente&r, usando &bAE2&r (porque você pode colocar &2fortuna&r nos &dplanos de aniquilação&r) e outro &6multibloco&r."
+		""
+		"[{\"text\":\"\"},{\"text\":\"Você \"},{\"text\":\"precisa\",\"color\":\"#FF5555\"},{\"text\":\" chegar à \"},{\"text\":\"fazenda de certus\",\"color\":\"#55FFFF\",\"underlined\":true,\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6B50E447E97394A8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"text\":\"Clique aqui para mudar para a missão da fazenda de certus\"}}},{\"text\":\" para vê-la!\"}]"
+	]
+	quest.7D95B999EE286B44.quest_subtitle: "Existem 2 maneiras"
 	quest.7D9A534A53DB60E2.quest_desc: [
 		"Se você ainda não tem todas as mudas diferentes, pode fazê-las usando outra muda e uma essência de manipulação."
 		""
@@ -7777,7 +7956,7 @@
 		""
 		"Existem outros modificadores, mas estes são os mais importantes. E sugiro que você dê uma olhada em The Origins of Darkness para aprender mais sobre eles, mas também podemos pressionar a tecla &lshift&r para ver quais modificadores essas peças têm."
 		""
-		"Não importa qual &5cabo&r, &5escova&r e &5haste&r usemos, uma vez que tenhamos todos os itens necessários, podemos combiná-los dentro de qualquer mesa de trabalho para montar nossa vassoura."
+		"Não importa qual &5cabo&r, &5escova&r e &5vara&r usemos, uma vez que tenhamos todos os itens necessários, podemos combiná-los dentro de qualquer mesa de trabalho para montar nossa vassoura."
 		""
 		"E, finalmente, precisaremos enchê-la com &4sangue&r para usá-la corretamente. Você pode enchê-la usando &lbotão direito do mouse&r em qualquer tanque que esteja cheio de Sangue."
 	]
@@ -7849,6 +8028,7 @@
 	task.060E3DA4CBADE3A5.title: "Pode ser feito?"
 	task.063236CDD724A650.title: "Qualquer calça de MA"
 	task.065D7932A755F400.title: "Gaiolas"
+	task.07C0B645E9F81502.title: "Cultivo"
 	task.07DEF24772DF8253.title: "Qualquer Bloco de Lã"
 	task.093E833D415B663B.title: "Centrífugas"
 	task.0945FABB3B320E12.title: "Obtenha uma Abelha Mineira de Chocolate"
@@ -7971,15 +8151,18 @@
 	task.522BDA67BFD0F34D.title: "Links e Dicas Úteis"
 	task.525E3F6850DF6FB5.title: "&lClique em Mim! Eu te desafio!"
 	task.52A8530F08C45E1F.title: "Como obter genes"
+	task.53511511729B1810.title: "Barra de Urânio"
 	task.542A0A5934FF7AE3.title: "Qualquer #curios:crafting_on_a_stick"
 	task.542A6E72EE8BAE2F.title: "Metanocturnall"
-	task.554BC51447A6AEBE.title: "Bem-vindo ao Armazenamento &aFuncional&r"
+	task.554BC51447A6AEBE.title: "Bem-vindo ao &aFunctional&r Storage"
+	task.55E9EDA6BF0811B9.title: "Obtendo-os"
 	task.56252BC830BE12D4.title: "A Segurança em Primeiro Lugar"
 	task.57F27ECDAB0BD1DF.title: "Obtenha uma abelha de ouro"
 	task.593505002D7FB206.title: "Trióxido de Enxofre"
 	task.59BFDB47F4003D7E.title: "Qualquer #c:ingots/steel"
 	task.5B0AADC3E7194977.title: "Observe uma Abelha de Água"
 	task.5B3BFF0F4A102264.title: "Qualquer #c:raw_materials/uranium"
+	task.5B4A4D26760C8047.title: "[{\"text\":\"\"},{\"text\":\"Bem-vindo ao \"},{\"text\":\"Ge\",\"color\":\"#7327F5\"},{\"text\":\"Ore\",\"color\":\"#F52742\"}]"
 	task.5BEBB33EF139549D.title: "Qualquer #c:silicon"
 	task.5C2550532A72D2A1.title: "Qualquer cerca que você possa usar uma guia"
 	task.5C6E60FBA249F910.title: "Para continuar?"
@@ -8007,10 +8190,12 @@
 	task.6ADD8CA326D91C66.title: "Qualquer Rede de Descanso"
 	task.6E08378CF30A85D7.title: "Artesãos Exaltados Potencializados"
 	task.6EEB18B1566985C0.title: "Bloco de Fluorita"
+	task.6F4B2913BA23765A.title: "Qualquer vara de radiestesia"
 	task.6FD079E34978FD9D.title: "Base"
 	task.7252ABEA2A23498A.title: "Informação"
 	task.72AB69FAE7968DA3.title: "Ácido Sulfúrico"
 	task.73F2DC67AACAE16C.title: "Mod criado por: &bSuperMartijn642"
+	task.74DE9D66FA636171.title: "Barra de Plutônio"
 	task.75078DC5A54AC93B.title: "Obtendo o melhor"
 	task.759C3E8B338464C4.title: "Barra de Urânio"
 	task.76EE390FF80FA6E2.title: "O mod &aChisel Reborn&r foi criado por: &eSlaincow"
