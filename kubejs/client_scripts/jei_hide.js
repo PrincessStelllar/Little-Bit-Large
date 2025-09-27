@@ -17,6 +17,10 @@ RecipeViewerEvents.removeEntries('item', catalyst => {
     catalyst.remove('quarryplus:adv_quarry')
     catalyst.remove('quarryplus:remove_bedrock_module')
     catalyst.remove('mysticalagradditions:insanium_nugget')
+    catalyst.remove([/geore:allthemodium_.*/, /geore:.*_allthemodium/, /geore:.*_allthemodium_bud/])
+    catalyst.remove([/geore:vibranium_.*/, /geore:.*_vibranium/, /geore:.*_vibranium_bud/])
+    catalyst.remove([/geore:unobtainium_.*/, /geore:.*_unobtainium/, /geore:.*_unobtainium_bud/])
+    catalyst.remove(['georenouveau:allthemodium_geore_golem_charm', 'georenouveau:vibranium_geore_golem_charm', 'georenouveau:unobtainium_geore_golem_charm'])
 })
 
 RecipeViewerEvents.addInformation('item', event => {
