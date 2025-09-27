@@ -10,6 +10,12 @@
 	order_index: 5
 	quest_links: [ ]
 	quests: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "ftblibrary:icons/check"
+			}
+			id: "ftbquests:custom_icon"
+		}
 		id: "46A654D0FFE616BD"
 		rewards: [{
 			id: "4335F5FCF8E2A01E"

@@ -6,6 +6,7 @@
     "mekanism",
     "railcraft",
     "forcecraft",
+    "pneumaticcraft",
     "immersiveengineering",
     "oritech"
   ],
@@ -30,7 +31,12 @@
     "c:rods/{material}",
     "c:storage_blocks/raw_{material}",
     "c:storage_blocks/{material}",
-    "c:wires/{material}"
+    "c:wires/{material}",
+    "c:ingots/plutonium",
+    "c:nuggets/plutonium",
+    "c:dusts/plutonium",
+    "c:pellets/plutonium",
+    "c:plastics"
   ],
   "ignored_tags": [],
   "ignored_items": [],

@@ -43,7 +43,20 @@
 		}
 	]
 	order_index: 0
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "4BD457DE52BBC76C"
+			linked_quest: "596F28EF0EB7002F"
+			x: -1.0d
+			y: 22.0d
+		}
+		{
+			id: "77FA4A2DB413262E"
+			linked_quest: "25CED87D758A6D0C"
+			x: 1.0d
+			y: 22.0d
+		}
+	]
 	quests: [
 		{
 			icon: {

@@ -1,5 +1,5 @@
 {
-	autofocus_id: "66E5109719D45653"
+	autofocus_id: "76890D74EE32B4CF"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "evilcraft"
@@ -2520,6 +2520,24 @@
 			}]
 			x: 19.5d
 			y: -10.5d
+		}
+		{
+			hide_text_until_complete: false
+			icon: {
+				components: {
+					"ftbquests:icon": "kubejs:textures/font/icons/warn.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "4D3F2DA049C32098"
+			invisible: true
+			optional: true
+			tasks: [{
+				id: "1D75E7766114644E"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -7.5d
 		}
 	]
 }

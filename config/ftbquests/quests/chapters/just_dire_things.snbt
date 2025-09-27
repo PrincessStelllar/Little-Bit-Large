@@ -7,9 +7,15 @@
 		id: "justdirethings:time_crystal"
 	}
 	id: "707DFCF38F8333D4"
-	order_index: 6
+	order_index: 3
 	quest_links: [ ]
 	quests: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "ftblibrary:icons/check"
+			}
+			id: "ftbquests:custom_icon"
+		}
 		id: "50D47E8D224A8E89"
 		shape: "heart"
 		tasks: [{

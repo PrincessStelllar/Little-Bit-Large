@@ -7,9 +7,23 @@
 		id: "minecraft:oak_sapling"
 	}
 	id: "0701BDFECC9EA8CD"
+	images: [{
+		height: 5.0d
+		image: "catalyst:textures/quest_images/lbl_logo.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 0.0d
+		y: -1.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [{
+		icon: {
+			components: {
+				"ftbquests:icon": "ftblibrary:icons/check"
+			}
+			id: "ftbquests:custom_icon"
+		}
 		id: "75A4C6008C48EA66"
 		rewards: [{
 			id: "06BB7D6B55CD4853"

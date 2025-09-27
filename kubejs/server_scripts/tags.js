@@ -31,6 +31,26 @@ ServerEvents.tags('item', catalyst => {
     //Rubber Tag
     catalyst.add('c:rubber', 'industrialforegoing:dryrubber')
 
+    //Plastic tag
+    catalyst.add('c:plastics', 'pneumaticcraft:plastic')
+    catalyst.add('c:plates/plastic', 'pneumaticcraft:plastic')
+
+    //Eternal Ores
+    catalyst.add('c:dusts/plutonium', 'eternalores:plutonium_dust')
+    catalyst.add('c:pellets/plutonium', 'eternalores:plutonium_ingot')
+
+    //Oritech 
+    catalyst.remove('c:ingots/steel', 'oritech:biosteel_ingot')
+    catalyst.add('c:ingots/plutonium', 'oritech:plutonium_pellet')
+    catalyst.add('c:dusts/plutonium', 'oritech:plutonium_dust')
+    catalyst.add('c:nuggets/plutonium', 'oritech:small_plutonium_pellet')
+    catalyst.add('c:ingots/uranium', 'oritech:uranium_pellet')
+    catalyst.add('c:nuggets/uranium', 'oritech:small_uranium_pellet')
+
+    //Mekanism
+    catalyst.add('c:ingots/plutonium', 'mekanism:pellet_plutonium')
+    catalyst.add('c:ingots', 'mekanism:pellet_plutonium')
+
     //Fix for Boon of Earth enchant dropping non generated ores
     catalyst.remove('c:ores_in_ground/stone', 'mekanism:fluorite_ore')
     catalyst.remove('c:ores_in_ground/stone', 'mekanism:osmium_ore')

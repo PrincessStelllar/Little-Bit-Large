@@ -2,13 +2,13 @@ ServerEvents.recipes(catalyst => {
     function inject(input_chemical, output_chemical, inn, out) {
         catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:neutron_injector", 40)
             // OPTIONAL CUSTOMIZATION {
-            .progressX(45) // default 74
-            .progressY(20) // default 8
-            .width(100) // default 256
-            .height(80) // default 256
+            .progressX(54)
+            .progressY(20)
+            .width(110)
+            .height(60)
             // }
-            .requireEnergy(10000, 0, 0)
-            .produceChemical(`${out}x ${output_chemical}`, 73, 20)
+            .requireEnergy(10000, 0, 4)
+            .produceChemical(`${out}x ${output_chemical}`, 90, 20)
             .requireChemical(`${inn}x ${input_chemical}`, 25, 20)
             
     }

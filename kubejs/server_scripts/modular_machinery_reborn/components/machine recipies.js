@@ -74,6 +74,92 @@ ServerEvents.recipes((catalyst) => {
         C: 'industrialforegoing:plant_sower'
     
         });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:apis_mutandis"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/honeycombs',
+        C: 'ars_nouveau:arcane_core'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:advanced_apiary"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/honeycombs',
+        C: '#productivebees:advanced_beehives'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:abyssal_pump"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/steel',
+        C: 'mekanism:electric_pump'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:neutron_injector"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/steel',
+        C: 'mekanism:solar_neutron_activator'
+    
+        });
+
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:osmotic_concentrator"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: '#c:storage_blocks/steel',
+        C: 'mekanism:thermal_evaporation_controller'
+    
+        });
+
+    //syntex
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:geo_syntex"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: 'minecraft:amethyst_cluster',
+        C: 'mysticalagriculture:awakened_supremium_growth_accelerator'
+    
+        });
+    
+    //maker
+    catalyst.shaped(
+        Item.of('modular_machinery_reborn:controller[modular_machinery_reborn:machine="mmr:crystalline_fabricator"]'), [
+        'ABA',
+        'BCB',
+        'ABA' ],
+         {
+        A: "modular_machinery_reborn:casing_plain",
+        B: 'minecraft:amethyst_cluster',
+        C: 'pneumaticcraft:pressure_chamber_interface'
+    
+        });
     
 
     

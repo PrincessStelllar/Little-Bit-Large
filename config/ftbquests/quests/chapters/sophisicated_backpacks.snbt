@@ -186,14 +186,19 @@
 			y: -0.8867346938775498d
 		}
 	]
-	order_index: 0
-	quest_links: [ ]
+	order_index: 2
+	quest_links: [{
+		id: "60FCE367903F4123"
+		linked_quest: "37FEFBA176B0E030"
+		x: -6.0d
+		y: -5.5d
+	}]
 	quests: [
 		{
 			dependencies: [
 				"58088F3DC3CCB08F"
 				"50A361EE2D5D4E7E"
-				"0B77F97A503F6CEB"
+				"37FEFBA176B0E030"
 			]
 			id: "40E18730E0B16FFE"
 			rewards: [
@@ -356,20 +361,6 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -5.5d
-		}
-		{
-			icon: {
-				id: "minecraft:chest"
-			}
-			id: "0B77F97A503F6CEB"
-			shape: "diamond"
-			tasks: [{
-				id: "66BEE536A51A7699"
-				item: { count: 1, id: "minecraft:chest" }
-				type: "item"
-			}]
-			x: -6.0d
 			y: -5.5d
 		}
 		{
@@ -1034,6 +1025,25 @@
 			}]
 			x: 2.5d
 			y: -7.0d
+		}
+		{
+			icon: {
+				components: {
+					"ftbquests:icon": "ftbfiltersystem:textures/gui/sprites/info.png"
+				}
+				id: "ftbquests:custom_icon"
+			}
+			id: "1209D2F4AEE0FF0D"
+			invisible: true
+			optional: true
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "45C7D3B8E7C9A8FE"
+				type: "checkmark"
+			}]
+			x: -8.25d
+			y: 0.0d
 		}
 	]
 }

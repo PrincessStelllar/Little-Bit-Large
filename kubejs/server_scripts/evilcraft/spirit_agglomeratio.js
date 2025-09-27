@@ -3,7 +3,7 @@ This script is property of Catalyst Studios for use in the modpack Little Bit La
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
 */
 
-ServerEvents.recipes( catalyst => { 
+/*ServerEvents.recipes( catalyst => { 
     catalyst.shaped('kubejs:spirit_agglomeratio', [
         'GSG',
         'PEV',
@@ -16,7 +16,7 @@ ServerEvents.recipes( catalyst => {
         R: 'evilcraft:flesh_rejuvenated',
         V: 'evilcraft:vengeance_essence'
     })
-})
+})*/
 
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
