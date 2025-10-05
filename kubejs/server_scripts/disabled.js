@@ -18,6 +18,7 @@ ServerEvents.recipes(catalyst => {
     catalyst.remove('advancedperipherals:chunk_controller')
     catalyst.remove({id: 'computercraft:upgrade_3'})
     catalyst.remove({id: 'computercraft:upgrade_5'})
+    catalyst.remove({id:'twilightforest:uncrafting_table'})
     /*catalyst.remove('extradisks:disk/shaped/infinite_storage_disk')
     catalyst.remove('extradisks:blocks/infinite_storage_block')
     catalyst.remove('extradisks:part/infinite_storage_part')

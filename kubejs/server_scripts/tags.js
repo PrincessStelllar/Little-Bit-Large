@@ -161,6 +161,9 @@ ServerEvents.tags('block', catalyst => {
     catalyst.remove('c:ores_in_ground/stone', 'energizedpower:tin_ore')
     catalyst.remove('c:ores_in_ground/stone', 'create:zinc_ore')
     catalyst.remove('c:ores_in_ground/stone', 'eternalores:plutonium_ore_block')
+
+    // Allow waystones to be used inside claims
+    catalyst.add('ftbchunks:interact_whitelist', ['@waystones'])
     }
 )
 
