@@ -12,10 +12,10 @@ function removeBlocks(blocksToRemove)
 
 function summonEntities(catalyst, entityType, count, x, y, z)
 {
-    for(let i = 0; i < count; i++)
-    {
-        catalyst.server.runCommandSilent(`summon minecraft:item ${x} ${y} ${z} {Item:{id:"${entityType}"}}`);;
-    }
+    let itemEntity = catalyst.level.createEntity('item');
+    itemEntity.item = Item.of(entityType, count);
+    itemEntity.setPosition(x, y, z);
+    itemEntity.spawn();
 }
 
 //reinforced deepslate block crafting
@@ -94,7 +94,8 @@ BlockEvents.rightClicked('justdirethings:gooblock_tier3', catalyst => {
             {
                 for(let dy = -1; dy <= 1; dy++)
                 {
-                    for(let dz = -1; dz <= 1; dz++) {
+                    for(let dz = -1; dz <= 1; dz++)
+                    {
                         let block = catalyst.block.offset(dx, dy, dz);
 
                         // Check for Raw Celestigem Ore
