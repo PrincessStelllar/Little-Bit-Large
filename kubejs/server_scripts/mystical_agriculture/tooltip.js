@@ -56,7 +56,7 @@ ItemEvents.modifyTooltips(catalyst => {
 
                 if(noPlant)
                 {
-                    text.add(Text.warn("Cannot be planted nor it will growth, use machines to farm them!"));
+                    text.add(Text.warn("Cannot be planted, it will not grow. Try using machines to farm them instead!"));
                 }
 
                 text.add(creditText);
