@@ -193,11 +193,15 @@ ServerEvents.recipes(catalyst => {
                     "type": `productivebees:${keyword}`
                 }
             });
+
             if(!skip.includes(keyword))
             {
                 //The commented one works, but no hearth on emi
                 //let outputComb = `64x productivebees:configurable_comb[productivebees:bee_type="productivebees:${keyword}"]`
-                let outputComb = Item.of('productivebees:configurable_comb', 64, { "productivebees:bee_type": `productivebees:${keyword}` })
+                let outputComb = Item.of('productivebees:configurable_comb', 64, {
+                        "productivebees:bee_type": `productivebees:${keyword}`
+                })
+                
                 catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_apiary", time)
                 .progressData(ProgressData.create().x(54).y(20))
                 .width(110)
@@ -379,14 +383,12 @@ MMREvents.recipeFunction("apiary_recipe_each", catalyst => {
                     let attribute = geneGroup.attribute();
                     let value = geneGroup.value();
                     let purity = geneGroup.purity();
-                    
                     if(purity.equals($Integer.valueOf("100")))
                     {
                         let traitValue = value.includes(".") 
                             ? value.toString().split("[.]")[1] 
                             : value;
-                            
-                        switch(attribute)
+                        switch(attribute.getSerializedName())
                         {
                             case "weather_tolerance":
                                 weatherTrait = traitValue;
@@ -471,45 +473,59 @@ function calculateCombBonus(inputItems, values)
     for(let i = 0; i < inputItems.size(); i++)
     {
         let item = inputItems.get(i);
-        if (!item || item.isEmpty()) continue;
+        if(!item || item.isEmpty()) continue;
 
-        // Count productivity upgrades
-        if (upgradeCount < 4 && item.id == 'productivelib:upgrade_productivity_4') {
+        // 1. Conteo de Upgrades (máximo 4)
+        if(upgradeCount < 4 && item.id == 'productivelib:upgrade_productivity_4')
+        {
             let countToAdd = Math.min(item.count, 4 - upgradeCount);
             upgradeCount += countToAdd;
         }
 
-        //Sugarbag boost
-        if (item.id == 'productivebees:sugarbag_honeycomb')
+        Sugarbag boost
+        if(item.id == 'productivebees:sugarbag_honeycomb')
         {
             hasSugarbag = true;
         }
 
-        // 3. Detectar Genes (Honey Treat)
-        if(item.id == 'productivebees:honey_treat' && item.componentMap.has("productivebees:gene_group_list"))
+        //Genes
+        if(item.id == 'productivebees:honey_treat')
         {
             let geneGroupList = item.componentMap.get("productivebees:gene_group_list");
-            for(let j = 0; j < geneGroupList.size(); j++)
+            if(geneGroupList)
             {
-                let gene = geneGroupList.get(j);
-                if(gene.attribute() == "productivity" && gene.purity().equals($Integer.valueOf("100")))
+                for(let j = 0; j < geneGroupList.size(); j++)
                 {
-                    let val = gene.value().toString();
-                    productivityTrait = val.includes(".") ? val.split(".")[1] : val;
+                    let geneGroup = geneGroupList.get(j);
+                    let attribute = geneGroup.attribute();
+                    let value = geneGroup.value();
+                    let purity = geneGroup.purity();
+
+                    if(purity.equals($Integer.valueOf("100")))
+                    {
+                        let traitValue = value.includes(".") 
+                            ? value.toString().split("[.]")[1] 
+                            : value;
+                            
+                        if(attribute.getSerializedName() == "productivity")
+                        {
+                            productivityTrait = traitValue;
+                        }
+                    }
                 }
             }
         }
     }
-
-    if (upgradeCount > 0) combBonus += upgradeCount * 16;
-    if (hasSugarbag) combBonus += values.sugarbag;
     
-    if(productivityTrait)
+    //Upgrades
+    if(upgradeCount > 0) combBonus += (upgradeCount * 16);
+    
+    //Sugarbag 
+    if(hasSugarbag) combBonus += values.sugarbag;
+
+    if(productivityTrait && values[productivityTrait])
     {
-        if(values[productivityTrait])
-        {
-            combBonus += values[productivityTrait];
-        }
+        combBonus += values[productivityTrait];
     }
 
     return combBonus;
