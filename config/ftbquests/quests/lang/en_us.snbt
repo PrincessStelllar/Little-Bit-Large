@@ -6674,7 +6674,7 @@
 		""
 		"[{\"text\":\"There is an \",\"color\":\"#FFFFFF\"},{\"text\":\"entire\",\"color\":\"#FF55FF\"},{\"text\":\" chapter around this \",\"color\":\"#FFFFFF\"},{\"text\":\"concept\",\"color\":\"#55FF55\"},{\"text\":\" and why I said about a \",\"color\":\"#FFFFFF\"},{\"text\":\"nuclear\",\"color\":\"#48cf63\"},{\"text\":\" \",\"color\":\"#FFFFFF\"},{\"text\":\"disaster\",\"color\":\"#FF55FF\"},{\"text\":\"!\",\"color\":\"#FFFFFF\"}]"
 	]
-	quest.5F20D723D9E6CE02.quest_subtitle: "Why is there more matter than &dantimmater&r?"
+	quest.5F20D723D9E6CE02.quest_subtitle: "Why is there more matter than &danti-matter&r?"
 	quest.5F28DE5365B6505C.quest_desc: ["Now with &dfilters&r!"]
 	quest.5F28DE5365B6505C.quest_subtitle: "Filtered"
 	quest.5F29A3544EF83EDC.quest_desc: [
