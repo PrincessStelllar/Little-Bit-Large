@@ -155,11 +155,11 @@
 		#[Server] Enable Peridot_mining ore generation.
 		peridot_mining = false
 		#[Server] Enable Platinum_overworld ore generation.
-		platinum_overworld = false
+		platinum_overworld = true
 		#[Server] Enable Platinum_end ore generation.
-		platinum_end = false
+		platinum_end = true
 		#[Server] Enable Platinum_mining ore generation.
-		platinum_mining = falst
+		platinum_mining = true
 		#[Server] Enable Pyrolite_nether ore generation.
 		pyrolite_nether = false
 		#[Server] Enable Pyrolite_end ore generation.
