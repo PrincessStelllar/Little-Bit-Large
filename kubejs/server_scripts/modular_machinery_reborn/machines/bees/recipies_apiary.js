@@ -482,7 +482,7 @@ function calculateCombBonus(inputItems, values)
             upgradeCount += countToAdd;
         }
 
-        Sugarbag boost
+        //Sugarbag boost
         if(item.id == 'productivebees:sugarbag_honeycomb')
         {
             hasSugarbag = true;
