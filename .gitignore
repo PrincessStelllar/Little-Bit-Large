@@ -5,3 +5,5 @@ packwiz*
 Questi*
 mods/**
 resourcepacks/**
+pack.toml
+index.toml
