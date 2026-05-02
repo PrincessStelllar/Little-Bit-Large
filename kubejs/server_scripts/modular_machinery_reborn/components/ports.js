@@ -154,6 +154,37 @@ ServerEvents.recipes(catalyst => {
         createPort(r[0], r[1], r[2], r[3], r[4]);
     });
 
+    catalyst.shaped(
+            Item.of("modular_machinery_reborn:dimensional_detector"),
+            [
+                'ABA',
+                'CDE',
+                'AFA'
+            ],
+            {
+                A: 'modular_machinery_reborn:modularium',
+                B: 'minecraft:deepslate',
+                C: 'eternalores:ender_pearl_block',
+                D: 'modular_machinery_reborn:casing_reinforced',
+                E: 'eternalores:blaze_block',
+                F: 'utilitarian:tps_meter'
+            }
+        ).id(`catalyst:mmr/ports/tiny_output_bus`);
+
+    catalyst.shaped(
+            Item.of("modular_machinery_reborn:casing_gear"),
+            [
+                'ABA',
+                'BCB',
+                'ABA'
+            ],
+            {
+                A: 'eternalores:rod_steel',
+                B: 'eternalores:gear_steel',
+                C: 'modular_machinery_reborn:casing_plain'
+            }
+        ).id(`catalyst:mmr/ports/tiny_input_bus`);
+
     console.log("[CatJS] Added hatches and buses for MMR")
 });
 
