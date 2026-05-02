@@ -1,0 +1,97 @@
+{
+    "quest.00BBFAADA2C905D4.quest_desc": [
+        "&e64&r... This thing now generates a whole stack of energy!"
+    ],
+    "quest.00BBFAADA2C905D4.quest_subtitle": "Not Quite The Redstone Solar Panel",
+    "quest.00BBFAADA2C905D4.title": "&l&eRedstone Solar Panel",
+    "quest.0EB614A5D08D59BD.title": "Solar Helmet &l&5V7",
+    "quest.15BA38377EA9D7A2.quest_desc": [
+        "Now that we are generating 4096FE/t we can begin to grow our factory with more machines..."
+    ],
+    "quest.15BA38377EA9D7A2.quest_subtitle": "I'm Out of Subtitles",
+    "quest.15BA38377EA9D7A2.title": "&l&3Resonant Solar Panel",
+    "quest.1DB14DCD4CD04E24.quest_desc": [
+        "Now we are generating 8FE/t, which is not a lot I know. But it's better than generating 1FE/t.",
+        "",
+        "But it should be more than enough to sustain at least &d1&r machine."
+    ],
+    "quest.1DB14DCD4CD04E24.quest_subtitle": "Better Than The Leadstone Solar Panel",
+    "quest.1DB14DCD4CD04E24.title": "&l&7Hardened Solar Panel",
+    "quest.269D02D4BFFC0190.quest_desc": [
+        "If you thought this mod only added solar panels... then you are correct...",
+        "",
+        "But we can flex a bit walking down the streets with this helmet to generate power while we recieve the &m&8deadly&r &llovely&r laser beams of our sun.",
+        "",
+        "Honestly, i suggest you forget about sunbathing and become a sentient walking being that generates &l&cenergy&r!"
+    ],
+    "quest.269D02D4BFFC0190.title": "Solar Helmet &lV1",
+    "quest.3822CD1546F0BC9B.quest_desc": [
+        "This is more than enough to start charging &djetpacks&r, &6gadgets&r and even sustain 2 or 4 machines!",
+        "",
+        "Depending if the machine has energy/speed upgrades of course..."
+    ],
+    "quest.3822CD1546F0BC9B.quest_subtitle": "Now We Are Talking",
+    "quest.3822CD1546F0BC9B.title": "&l&cSignalum Solar Panel",
+    "quest.3E24D52CA683A3F1.title": "Solar Helmet &l&cV4",
+    "quest.4BF589FF795C4125.quest_desc": [
+        "Now this is even better, 32768&rFE/t is a really good amount of FE generation to sustain a large &adigital storage&r!"
+    ],
+    "quest.4BF589FF795C4125.quest_subtitle": "Almost There!",
+    "quest.4BF589FF795C4125.title": "&l&1Advanced Solar Panel",
+    "quest.4CDF67A932172054.quest_desc": [
+        "We might've ran into some issues crafting these solar panels, but we finally done it...",
+        "",
+        "              &4262144FE&r/t at last."
+    ],
+    "quest.4CDF67A932172054.quest_subtitle": "Unlimited Power...",
+    "quest.4CDF67A932172054.title": "&l&5Ultimate Solar Panel",
+    "quest.5E635799470EEF47.quest_desc": [
+        "Welcome to &eSolar Generation&r mod where our main objective is generating energy... from the &6&lSUN&r!",
+        "",
+        "This incredible mod adds &d7&r new solar panels that need quite a lot of materials to generate lots of energy.",
+        "",
+        "These generators will recieve the daily those of &cUV&r rays we are supposed to recieve... But, why do everything manually when we can actually use a machine for it?",
+        "",
+        "I recommend you start any &aresource&r &egeneration&r mod to craft all of these solar panels.",
+        "",
+        "Mod created by: &63divad99"
+    ],
+    "quest.5E635799470EEF47.title": "&l&6Solar Generation",
+    "quest.6069D3860B38504C.title": "Solar Helmet &l&1V6",
+    "quest.62F972854AA43136.quest_desc": [
+        "These amazing quests were made for &l&4Catalyst Studios&r and it's a part of their project and belong to them.",
+        "",
+        "Solar Generation Questline made by: &aRadz&8Ratz&r",
+        "",
+        "If you are seeing this, it means you are in editing mode."
+    ],
+    "quest.62F972854AA43136.title": "&l&4Catalyst Studios Quests",
+    "quest.64363D9756720A6B.title": "Solar Helmet &l&eV3",
+    "quest.6CBD797B715195F9.quest_desc": [
+        "Being our very first solar panel it... will not generate an enormous amount of FE...",
+        "",
+        "                      &4&lBUT!&r",
+        "",
+        "The further we dig into this mod the energy generation will become better, i promise.",
+        "",
+        "Something important to note, is that the transfer rate will be much higher than the generation rate.",
+        "",
+        "Another thing to remember, is that these solar panels have an internal energy buffer, which is recommended to leave while it generates more energy!",
+        "",
+        "And more important, it needs a clear view of the sun."
+    ],
+    "quest.6CBD797B715195F9.quest_subtitle": "The Beginning",
+    "quest.6CBD797B715195F9.title": "&lLeadstone Solar Panel",
+    "quest.6D36292892EA5781.title": "Solar Helmet &l&7V2",
+    "quest.6F365DC5EC358354.title": "Solar Helmet &l&3V5",
+    "quest.72E024F538AAFA84.quest_desc": [
+        "Before we can start crafting all of our solar panels we need some materials first.",
+        "",
+        "For the first tier of solar panels, &lLeadstone&r Tier, we'll need &9lapis&r for our &dphotovoltaic&r cells, &4redstone&r dust and a &7leadstone&r core to assemble the whole thing!",
+        "",
+        "Keep in mind that the very first tier of solar panels need the mentioned materials, where the other solar panels require &n&a8&r solar panels of the &n&cpast&r tier and their respective &n&5core&r. ",
+        "",
+        "And to upgrade the solar cores we need the past tier core as well."
+    ],
+    "quest.72E024F538AAFA84.title": "Needed Items"
+}

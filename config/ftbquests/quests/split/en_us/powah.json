@@ -1,0 +1,10 @@
+{
+    "quest.6B4C6BEDD35D7F0F.quest_desc": [
+        "This questline was made with the intent of having the &bgrid scale&r at &b0.15&r.",
+        "",
+        "You can change grid scale by going &bSettings > Edit File > Grid Scale 0.15&r",
+        "",
+        "Note for other future worker (Titop54 here), you dont need to change the grid scale, you can shift to freely move. If not, you can set the coord to any floating values that is in range of the IEEE 754"
+    ],
+    "quest.6B4C6BEDD35D7F0F.title": "Note to future quest author"
+}

@@ -1,0 +1,129 @@
+{
+    "quest.06EA43B239BD0B56.quest_subtitle": "The Beginning",
+    "quest.06EA43B239BD0B56.title": "Your First Modifier!",
+    "quest.0DACD6F3077FBD20.quest_desc": [
+        "Apothic Spawners allows you to modify spawners to make them faster and more efficient!",
+        "",
+        "Pick up any spawner using a &bSilk Touch&r pick!",
+        "",
+        "You can change the spawned mob by right-clicking the spawner with its spawn egg.",
+        "",
+        "&aTip:&r You can also use &bMekanism Cardboard Boxes&r to pick spawners up!"
+    ],
+    "quest.0DACD6F3077FBD20.title": "Apothic Spawners!",
+    "quest.0DC883B46880A03C.quest_desc": [
+        "Enchant a weapon with &bCapturing&r to have a chance of getting it's spawn egg!"
+    ],
+    "quest.0DC883B46880A03C.quest_subtitle": "Which came first? The chicken or the egg?",
+    "quest.0DC883B46880A03C.title": "Getting Spawn Eggs",
+    "quest.1AD8C1337F69E1C5.quest_desc": [
+        "Makes the spawner require a &bredstone signal&r to function."
+    ],
+    "quest.1AD8C1337F69E1C5.title": "Redstone Toggle",
+    "quest.240552BBF5D94EB1.quest_desc": [
+        "Mobs ignore spawn conditions and spawn in any condition.",
+        "",
+        "You don't need &bIgnore Light Level&r if you have this upgrade."
+    ],
+    "quest.240552BBF5D94EB1.quest_subtitle": "This spot looks good enough",
+    "quest.240552BBF5D94EB1.title": "&bIgnore Spawn Conditions",
+    "quest.26D7A8C7156AB1F6.quest_desc": [
+        "If you want to remove modifiers, just take that modifier item and hold a piece of &bNether Quartz&r in your &lOff-Hand&r to remove one level of modifier!"
+    ],
+    "quest.26D7A8C7156AB1F6.quest_subtitle": "Everyone makes mistakes",
+    "quest.26D7A8C7156AB1F6.title": "Removing Modifiers",
+    "quest.328025E9BA01FBDC.quest_desc": [
+        "The spawner no longer needs &bplayer nearby&r to spawn mobs.",
+        "",
+        "Great for farming while doing other things!"
+    ],
+    "quest.328025E9BA01FBDC.quest_subtitle": "I don't need you",
+    "quest.328025E9BA01FBDC.title": "&dIgnore Players",
+    "quest.32E4322646FFF017.quest_desc": [
+        "Mobs ignore light level and will spawn in any light level."
+    ],
+    "quest.32E4322646FFF017.quest_subtitle": "I'm legally blind",
+    "quest.32E4322646FFF017.title": "Ignore Light Level",
+    "quest.40D0DEDD660A301E.quest_desc": [
+        "Decreases the amount of health mobs spawned with.",
+        "",
+        "Each dripstone will &b-5% to initial health&r to a &bmin of 20% health&r."
+    ],
+    "quest.40D0DEDD660A301E.quest_subtitle": "Call an ambulance!",
+    "quest.40D0DEDD660A301E.title": "Less Initial Health",
+    "quest.45486AC8954F26C1.quest_desc": [
+        "Increases the range in which mobs spawn.",
+        "",
+        "Each piston will &b+2 spawn range&r to a &bmax of 32 blocks&r."
+    ],
+    "quest.45486AC8954F26C1.quest_subtitle": "Plenty of room to stretch",
+    "quest.45486AC8954F26C1.title": "More Spawn Range",
+    "quest.49235AB18DFE6AD7.quest_desc": [
+        "Spawned mobs will always spawn as a baby if possible. "
+    ],
+    "quest.49235AB18DFE6AD7.quest_subtitle": "&4You Monster&r",
+    "quest.49235AB18DFE6AD7.title": "Youthful",
+    "quest.5760A1BA7C6CDA67.quest_desc": [
+        "Decreases the maximum tick time between spawns. ",
+        "",
+        "Each clock will -20 ticks to the &bmax spawn delay&r.",
+        "",
+        "Minimum max spawn delay is &b20 ticks&r."
+    ],
+    "quest.5760A1BA7C6CDA67.quest_subtitle": "Upper bound",
+    "quest.5760A1BA7C6CDA67.title": "Maximum Spawn Delay",
+    "quest.6B477C68C8D84A3D.quest_desc": [
+        "Spawns &6burning&r mobs. &oOuch&r."
+    ],
+    "quest.6B477C68C8D84A3D.quest_subtitle": "Let them burn",
+    "quest.6B477C68C8D84A3D.title": "Burning",
+    "quest.6C504AA720E7C1C3.quest_desc": [
+        "Decreases the minimum tick time between spawns. ",
+        "",
+        "Each sugar will -20 ticks to the &bmin spawn delay&r.",
+        "",
+        "Minimum min spawn delay is &b20 ticks&r."
+    ],
+    "quest.6C504AA720E7C1C3.quest_subtitle": "Lower bound",
+    "quest.6C504AA720E7C1C3.title": "Minimum Spawn Delay",
+    "quest.6FE1831C4E32CD9D.quest_desc": [
+        "Increases the amount of mobs spawned per wave.",
+        "",
+        "Each eye will &b+2 spawn count&r to a &bmax of 16 mobs&r in a single wave."
+    ],
+    "quest.6FE1831C4E32CD9D.quest_subtitle": "More Mobs!",
+    "quest.6FE1831C4E32CD9D.title": "Increase Spawn Count",
+    "quest.74F6B9592744EC7C.quest_desc": [
+        "Killed mobs drop more loot! ",
+        "",
+        "Each Echo Shard gives &b+1 level&r. Max level is &bEchoing V&r."
+    ],
+    "quest.74F6B9592744EC7C.quest_subtitle": "MOAR LOOT!",
+    "quest.74F6B9592744EC7C.title": "More Loot!",
+    "quest.78C350866A75F0D0.quest_desc": [
+        "Now that you have all the pieces, it's time to create the &l&dUltimate Spawner&r&r. ",
+        "",
+        "It'll have &bMinimum Delays&r, &bRedstone Control&r, &bNo AI&r, &bIgnores Spawn Conditions&r, and &bIgnores Players&r."
+    ],
+    "quest.78C350866A75F0D0.quest_subtitle": "Infinite loot!",
+    "quest.78C350866A75F0D0.title": "&o&l&dThe Ultimate Spawner&r&r&r",
+    "quest.7A71E1BAB8050192.quest_desc": [
+        "+2 total entities near by Max 32"
+    ],
+    "quest.7A71E1BAB8050192.quest_subtitle": "Getting Crowded",
+    "quest.7A71E1BAB8050192.title": "Max Nearby Entities",
+    "quest.7D421F7F44B98A4F.quest_desc": [
+        "You are &lnot&r allowed to use these quests in any public pack without &4&nexplicit permission&r from Catalyst Studios.",
+        "",
+        "&bApothic Spawners&r questline made by: &5ArcTrooper&r",
+        "",
+        "If you are seeing this, it means you are in editing mode."
+    ],
+    "quest.7DDA8F8BFCB5F3EC.quest_desc": [
+        "Mobs spawn with no AI which means they won't do anything.",
+        "",
+        "&eWarning:&r This &omay&r break certain interactions with mobs."
+    ],
+    "quest.7DDA8F8BFCB5F3EC.quest_subtitle": "&oWhat am I?",
+    "quest.7DDA8F8BFCB5F3EC.title": "No Ai"
+}
