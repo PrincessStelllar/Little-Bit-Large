@@ -11,7 +11,7 @@ ServerEvents.recipes(catalyst => {
         ],{
         A: 'minecraft:obsidian',
         B: 'minecraft:glass',
-    })
+    }).id("catalyst:reinforced_glass");
 
     catalyst.shapeless('catalystcore:elemental_fire_crystal', 
         ['catalystcore:elemental_emptiness_crystal', 'ars_nouveau:fire_essence']
