@@ -66,13 +66,13 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("immersiveengineering", "cloche")
+            let catId = $ResourceLocation.fromNamespaceAndPath("immersiveengineering", "cloche")
             let workstationItem = Item.of("immersiveengineering:cloche").getItem()
             let iconStack = new $ItemStack(workstationItem)
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             
             let clocheCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("immersiveengineering", "textures/gui/cloche.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("immersiveengineering", "textures/gui/cloche.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 176, 77, 176, 77, 256, 256)
             let tankOverlayTexture = new $EmiTexture(textureLoc, 176, 30, 20, 51, 20, 51, 256, 256)
 
@@ -80,7 +80,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
             emiRegistry.addWorkstation(clocheCategory, catIcon)
 
             let recipeManager = emiRegistry.getRecipeManager()
-            let fertilizerType = $BuiltInRegistries.RECIPE_TYPE.get(new $ResourceLocation("immersiveengineering", "fertilizer"))
+            let fertilizerType = $BuiltInRegistries.RECIPE_TYPE.get($ResourceLocation.fromNamespaceAndPath("immersiveengineering", "fertilizer"))
             let fertilizerEmiIngredient = null
             
             if(fertilizerType)

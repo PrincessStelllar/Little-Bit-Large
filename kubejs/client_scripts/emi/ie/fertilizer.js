@@ -56,7 +56,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("immersiveengineering", "fertilizer")
+            let catId = $ResourceLocation.fromNamespaceAndPath("immersiveengineering", "fertilizer")
             
             let workstationItem = Item.of("immersiveengineering:fertilizer").getItem()
             let iconStack = new $ItemStack(workstationItem)

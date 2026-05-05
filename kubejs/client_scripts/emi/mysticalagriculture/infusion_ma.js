@@ -59,11 +59,11 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("mysticalagriculture", "infusion")
+            let catId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "infusion")
             let iconStack = new $ItemStack($ModBlocks.INFUSION_ALTAR.get())
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             let infusionCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("mysticalagriculture", "textures/jei/infusion.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "textures/jei/infusion.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 144, 81, 144, 81, 256, 256)
 
             emiRegistry.addCategory(infusionCategory)
@@ -86,7 +86,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
             let infusionRecipes = recipeManager.getAllRecipesFor(infusionType).toArray()
 
             let registryAccess = $Minecraft.getInstance().level.registryAccess()
-            let barrierItem = $BuiltInRegistries.ITEM.get(new $ResourceLocation("minecraft", "barrier"))
+            let barrierItem = $BuiltInRegistries.ITEM.get($ResourceLocation.fromNamespaceAndPath("minecraft", "barrier"))
             let barrierStack = new $ItemStack(barrierItem)
 
             infusionRecipes.forEach(recipeHolder => {

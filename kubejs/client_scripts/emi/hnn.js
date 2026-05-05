@@ -64,20 +64,20 @@ RecipeViewerEvents.addEntries("item", catalyst => {
             }
 
             //Sim
-            let catId = new $ResourceLocation("hostilenetworks", "sim_chamber")
+            let catId = $ResourceLocation.fromNamespaceAndPath("hostilenetworks", "sim_chamber")
             let iconStack = new $ItemStack(Item.of("hostilenetworks:sim_chamber").getItem())
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             let simCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("hostilenetworks", "textures/jei/sim_chamber.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("hostilenetworks", "textures/jei/sim_chamber.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 116, 43, 116, 43, 256, 256)
             emiRegistry.addCategory(simCategory)
             emiRegistry.addWorkstation(simCategory, catIcon)
 
             //Loot
-            let lootFabId = new $ResourceLocation("hostilenetworks", "loot_fabricator")
+            let lootFabId = $ResourceLocation.fromNamespaceAndPath("hostilenetworks", "loot_fabricator")
             let lootFabIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](new $ItemStack(Item.of("hostilenetworks:loot_fabricator").getItem()))
             let lootFabCategory = new $EmiRecipeCategory(lootFabId, lootFabIcon, lootFabIcon)
-            let lootFabTextureLoc = new $ResourceLocation("hostilenetworks", "textures/jei/loot_fabricator.png")
+            let lootFabTextureLoc = $ResourceLocation.fromNamespaceAndPath("hostilenetworks", "textures/jei/loot_fabricator.png")
             let lootFabBg = new $EmiTexture(lootFabTextureLoc, 0, 0, 103, 30, 103, 30, 256, 256)
             emiRegistry.addCategory(lootFabCategory)
             emiRegistry.addWorkstation(lootFabCategory, lootFabIcon)
@@ -107,7 +107,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
 
                 return new $EmiRecipe({
                     getCategory: () => simCategory,
-                    getId: () => new $ResourceLocation("kubejs", "hnn_sim_" + resourceId.getPath()),
+                    getId: () => $ResourceLocation.fromNamespaceAndPath("kubejs", "hnn_sim_" + resourceId.getPath()),
                     getInputs: () => [emiInput],
                     getOutputs: () => [emiBaseOutput, emiPredictionOutput],
                     getDisplayWidth: () => 116,
@@ -187,7 +187,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
 
                 return new $EmiRecipe({
                     getCategory: () => lootFabCategory,
-                    getId: () => new $ResourceLocation("kubejs", `loot_${resourceId.getPath()}_${index}`),
+                    getId: () => $ResourceLocation.fromNamespaceAndPath("kubejs", `loot_${resourceId.getPath()}_${index}`),
                     getInputs: () => [emiInput],
                     getOutputs: () => [emiOutput],
                     getDisplayWidth: () => 103,

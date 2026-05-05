@@ -50,12 +50,12 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("mysticalagriculture", "soul_extractor")
+            let catId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "soul_extractor")
             let workstationItem = $ModBlocks.SOUL_EXTRACTOR.get()
             let iconStack = new $ItemStack(workstationItem)
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             let soulExtractorCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("mysticalagriculture", "textures/jei/reprocessor.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "textures/jei/reprocessor.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 82, 26, 82, 26, 256, 256)
 
             emiRegistry.addCategory(soulExtractorCategory)

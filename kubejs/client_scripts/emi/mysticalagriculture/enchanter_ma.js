@@ -53,20 +53,20 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("mysticalagriculture", "enchanter")
+            let catId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "enchanter")
             let workstationItem = $ModBlocks.ENCHANTER.get()
             let iconStack = new $ItemStack(workstationItem)
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             
             let enchanterCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("mysticalagriculture", "textures/jei/enchanter.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "textures/jei/enchanter.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 144, 26, 144, 26, 256, 256)
 
             emiRegistry.addCategory(enchanterCategory)
             emiRegistry.addWorkstation(enchanterCategory, catIcon)
 
             let recipeManager = emiRegistry.getRecipeManager()
-            let enchanterTypeId = new $ResourceLocation("mysticalagriculture", "enchanter")
+            let enchanterTypeId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "enchanter")
             let enchanterRecipeType = $BuiltInRegistries.RECIPE_TYPE.get(enchanterTypeId)
 
             if (!enchanterRecipeType) {

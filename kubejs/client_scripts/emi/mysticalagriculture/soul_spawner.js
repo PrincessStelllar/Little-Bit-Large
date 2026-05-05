@@ -67,12 +67,12 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("mysticalagriculture", "soulium_spawner")
+            let catId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "soulium_spawner")
             let workstationItem = $ModBlocks.SOULIUM_SPAWNER.get()
             let iconStack = new $ItemStack(workstationItem)
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             let spawnerCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("mysticalagriculture", "textures/jei/soulium_spawner.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "textures/jei/soulium_spawner.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 82, 26, 82, 26, 256, 256)
 
             emiRegistry.addCategory(spawnerCategory)

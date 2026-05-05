@@ -54,11 +54,11 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("mysticalagriculture", "crux")
+            let catId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "crux")
             let iconStack = new $ItemStack($ModItems.PROSPERITY_SEED_BASE.get())
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             let cruxCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("mysticalagriculture", "textures/jei/crux.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "textures/jei/crux.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 80, 54, 80, 54, 256, 256)
 
             emiRegistry.addCategory(cruxCategory)
@@ -100,7 +100,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
 
                 return new $EmiRecipe({
                     getCategory: () => cruxCategory,
-                    getId: () => new $ResourceLocation("kubejs", "ma_crux_" + cropId.getPath()),
+                    getId: () => $ResourceLocation.fromNamespaceAndPath("kubejs", "ma_crux_" + cropId.getPath()),
                     getInputs: () => [emiSeed, emiSoil, emiCrux],
                     getOutputs: () => [emiOutput],
                     getDisplayWidth: () => 80,

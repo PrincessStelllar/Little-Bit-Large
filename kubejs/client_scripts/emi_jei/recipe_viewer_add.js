@@ -101,7 +101,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
 
             if(!fluxCategory)
             {
-                let catId = new $ResourceLocation("fluxnetworks", "creating_flux") 
+                let catId = $ResourceLocation.fromNamespaceAndPath("fluxnetworks", "creating_flux") 
                 let iconStack = new $ItemStack(Item.of("fluxnetworks:flux_block").getItem())
                 let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
                 fluxCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
@@ -109,7 +109,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
             }
 
             let createEmiRecipe = (recipeData) => {
-                let id = new $ResourceLocation("kubejs", recipeData.id)
+                let id = $ResourceLocation.fromNamespaceAndPath("kubejs", recipeData.id)
                 const getStack = (itemId) => new $ItemStack(Item.of(itemId).getItem(), 1)
                 
                 let renderBase = getStack(recipeData.base)

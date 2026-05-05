@@ -59,11 +59,11 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 return;
             }
 
-            let catId = new $ResourceLocation("mysticalagriculture", "awakening")
+            let catId = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "awakening")
             let iconStack = new $ItemStack($ModBlocks.AWAKENING_ALTAR.get())
             let catIcon = $EmiStack["of(net.minecraft.world.item.ItemStack)"](iconStack)
             let awakeningCategory = new $EmiRecipeCategory(catId, catIcon, catIcon)
-            let textureLoc = new $ResourceLocation("mysticalagriculture", "textures/jei/infusion.png")
+            let textureLoc = $ResourceLocation.fromNamespaceAndPath("mysticalagriculture", "textures/jei/infusion.png")
             let bgTexture = new $EmiTexture(textureLoc, 0, 0, 144, 81, 144, 81, 256, 256)
 
             emiRegistry.addCategory(awakeningCategory)
@@ -85,7 +85,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
             let awakeningRecipes = recipeManager.getAllRecipesFor(awakeningType).toArray()
             let registryAccess = $Minecraft.getInstance().level.registryAccess()
 
-            let barrierItem = $BuiltInRegistries.ITEM.get(new $ResourceLocation("minecraft", "barrier"))
+            let barrierItem = $BuiltInRegistries.ITEM.get($ResourceLocation.fromNamespaceAndPath("minecraft", "barrier"))
             let barrierStack = new $ItemStack(barrierItem)
 
             awakeningRecipes.forEach(recipeHolder => {
