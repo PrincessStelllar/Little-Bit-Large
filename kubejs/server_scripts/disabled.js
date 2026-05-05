@@ -104,9 +104,9 @@ ServerEvents.recipes(catalyst => {
         { output: "create:item_vault" },
         { output: 'create:precision_mechanism' },
         "create:crafting/materials/andesite_alloy",
-        "create:crafting/materials/andesite_alloy_from_zinc"
+        "create:crafting/materials/andesite_alloy_from_zinc",
 
-
+        "railcraft:world_spike"
 
     ]
 
