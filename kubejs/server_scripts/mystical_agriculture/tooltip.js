@@ -17,7 +17,7 @@ ItemEvents.modifyTooltips(catalyst => {
     };
 
     const excludedEssences = new Set([
-        'inferium', 'prudentium', 'imperium', 'supremium', 'tertium'
+        'inferium', 'prudentium', 'imperium', 'supremium', 'tertium', "sculk"
     ]);
 
     function modifyMA(itemName, options)
@@ -87,10 +87,13 @@ ItemEvents.modifyTooltips(catalyst => {
         ['dark_gem',   { biome: true }],
         ['entro'],
         ['flux',       { noPlant: true }],
-        ['sculk',      { tier: 'mag', biome: true, noPlant: true }],
+        ['sculk',      { tier: 'mag', noPlant: true }],
         ['dire',       { tier: 'tech', noPlant: true }],
         ["fluxite"],
-        ["force_gem"]
+        ["force_gem"],
+        ["mystical_diamond",       { noPlant: true }],
+        ["mystical_emerald",       { noPlant: true }],
+        ["mystical_netherite",     { noPlant: true }],
     ];
 
     items.forEach(([name, options]) => modifyMA(name, options));

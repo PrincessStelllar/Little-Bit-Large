@@ -292,6 +292,12 @@ StartupEvents.init(catalyst => {
             .color(0xf7e922)
             .register()
 
+        CropBuilder('black_quartz', 'Black Quartz')
+            .tier('2')
+            .pattern('gem')
+            .color(0x182326)
+            .register()
+
         // Tier 3
         CropBuilder('prosperity', 'Prosperity')
             .tier('3')
@@ -323,6 +329,12 @@ StartupEvents.init(catalyst => {
             .color(0xAC32C7)
             .register()
 
+        CropBuilder('enriched_copper', 'Quartz Enriched Copper')
+            .tier('3')
+            .pattern(TEXTURE_PATTERNS.ingot)
+            .color(0xe09e19)
+            .register()
+
         // Tier 4
         CropBuilder('prudentium', 'Prudentium')
             .tier('4')
@@ -330,6 +342,7 @@ StartupEvents.init(catalyst => {
             .color(0x008020)
             .crux('mysticalagriculture:imperium_block')
             .essence('mysticalagriculture:prudentium_essence')
+            .dontPlant()
             .register()
 
         CropBuilder('dark_gem', 'Dark Gem')
@@ -353,6 +366,7 @@ StartupEvents.init(catalyst => {
             .color(0xA73F01)
             .crux('mysticalagriculture:supremium_block')
             .essence('mysticalagriculture:tertium_essence')
+            .dontPlant()
             .register()
 
         CropBuilder('flux', 'Flux')
@@ -369,6 +383,7 @@ StartupEvents.init(catalyst => {
             .color(0x0092FC)
             .crux('mysticalagradditions:insanium_block')
             .essence('mysticalagriculture:imperium_essence')
+            .dontPlant()
             .register()
 
         CropBuilder('cognizian', 'Cognizian')
@@ -376,6 +391,7 @@ StartupEvents.init(catalyst => {
             .pattern('dust')
             .color(0xA73F01)
             .essence('mysticalagriculture:cognizant_dust')
+            .dontPlant()
             .register()
 
         // Tier Elemental
@@ -405,6 +421,32 @@ StartupEvents.init(catalyst => {
             .pattern('dust_ingot')
             .color(0xEDC45F)
             .glint()
+            .dontPlant()
+            .register()
+
+        // Tier Mystic (9)
+        CropBuilder("mystical_diamond", "Mystical Diamond")
+            .tier("mystic")
+            .pattern(TEXTURE_PATTERNS.gem)
+            .color(0x2bf5fb)
+            .glint()
+            .dontPlant()
+            .register()
+
+        CropBuilder("mystical_emerald", "Mystical Emerald")
+            .tier("mystic")
+            .pattern(TEXTURE_PATTERNS.gem)
+            .color(0x35fb2b)
+            .glint()
+            .dontPlant()
+            .register()
+
+        CropBuilder("mystical_netherite", "Mystical Netherite")
+            .tier("mystic")
+            .pattern(TEXTURE_PATTERNS.rock)
+            .color(0x271c05)
+            .glint()
+            .dontPlant()
             .register()
 
         // Tier Magical (8)
@@ -414,6 +456,7 @@ StartupEvents.init(catalyst => {
             .color(0xDF0101)
             .crux('mysticalagradditions:insanium_block')
             .essence('mysticalagriculture:supremium_essence')
+            .dontPlant()
             .register()
 
         // Tier Technology (9)
@@ -423,6 +466,7 @@ StartupEvents.init(catalyst => {
             .color(0x640099)
             .crux('kubejs:magical_block')
             .essence('mysticalagradditions:insanium_essence')
+            .dontPlant()
             .register()
 
         CropBuilder('dire', 'Dire Thing')
@@ -430,6 +474,7 @@ StartupEvents.init(catalyst => {
             .pattern('ingot')
             .color(0x4ebade)
             .crux('justdirethings:time_crystal_budding_block')
+            .dontPlant()
             .register()
 
         registryInstance.setAllowRegistration(false)
