@@ -118,9 +118,9 @@ ServerEvents.recipes(catalyst => {
         mod++;
     }
 
-    function diagonal2(mats, output, count) {
-        catalyst.shaped(`${count}x ${output}`, ['  A', ' B ', 'C  '], { A: mats[0], B: mats[1], C: mats[2] })
-        .id(`catalyst:shaped/diagonal2/${getCleanName(output)}_${mod}`)
+    function line(mats, output, count) {
+        catalyst.shaped(`${count}x ${output}`, [' A', ' B ', 'C '], { A: mats[0], B: mats[1], C: mats[2] })
+        .id(`catalyst:shaped/line/${getCleanName(output)}_${mod}`)
         mod++;
     }
 
@@ -336,11 +336,11 @@ ServerEvents.recipes(catalyst => {
         // Diagonals
         { type: 'diagonal', mats: ["mysticalagriculture:stone_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:stone_essence"], out: "ars_nouveau:sourcestone", count: 32 },
         { type: 'diagonal', mats: ["mysticalagriculture:wood_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:wood_essence"], out: "ars_nouveau:green_archwood_log", count: 16 },
-        { type: 'diagonal2', mats: ["mysticalagriculture:wood_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:wood_essence"], out: "ars_elemental:yellow_archwood_log", count: 16 },
+        { type: 'line', mats: ["mysticalagriculture:wood_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:wood_essence"], out: "ars_elemental:yellow_archwood_log", count: 16 },
         { type: 'diagonal', mats: ["mysticalagriculture:nature_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:nature_essence"], out: "ars_nouveau:bombegranate_pod", count: 4 },
-        { type: 'diagonal2', mats: ["mysticalagriculture:nature_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:nature_essence"], out: "ars_elemental:flashpine_pod", count: 4 },
+        { type: 'line', mats: ["mysticalagriculture:nature_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:nature_essence"], out: "ars_elemental:flashpine_pod", count: 4 },
         { type: 'diagonal', mats: ["mysticalagriculture:xychorium_essence", "mysticalagriculture:xychorium_essence", "mysticalagriculture:xychorium_essence"], out: "xycraft_world:xychorium_gem_dark", count: 16 },
-        { type: 'diagonal2', mats: ["mysticalagriculture:xychorium_essence", "mysticalagriculture:xychorium_essence", "mysticalagriculture:xychorium_essence"], out: "xycraft_world:xychorium_gem_light", count: 16 },
+        { type: 'line', mats: ["mysticalagriculture:xychorium_essence", "mysticalagriculture:xychorium_essence", "mysticalagriculture:xychorium_essence"], out: "xycraft_world:xychorium_gem_light", count: 16 },
 
         // Squares
         { type: 'square', mats: ["mysticalagriculture:zombie_essence", "mysticalagriculture:dark_gem_essence", "mysticalagriculture:dark_gem_essence", "mysticalagriculture:zombie_essence"], out: "evilcraft:flesh_werewolf", count: 1 },
@@ -352,7 +352,7 @@ ServerEvents.recipes(catalyst => {
         if (r.type === 'row2') row2(r.mats, r.out, r.count, r.mode);
         if (r.type === 'row3') row3(r.mats, r.out, r.count, r.mode);
         if (r.type === 'diagonal') diagonal(r.mats, r.out, r.count);
-        if (r.type === 'diagonal2') diagonal2(r.mats, r.out, r.count);
+        if (r.type === 'line') line(r.mats, r.out, r.count);
         if (r.type === 'square') square(r.mats, r.out, r.count);
     });
 
