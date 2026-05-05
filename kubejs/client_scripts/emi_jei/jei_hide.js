@@ -43,6 +43,12 @@ RecipeViewerEvents.removeEntries('item', catalyst => {
         'georenouveau:allthemodium_geore_golem_charm',
         'georenouveau:vibranium_geore_golem_charm',
         'georenouveau:unobtainium_geore_golem_charm',
+
+        'evilcraft:display_stand',
+
+        'rftoolsutility:syringe',
+
+        'enderio:soul_vial'
     ];
 
     itemsToRemove.forEach(item => {
