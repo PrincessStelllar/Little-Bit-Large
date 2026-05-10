@@ -33,6 +33,7 @@ ServerEvents.recipes(catalyst => {
 
         // Productive Bees
         { id: 'productivebees:evilcraft/bloody_bee_2' },
+        { id: 'productivebees:tconstruct/cobalt_bee_no_tinker'},
 
         // Advanced Peripherals
         { output: 'advancedperipherals:chunk_controller'},
