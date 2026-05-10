@@ -1,0 +1,17 @@
+packwiz
+packwiz.exe
+info.json
+mods.json
+manifest.json
+.git/
+*.zip
+QuestiMakinator*
+Little
+Little Bit Large*
+colors.json
+resourcepacks.json
+imgui.ini
+quest_editor.json
+extra.json
+logs.txt
+errors.txt
