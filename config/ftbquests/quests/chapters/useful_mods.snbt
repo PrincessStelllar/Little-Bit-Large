@@ -394,43 +394,9 @@
 			dependencies: ["16CB243E5678D282"]
 			icon: {
 				components: {
-					"relics:data": {
-						abilities: {
-							abilities: {
-								dissection: {
-									extender: {
-										cooldown: 0
-										cooldownCap: 0
-										ticking: 0b
-									}
-									lock: {
-										breaks: 5
-									}
-									points: 0
-									research: {
-										links: { }
-										researched: 0b
-									}
-									stats: {
-										distance: {
-											initialValue: 29.38186d
-										}
-										time: {
-											initialValue: 7.89114d
-										}
-									}
-								}
-							}
-						}
-						leveling: {
-							experience: 0
-							level: 0
-							luck: 0
-							points: 0
-						}
-					}
+					"ftbquests:icon": "relics:textures/gui/description/icons/holy_locket/blessing.png"
 				}
-				id: "relics:space_dissector"
+				id: "ftbquests:custom_icon"
 			}
 			id: "1F9DD8905A302496"
 			rewards: [{
@@ -439,8 +405,8 @@
 				xp: 100
 			}]
 			tasks: [{
-				id: "0632E133685DC06C"
-				item: { components: { "ftbfiltersystem:filter": "mod(relics)or(item(relics:reflection_necklace)item(relics:magma_walker)item(relics:aqua_walker)item(relics:midnight_robe)item(relics:drowned_belt)item(relics:jellyfish_necklace)item(relics:hunter_belt)item(relics:rage_glove)item(relics:ice_skates)item(relics:bastion_ring)item(relics:chorus_inhibitor)item(relics:holy_locket)item(relics:enders_hand)item(relics:elytra_booster)item(relics:ice_breaker)item(relics:spore_sack)item(relics:roller_skates)item(relics:leather_belt)item(relics:wool_mitten)item(relics:amphibian_boot))", "minecraft:custom_name": "\"Any Relic Curio\"" }, count: 1, id: "ftbfiltersystem:smart_filter" }
+				id: "58D77E3AB2FAA70A"
+				item: { components: { "ftbfiltersystem:filter": "or(item(relics:golden_tooth)item(relics:pet_bone)item(relics:raw_meatball)item(relics:cooked_meatball)item(relics:leafy_mantle)item(relics:springy_boot)item(relics:kinetic_belt)item(relics:reflective_necklace)item(relics:jellyfish_necklace)item(relics:midnight_mantle)item(relics:roller_skate)item(relics:chorus_staff)item(relics:clot_of_time)item(relics:piglin_mask)item(relics:chef_hat)item(relics:cut_glass_boot)item(relics:rider_flute)item(relics:ring_of_the_seven_deadly_sins)item(relics:sphere_of_self_sacrifice)item(relics:hunting_belt)item(relics:experience_disperser))" }, count: 1, id: "ftbfiltersystem:smart_filter" }
 				type: "item"
 			}]
 			x: 0.5d
@@ -1303,6 +1269,7 @@
 			icon: {
 				components: {
 					"ironjetpacks:jetpack_id": "ironjetpacks:creative"
+					"minecraft:rarity": "epic"
 				}
 				id: "ironjetpacks:jetpack"
 			}

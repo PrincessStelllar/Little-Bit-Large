@@ -291,7 +291,7 @@
 			tasks: [
 				{
 					id: "2276DAA7E3D24902"
-					item: { count: 1, id: "ars_elemental:anima_essence" }
+					item: { count: 1, id: "sauce:anima_essence" }
 					type: "item"
 				}
 				{

@@ -1347,6 +1347,7 @@
 			tasks: [{
 				id: "60A6A69B2556FD13"
 				item: { components: { "productivebees:bee_type": "productivebees:spacial" }, count: 1, id: "productivebees:configurable_honeycomb" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 4.0d
@@ -1366,6 +1367,7 @@
 			tasks: [{
 				id: "317C9FC07DA12EF5"
 				item: { components: { "productivebees:bee_type": "productivebees:fluix" }, count: 1, id: "productivebees:configurable_honeycomb" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -4.0d
@@ -2346,6 +2348,7 @@
 			tasks: [{
 				id: "2C5156A806B9CBCD"
 				item: { components: { "productivebees:bee_type": "productivebees:redstone_crystal" }, count: 1, id: "productivebees:configurable_honeycomb" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 11.0d
@@ -4019,6 +4022,7 @@
 			tasks: [{
 				id: "2F389339CADC4ACA"
 				item: { components: { "productivebees:bee_type": "productivebees:entro" }, count: 1, id: "productivebees:configurable_honeycomb" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: -13.5d

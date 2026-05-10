@@ -176,6 +176,7 @@
 			tasks: [{
 				id: "71CD2C3A1912D5C2"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:data_extractor" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.0d
@@ -215,6 +216,7 @@
 			tasks: [{
 				id: "4225E1F095F210A4"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:phytomorphic_synthesiszer" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.0d
@@ -254,6 +256,7 @@
 			tasks: [{
 				id: "7FD04C076B23F3A0"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:arboretum" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.0d
@@ -670,6 +673,7 @@
 			tasks: [{
 				id: "6C10F4B5BBC2B95E"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:apis_mutandis" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 15.3d
@@ -690,6 +694,7 @@
 			tasks: [{
 				id: "2A4BD13A33036932"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:advanced_apiary" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 15.3d
@@ -728,6 +733,7 @@
 			tasks: [{
 				id: "769FF86F152C9DCB"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:abyssal_pump" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.0d
@@ -748,6 +754,7 @@
 			tasks: [{
 				id: "07EAA9EF97C1F3C9"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:osmotic_concentrator" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.0d
@@ -784,6 +791,7 @@
 			tasks: [{
 				id: "55EA56839BBA3DE6"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:neutron_injector" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.0d
@@ -825,6 +833,7 @@
 			tasks: [{
 				id: "02FE3EA7617CE227"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:geo_syntex" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 16.5d
@@ -887,6 +896,7 @@
 			tasks: [{
 				id: "19EEFA67CAA80AA9"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:celestial_forge" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 14.5d
@@ -939,6 +949,7 @@
 			tasks: [{
 				id: "67262EB239828D79"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:drill_miner" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 16.5d
@@ -951,6 +962,7 @@
 			tasks: [{
 				id: "05ED221BAADD1C67"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:primitive_furnace" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 16.0d
@@ -963,6 +975,7 @@
 			tasks: [{
 				id: "6C83002D9CB2AA77"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:multismelter" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 17.0d
@@ -975,6 +988,7 @@
 			tasks: [{
 				id: "13DB312C55D1E292"
 				item: { components: { "modular_machinery_reborn:machine": "mmr:advanced_multismelter" }, count: 1, id: "modular_machinery_reborn:controller" }
+				match_components: "strict"
 				type: "item"
 			}]
 			x: 17.0d

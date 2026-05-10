@@ -541,6 +541,7 @@
 				{
 					exclude_from_claim_all: true
 					id: "40D62447C852AD39"
+					table_id: 7655615662620160508L
 					type: "choice"
 				}
 				{
