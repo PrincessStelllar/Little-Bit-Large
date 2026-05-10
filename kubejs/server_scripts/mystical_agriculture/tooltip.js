@@ -17,8 +17,12 @@ ItemEvents.modifyTooltips(catalyst => {
     };
 
     const excludedEssences = new Set([
-        'inferium', 'prudentium', 'imperium', 'supremium', 'tertium', "sculk"
+        'inferium', 'prudentium', 'imperium', 'supremium', 'tertium', 'sculk'
     ]);
+
+    const excludedSeeds = new Set([
+        'sculk'
+    ])
 
     function modifyMA(itemName, options)
     {
@@ -37,7 +41,7 @@ ItemEvents.modifyTooltips(catalyst => {
             });
         }
 
-        if(Item.exists(seedsId))
+        if(Item.exists(seedsId) && !excludedSeeds.has(itemName))
         {
             catalyst.modify(seedsId, text => {
                 text.removeLine(2);
