@@ -191,7 +191,7 @@ StartupEvents.init(catalyst => {
                     let id = $ResourceLocation.parse('mysticalagriculture:'+ _idStr)
                     let tier = getTier(_tierId)
                     let type = getType(_typeId)
-                    let textures = TEXTURE_PATTERNS[_pattern]
+                    let textures = (typeof _pattern === 'string') ? TEXTURE_PATTERNS[_pattern] : _pattern;
 
                     if(!tier || !type || !textures)
                     {
