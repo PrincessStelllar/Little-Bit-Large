@@ -130,6 +130,12 @@ ServerEvents.recipes(catalyst => {
         mod++;
     }
 
+    function square2(mats, output, count) {
+        catalyst.shaped(`${count}x ${output}`, ['AAA', 'AAA', 'AAA'], { A: mats[0] })
+        .id(`catalyst:shaped/square2/${getCleanName(output)}_${mod}`)
+        mod++;
+    }
+
     const seedsToFix = new Set(["cobalt", "lumium", "signalum", "rose_gold", "pig_iron", "enderium"]);
     
     $CropRegistry.getInstance().getCrops().forEach(crop => {
@@ -287,6 +293,13 @@ ServerEvents.recipes(catalyst => {
         { out: "mysticalagriculture:xychorium_seeds", in: "mysticalagriculture:prosperity_seed_base", ing: ["xycraft_world:xychorium_gem_red", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_red", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_red", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_red", "mysticalagriculture:tertium_essence"], bee: false },
         { out: "mysticalagriculture:xychorium_seeds", in: "mysticalagriculture:prosperity_seed_base", ing: ["xycraft_world:xychorium_gem_dark", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_dark", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_dark", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_dark", "mysticalagriculture:tertium_essence"], bee: false },
         { out: "mysticalagriculture:xychorium_seeds", in: "mysticalagriculture:prosperity_seed_base", ing: ["xycraft_world:xychorium_gem_light", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_light", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_light", "mysticalagriculture:tertium_essence", "xycraft_world:xychorium_gem_light", "mysticalagriculture:tertium_essence"], bee: false },
+        { out: 'mysticalagriculture:fluxite_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["oritech:fluxite", "mysticalagriculture:prudentium_essence", "oritech:fluxite", "mysticalagriculture:prudentium_essence", "oritech:fluxite", "mysticalagriculture:prudentium_essence", "oritech:fluxite", "mysticalagriculture:prudentium_essence"], bee: false },
+        { out: 'mysticalagriculture:force_gem_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["forcecraft:force_gem", "mysticalagriculture:prudentium_essence", "forcecraft:force_gem", "mysticalagriculture:prudentium_essence", "forcecraft:force_gem", "mysticalagriculture:prudentium_essence", "forcecraft:force_gem", "mysticalagriculture:prudentium_essence"], bee: false },
+        { out: 'mysticalagriculture:black_quartz_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["actuallyadditions:black_quartz", "mysticalagriculture:prudentium_essence", "actuallyadditions:black_quartz", "mysticalagriculture:prudentium_essence", "actuallyadditions:black_quartz", "mysticalagriculture:prudentium_essence", "actuallyadditions:black_quartz", "mysticalagriculture:prudentium_essence"], bee: false },
+        { out: 'mysticalagriculture:enriched_copper_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["refinedstorage:quartz_enriched_copper", "mysticalagriculture:tertium_essence", "refinedstorage:quartz_enriched_copper", "mysticalagriculture:tertium_essence", "refinedstorage:quartz_enriched_copper", "mysticalagriculture:tertium_essence", "refinedstorage:quartz_enriched_copper", "mysticalagriculture:tertium_essence"], bee: false },
+        { out: 'mysticalagriculture:mystical_diamond_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["eternalores:compressed_diamond_2x", "mysticalagriculture:diamond_seeds", "eternalores:compressed_diamond_2x", "mysticalagriculture:diamond_seeds", "eternalores:compressed_diamond_2x", "mysticalagriculture:diamond_seeds", "eternalores:compressed_diamond_2x", "mysticalagriculture:diamond_seeds"], bee: false },
+        { out: 'mysticalagriculture:mystical_emerald_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["eternalores:compressed_emerald_2x", "mysticalagriculture:emerald_seeds", "eternalores:compressed_emerald_2x", "mysticalagriculture:emerald_seeds", "eternalores:compressed_emerald_2x", "mysticalagriculture:emerald_seeds", "eternalores:compressed_emerald_2x", "mysticalagriculture:emerald_seeds"], bee: false },
+        { out: 'mysticalagriculture:mystical_netherite_seeds', in: "mysticalagriculture:prosperity_seed_base", ing: ["minecraft:netherite_block", "mysticalagriculture:netherite_seeds", "minecraft:netherite_block", "mysticalagriculture:netherite_seeds", "minecraft:netherite_block", "mysticalagriculture:netherite_seeds", "minecraft:netherite_block", "mysticalagriculture:netherite_seeds"], bee: false },
 
         // Bees
         { out: "awakened_supremium", in: "supremium", ing: ["reliquary:witherless_rose", "minecraft:dragon_egg", "reliquary:witherless_rose", "minecraft:dragon_egg", "reliquary:witherless_rose", "minecraft:dragon_egg", "reliquary:witherless_rose", "minecraft:dragon_egg"], bee: true },
@@ -332,6 +345,10 @@ ServerEvents.recipes(catalyst => {
         { type: 'row', mats: ["mysticalagriculture:xychorium_essence", "mysticalagriculture:deepslate_essence", "mysticalagriculture:xychorium_essence"], out: "xycraft_world:kivi", count: 32, mode: 1 },
         { type: 'row', mats: ["mysticalagriculture:flux_essence", "mysticalagriculture:flux_essence", "mysticalagriculture:flux_essence"], out: "fluxnetworks:flux_dust", count: 6, mode: 1 },
         { type: 'row', mats: ["mysticalagriculture:soulium_essence", "mysticalagriculture:soulium_essence", "mysticalagriculture:soulium_essence"], out: "mysticalagriculture:soulstone_cobble", count: 16, mode: 1},
+        { type: 'row', mats: ['mysticalagriculture:netherite_essence', 'mysticalagriculture:netherite_essence', 'mysticalagriculture:netherite_essence'], out: 'minecraft:netherite_scrap', count: 4, mode: 1},
+        { type: 'row', mats: ['mysticalagriculture:mystical_diamond_essence', 'mysticalagriculture:mystical_diamond_essence', 'mysticalagriculture:mystical_diamond_essence'], out: 'minecraft:diamond', count: 8, mode: 1},
+        { type: 'row', mats: ['mysticalagriculture:mystical_emerald_essence', 'mysticalagriculture:mystical_emerald_essence', 'mysticalagriculture:mystical_emerald_essence'], out: 'minecraft:emerald', count: 8, mode: 1},
+        { type: 'row', mats: ['mysticalagriculture:mystical_netherite_essence', 'mysticalagriculture:mystical_netherite_essence', 'mysticalagriculture:mystical_netherite_essence'], out: 'minecraft:netherite_ingot', count: 2, mode: 1},
 
         // Diagonals
         { type: 'diagonal', mats: ["mysticalagriculture:stone_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:stone_essence"], out: "ars_nouveau:sourcestone", count: 32 },
@@ -345,6 +362,10 @@ ServerEvents.recipes(catalyst => {
         // Squares
         { type: 'square', mats: ["mysticalagriculture:zombie_essence", "mysticalagriculture:dark_gem_essence", "mysticalagriculture:dark_gem_essence", "mysticalagriculture:zombie_essence"], out: "evilcraft:flesh_werewolf", count: 1 },
         { type: 'square', mats: ["mysticalagriculture:dark_gem_essence", "mysticalagriculture:deepslate_essence", "mysticalagriculture:deepslate_essence", "mysticalagriculture:dark_gem_essence"], out: "evilcraft:dark_brick", count: 6 },
+        { type: 'square2', mats: ['mysticalagriculture:enriched_copper_essence'], out: 'refinedstorage:quartz_enriched_copper', count: 12 },
+        { type: 'square2', mats: ['mysticalagriculture:black_quartz_essence'], out: 'actuallyadditions:black_quartz', count: 8 },
+        { type: 'square2', mats: ['mysticalagriculture:force_gem_essence'], out: 'forcecraft:force_gem', count: 2 },
+        { type: 'square2', mats: ['mysticalagriculture:fluxite_essence'], out: 'oritech:fluxite', count: 4 },
     ];
 
     geometricRecipes.forEach(r => {
@@ -354,6 +375,7 @@ ServerEvents.recipes(catalyst => {
         if (r.type === 'diagonal') diagonal(r.mats, r.out, r.count);
         if (r.type === 'line') line(r.mats, r.out, r.count);
         if (r.type === 'square') square(r.mats, r.out, r.count);
+        if (r.type === 'square2') square2(r.mats, r.out, r.count);
     });
 
     // Creative essence with insanium bee

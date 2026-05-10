@@ -58,6 +58,7 @@ ServerEvents.recipes(catalyst => {
         {type: 'mysticalagriculture:awakening', output: 'productivebees:spawn_egg_configurable_bee'},
         {output: 'mysticalagriculture:sculk_seeds'}, //MA one
         {input: 'mysticalagriculture:sculk_essence'},
+        {id: 'mysticalagradditions:essence/minecraft/netherite_ingot'},
 
         // Oritech
         'oritech:crafting/iron',

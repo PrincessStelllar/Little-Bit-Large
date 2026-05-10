@@ -86,6 +86,8 @@ ItemEvents.modifyTooltips(catalyst => {
         ['arcane'],
         ['industrial'],
         ['plastic'],
+        ['black_quartz'],
+        ['enriched_copper'],
         ['prosperity'],
         ['xychorium'],
         ['dark_gem',   { biome: true }],

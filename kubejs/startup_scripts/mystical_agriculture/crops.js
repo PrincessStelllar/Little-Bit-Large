@@ -443,7 +443,7 @@ StartupEvents.init(catalyst => {
 
         CropBuilder("mystical_netherite", "Mystical Netherite")
             .tier("mystic")
-            .pattern(TEXTURE_PATTERNS.rock)
+            .pattern(TEXTURE_PATTERNS.ingot)
             .color(0x271c05)
             .glint()
             .dontPlant()
