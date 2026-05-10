@@ -10,7 +10,7 @@ ServerEvents.recipes(catalyst => {
     [
         "WS ",
     ],{
-        W: "minecraft:wool",
+        W: 'minecraft:white_wool',
         S: "minecraft:shears",
     
     }).id("catalyst:energized_power/cable_insulator");
