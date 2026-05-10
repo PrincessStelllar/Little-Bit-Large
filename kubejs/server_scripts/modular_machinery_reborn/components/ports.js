@@ -21,7 +21,7 @@ ServerEvents.recipes(catalyst => {
             A: core,
             B: top,
             C: bottom
-        }).id(`catalyst:mmr/ports/${input.split(':')[1]}_to_${output.split(':')[1]}`);;
+        }).id(`catalyst:mmr/ports/${input.split(':')[1]}_to_${output.split(':')[1]}`);
     };
 
     catalyst.shaped(
@@ -145,7 +145,6 @@ ServerEvents.recipes(catalyst => {
         [`${mmr}casing_plain`,                  `${mmr}parallel_hatch_basic`,  'mekanism:robit',          'mekanism:robit',                     'stevescarts:component_cleaning_fan'],
         [`${mmr}parallel_hatch_basic`,          `${mmr}parallel_hatch_medium`, `${mmr}casing_reinforced`, `${mmr}casing_reinforced`,            `${mmr}casing_reinforced`],
         ['minecraft:paper',                     `${mmr}blueprint`,             `${mmr}outputbus_tiny`,    'minecraft:blue_dye',                 'minecraft:blue_dye'],
-        ['minecraft:paper',                     `${mmr}blueprint`,             `${mmr}inputbus_tiny`,    'minecraft:blue_dye',                 'minecraft:blue_dye'],
         ['minecraft:repeater',                  `${mmr}redstone_port`,         `${mmr}casing_plain`,      'minecraft:redstone',                 'minecraft:redstone'],
         ['minecraft:redstone',                  `${mmr}entity_detector`,       `${mmr}casing_plain`,      'hostilenetworks:deep_learner',       'hostilenetworks:prediction_matrix'],
     ];
@@ -170,10 +169,10 @@ ServerEvents.recipes(catalyst => {
                 E: 'eternalores:blaze_block',
                 F: 'utilitarian:tps_meter'
             }
-        ).id(`catalyst:mmr/ports/tiny_output_bus`);
+        ).id(`catalyst:mmr/ports/dimensional_detector_detector`);
 
     catalyst.shaped(
-            Item.of("modular_machinery_reborn:casing_gear"),
+            Item.of('modular_machinery_reborn:casing_gearbox'),
             [
                 'ABA',
                 'BCB',
@@ -184,7 +183,18 @@ ServerEvents.recipes(catalyst => {
                 B: 'eternalores:gear_steel',
                 C: 'modular_machinery_reborn:casing_plain'
             }
-        ).id(`catalyst:mmr/ports/tiny_input_bus`);
+        ).id(`catalyst:mmr/ports/casing_gear`);
+    
+    catalyst.shaped(Item.of(`${mmr}blueprint`, 1), [
+        'B B',
+        'DAD',
+        'C C'
+    ], {
+        D: "minecraft:paper",
+        A: `${mmr}inputbus_tiny`,
+        B: 'minecraft:blue_dye',
+        C: 'minecraft:blue_dye'
+    }).id(`catalyst:mmr/ports/blueprint_output`);
 
     console.log("[CatJS] Added hatches and buses for MMR")
 });
