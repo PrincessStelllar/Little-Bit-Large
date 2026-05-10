@@ -119,7 +119,7 @@ ServerEvents.recipes(catalyst => {
     }
 
     function line(mats, output, count) {
-        catalyst.shaped(`${count}x ${output}`, [' A', ' B ', 'C '], { A: mats[0], B: mats[1], C: mats[2] })
+        catalyst.shaped(`${count}x ${output}`, [' A ', ' B ', ' C '], { A: mats[0], B: mats[1], C: mats[2] })
         .id(`catalyst:shaped/line/${getCleanName(output)}_${mod}`)
         mod++;
     }
