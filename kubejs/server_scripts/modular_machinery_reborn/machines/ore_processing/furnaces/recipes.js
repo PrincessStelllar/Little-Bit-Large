@@ -18,6 +18,15 @@ ServerEvents.recipes(catalyst => {
         return r;
     };
 
+    const addFurnaceRequirements2 = (recipeBuilder) => {
+        let r = recipeBuilder
+            .progressData(ProgressData.create().x(54).y(20))
+            .width(110)
+            .height(60)
+
+        return r;
+    };
+
     catalyst.forEachRecipe({ type: 'minecraft:smelting' }, recipe => {
         let outputItemRaw = recipe.originalRecipeResult;
         
@@ -65,7 +74,7 @@ ServerEvents.recipes(catalyst => {
                                     .hide()
                                     .id(`catalyst:mmr/multismelter/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
 
-                                addFurnaceRequirements(recipe);
+                                addFurnaceRequirements2(recipe);
                             }
                             recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_multismelter", 50)
                                 .requireItem(inputItem, 0, 10) 
@@ -75,7 +84,7 @@ ServerEvents.recipes(catalyst => {
                                 .hide()
                                 .id(`catalyst:mmr/adv_multismelter/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
 
-                            addFurnaceRequirements(recipe);
+                            addFurnaceRequirements2(recipe);
                         }
                         else
                         {
@@ -94,22 +103,24 @@ ServerEvents.recipes(catalyst => {
                                 .produceItem(outOverworld, 60, 10)
                                 .requireEnergyPerTick(10000)
                                 .jei()
-                                .requireItem(inputItem, 5, 10) 
-                                .produceItem(outOverworld, 60, 10)
+                                .requireItem(inputItem, 20, 20) 
+                                .produceItem(outOverworld, 90, 20)
+                                .requireEnergyPerTick(10000)
                                 .id(`catalyst:mmr/multismelter/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
 
-                            addFurnaceRequirements(recipe);
+                            addFurnaceRequirements2(recipe);
 
                             recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_multismelter", 50)
                                 .requireItem(inputItem, 5, 10) 
                                 .produceItem(outOverworld, 60, 10)
                                 .requireEnergyPerTick(50000)
                                 .jei()
-                                .requireItem(inputItem, 5, 10) 
-                                .produceItem(outOverworld, 60, 10)
+                                .requireItem(inputItem, 20, 20) 
+                                .produceItem(outOverworld, 90, 20)
+                                .requireEnergyPerTick(50000)
                                 .id(`catalyst:mmr/adv_multismelter/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
 
-                            addFurnaceRequirements(recipe);
+                            addFurnaceRequirements2(recipe);
                         }
                     })
 
