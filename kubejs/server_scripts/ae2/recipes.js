@@ -18,6 +18,72 @@ ServerEvents.recipes(catalyst => {
     
     }).id("catalyst:ae2/tick_analyser");
 
+    catalyst.custom({
+        type: "extendedae:crystal_assembler",
+        input_items: [
+            { ingredient: { item: "megacells:mega_pattern_provider" } },
+            { amount: 3, ingredient: { item: "ae2:capacity_card" } },
+            { amount: 3, ingredient: { item: "minecraft:crafting_table" } },
+            { ingredient: { item: "extendedae:concurrent_processor" } },
+            { amount: 6, ingredient: { tag: "ae2:glass_cable" } }
+        ],
+        output: { count: 1, id: "extendedae:ex_pattern_provider" }
+    }).id('catalyst:extendedae/ex_pattern_provider_cheap');
+
+    catalyst.custom({
+        type: "extendedae:crystal_assembler",
+        input_items: [
+            { amount: 4, ingredient: { tag: "ae2:pattern_provider" } },
+            { amount: 3, ingredient: { item: "ae2:capacity_card" } },
+            { amount: 3, ingredient: { item: "minecraft:crafting_table" } },
+            { ingredient: { item: "extendedae:concurrent_processor" } },
+            { amount: 6, ingredient: { tag: "ae2:glass_cable" } }
+        ],
+        output: { count: 1, id: "extendedae:ex_pattern_provider" }
+    }).id('catalyst:extendedae/ex_pattern_provider_normal');
+
+    catalyst.custom({
+        type: "extendedae:crystal_assembler",
+        input_items: [
+            { ingredient: { item: "megacells:mega_interface" } },
+            { amount: 3, ingredient: { item: "ae2:capacity_card" } },
+            { amount: 3, ingredient: { tag: "c:glass_blocks" } },
+            { ingredient: { item: "extendedae:concurrent_processor" } },
+            { amount: 6, ingredient: { tag: "ae2:glass_cable" } }
+        ],
+        output: { count: 1, id: "extendedae:ex_interface" }
+    }).id('catalyst:extendedae/ex_interface_cheap');
+
+    catalyst.custom({
+        type: "extendedae:crystal_assembler",
+        input_items: [
+            { amount: 4, ingredient: { tag: "ae2:interface" } },
+            { amount: 3, ingredient: { item: "ae2:capacity_card" } },
+            { amount: 3, ingredient: { tag: "c:glass_blocks" } },
+            { ingredient: { item: "extendedae:concurrent_processor" } },
+            { amount: 6, ingredient: { tag: "ae2:glass_cable" } }
+        ],
+        output: { count: 1, id: "extendedae:ex_interface" }
+    }).id('catalyst:extendedae/ex_interface_normal');
+
+    catalyst.custom({
+        type: "extendedae:crystal_assembler",
+        input_items: [
+            { amount: 4, ingredient: { item: "extendedae:ex_pattern_provider" } },
+            { amount: 2, ingredient: { item: "extendedae:concurrent_processor" } }
+        ],
+        output: { count: 1, id: "expandedae:exp_pattern_provider" }
+    }).id('catalyst:expandedae/exp_pattern_provider_from_extended');
+
+    catalyst.custom({
+        type: "extendedae:crystal_assembler",
+        input_items: [
+            { ingredient: { item: "advanced_ae:adv_pattern_provider" } },
+            { amount: 2, ingredient: { item: "extendedae:concurrent_processor" } }
+        ],
+        output: { count: 1, id: "expandedae:exp_pattern_provider" }
+    }).id('catalyst:expandedae/exp_pattern_provider_from_advanced');
+
     console.log("[CatJS] Added AE2 recipes")
 });
 

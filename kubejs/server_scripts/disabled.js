@@ -11,6 +11,9 @@ ServerEvents.recipes(catalyst => {
 
         // AE2
         'ae2:network/blocks/spatial_anchor',
+        { id: "extendedae:assembler/ex_pattern_provider" },
+        { id: "extendedae:assembler/ex_interface" },
+        { id: "expandedae:crafting/exp_pattern_provider_ext" },
 
         // Reliquary
         'reliquary:alkahestry_tome',
@@ -58,7 +61,7 @@ ServerEvents.recipes(catalyst => {
         {type: 'mysticalagriculture:awakening', output: 'productivebees:spawn_egg_configurable_bee'},
         {output: 'mysticalagriculture:sculk_seeds'}, //MA one
         {input: 'mysticalagriculture:sculk_essence'},
-        {id: 'mysticalagradditions:essence/minecraft/netherite_ingot'},
+        {id: 'mysticalagriculture:essence/minecraft/netherite_ingot'},
 
         // Oritech
         'oritech:crafting/iron',
