@@ -54,7 +54,8 @@ ServerEvents.recipes(catalyst => {
         {input: 'mysticalagriculture:deepslate_prosperity_ore', output: 'mysticalagriculture:prosperity_shard', amount: 6},
         {input: 'mysticalagradditions:nether_prosperity_ore', output: 'mysticalagriculture:prosperity_shard', amount: 6},
         {input: 'mysticalagradditions:end_prosperity_ore', output: 'mysticalagriculture:prosperity_shard', amount: 12},
-        {input: 'geore:ancient_debris_shard', output: 'minecraft:netherite_scrap', amount: 1}
+        {input: 'geore:ancient_debris_shard', output: 'minecraft:netherite_scrap', amount: 1},
+        {input: 'malum:cthonic_gold_ore', output: 'malum:cthonic_gold_fragment', amount: 4}
     ];
 
     const blacklist = [
@@ -64,6 +65,8 @@ ServerEvents.recipes(catalyst => {
         'geore:topaz_shard',
         'geore:monazite_shard',
         'geore:tungsten_shard',
+        'malum:cthonic_gold',
+        'malum:cthonic_gold_fragment',
     ];
 
 
