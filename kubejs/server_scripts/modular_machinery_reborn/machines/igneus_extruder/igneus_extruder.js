@@ -34,13 +34,16 @@ MMREvents.machines(catalyst => {
         ])
         .keys({
         "a":"immersiveengineering:steel_scaffolding_standard",
-        "b":"minecraft:air",
         "c":"create:railway_casing",
         "d":"rechiseled:netherite_block_smooth",
         "e":"create_new_age:reactor_glass",
-        "f":"modular_machinery_reborn:casing_plain[connect_textures=true]",
+        "f":[ 
+            "modular_machinery_reborn:casing_plain",
+            "#modular_machinery_reborn:itembus",
+            '#modular_machinery_reborn:energyhatch'
+        ],
         "g":"minecraft:magma_block",
-        "h":"enderio:dark_steel_bars[south=true+east=true+north=true+west=true]",
+        "h":"enderio:dark_steel_bars",
         "i":"minecraft:blue_ice"}))});
 /*
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
