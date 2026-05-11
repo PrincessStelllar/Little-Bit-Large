@@ -62,6 +62,24 @@ ServerEvents.recipes(catalyst => {
                                     .id(`catalyst:mmr/primitive_furnace/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
 
                                 addFurnaceRequirements(recipe);
+
+                                recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:nether_furnace", 350)
+                                    .requireItem(inputItem, 0, 10) 
+                                    .produceItem(outOverworld, 40, 10)
+                                    .priority(number)
+                                    .hide()
+                                    .id(`catalyst:mmr/primitive_soul_furnace/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
+
+                                addFurnaceRequirements(recipe);
+
+                                recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:end_furnace", 300)
+                                    .requireItem(inputItem, 0, 10) 
+                                    .produceItem(outOverworld, 40, 10)
+                                    .priority(number)
+                                    .hide()
+                                    .id(`catalyst:mmr/primitive_end_furnace/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
+
+                                addFurnaceRequirements(recipe);
                             }
 
                             if(number < 512)
@@ -76,6 +94,7 @@ ServerEvents.recipes(catalyst => {
 
                                 addFurnaceRequirements2(recipe);
                             }
+
                             recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:advanced_multismelter", 50)
                                 .requireItem(inputItem, 0, 10) 
                                 .produceItem(outOverworld, 40, 10)
@@ -95,6 +114,20 @@ ServerEvents.recipes(catalyst => {
                                 .requireItem(inputItem, 5, 10) 
                                 .produceItem(outOverworld, 60, 10)
                                 .id(`catalyst:mmr/primitive_furnace/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
+
+                            addFurnaceRequirements(recipe);
+
+                            recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:nether_furnace", 350)
+                                .requireItem(inputItem, 5, 10) 
+                                .produceItem(outOverworld, 60, 10)
+                                .id(`catalyst:mmr/primitive_soul_furnace/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
+
+                            addFurnaceRequirements(recipe);
+
+                            recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:end_furnace", 300)
+                                .requireItem(inputItem, 5, 10) 
+                                .produceItem(outOverworld, 60, 10)
+                                .id(`catalyst:mmr/primitive_end_furnace/${number}/${inputId.replace(":", "-")}_to_${outOverworld.id.replace(":", "-")}`)
 
                             addFurnaceRequirements(recipe);
 
