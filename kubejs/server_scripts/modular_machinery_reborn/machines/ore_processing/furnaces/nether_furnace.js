@@ -1,6 +1,6 @@
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:nether_furnace")
-        .color('#ff66605f')
+        .color('#ff5b1215')
         .name('Soul Furnace')
         .structure(
             MMRStructureBuilder.create()
