@@ -24,7 +24,7 @@ MMREvents.machines(catalyst => {
                 '#minecraft:walls'
             ],
             "d": [
-                "minecraft:stone_slab",
+                '#minecraft:slabs',
                 'modular_machinery_reborn:outputbus_tiny'
             ],
             "e": [
