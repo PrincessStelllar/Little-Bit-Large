@@ -36,15 +36,19 @@ ServerEvents.recipes(catalyst => {
         {input: 'rftoolsbase:dimensionalshard_overworld', output: 'rftoolsbase:dimensionalshard', amount: 1},
         {input: 'rftoolsbase:dimensionalshard_nether', output: 'rftoolsbase:dimensionalshard', amount: 2},
         {input: 'rftoolsbase:dimensionalshard_end', output: 'rftoolsbase:dimensionalshard', amount: 3},
+        
         {input: 'railcraft:firestone_ore', output: 'railcraft:raw_firestone', amount: 2},
         {input: 'eternalores:raw_catalyrium', output: 'eternalores:catalyrium_ingot', amount: 1},
         {input: 'evilcraft:dark_ore_deepslate', output: 'evilcraft:dark_gem', amount: 2},
+        
         {input: 'minecraft:redstone_ore', output: 'minecraft:redstone', amount: 6},
         {input: 'minecraft:deepslate_redstone_ore', output: 'minecraft:redstone', amount: 7},
         {input: 'minecraft:lapis_ore', output: 'minecraft:lapis_lazuli', amount: 6},
         {input: 'minecraft:deepslate_lapis_ore', output: 'minecraft:lapis_lazuli', amount: 7},
         {input: 'minecraft:coal_ore', output: 'minecraft:coal', amount: 3},
         {input: 'minecraft:deepslate_coal_ore', output: 'minecraft:coal', amount: 4},
+
+        //MA
         {input: 'mysticalagriculture:inferium_ore', output: 'mysticalagriculture:inferium_essence', amount: 12},
         {input: 'mysticalagriculture:deepslate_inferium_ore', output: 'mysticalagriculture:inferium_essence', amount: 16},
         {input: 'mysticalagradditions:nether_inferium_ore', output: 'mysticalagriculture:inferium_essence', amount: 14},
@@ -53,8 +57,34 @@ ServerEvents.recipes(catalyst => {
         {input: 'mysticalagriculture:deepslate_prosperity_ore', output: 'mysticalagriculture:prosperity_shard', amount: 6},
         {input: 'mysticalagradditions:nether_prosperity_ore', output: 'mysticalagriculture:prosperity_shard', amount: 6},
         {input: 'mysticalagradditions:end_prosperity_ore', output: 'mysticalagriculture:prosperity_shard', amount: 12},
+        
         {input: 'geore:ancient_debris_shard', output: 'minecraft:netherite_scrap', amount: 1},
-        {input: 'malum:cthonic_gold_ore', output: 'malum:cthonic_gold_fragment', amount: 4}
+        {input: 'malum:cthonic_gold_ore', output: 'malum:cthonic_gold_fragment', amount: 4},
+
+        //Xychros blue
+        {input: 'xycraft_world:xychorium_ore_stone_blue', output: 'xycraft_world:xychorium_gem_blue', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_deepslate_blue', output: 'xycraft_world:xychorium_gem_blue', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_kivi_blue', output: 'xycraft_world:xychorium_gem_blue', amount: 10},
+
+        //Xychros green
+        {input: 'xycraft_world:xychorium_ore_stone_green', output: 'xycraft_world:xychorium_gem_green', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_deepslate_green', output: 'xycraft_world:xychorium_gem_green', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_kivi_green', output: 'xycraft_world:xychorium_gem_green', amount: 10},
+
+        //Xychros red
+        {input: 'xycraft_world:xychorium_ore_stone_red', output: 'xycraft_world:xychorium_gem_red', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_deepslate_red', output: 'xycraft_world:xychorium_gem_red', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_kivi_red', output: 'xycraft_world:xychorium_gem_red', amount: 10},
+
+        //Xychros dark
+        {input: 'xycraft_world:xychorium_ore_stone_dark', output: 'xycraft_world:xychorium_gem_dark', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_deepslate_dark', output: 'xycraft_world:xychorium_gem_dark', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_kivi_dark', output: 'xycraft_world:xychorium_gem_dark', amount: 10},
+
+        //Xychros light
+        {input: 'xycraft_world:xychorium_ore_stone_light', output: 'xycraft_world:xychorium_gem_light', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_deepslate_light', output: 'xycraft_world:xychorium_gem_light', amount: 10},
+        {input: 'xycraft_world:xychorium_ore_kivi_light', output: 'xycraft_world:xychorium_gem_light', amount: 10},
     ];
 
     const blacklist = [

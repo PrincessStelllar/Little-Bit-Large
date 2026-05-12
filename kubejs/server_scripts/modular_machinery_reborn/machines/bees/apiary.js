@@ -28,7 +28,6 @@ MMREvents.machines(catalyst => {
                         "#modular_machinery_reborn:outputbus",
                         "#modular_machinery_reborn:fluidinputhatch",
                         "#modular_machinery_reborn:inputbus",
-                        "#modular_machinery_reborn:parallelhatch",
                         "modular_machinery_reborn:casing_plain"
                     ],
                     "b": ["ars_nouveau:sourcestone_large_bricks"],
