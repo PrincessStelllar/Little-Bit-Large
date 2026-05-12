@@ -14,6 +14,7 @@ ServerEvents.recipes(catalyst => {
         let material = item.getId().replace('geore:budding_', '');
 
         // Create budding conversion recipe
+        if(material.contains("eternalores:")) return;
         catalyst.custom({
             type: "ars_nouveau:budding_conversion",
             input: `geore:${material}_block`,
