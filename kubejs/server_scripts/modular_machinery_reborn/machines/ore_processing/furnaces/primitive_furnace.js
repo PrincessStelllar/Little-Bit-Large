@@ -4,7 +4,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 */
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:primitive_furnace")
-        .color('#FFb68528')
+        .color('#FF5d4737')
         .name('Primitive Furnace')
         .structure(
             MMRStructureBuilder.create()
