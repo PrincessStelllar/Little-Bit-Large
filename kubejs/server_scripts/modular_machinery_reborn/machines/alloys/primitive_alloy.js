@@ -22,11 +22,11 @@ MMREvents.machines(catalyst => {
                 "c": ["minecraft:campfire"],
                 "d": ["modular_machinery_reborn:outputbus_tiny"],
                 "e": ["minecraft:mud_brick_slab[type=bottom]"],
-                "f": ["minecraft:mud_brick_stairs[facing=west,half=bottom,shape=straight]"],
-                "g": ["minecraft:mud_brick_stairs[facing=south,half=bottom,shape=straight]"],
-                "h": ["minecraft:iron_trapdoor[facing=north,half=top,open=false,powered=false]"],
-                "i": ["minecraft:mud_brick_stairs[facing=north,half=bottom,shape=straight]"],
-                "j": ["minecraft:mud_brick_stairs[facing=east,half=bottom,shape=straight]"]
+                "f": ["minecraft:mud_brick_stairs"],
+                "g": ["minecraft:mud_brick_stairs"],
+                "h": ["minecraft:iron_trapdoor[half=top,open=false]"],
+                "i": ["minecraft:mud_brick_stairs"],
+                "j": ["minecraft:mud_brick_stairs"]
             })
         )
         .texture("modular_machinery_reborn:item_input_bus_tiny",

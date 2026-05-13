@@ -397,7 +397,8 @@ ServerEvents.recipes(event => {
             result_count: 1,
             inputs: [
                 { id: "minecraft:iron_ingot", count: 1 },
-                { id: "minecraft:charcoal", count: 12 }
+                { id: "minecraft:charcoal", count: 12 },
+                { id: "eternalores:rose_gold_ingot", count: 1}
             ]
         },
         {
@@ -405,7 +406,8 @@ ServerEvents.recipes(event => {
             result_count: 2,
             inputs: [
                 { id: "minecraft:iron_ingot", count: 1 },
-                { id: "minecraft:coal", count: 6 }
+                { id: "minecraft:coal", count: 6 },
+                { id: "eternalores:rose_gold_ingot", count: 1}
             ]
         },
         {
@@ -413,7 +415,8 @@ ServerEvents.recipes(event => {
             result_count: 4,
             inputs: [
                 { id: "minecraft:iron_ingot", count: 1 },
-                { id: "eternalores:bituminous_coal", count: 2 }
+                { id: "eternalores:bituminous_coal", count: 2 },
+                { id: "eternalores:rose_gold_ingot", count: 1}
             ]
         },
 
@@ -450,7 +453,7 @@ ServerEvents.recipes(event => {
             result: "eternalores:steel_ingot",
             result_count: 1,
             inputs: [
-                { id: "minecraft:iron_ingot", count: 1 },
+                { id: "eternalores:wrought_iron_ingot", count: 1 },
                 { id: "minecraft:charcoal", count: 4 }
             ]
         },
@@ -458,7 +461,7 @@ ServerEvents.recipes(event => {
             result: "eternalores:steel_ingot",
             result_count: 2,
             inputs: [
-                { id: "minecraft:iron_ingot", count: 1 },
+                { id: "eternalores:wrought_iron_ingot", count: 1 },
                 { id: "minecraft:coal", count: 2 }
             ]
         },
@@ -466,7 +469,7 @@ ServerEvents.recipes(event => {
             result: "eternalores:steel_ingot",
             result_count: 3,
             inputs: [
-                { id: "minecraft:iron_ingot", count: 1 },
+                { id: "eternalores:wrought_iron_ingot", count: 1 },
                 { id: "eternalores:bituminous_coal", count: 1 }
             ]
         },
@@ -484,7 +487,7 @@ ServerEvents.recipes(event => {
             result: "eternalores:wrought_iron_ingot",
             result_count: 2,
             inputs: [
-                { id: "minecraft:iron_ingot", count: 2 },
+                { id: "eternalores:iron_dust", count: 2 },
                 { id: "minecraft:charcoal", count: 1 }
             ]
         },
@@ -594,7 +597,7 @@ ServerEvents.recipes(event => {
     custom_recipes.forEach(r => {
         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].forEach(parallel => {
             i++;
-            
+
             let recipe = event.recipes.modular_machinery_reborn.machine_recipe(machine_id, base_time)
                 .width(110)
                 .height(60)
