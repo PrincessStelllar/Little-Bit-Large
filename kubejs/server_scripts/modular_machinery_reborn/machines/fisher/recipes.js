@@ -98,9 +98,17 @@ ServerEvents.recipes(event => {
             }
         }
 
-        recipe.id(`catalyst:mmr/oceanic_sifter/${r.name}`);
+        recipe.id(`catalyst:mmr/fisher/${r.name}`);
     });
 });
+
+MMREvents.extraTooltips(event => {
+    event.create("mmr:fisher", 'item')
+    .add("Boat from BitGardener")
+
+    event.create("mmr:fisher", 'gui')
+    .add("Boat from BitGardener")
+})
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
