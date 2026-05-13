@@ -175,6 +175,39 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Added Furnaces recipes from smelting")
 
 });
+
+MMREvents.extraTooltips(event => {
+  // Primitive Furnace
+  event.create("mmr:primitive_furnace", 'item')
+    .add("[Primitive Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+  event.create("mmr:primitive_furnace", 'gui')
+    .add("[Primitive Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+
+  // Nether Furnace
+  event.create("mmr:nether_furnace", 'item')
+    .add("[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+  event.create("mmr:nether_furnace", 'gui')
+    .add("[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+
+  // End Furnace
+  event.create("mmr:end_furnace", 'item')
+    .add("[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+  event.create("mmr:end_furnace", 'gui')
+    .add("[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+
+  // Multismelter (16 recetas)
+  event.create("mmr:multismelter", 'item')
+    .add("[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+  event.create("mmr:multismelter", 'gui')
+    .add("[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+
+  // Advanced Multismelter
+  event.create("mmr:advanced_multismelter", 'item')
+    .add("[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+  event.create("mmr:advanced_multismelter", 'gui')
+    .add("[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+})
+
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.

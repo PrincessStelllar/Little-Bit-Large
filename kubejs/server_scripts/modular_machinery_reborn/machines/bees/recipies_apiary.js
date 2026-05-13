@@ -352,6 +352,22 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Finished centrifuges recipes")
 })
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:advanced_apiary", 'item')
+    .add("Can only do 1 bee type at the time, but produces the same as multiple of them!")
+    .add("You can boost some this multiblock!")
+    .add(" - Genes: Productivity trait increases output and speed, while behavior trait allows it to work on specific part of the day, similar to weather trait")
+    .add(" - Omega Upgrades: Adds more output, up to 64 combs")
+    .add(" - Sugarbag comb: Produces 16 extra combs, max 1 items")
+
+    event.create("mmr:advanced_apiary", 'gui')
+    .add("Can only do 1 bee type at the time, but produces the same as multiple of them!")
+    .add("You can boost some this multiblock!")
+    .add(" - Genes: Productivity trait increases output and speed, while behavior trait allows it to work on specific part of the day, similar to weather trait")
+    .add(" - Omega Upgrades: Adds more output, up to 64 combs")
+    .add(" - Sugarbag comb: Produces 16 extra combs, max 1 items")
+})
+
 MMREvents.recipeFunction("apiary_recipe_each", catalyst => {
     let controler = catalyst.machine;
     let level = catalyst.getBlock().getLevel();

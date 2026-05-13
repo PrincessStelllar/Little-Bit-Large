@@ -17,6 +17,22 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Geode multi recipe added")
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:geo_syntex", 'item')
+    .add("Needs to have the budding and clusters of the same type to be able to produce!")
+    .add("Needs some items to be able to produce:")
+    .add(" - Amethyst Golem Charm: Produces 10 per item, max 4 items")
+    .add(" - Amethyst Budding: Produces 8 per item, max 3 items")
+    .add(" - Amethyst Cluster: Produces 16 per item, max 1 items")
+
+    event.create("mmr:geo_syntex", 'gui')
+    .add("Needs to have the budding and clusters of the same type to be able to produce!")
+    .add("Needs some items to be able to produce:")
+    .add(" - Amethyst Golem Charm: Produces 10 per item, max 4 items")
+    .add(" - Amethyst Budding: Produces 8 per item, max 3 items")
+    .add(" - Amethyst Cluster: Produces 16 per item, max 1 items")
+})
+
 MMREvents.recipeFunction("geo_chooser", catalyst => {
     let controller = catalyst.machine;
     let level = catalyst.getTile().getLevel();

@@ -329,6 +329,14 @@ ServerEvents.recipes(catalyst => {
 
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:celestial_forge", 'item')
+    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....")
+
+    event.create("mmr:celestial_forge", 'gui')
+    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....")
+})
+
 MMREvents.recipeFunction("celestial_end", event => {
     let rolls = event.get(0);
     let machine = event.machine;

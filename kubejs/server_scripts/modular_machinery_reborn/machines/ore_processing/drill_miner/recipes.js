@@ -50,6 +50,14 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Finished Head Drill multi recipes")
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:drill_miner", 'item')
+    .add("This machine needs mobs inside to work!")
+
+    event.create("mmr:drill_miner", 'gui')
+    .add("This machine needs mobs inside to work!")
+})
+
 MMREvents.recipeFunction("souls", catalyst => {
     let level = catalyst.getTile().getLevel();
     let controllerPos = catalyst.getTile().getBlockPos();

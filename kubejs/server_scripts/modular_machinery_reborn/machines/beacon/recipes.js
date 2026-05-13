@@ -246,6 +246,14 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Added Beacon effects recipes");
 })
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:personal_beacon", 'item')
+    .add("It can only affect 1 player at the time based on the nametag's name")
+
+    event.create("mmr:personal_beacon", 'gui')
+    .add("It can only affect 1 player at the time based on the nametag's name")
+})
+
 function getTargetPlayerName(machine)
 {
     let inputItems = machine.getItemsStored(IOType.INPUT);

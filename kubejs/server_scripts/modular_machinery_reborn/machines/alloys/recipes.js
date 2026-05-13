@@ -638,6 +638,14 @@ ServerEvents.recipes(event => {
     console.log("[CatJS] Finished Alloy Maker recipes")
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:primitive_alloy", 'item')
+    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time!")
+
+    event.create("mmr:primitive_alloy", 'gui')
+    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time!")
+})
+
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.

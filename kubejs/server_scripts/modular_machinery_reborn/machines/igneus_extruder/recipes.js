@@ -102,6 +102,16 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Finished Igneous Extruder recipes")
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:primitive_extruder", 'item')
+    .add("Needs to have a valid block placed 2 blocks below the controller to being able to work")
+    .add("Voids items if the hatches are full!")
+
+    event.create("mmr:primitive_extruder", 'gui')
+    .add("Needs to have a valid block placed 2 blocks below the controller to being able to work")
+    .add("Voids items if the hatches are full! ")
+})
+
 MMREvents.recipeFunction("mining_start", event => {
     let level = event.getTile().getLevel();
     let pos = event.getTile().getBlockPos().below(2);

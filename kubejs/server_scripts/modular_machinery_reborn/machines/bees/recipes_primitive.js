@@ -19,6 +19,16 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Finished Primitive Apiary recipes")
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:primitive_apiary", 'item')
+    .add("Produces from time to time some honey")
+    .add("No need to add bees.")
+
+    event.create("mmr:primitive_apiary", 'gui')
+    .add("Produces from time to time some honey")
+    .add("No need to add bees.")
+})
+
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
