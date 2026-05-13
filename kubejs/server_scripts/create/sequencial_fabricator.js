@@ -327,6 +327,8 @@ ServerEvents.recipes(catalyst => {
             deploy('#c:nuggets/iron')
         ])
         .withResults('create:precision_mechanism', 100)
+
+    console.log("[CatJS] Finished Create Sequencial recipes")
 })
 
 /* 

@@ -634,6 +634,8 @@ ServerEvents.recipes(event => {
             recipe.id(`catalyst:mmr/primitive_alloy/parallel_${parallel}/${i}/${r.result.replace(":", "_")}_${r.inputs.length}_${r.result_count}`);
         });
     });
+
+    console.log("[CatJS] Finished Alloy Maker recipes")
 });
 
 /* 
