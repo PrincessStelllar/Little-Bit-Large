@@ -22,15 +22,15 @@ MMREvents.machines(catalyst => {
                 "d": ["modular_machinery_reborn:outputbus_tiny"],
                 "f": ["modular_machinery_reborn:inputbus_tiny"],
                 "g": ["minecraft:purple_concrete"],
-                "h": ["minecraft:polished_blackstone_brick_stairs[facing=east,half=bottom,shape=straight]"],
-                "i": ["occultism:spirit_campfire[facing=west]"],
-                "j": ["minecraft:polished_blackstone_brick_stairs[facing=west,half=bottom,shape=straight]"],
+                "h": ["minecraft:polished_blackstone_brick_stairs"],
+                "i": ["occultism:spirit_campfire"],
+                "j": ["minecraft:polished_blackstone_brick_stairs"],
                 "k": ["minecraft:end_stone_brick_wall"],
                 "l": ["minecraft:polished_blackstone_brick_wall"],
                 "n": ["ars_additions:sourcestone_magelight_lantern[hanging=true]"],
                 "o": ["minecraft:polished_blackstone_brick_slab[type=bottom]"],
-                "p": ["minecraft:polished_blackstone_brick_stairs[facing=north,half=bottom,shape=straight]"],
-                "q": ["minecraft:polished_blackstone_brick_stairs[facing=south,half=bottom,shape=straight]"]
+                "p": ["minecraft:polished_blackstone_brick_stairs"],
+                "q": ["minecraft:polished_blackstone_brick_stairs"]
             })
         )
 })
