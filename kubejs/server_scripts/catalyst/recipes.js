@@ -34,6 +34,21 @@ ServerEvents.recipes(catalyst => {
     ).id("catalyst:ars/personal_beacon/light_crystal")
 
     console.log("[CatJS] Added Cat Item recipes")
+
+    catalyst.shaped(Item.of('catalystcore:spirit_agglomeratio', 1), [
+        'GSG',
+        'PEV',
+        'GRG'
+    ],{
+        E: 'evilcraft:inverted_potentia_empowered',
+        G: 'evilcraft:garmonbozia',
+        P: 'evilcraft:piercing_vengeance_focus',
+        S: 'evilcraft:necromancer_staff',
+        R: 'evilcraft:flesh_rejuvenated',
+        V: 'evilcraft:vengeance_essence'
+    })
+
+    console.log("[CatJS] Added recipe for end game items")
 })
 
 
