@@ -179,33 +179,33 @@ ServerEvents.recipes(catalyst => {
 MMREvents.extraTooltips(event => {
   // Primitive Furnace
   event.create("mmr:primitive_furnace", 'item')
-    .add("[Primitive Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_furnace.item"))
   event.create("mmr:primitive_furnace", 'gui')
-    .add("[Primitive Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_furnace.gui"))
 
   // Nether Furnace
   event.create("mmr:nether_furnace", 'item')
-    .add("[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.nether_furnace.item"))
   event.create("mmr:nether_furnace", 'gui')
-    .add("[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.nether_furnace.gui"))
 
   // End Furnace
   event.create("mmr:end_furnace", 'item')
-    .add("[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.end_furnace.item"))
   event.create("mmr:end_furnace", 'gui')
-    .add("[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.end_furnace.gui"))
 
   // Multismelter (16 recetas)
   event.create("mmr:multismelter", 'item')
-    .add("[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+    .add(Component.translatable("catalyst.mmr.tooltip.multismelter.item"))
   event.create("mmr:multismelter", 'gui')
-    .add("[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+    .add(Component.translatable("catalyst.mmr.tooltip.multismelter.gui"))
 
   // Advanced Multismelter
   event.create("mmr:advanced_multismelter", 'item')
-    .add("[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_multismelter.item"))
   event.create("mmr:advanced_multismelter", 'gui')
-    .add("[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!")
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_multismelter.gui"))
 })
 
 /* 

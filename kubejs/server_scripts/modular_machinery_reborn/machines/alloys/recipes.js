@@ -640,10 +640,10 @@ ServerEvents.recipes(event => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:primitive_alloy", 'item')
-    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_alloy.item"))
 
     event.create("mmr:primitive_alloy", 'gui')
-    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time!")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_alloy.gui"))
 })
 
 /* 

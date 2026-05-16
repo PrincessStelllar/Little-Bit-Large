@@ -331,10 +331,10 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:celestial_forge", 'item')
-    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....")
+    .add(Component.translatable("catalyst.mmr.tooltip.celestial_forge.item"))
 
     event.create("mmr:celestial_forge", 'gui')
-    .add("This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....")
+    .add(Component.translatable("catalyst.mmr.tooltip.celestial_forge.gui"))
 })
 
 MMREvents.recipeFunction("celestial_end", event => {

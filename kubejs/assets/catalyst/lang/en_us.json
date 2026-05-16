@@ -1,0 +1,59 @@
+{
+  "catalyst.mmr.tooltip.primitive_alloy.item": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
+  "catalyst.mmr.tooltip.primitive_alloy.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
+  
+  "catalyst.mmr.tooltip.personal_beacon.item": "It can only affect 1 player at the time based on the nametag's name",
+  "catalyst.mmr.tooltip.personal_beacon.gui": "It can only affect 1 player at the time based on the nametag's name",
+  
+  "catalyst.mmr.tooltip.primitive_apiary.item.1": "Produces from time to time some honey",
+  "catalyst.mmr.tooltip.primitive_apiary.item.2": "No need to add bees.",
+  "catalyst.mmr.tooltip.primitive_apiary.gui.1": "Produces from time to time some honey",
+  "catalyst.mmr.tooltip.primitive_apiary.gui.2": "No need to add bees.",
+
+  "catalyst.mmr.tooltip.advanced_apiary.item.1": "Can only do 1 bee type at the time, but produces the same as multiple of them!",
+  "catalyst.mmr.tooltip.advanced_apiary.item.2": "You can boost some this multiblock!",
+  "catalyst.mmr.tooltip.advanced_apiary.item.3": " - Genes: Productivity trait increases output and speed, while behavior trait allows it to work on specific part of the day, similar to weather trait",
+  "catalyst.mmr.tooltip.advanced_apiary.item.4": " - Omega Upgrades: Adds more output, up to 64 combs",
+  "catalyst.mmr.tooltip.advanced_apiary.item.5": " - Sugarbag comb: Produces 16 extra combs, max 1 items",
+  "catalyst.mmr.tooltip.advanced_apiary.gui.1": "Can only do 1 bee type at the time, but produces the same as multiple of them!",
+  "catalyst.mmr.tooltip.advanced_apiary.gui.2": "You can boost some this multiblock!",
+  "catalyst.mmr.tooltip.advanced_apiary.gui.3": " - Genes: Productivity trait increases output and speed, while behavior trait allows it to work on specific part of the day, similar to weather trait",
+  "catalyst.mmr.tooltip.advanced_apiary.gui.4": " - Omega Upgrades: Adds more output, up to 64 combs",
+  "catalyst.mmr.tooltip.advanced_apiary.gui.5": " - Sugarbag comb: Produces 16 extra combs, max 1 items",
+
+  "catalyst.mmr.tooltip.fisher.item": "Boat from BitGardener",
+  "catalyst.mmr.tooltip.fisher.gui": "Boat from BitGardener",
+
+  "catalyst.mmr.tooltip.geo_syntex.item.1": "Needs to have the budding and clusters of the same type to be able to produce!",
+  "catalyst.mmr.tooltip.geo_syntex.item.2": "Needs some items to be able to produce:",
+  "catalyst.mmr.tooltip.geo_syntex.item.3": " - Amethyst Golem Charm: Produces 10 per item, max 4 items",
+  "catalyst.mmr.tooltip.geo_syntex.item.4": " - Amethyst Budding: Produces 8 per item, max 3 items",
+  "catalyst.mmr.tooltip.geo_syntex.item.5": " - Amethyst Cluster: Produces 16 per item, max 1 items",
+  "catalyst.mmr.tooltip.geo_syntex.gui.1": "Needs to have the budding and clusters of the same type to be able to produce!",
+  "catalyst.mmr.tooltip.geo_syntex.gui.2": "Needs some items to be able to produce:",
+  "catalyst.mmr.tooltip.geo_syntex.gui.3": " - Amethyst Golem Charm: Produces 10 per item, max 4 items",
+  "catalyst.mmr.tooltip.geo_syntex.gui.4": " - Amethyst Budding: Produces 8 per item, max 3 items",
+  "catalyst.mmr.tooltip.geo_syntex.gui.5": " - Amethyst Cluster: Produces 16 per item, max 1 items",
+
+  "catalyst.mmr.tooltip.primitive_extruder.item.1": "Needs to have a valid block placed 2 blocks below the controller to being able to work",
+  "catalyst.mmr.tooltip.primitive_extruder.item.2": "Voids items if the hatches are full!",
+  "catalyst.mmr.tooltip.primitive_extruder.gui.1": "Needs to have a valid block placed 2 blocks below the controller to being able to work",
+  "catalyst.mmr.tooltip.primitive_extruder.gui.2": "Voids items if the hatches are full!",
+
+  "catalyst.mmr.tooltip.celestial_forge.item": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....",
+  "catalyst.mmr.tooltip.celestial_forge.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....",
+
+  "catalyst.mmr.tooltip.drill_miner.item": "This machine needs mobs inside to work!",
+  "catalyst.mmr.tooltip.drill_miner.gui": "This machine needs mobs inside to work!",
+
+  "catalyst.mmr.tooltip.primitive_furnace.item": "[Primitive Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
+  "catalyst.mmr.tooltip.primitive_furnace.gui": "[Primitive Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
+  "catalyst.mmr.tooltip.nether_furnace.item": "[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
+  "catalyst.mmr.tooltip.nether_furnace.gui": "[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
+  "catalyst.mmr.tooltip.end_furnace.item": "[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
+  "catalyst.mmr.tooltip.end_furnace.gui": "[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
+  "catalyst.mmr.tooltip.multismelter.item": "[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
+  "catalyst.mmr.tooltip.multismelter.gui": "[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
+  "catalyst.mmr.tooltip.advanced_multismelter.item": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
+  "catalyst.mmr.tooltip.advanced_multismelter.gui": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!"
+}

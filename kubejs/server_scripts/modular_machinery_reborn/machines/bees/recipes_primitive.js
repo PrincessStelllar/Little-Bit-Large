@@ -21,12 +21,12 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:primitive_apiary", 'item')
-    .add("Produces from time to time some honey")
-    .add("No need to add bees.")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_apiary.item.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_apiary.item.2"))
 
     event.create("mmr:primitive_apiary", 'gui')
-    .add("Produces from time to time some honey")
-    .add("No need to add bees.")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_apiary.gui.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_apiary.gui.2"))
 })
 
 /* 

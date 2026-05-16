@@ -354,18 +354,18 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:advanced_apiary", 'item')
-    .add("Can only do 1 bee type at the time, but produces the same as multiple of them!")
-    .add("You can boost some this multiblock!")
-    .add(" - Genes: Productivity trait increases output and speed, while behavior trait allows it to work on specific part of the day, similar to weather trait")
-    .add(" - Omega Upgrades: Adds more output, up to 64 combs")
-    .add(" - Sugarbag comb: Produces 16 extra combs, max 1 items")
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.item.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.item.2"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.item.3"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.item.4"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.item.5"))
 
     event.create("mmr:advanced_apiary", 'gui')
-    .add("Can only do 1 bee type at the time, but produces the same as multiple of them!")
-    .add("You can boost some this multiblock!")
-    .add(" - Genes: Productivity trait increases output and speed, while behavior trait allows it to work on specific part of the day, similar to weather trait")
-    .add(" - Omega Upgrades: Adds more output, up to 64 combs")
-    .add(" - Sugarbag comb: Produces 16 extra combs, max 1 items")
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.gui.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.gui.2"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.gui.3"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.gui.4"))
+    .add(Component.translatable("catalyst.mmr.tooltip.advanced_apiary.gui.5"))
 })
 
 MMREvents.recipeFunction("apiary_recipe_each", catalyst => {

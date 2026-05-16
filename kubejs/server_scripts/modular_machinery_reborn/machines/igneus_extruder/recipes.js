@@ -104,12 +104,12 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:primitive_extruder", 'item')
-    .add("Needs to have a valid block placed 2 blocks below the controller to being able to work")
-    .add("Voids items if the hatches are full!")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_extruder.item.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_extruder.item.2"))
 
     event.create("mmr:primitive_extruder", 'gui')
-    .add("Needs to have a valid block placed 2 blocks below the controller to being able to work")
-    .add("Voids items if the hatches are full! ")
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_extruder.gui.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.primitive_extruder.gui.2"))
 })
 
 MMREvents.recipeFunction("mining_start", event => {

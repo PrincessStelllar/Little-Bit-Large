@@ -52,10 +52,10 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:drill_miner", 'item')
-    .add("This machine needs mobs inside to work!")
+    .add(Component.translatable("catalyst.mmr.tooltip.drill_miner.item"))
 
     event.create("mmr:drill_miner", 'gui')
-    .add("This machine needs mobs inside to work!")
+    .add(Component.translatable("catalyst.mmr.tooltip.drill_miner.gui"))
 })
 
 MMREvents.recipeFunction("souls", catalyst => {

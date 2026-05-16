@@ -248,10 +248,10 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:personal_beacon", 'item')
-    .add("It can only affect 1 player at the time based on the nametag's name")
+    .add(Component.translatable("catalyst.mmr.tooltip.personal_beacon.item"))
 
     event.create("mmr:personal_beacon", 'gui')
-    .add("It can only affect 1 player at the time based on the nametag's name")
+    .add(Component.translatable("catalyst.mmr.tooltip.personal_beacon.gui"))
 })
 
 function getTargetPlayerName(machine)

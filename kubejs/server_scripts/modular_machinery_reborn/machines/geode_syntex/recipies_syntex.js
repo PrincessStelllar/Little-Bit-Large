@@ -19,18 +19,18 @@ ServerEvents.recipes(catalyst => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:geo_syntex", 'item')
-    .add("Needs to have the budding and clusters of the same type to be able to produce!")
-    .add("Needs some items to be able to produce:")
-    .add(" - Amethyst Golem Charm: Produces 10 per item, max 4 items")
-    .add(" - Amethyst Budding: Produces 8 per item, max 3 items")
-    .add(" - Amethyst Cluster: Produces 16 per item, max 1 items")
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.2"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.3"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.4"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.5"))
 
     event.create("mmr:geo_syntex", 'gui')
-    .add("Needs to have the budding and clusters of the same type to be able to produce!")
-    .add("Needs some items to be able to produce:")
-    .add(" - Amethyst Golem Charm: Produces 10 per item, max 4 items")
-    .add(" - Amethyst Budding: Produces 8 per item, max 3 items")
-    .add(" - Amethyst Cluster: Produces 16 per item, max 1 items")
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.1"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.2"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.3"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.4"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.5"))
 })
 
 MMREvents.recipeFunction("geo_chooser", catalyst => {

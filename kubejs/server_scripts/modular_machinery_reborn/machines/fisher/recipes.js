@@ -104,10 +104,10 @@ ServerEvents.recipes(event => {
 
 MMREvents.extraTooltips(event => {
     event.create("mmr:fisher", 'item')
-    .add("Boat from BitGardener")
+    .add(Component.translatable("catalyst.mmr.tooltip.fisher.item"))
 
     event.create("mmr:fisher", 'gui')
-    .add("Boat from BitGardener")
+    .add(Component.translatable("catalyst.mmr.tooltip.fisher.gui"))
 })
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
