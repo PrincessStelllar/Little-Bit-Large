@@ -24,34 +24,97 @@ ServerEvents.recipes(catalyst => {
         }).id(`catalyst:mmr/ports/${input.split(':')[1]}_to_${output.split(':')[1]}`);
     };
 
-    catalyst.shaped(
-            Item.of("modular_machinery_reborn:outputbus_tiny"),
-            [
-                'ABA',
-                'BCB',
-                'ABA'
-            ],
-            {
-                A: "minecraft:mud_bricks",
-                B: "minecraft:bricks",
-                C: "chest"
-            }
-        ).id(`catalyst:mmr/ports/tiny_output_bus`);
+    //Input bus
+    catalyst.shaped(Item.of("modular_machinery_reborn:inputbus_tiny"),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            B: "minecraft:mud_bricks",
+            A: "minecraft:bricks",
+            C: "minecraft:chest"
+        }
+    ).id(`catalyst:mmr/ports/tiny_input_bus`);
 
-    catalyst.shaped(
-            Item.of("modular_machinery_reborn:inputbus_tiny"),
-            [
-                'ABA',
-                'BCB',
-                'ABA'
-            ],
-            {
-                B: "minecraft:mud_bricks",
-                A: "minecraft:bricks",
-                C: "chest"
-            }
-        ).id(`catalyst:mmr/ports/tiny_input_bus`);
+    catalyst.shaped(Item.of("modular_machinery_reborn:outputbus_tiny"),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: "minecraft:mud_bricks",
+            B: "minecraft:bricks",
+            C: "minecraft:chest"
+        }
+    ).id(`catalyst:mmr/ports/tiny_output_bus`);
+    
+    //fluid hatches
+    catalyst.shaped(Item.of('modular_machinery_reborn:fluidinputhatch_tiny'),
+        [
+            'ACA',
+            'BEB',
+            'ADA'
+        ],
+        {
+            A: 'eternalores:plate_steel',
+            B: 'eternalores:plate_bronze',
+            C: 'utilitarian:fluid_hopper',
+            D: 'minecraft:bucket',
+            E: 'eternalores:signalum_foil'
+        }
+    ).id(`catalyst:mmr/ports/tiny_input_fluid_hatch`);
 
+    catalyst.shaped(Item.of('modular_machinery_reborn:fluidoutputhatch_tiny'),
+        [
+            'ADA',
+            'BEB',
+            'ACA'
+        ],
+        {
+            A: 'eternalores:plate_steel',
+            B: 'eternalores:plate_bronze',
+            C: 'utilitarian:fluid_hopper',
+            D: 'minecraft:bucket',
+            E: 'eternalores:signalum_foil'
+        }
+    ).id(`catalyst:mmr/ports/tiny_output_fluid_hatch`);
+
+    //energy
+    catalyst.shaped(Item.of('modular_machinery_reborn:energyinputhatch_tiny'),
+        [
+            'BCB',
+            'FEF',
+            'ADA'
+        ],
+        {
+            A: 'eternalores:plate_invar',
+            B: 'eternalores:plate_aluminum',
+            C: 'eternalores:rod_bronze',
+            D: 'energizedpower:battery_2',
+            E: 'eternalores:gear_copper',
+            F: 'energizedpower:copper_cable'
+        }
+    ).id(`catalyst:mmr/ports/tiny_input_energy_hatch`);
+
+    catalyst.shaped(Item.of('modular_machinery_reborn:energyoutputhatch_tiny'),
+        [
+            'BDB',
+            'FEF',
+            'ACA'
+        ],
+        {
+            A: 'eternalores:plate_invar',
+            B: 'eternalores:plate_aluminum',
+            C: 'eternalores:rod_bronze',
+            D: 'energizedpower:battery_2',
+            E: 'eternalores:gear_copper',
+            F: 'energizedpower:copper_cable'
+        }
+    ).id(`catalyst:mmr/ports/tiny_output_energy_hatch`);
+    
     //energy
     const energyTiers = [
         { id: 'small',      next: 'normal',    cable: 'mekanism:advanced_universal_cable', hopper: 'powah:energy_hopper_niotic' },

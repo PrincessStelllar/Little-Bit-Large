@@ -89,6 +89,10 @@ ServerEvents.recipes(catalyst => {
         {output: 'modular_machinery_reborn:modularium'},
         {output: "modular_machinery_reborn:outputbus_tiny"},
         {output: "modular_machinery_reborn:inputbus_tiny"},
+        {output: 'modular_machinery_reborn:fluidinputhatch_tiny'},
+        {output: 'modular_machinery_reborn:fluidoutputhatch_tiny'},
+        {output: 'modular_machinery_reborn:energyinputhatch_tiny'},
+        {output: 'modular_machinery_reborn:energyoutputhatch_tiny'},
 
         //direthings
         'justdirethings:celestigem_paxel',
