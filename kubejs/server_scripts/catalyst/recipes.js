@@ -33,6 +33,10 @@ ServerEvents.recipes(catalyst => {
         ['catalystcore:elemental_emptiness_crystal', 'ars_nouveau:abjuration_essence']
     ).id("catalyst:ars/personal_beacon/light_crystal")
 
+    catalyst.shapeless('catalystcore:elemental_darkness_crystal', 
+        ['catalystcore:elemental_emptiness_crystal', 'sauce:anima_essence']
+    ).id("catalyst:ars/personal_beacon/darkness_crystal")
+
     console.log("[CatJS] Added Cat Item recipes")
 
     catalyst.shaped(Item.of('catalystcore:spirit_agglomeratio', 1), [
@@ -46,7 +50,7 @@ ServerEvents.recipes(catalyst => {
         S: 'evilcraft:necromancer_staff',
         R: 'evilcraft:flesh_rejuvenated',
         V: 'evilcraft:vengeance_essence'
-    })
+    }).id("catalyst:endgame/evilcraft/spirit_agglomeratio")
 
     console.log("[CatJS] Added recipe for end game items")
 })
