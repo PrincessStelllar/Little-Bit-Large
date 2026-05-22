@@ -37,6 +37,7 @@ MMREvents.machines(catalyst => {
         .keys({
             "@": [
                 "modular_machinery_reborn:casing_plain",
+                '#modular_machinery_reborn:parallelhatch'
             ],
             "c": ["create_new_age:reactor_casing"],
             "d": ["modular_machinery_reborn:casing_plain"],

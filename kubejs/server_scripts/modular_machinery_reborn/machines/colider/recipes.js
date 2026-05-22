@@ -2746,146 +2746,140 @@ ServerEvents.recipes(catalyst => {
 
     let i = 0;
     recipes.forEach(rs => {
-        return;
-        for(let j = 1; j < 5; j++)
+        i++;
+
+        let recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe(machine_id, rs.time)
+            .width(140)
+            .height(80)
+            .progressData(ProgressData.create().x(progressArrow.x).y(progressArrow.y))
+            .requireFunctionOnStart("starting")
+            .requireFunctionOnEnd("ending");
+            
+        let total_inputs = 0;
+        if(rs.inputs && rs.inputs.length > 0)
         {
-            i++;
-
-            let recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe(machine_id, rs.time)
-                .width(140)
-                .height(80)
-                .progressData(ProgressData.create().x(progressArrow.x).y(progressArrow.y))
-                .requireFunctionOnStart("starting")
-                .requireFunctionOnEnd("ending");
-            
-            let total_inputs = 0;
-            if(rs.inputs && rs.inputs.length > 0)
-            {
-                rs.inputs.forEach(input => {
-                    total_inputs++;
-                    recipe.requireItem(Item.of(input.id, input.count*j), input.chance)
-                })
-            }
-
-            if(total_inputs > 9) throw Error("Can't have more than 9 item inputs! " + rs)
-
-            if(rs.fluid_input && rs.fluid_input.length > 0)
-            {
-                rs.fluid_input.forEach(input => {
-                    total_inputs++;
-                    recipe.requireFluid(Fluid.of(input.id, input.count*j), input.chance)
-                })
-            }
-
-            if(total_inputs > 9) throw Error("Can't have more than 9 inputs in total! " + rs)
-
-            if(rs.energy && rs.energy > 0)
-            {
-                recipe.requireEnergyPerTick(rs.energy*j);
-            }
-
-            //outputs
-            let total_outputs = 0;
-            if(rs.outputs && rs.outputs.length > 0)
-            {
-                rs.outputs.forEach(input => {
-                    total_outputs++;
-                    recipe.produceItem(Item.of(input.id, input.count*j), input.chance)
-                })
-            }
-
-            if(total_outputs > 9) throw Error("Can't have more than 9 item outputs! " + rs)
-
-            if(rs.fluid_output && rs.fluid_output.length > 0)
-            {
-                rs.fluid_output.forEach(input => {
-                    total_outputs++;
-                    recipe.produceFluid(Fluid.of(input.id, input.count*j), input.chance)
-                })
-            }
-
-            if(total_outputs > 9) throw Error("Can't have more than 9 outputs in total! " + rs)
-
-            if(rs.energy_out && rs.energy_out > 0)
-            {
-                recipe.produceEnergyPerTick(totalEnergy*j);
-            }
-
-            if(j !== 1)
-            {
-                recipe.hide();
-            }
-            else
-            {
-                recipe.jei();
-            }
-            
-            let inputIdx = 0;
-            
-            if(rs.inputs && rs.inputs.length > 0)
-            {
-                rs.inputs.forEach(input => {
-                    if(!Item.exists(input)) return;
-                    let slot = input_slots[inputIdx];
-                    recipe.requireItem(Item.of(input.id, input.count * j), input.chance, slot.x, slot.y);
-                    inputIdx++;
-                });
-            }
-
-            if(rs.fluid_input && rs.fluid_input.length > 0)
-            {
-                rs.fluid_input.forEach(fluid => {
-                    if(!Fluid.exists(fluid)) return;
-                    let slot = input_slots[inputIdx];
-                    recipe.requireFluid(Fluid.of(fluid.id, fluid.count * j), fluid.chance, slot.x, slot.y);
-                    inputIdx++;
-                });
-            }
-
-            for(let slot_index = inputIdx; slot_index < 9; slot_index++)
-            {
-                recipe.emptyItem(input_slots[slot_index].x, input_slots[slot_index].y);
-            }
-            
-            if(rs.energy && rs.energy > 0)
-            {
-                recipe.requireEnergyPerTick(rs.energy * j, energy_in.x, energy_in.y);
-            }
-            
-            if(rs.energy_out && rs.energy_out > 0)
-            {
-                recipe.produceEnergyPerTick(rs.energy_out * j, energy_out.x, energy_out.y);
-            }
-            
-            let output_index = 0;
-            
-            if(rs.outputs && rs.outputs.length > 0)
-            {
-                rs.outputs.forEach(out => {
-                    let slot = output_slots[output_index];
-                    recipe.produceItem(Item.of(out.id, out.count * j), out.chance, slot.x, slot.y);
-                    output_index++;
-                });
-            }
-
-            if(rs.fluid_output && rs.fluid_output.length > 0)
-            {
-                rs.fluid_output.forEach(out => {
-                    let slot = output_slots[output_index];
-                    recipe.produceFluid(Fluid.of(out.id, out.count * j), out.chance, slot.x, slot.y);
-                    output_index++;
-                });
-            }
-
-            for(let slot_index = output_index; slot_index < 9; slot_index++)
-            {
-                recipe.emptyItem(output_slots[slot_index].x, output_slots[slot_index].y);
-            }
-
-            let recipe_name = (rs.outputs && rs.outputs.length > 0) ? rs.outputs[0].id : `recipe_${i}`;
-            
-            recipe.id(`catalyst:mmr/colider/${i}/parallel_${j}/${recipe_name.replace(':', '_')}`);
+            rs.inputs.forEach(input => {
+                total_inputs++;
+                recipe.requireItem(Item.of(input.id, input.count*j), input.chance)
+            })
         }
+
+        if(total_inputs > 9) throw Error("Can't have more than 9 item inputs! " + rs)
+
+        if(rs.fluid_input && rs.fluid_input.length > 0)
+        {
+            rs.fluid_input.forEach(input => {
+                total_inputs++;
+                recipe.requireFluid(Fluid.of(input.id, input.count*j), input.chance)
+            })
+        }
+
+        if(total_inputs > 9) throw Error("Can't have more than 9 inputs in total! " + rs)
+
+        if(rs.energy && rs.energy > 0)
+        {
+            recipe.requireEnergyPerTick(rs.energy*j);
+        }
+
+        //outputs
+        let total_outputs = 0;
+        if(rs.outputs && rs.outputs.length > 0)
+        {
+            rs.outputs.forEach(input => {
+                total_outputs++;
+                recipe.produceItem(Item.of(input.id, input.count*j), input.chance)
+            })
+        }
+
+        if(total_outputs > 9) throw Error("Can't have more than 9 item outputs! " + rs)
+
+        if(rs.fluid_output && rs.fluid_output.length > 0)
+        {
+            rs.fluid_output.forEach(input => {
+                total_outputs++;
+                recipe.produceFluid(Fluid.of(input.id, input.count*j), input.chance)
+            })
+        }
+
+        if(total_outputs > 9) throw Error("Can't have more than 9 outputs in total! " + rs)
+
+        if(rs.energy_out && rs.energy_out > 0)
+        {
+            recipe.produceEnergyPerTick(totalEnergy*j);
+        }
+
+        if(j !== 1)
+        {
+            recipe.hide();
+        }
+        else
+        {
+            recipe.jei();
+        }
+            
+        let inputIdx = 0;
+            
+        if(rs.inputs && rs.inputs.length > 0)
+        {
+            rs.inputs.forEach(input => {
+                let slot = input_slots[inputIdx];
+                recipe.requireItem(Item.of(input.id, input.count * j), input.chance, slot.x, slot.y);
+                inputIdx++;
+            });
+        }
+
+        if(rs.fluid_input && rs.fluid_input.length > 0)
+        {
+            rs.fluid_input.forEach(fluid => {
+                let slot = input_slots[inputIdx];
+                recipe.requireFluid(Fluid.of(fluid.id, fluid.count * j), fluid.chance, slot.x, slot.y);
+                inputIdx++;
+            });
+        }
+
+        for(let slot_index = inputIdx; slot_index < 9; slot_index++)
+        {
+            recipe.emptyItem(input_slots[slot_index].x, input_slots[slot_index].y);
+        }
+            
+        if(rs.energy && rs.energy > 0)
+        {
+            recipe.requireEnergyPerTick(rs.energy * j, energy_in.x, energy_in.y);
+        }
+            
+        if(rs.energy_out && rs.energy_out > 0)
+        {
+            recipe.produceEnergyPerTick(rs.energy_out * j, energy_out.x, energy_out.y);
+        }
+            
+        let output_index = 0;
+            
+        if(rs.outputs && rs.outputs.length > 0)
+        {
+            rs.outputs.forEach(out => {
+                let slot = output_slots[output_index];
+                recipe.produceItem(Item.of(out.id, out.count * j), out.chance, slot.x, slot.y);
+                output_index++;
+            });
+        }
+
+        if(rs.fluid_output && rs.fluid_output.length > 0)
+        {
+            rs.fluid_output.forEach(out => {
+                let slot = output_slots[output_index];
+                recipe.produceFluid(Fluid.of(out.id, out.count * j), out.chance, slot.x, slot.y);
+                output_index++;
+            });
+        }
+
+        for(let slot_index = output_index; slot_index < 9; slot_index++)
+        {
+            recipe.emptyItem(output_slots[slot_index].x, output_slots[slot_index].y);
+        }
+
+        let recipe_name = (rs.outputs && rs.outputs.length > 0) ? rs.outputs[0].id : `recipe_${i}`;
+            
+        recipe.id(`catalyst:mmr/colider/${i}/parallel_${j}/${recipe_name.replace(':', '_')}`);
     });
 
     catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:colider", 200)
@@ -2910,27 +2904,55 @@ MMREvents.extraTooltips(event => {
 })
 
 MMREvents.recipeFunction("starting", catalyst => {
-    let level = catalyst.getTile().getLevel();
-    let controllerPos = catalyst.getTile().getBlockPos();
-    let targetPos = controllerPos.above(4); 
-    level.setBlock(targetPos, Block.getBlock('catalystcore:gravity_anomaly').defaultBlockState(), 3);
+    let tile = catalyst.getTile();
+    let level = tile.getLevel();
+    let pos = tile.getBlockPos();
+    let targetPos = pos.above(4); 
+    
+    let data = tile.getPersistentData();
+    let jobs = data.getInt("parallels") || 0;
+    
+    let state = level.getBlockState(targetPos);
+    if(state.getBlock().id !== 'catalystcore:gravity_anomaly')
+    {
+        jobs = 0;
+    }
+    
+    jobs++;
+    data.putInt("parallels", jobs);
+
+    if(jobs === 1)
+    {
+        level.setBlock(targetPos, Block.getBlock('catalystcore:gravity_anomaly').defaultBlockState(), 3);
+    }
 });
 
 MMREvents.recipeFunction("ending", catalyst => {
-    let level = catalyst.getTile().getLevel();
-    let controllerPos = catalyst.getTile().getBlockPos();
-    let targetPos = controllerPos.above(4); 
+    let tile = catalyst.getTile();
+    let level = tile.getLevel();
+    let pos = tile.getBlockPos();
+    let targetPos = pos.above(4); 
 
     let state = level.getBlockState(targetPos);
     let blockId = state.getBlock().id;
 
-    if(blockId === 'catalystcore:gravity_anomaly')
-    {
-        level.setBlock(targetPos, Block.getBlock('minecraft:air').defaultBlockState(), 3);
-    }
-    else
+    if(blockId !== 'catalystcore:gravity_anomaly')
     {
         catalyst.error("No black hole");
+    }
+
+    let data = tile.getPersistentData();
+    let jobs = data.getInt("parallels") || 0;
+
+    if(jobs > 0)
+    {
+        jobs--;
+        data.putInt("parallels", jobs);
+    }
+
+    if(jobs === 0)
+    {
+        level.setBlock(targetPos, Block.getBlock('minecraft:air').defaultBlockState(), 3);
     }
 });
 
