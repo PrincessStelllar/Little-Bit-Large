@@ -55,5 +55,8 @@
   "catalyst.mmr.tooltip.multismelter.item": "[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
   "catalyst.mmr.tooltip.multismelter.gui": "[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
   "catalyst.mmr.tooltip.advanced_multismelter.item": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
-  "catalyst.mmr.tooltip.advanced_multismelter.gui": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!"
+  "catalyst.mmr.tooltip.advanced_multismelter.gui": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
+
+  "catalyst.mmr.tooltip.colider.item": "This multiblock has visuals animations that breaks with Iris mod\nYou can disable Iris mod if you aren't using shaders\nIt doesn't break the machine, it's just visual!",
+  "catalyst.mmr.tooltip.colider.gui": "This multiblock has visuals animations that breaks with Iris mod\nYou can disable Iris mod if you aren't using shaders\nIt doesn't break the machine, it's just visual!"
 }
