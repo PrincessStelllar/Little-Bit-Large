@@ -82,54 +82,6 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/tiny_output_fluid_hatch`);
 
-    //energy
-    catalyst.shaped(Item.of('modular_machinery_reborn:energyinputhatch_tiny'),
-        [
-            'BCB',
-            'FEF',
-            'ADA'
-        ],
-        {
-            A: 'eternalores:plate_invar',
-            B: 'eternalores:plate_aluminum',
-            C: 'eternalores:rod_bronze',
-            D: 'energizedpower:battery_2',
-            E: 'eternalores:gear_copper',
-            F: 'energizedpower:copper_cable'
-        }
-    ).id(`catalyst:mmr/ports/tiny_input_energy_hatch`);
-
-    catalyst.shaped(Item.of('modular_machinery_reborn:energyoutputhatch_tiny'),
-        [
-            'BDB',
-            'FEF',
-            'ACA'
-        ],
-        {
-            A: 'eternalores:plate_invar',
-            B: 'eternalores:plate_aluminum',
-            C: 'eternalores:rod_bronze',
-            D: 'energizedpower:battery_2',
-            E: 'eternalores:gear_copper',
-            F: 'energizedpower:copper_cable'
-        }
-    ).id(`catalyst:mmr/ports/tiny_output_energy_hatch`);
-    
-    //energy
-    const energyTiers = [
-        { id: 'small',      next: 'normal',    cable: 'mekanism:advanced_universal_cable', hopper: 'powah:energy_hopper_niotic' },
-        { id: 'normal',     next: 'reinforced',cable: 'mekanism:advanced_universal_cable', hopper: 'powah:energy_hopper_niotic' },
-        { id: 'reinforced', next: 'big',       cable: 'mekanism:elite_universal_cable',    hopper: 'powah:energy_hopper_spirited' },
-        { id: 'big',        next: 'huge',      cable: 'mekanism:elite_universal_cable',    hopper: 'powah:energy_hopper_spirited' },
-        { id: 'huge',       next: 'ludicrous', cable: 'mekanism:ultimate_universal_cable', hopper: 'powah:energy_hopper_nitro' },
-        { id: 'ludicrous',  next: 'ultimate',  cable: 'mekanism:ultimate_universal_cable', hopper: 'powah:energy_hopper_nitro' }
-    ];
-
-    energyTiers.forEach(t => {
-        createPort(`${mmr}energyinputhatch_${t.id}`,  `${mmr}energyinputhatch_${t.next}`,  'minecraft:redstone_block', t.cable, t.hopper);
-        createPort(`${mmr}energyoutputhatch_${t.id}`, `${mmr}energyoutputhatch_${t.next}`, 'minecraft:redstone_block', t.cable, t.hopper);
-    });
-
     //item
     // Input: Top = Hopper, Bottom = Chest | Output: Top = Chest, Bottom = Hopper
     const itemTiers = [
