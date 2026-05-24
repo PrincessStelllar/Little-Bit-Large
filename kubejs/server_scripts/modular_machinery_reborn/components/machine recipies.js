@@ -9,7 +9,7 @@ ServerEvents.recipes((catalyst) => {
      * ABA
      * BCB
      * ABA
-     * * @param {string} machineId The ID of the MMR machine (e.g., "mmr:data_extractor").
+     * @param {string} machineId The ID of the MMR machine (e.g., "mmr:data_extractor").
      * @param {string} itemA The item for the 'A' slot (usually casing).
      * @param {string} itemB The item for the 'B' slot.
      * @param {string} itemC The item for the 'C' slot (core component).
@@ -30,7 +30,12 @@ ServerEvents.recipes((catalyst) => {
         ).id(`catalyst:mmr/controller/${machineId.split(':')[1]}`);
     };
 
+    const getController = (machineId) => {
+        return Item.of(`modular_machinery_reborn:controller[modular_machinery_reborn:machine="${machineId}"]`);
+    }
+
     const plainCasing = "modular_machinery_reborn:casing_plain";
+    const reinforcedCasing = 'modular_machinery_reborn:casing_reinforced';
 
     // Data Extractor
     registerController(
@@ -155,7 +160,7 @@ ServerEvents.recipes((catalyst) => {
         "mmr:personal_beacon",
         plainCasing,
         'minecraft:beacon',
-        'modular_machinery_reborn:casing_reinforced'
+        reinforcedCasing
     );
 
     console.log("[CatJS] Added MMR controllers")
