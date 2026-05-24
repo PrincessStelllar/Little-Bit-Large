@@ -250,10 +250,18 @@ ServerEvents.recipes(event => {
         // EO
         {
             result: "eternalores:biosteel_ingot",
-            result_count: 1,
+            result_count: 2,
             inputs: [
                 { id: "minecraft:iron_ingot", count: 1 },
                 { id: "oritech:raw_biopolymer", count: 1 }
+            ]
+        },
+        {
+            result: "eternalores:biosteel_ingot",
+            result_count: 1,
+            inputs: [
+                { id: 'eternalores:wrought_iron_ingot', count: 1 },
+                { id: 'eternalores:biomass', count: 8 }
             ]
         },
         {
