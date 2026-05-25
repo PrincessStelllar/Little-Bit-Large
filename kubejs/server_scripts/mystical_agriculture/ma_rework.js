@@ -131,7 +131,7 @@ ServerEvents.recipes(catalyst => {
     }
 
     function square2(mats, output, count) {
-        catalyst.shaped(`${count}x ${output}`, ['AAA', 'AAA', 'AAA'], { A: mats[0] })
+        catalyst.shaped(`${count}x ${output}`, ['AAA', 'A A', 'AAA'], { A: mats[0] })
         .id(`catalyst:shaped/square2/${getCleanName(output)}_${mod}`)
         mod++;
     }
