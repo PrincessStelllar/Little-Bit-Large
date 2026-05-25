@@ -42,6 +42,7 @@ ServerEvents.tags('item', catalyst => {
     //Oritech 
     catalyst.remove('c:ingots/steel', 'oritech:biosteel_ingot')
     catalyst.add('c:ingots/plutonium', 'oritech:plutonium_pellet')
+    catalyst.add('c:pellets/plutonium', 'oritech:plutonium_pellet')
     catalyst.add('c:dusts/plutonium', 'oritech:plutonium_dust')
     catalyst.add('c:nuggets/plutonium', 'oritech:small_plutonium_pellet')
     catalyst.add('c:ingots/uranium', 'oritech:uranium_pellet')
