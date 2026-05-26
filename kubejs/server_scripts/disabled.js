@@ -117,7 +117,22 @@ ServerEvents.recipes(catalyst => {
         "create:crafting/materials/andesite_alloy",
         "create:crafting/materials/andesite_alloy_from_zinc",
 
-        "railcraft:world_spike"
+        "railcraft:world_spike",
+
+        //solar powah
+        { output: "solargeneration:solar_panel_leadstone" },
+        { output: "energizedpower:solar_panel_1" },
+        { output: "solargeneration:solar_panel_hardened" },
+        { output: "energizedpower:solar_panel_2" },
+        { output: "solargeneration:solar_panel_redstone" },
+        { output: "energizedpower:solar_panel_3" },
+        { output: "solargeneration:solar_panel_signalum" },
+        { output: "energizedpower:solar_panel_4" },
+        { output: "solargeneration:solar_panel_resonant" },
+        { output: "energizedpower:solar_panel_5" },
+        { output: "solargeneration:solar_panel_advanced" },
+        { output: "energizedpower:solar_panel_6" },
+        { output: "solargeneration:solar_panel_ultimate" }
 
     ]
 
