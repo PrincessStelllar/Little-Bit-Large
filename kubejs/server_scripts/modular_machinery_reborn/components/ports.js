@@ -157,8 +157,6 @@ ServerEvents.recipes(catalyst => {
     const miscRecipes = [
         ['minecraft:redstone_block',            `${mmr}casing_vent`,           `${mmr}casing_plain`,      'stevescarts:component_cleaning_fan', 'stevescarts:component_cleaning_fan'],
         ['mekanism:ultimate_control_circuit',   `${mmr}casing_circuitry`,      `${mmr}casing_plain`,      'railcraft:radio_circuit',            'railcraft:controller_circuit'],
-        [`${mmr}casing_plain`,                  `${mmr}parallel_hatch_basic`,  'mekanism:robit',          'mekanism:robit',                     'stevescarts:component_cleaning_fan'],
-        [`${mmr}parallel_hatch_basic`,          `${mmr}parallel_hatch_medium`, `${mmr}casing_reinforced`, `${mmr}casing_reinforced`,            `${mmr}casing_reinforced`],
         ['minecraft:paper',                     `${mmr}blueprint`,             `${mmr}outputbus_tiny`,    'minecraft:blue_dye',                 'minecraft:blue_dye'],
         ['minecraft:repeater',                  `${mmr}redstone_port`,         `${mmr}casing_plain`,      'minecraft:redstone',                 'minecraft:redstone'],
         ['minecraft:redstone',                  `${mmr}entity_detector`,       `${mmr}casing_plain`,      'hostilenetworks:deep_learner',       'hostilenetworks:prediction_matrix'],
