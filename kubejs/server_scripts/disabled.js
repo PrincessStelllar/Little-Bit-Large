@@ -85,6 +85,26 @@ ServerEvents.recipes(catalyst => {
         /geore:.*_unobtainium/,
         /geore:.*_unobtainium_bud/,
 
+        {output: /geore.*:allthemodium_.*/},
+        {output: /geore:.*_allthemodium/},
+        {output: /geore:.*_allthemodium_bud/},
+        {output: /geore.*:vibranium_.*/},
+        {output: /geore:.*_vibranium/},
+        {output: /geore:.*_vibranium_bud/},
+        {output: /geore.*:unobtainium_.*/},
+        {output: /geore:.*_unobtainium/},
+        {output: /geore:.*_unobtainium_bud/},
+
+        {input: /geore.*:allthemodium_.*/},
+        {input: /geore:.*_allthemodium/},
+        {input: /geore:.*_allthemodium_bud/},
+        {input: /geore.*:vibranium_.*/},
+        {input: /geore:.*_vibranium/},
+        {input: /geore:.*_vibranium_bud/},
+        {input: /geore.*:unobtainium_.*/},
+        {input: /geore:.*_unobtainium/},
+        {input: /geore:.*_unobtainium_bud/},
+
         //mmr
         {output: 'modular_machinery_reborn:modularium'},
         {output: "modular_machinery_reborn:outputbus_tiny"},
