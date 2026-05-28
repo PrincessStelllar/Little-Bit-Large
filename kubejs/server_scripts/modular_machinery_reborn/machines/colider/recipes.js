@@ -4099,16 +4099,6 @@ ServerEvents.recipes(catalyst => {
         recipe.id(`catalyst:mmr/colider/${i}/${recipe_name.replace(':', '_')}`);
     });
 
-    catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:colider", 200)
-        .progressData(ProgressData.create().x(54).y(20))
-        .width(110)
-        .height(60)
-        .requireItem("minecraft:stone", 20, 20)
-        .produceItem("minecraft:cobblestone", 90, 20)
-        .requireFunctionOnStart("starting")
-        .requireFunctionOnEnd("ending")
-        .id("catalyst:mmr/colider/gravity_conversion")
-
     console.log("[CatJS] Finished Colider recipes");
 });
 
