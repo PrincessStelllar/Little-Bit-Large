@@ -631,7 +631,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:energy_cable_niotic", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:energy_cable_niotic", count: 64, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: 'powah:dielectric_paste', count: 4, chance: 1.0 }
@@ -643,7 +643,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:energy_cable_spirited", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:energy_cable_spirited", count: 64, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -656,7 +656,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:energy_cable_nitro", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:energy_cable_nitro", count: 64, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -670,7 +670,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:ender_gate_niotic", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:ender_gate_niotic", count: 4, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: 'minecraft:obsidian', count: 4, chance: 1.0 }
@@ -682,7 +682,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:ender_gate_spirited", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:ender_gate_spirited", count: 4, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -695,7 +695,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:ender_gate_nitro", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:ender_gate_nitro", count: 4, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -709,7 +709,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:energizing_rod_niotic", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:energizing_rod_niotic", count: 2, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: 'powah:dielectric_casing', count: 1, chance: 1.0 }
@@ -721,7 +721,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:energizing_rod_spirited", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:energizing_rod_spirited", count: 2, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -734,7 +734,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:energizing_rod_nitro", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:energizing_rod_nitro", count: 2, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -904,7 +904,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:reactor_niotic", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:reactor_niotic", count: 8, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: 'eternalores:uraninite_ingot', count: 4, chance: 1.0 }
@@ -916,7 +916,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:reactor_spirited", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:reactor_spirited", count: 8, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -929,7 +929,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 50,
             energy: 3000000,
-            outputs: [{ id: "powah:reactor_nitro", count: 1, chance: 1.0 }],
+            outputs: [{ id: "powah:reactor_nitro", count: 8, chance: 1.0 }],
             inputs: [
                 { id: "powah:niotic_crystal_block", count: 4, chance: 1.0 },
                 { id: "powah:spirited_crystal_block", count: 2, chance: 1.0 },
@@ -1061,7 +1061,7 @@ ServerEvents.recipes(catalyst => {
         // Energized power
         {
             time: 200,
-            energy: 8,
+            energy: 1250000,
             outputs: [{ id: "energizedpower:solar_panel_6", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "solargeneration:solar_panel_advanced", count: 1, chance: 1.0 },
@@ -1076,7 +1076,7 @@ ServerEvents.recipes(catalyst => {
         },
         {
             time: 200,
-            energy: 8,
+            energy: 2500000,
             outputs: [{ id: "energizedpower:solar_panel_5", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "solargeneration:solar_panel_resonant", count: 1, chance: 1.0 },
@@ -1090,7 +1090,7 @@ ServerEvents.recipes(catalyst => {
         },
         {
             time: 200,
-            energy: 8,
+            energy: 5000000,
             outputs: [{ id: "energizedpower:solar_panel_4", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "energizedpower:advanced_solar_cell", count: 1, chance: 1.0 },
@@ -1103,8 +1103,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "energizedpower:crystal_matrix", count: 64, chance: 1.0 }],
             inputs: [
                 {id: 'minecraft:diamond', count: 128, chance: 1.0 },
@@ -1117,35 +1117,35 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
-            outputs: [{ id: "energizedpower:energized_crystal_matrix", count: 1, chance: 1.0 }],
-            inputs: [{id: 'energizedpower:crystal_matrix', count: 1, chance: 1.0 }],
+            time: 150,
+            energy: 200000,
+            outputs: [{ id: "energizedpower:energized_crystal_matrix", count: 64, chance: 1.0 }],
+            inputs: [{id: 'energizedpower:crystal_matrix', count: 64, chance: 1.0 }],
             fluid_input: [],
             fluid_output: [],
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
-            outputs: [{ id: "energizedpower:energized_copper_ingot", count: 1, chance: 1.0 }],
-            inputs: [{id: 'minecraft:copper_ingot', count: 1, chance: 1.0}],
+            time: 150,
+            energy: 200000,
+            outputs: [{ id: "energizedpower:energized_copper_ingot", count: 128, chance: 1.0 }],
+            inputs: [{id: 'minecraft:copper_ingot', count: 128, chance: 1.0}],
             fluid_input: [],
             fluid_output: [],
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
-            outputs: [{ id: "energizedpower:energized_gold_ingot", count: 1, chance: 1.0 }],
-            inputs: [{id: 'minecraft:gold_ingot', count: 1, chance: 1.0}],
+            time: 150,
+            energy: 200000,
+            outputs: [{ id: "energizedpower:energized_gold_ingot", count: 64, chance: 1.0 }],
+            inputs: [{id: 'minecraft:gold_ingot', count: 64, chance: 1.0}],
             fluid_input: [],
             fluid_output: [],
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "energizedpower:reinforced_advanced_solar_cell", count: 1, chance: 1.0 }],
             inputs: [
                 { id: 'energizedpower:crystal_matrix', count: 2, chance: 1.0 },
@@ -1158,8 +1158,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: 'energizedpower:advanced_solar_cell', count: 1, chance: 1.0 }],
             inputs: [
                 { id: 'energizedpower:basic_solar_cell', count: 1, chance: 1.0 },
@@ -1174,8 +1174,8 @@ ServerEvents.recipes(catalyst => {
 
         // AE2
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:cell_component_4k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "ae2:cell_component_1k", count: 1, chance: 1.0 },
@@ -1188,8 +1188,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:cell_component_16k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "ae2:cell_component_4k", count: 1, chance: 1.0 },
@@ -1202,8 +1202,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:cell_component_64k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "ae2:cell_component_16k", count: 1, chance: 1.0 },
@@ -1216,8 +1216,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:cell_component_256k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "ae2:cell_component_64k", count: 1, chance: 1.0 },
@@ -1230,8 +1230,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "megacells:cell_component_1m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "ae2:cell_component_256k", count: 1, chance: 1.0 },
@@ -1245,8 +1245,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "megacells:cell_component_4m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "megacells:cell_component_1m", count: 1, chance: 1.0 },
@@ -1260,8 +1260,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "megacells:cell_component_16m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "megacells:cell_component_4m", count: 1, chance: 1.0 },
@@ -1275,8 +1275,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "megacells:cell_component_64m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "megacells:cell_component_16m", count: 1, chance: 1.0 },
@@ -1290,8 +1290,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "megacells:cell_component_256m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "megacells:cell_component_64m", count: 1, chance: 1.0 },
@@ -1305,8 +1305,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "advanced_ae:quantum_storage_component", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "ae2:cell_component_256k", count: 1, chance: 1.0 },
@@ -1320,8 +1320,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_4k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_1k", count: 1, chance: 1.0 },
@@ -1334,8 +1334,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_16k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_4k", count: 1, chance: 1.0 },
@@ -1348,8 +1348,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_64k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_16k", count: 1, chance: 1.0 },
@@ -1362,8 +1362,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_256k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_64k", count: 1, chance: 1.0 },
@@ -1376,8 +1376,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_1m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_256k", count: 1, chance: 1.0 },
@@ -1391,8 +1391,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_4m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_1m", count: 1, chance: 1.0 },
@@ -1406,8 +1406,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_16m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_4m", count: 1, chance: 1.0 },
@@ -1421,8 +1421,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_64m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_16m", count: 1, chance: 1.0 },
@@ -1436,8 +1436,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "appflux:core_256m", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "appflux:core_64m", count: 1, chance: 1.0 },
@@ -1451,8 +1451,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage:4k_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:1k_storage_part", count: 1, chance: 1.0 },
@@ -1465,8 +1465,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage:16k_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:4k_storage_part", count: 1, chance: 1.0 },
@@ -1479,8 +1479,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage:64k_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:16k_storage_part", count: 1, chance: 1.0 },
@@ -1493,8 +1493,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage:256b_fluid_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:64b_fluid_storage_part", count: 1, chance: 1.0 },
@@ -1507,8 +1507,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage:1024b_fluid_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:256b_fluid_storage_part", count: 1, chance: 1.0 },
@@ -1521,8 +1521,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage:4096b_fluid_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:1024b_fluid_storage_part", count: 1, chance: 1.0 },
@@ -1535,8 +1535,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage_mekanism_integration:256b_chemical_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage_mekanism_integration:64b_chemical_storage_part", count: 1, chance: 1.0 },
@@ -1549,8 +1549,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage_mekanism_integration:1024b_chemical_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage_mekanism_integration:256b_chemical_storage_part", count: 1, chance: 1.0 },
@@ -1563,8 +1563,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedstorage_mekanism_integration:8192b_chemical_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage_mekanism_integration:1024b_chemical_storage_part", count: 1, chance: 1.0 },
@@ -1577,8 +1577,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_256k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:64k_storage_part", count: 1, chance: 1.0 },
@@ -1591,8 +1591,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_1024k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "extrastorage:storagepart_256k", count: 1, chance: 1.0 },
@@ -1605,8 +1605,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_4096k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "extrastorage:storagepart_1024k", count: 1, chance: 1.0 },
@@ -1619,8 +1619,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_16384k", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "extrastorage:storagepart_4096k", count: 1, chance: 1.0 },
@@ -1633,8 +1633,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_16384b_fluid", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedstorage:4096b_fluid_storage_part", count: 1, chance: 1.0 },
@@ -1647,8 +1647,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_65536b_fluid", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "extrastorage:storagepart_16384b_fluid", count: 1, chance: 1.0 },
@@ -1661,8 +1661,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_262144b_fluid", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "extrastorage:storagepart_65536b_fluid", count: 1, chance: 1.0 },
@@ -1675,8 +1675,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "extrastorage:storagepart_1048576b_fluid", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "extrastorage:storagepart_262144b_fluid", count: 1, chance: 1.0 },
@@ -1691,8 +1691,8 @@ ServerEvents.recipes(catalyst => {
 
         // RS energy
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:256k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:64k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1705,8 +1705,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:1024k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:256k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1719,8 +1719,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:8192k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:1024k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1733,8 +1733,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:65536k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:8192k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1747,8 +1747,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:262144k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:65536k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1761,8 +1761,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:1048576k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:262144k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1775,8 +1775,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:8388608k_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:1048576k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1789,8 +1789,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:infinite_energy_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:8388608k_energy_storage_part", count: 1, chance: 1.0 },
@@ -1805,8 +1805,8 @@ ServerEvents.recipes(catalyst => {
 
         //RS source
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:256b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:64b_source_storage_part", count: 1, chance: 1.0 },
@@ -1819,8 +1819,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:1024b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:256b_source_storage_part", count: 1, chance: 1.0 },
@@ -1833,8 +1833,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:8192b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:1024b_source_storage_part", count: 1, chance: 1.0 },
@@ -1847,8 +1847,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:65536b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:8192b_source_storage_part", count: 1, chance: 1.0 },
@@ -1861,8 +1861,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:262144b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:65536b_source_storage_part", count: 1, chance: 1.0 },
@@ -1875,8 +1875,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:1048576b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:262144b_source_storage_part", count: 1, chance: 1.0 },
@@ -1889,8 +1889,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:8388608b_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:1048576b_source_storage_part", count: 1, chance: 1.0 },
@@ -1903,8 +1903,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:infinite_source_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:8388608b_source_storage_part", count: 1, chance: 1.0 },
@@ -1919,8 +1919,8 @@ ServerEvents.recipes(catalyst => {
 
         //RS souls
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:8k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:1k_soul_storage_part", count: 1, chance: 1.0 },
@@ -1933,8 +1933,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:64k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:8k_soul_storage_part", count: 1, chance: 1.0 },
@@ -1947,8 +1947,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:512k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:64k_soul_storage_part", count: 1, chance: 1.0 },
@@ -1961,8 +1961,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:4096k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:512k_soul_storage_part", count: 1, chance: 1.0 },
@@ -1975,8 +1975,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:32768k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:4096k_soul_storage_part", count: 1, chance: 1.0 },
@@ -1989,8 +1989,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:262144k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:32768k_soul_storage_part", count: 1, chance: 1.0 },
@@ -2003,8 +2003,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:2097152k_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:262144k_soul_storage_part", count: 1, chance: 1.0 },
@@ -2017,8 +2017,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "refinedtypes:infinite_soul_storage_part", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "refinedtypes:2097152k_soul_storage_part", count: 1, chance: 1.0 },
@@ -2034,7 +2034,7 @@ ServerEvents.recipes(catalyst => {
         // Solargeneration panels
         {
             time: 200,
-            energy: 8,
+            energy: 10000000,
             outputs: [{ id: "solargeneration:solar_panel_resonant", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "energizedpower:solar_panel_4", count: 1, chance: 1.0 },
@@ -2047,7 +2047,7 @@ ServerEvents.recipes(catalyst => {
         },
         {
             time: 200,
-            energy: 8,
+            energy: 25000000,
             outputs: [{ id: "solargeneration:solar_panel_advanced", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "energizedpower:solar_panel_5", count: 1, chance: 1.0 },
@@ -2060,7 +2060,7 @@ ServerEvents.recipes(catalyst => {
         },
         {
             time: 200,
-            energy: 8,
+            energy: 50000000,
             outputs: [{ id: "solargeneration:solar_panel_ultimate", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "energizedpower:solar_panel_6", count: 1, chance: 1.0 },
@@ -2074,8 +2074,8 @@ ServerEvents.recipes(catalyst => {
 
         //parallel hatches
         {
-            time: 200,
-            energy: 8,
+            time: 300,
+            energy: 50000000,
             outputs: [{ id: "modular_machinery_reborn:parallel_hatch_max", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "modular_machinery_reborn:parallel_hatch_ultimate", count: 2, chance: 1.0 },
@@ -2090,8 +2090,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 10000000
         },
         {
-            time: 200,
-            energy: 8,
+            time: 300,
+            energy: 25000000,
             outputs: [{ id: "modular_machinery_reborn:parallel_hatch_ultimate", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "modular_machinery_reborn:parallel_hatch_advanced", count: 2, chance: 1.0 },
@@ -2106,8 +2106,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 10000000
         },
         {
-            time: 200,
-            energy: 8,
+            time: 300,
+            energy: 15000000,
             outputs: [{ id: "modular_machinery_reborn:parallel_hatch_advanced", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "modular_machinery_reborn:parallel_hatch_medium", count: 2, chance: 1.0 },
@@ -2133,7 +2133,7 @@ ServerEvents.recipes(catalyst => {
             ],
             fluid_input: [],
             fluid_output: [],
-            energy_out: 3000000
+            energy_out: 5000000
         },
         {
             time: 10,
@@ -2516,8 +2516,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:charged_certus_quartz_crystal", count: 128, chance: 1.0 }],
             inputs: [{ id: "ae2:certus_quartz_crystal", count: 128, chance: 1.0 }],
             fluid_input: [],
@@ -2525,8 +2525,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:matter_ball", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:cobblestone", count: 16384, chance: 1.0 }],
             fluid_input: [],
@@ -2534,8 +2534,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:singularity", count: 1, chance: 1.0 }],
             inputs: [],
             fluid_input: [{ id: "minecraft:water", count: 32000000, chance: 1.0 }],
@@ -2543,8 +2543,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "ae2:singularity", count: 64, chance: 1.0 }],
             inputs: [{ id: "ae2:matter_ball", count: 4096, chance: 1.0 }],
             fluid_input: [],
@@ -2552,8 +2552,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "oritech:overcharged_crystal", count: 9, chance: 1.0 }],
             inputs: [
                 { id: 'oritech:fluxite_block', count: 1, chance: 1.0 },
@@ -2564,8 +2564,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "oritech:enderic_compound", count: 192, chance: 1.0 }],
             inputs: [
                 { id: 'minecraft:ender_pearl', count: 16, chance: 1.0}
@@ -2575,8 +2575,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "oritech:enderic_compound", count: 64, chance: 1.0 }],
             inputs: [
                 { id: 'minecraft:end_stone', count: 64, chance: 1.0}
@@ -2586,8 +2586,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "oritech:enderic_compound", count: 64, chance: 1.0 }],
             inputs: [
                 { id: 'minecraft:sculk', count: 64, chance: 1.0}
@@ -2597,8 +2597,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "oritech:enderic_compound", count: 128, chance: 1.0 }],
             inputs: [
                 { id: 'minecraft:redstone', count: 64, chance: 1.0},
@@ -2609,8 +2609,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:echo_shard", count: 1, chance: 1.0 }],
             inputs: [
                 {id: 'minecraft:sculk', count: 10, chance: 1.0 },
@@ -2621,8 +2621,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:elytra", count: 1, chance: 1.0 }],
             inputs: [
                 {id: 'minecraft:netherite_chestplate', count: 1, chance: 1.0 },
@@ -2635,8 +2635,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:heavy_core", count: 1, chance: 1.0 }],
             inputs: [
                 {id: 'minecraft:wind_charge', count: 16, chance: 1.0 },
@@ -2648,8 +2648,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "eternalores:plutonium_dust", count: 9, chance: 1.0 }],
             inputs: [
                 {id: 'eternalores:uranium_block', count: 1, chance: 1.0 },
@@ -2661,11 +2661,11 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "oritech:banana", count: 1, chance: 0.75 }],
             inputs: [
-                { id: 'minecraft:enchanted_golden_apple', count: 1, chance: 1.0 },
+                { id: 'minecraft:enchanted_golden_apple', count: 9, chance: 1.0 },
                 { id: 'minecraft:yellow_dye', count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -2673,8 +2673,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:enori_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:iron_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2682,8 +2682,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:restonia_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:redstone_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2691,8 +2691,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:palis_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:lapis_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2700,8 +2700,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:diamatine_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:diamond_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2709,8 +2709,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:void_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:coal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2718,8 +2718,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:emeradic_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:emerald_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2727,8 +2727,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:empowered_enori_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:enori_crystal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2736,8 +2736,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:empowered_restonia_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:restonia_crystal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2745,8 +2745,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:empowered_palis_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:palis_crystal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2754,8 +2754,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:empowered_diamatine_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:diamatine_crystal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2763,8 +2763,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:empowered_void_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:void_crystal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2772,8 +2772,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:empowered_emeradic_crystal_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:emeradic_crystal_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2781,8 +2781,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:crystallized_canola_seed", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:canola_seeds", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2790,8 +2790,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:soul_sand", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:sand", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2799,8 +2799,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:ethetic_green_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "actuallyadditions:ethetic_white_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2808,8 +2808,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "actuallyadditions:ethetic_white_block", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:quartz_block", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -2817,8 +2817,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 10000,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:leather", count: 64, chance: 1.0 }],
             inputs: [{ id: "minecraft:rotten_flesh", count: 64, chance: 1.0 }],
             fluid_input: [],
@@ -3553,8 +3553,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "pneumaticcraft:printed_circuit_board", count: 3, chance: 1.0 }],
             inputs: [
                 {id: 'pneumaticcraft:plastic', count: 1, chance: 1.0},
@@ -3567,8 +3567,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 50,
+            energy: 2000,
             outputs: [{ id: "mekanism:alloy_atomic", count: 2, chance: 1.0 }],
             inputs: [
                 {id: 'mekanism:enriched_refined_obsidian', count: 1, chance: 1.0 },
@@ -3846,8 +3846,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 100,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:heart_of_the_sea", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "minecraft:nautilus_shell", count: 4, chance: 1.0 },
@@ -3859,8 +3859,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:turtle_scute", count: 5, chance: 1.0 }],
             inputs: [
                 { id: "minecraft:seagrass", count: 4, chance: 1.0 },
@@ -3872,8 +3872,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 20,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:armadillo_scute", count: 16, chance: 1.0 }],
             inputs: [
                 { id: "minecraft:dirt", count: 1, chance: 1.0 },
@@ -3885,8 +3885,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:rabbit_hide", count: 4, chance: 1.0 }],
             inputs: [
                 { id: "minecraft:leather", count: 1, chance: 1.0 },
@@ -3897,8 +3897,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:breeze_rod", count: 2, chance: 1.0 }],
             inputs: [
                 { id: "minecraft:chiseled_tuff", count: 2, chance: 1.0 },
@@ -3909,8 +3909,8 @@ ServerEvents.recipes(catalyst => {
             energy_out: 0
         },
         {
-            time: 200,
-            energy: 8,
+            time: 150,
+            energy: 200000,
             outputs: [{ id: "minecraft:ominous_bottle{\"minecraft:ominous_bottle_amplifier\":4}", count: 1, chance: 1.0 }],
             inputs: [
                 { id: "minecraft:glass_bottle", count: 1, chance: 1.0 },
