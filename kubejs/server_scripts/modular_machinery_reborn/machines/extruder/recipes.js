@@ -603,11 +603,11 @@ ServerEvents.recipes(catalyst => {
         return undefined
     }
 
-    let createRecipe = (material, amount_input, output, amount, mold) => {
+    let createRecipe = (material, amount_input, output, amount, mold, parallel) => {
         let item = getItem(material, amount_input)
         if(item === undefined)
         {
-            console.log(`Incorrect recipe inputs for item ${material}!!!!!`)
+            console.warn(`Incorrect recipe inputs for item ${material} for extruder!`)
             return;
         }
 
@@ -632,30 +632,48 @@ ServerEvents.recipes(catalyst => {
         }
         else
         {
-            console.log(`Incorrect dust for item ${material}!!!!!`)
+            console.warn(`Incorrect dust for item ${material} for extruder!`)
         }
 
-        recipe.id(`catalyst:mmr/extruder/${output}_${amount}`);
+        if(parallel > 1)
+        {
+            recipe.hide()
+        }
+
+        recipe.id(`catalyst:mmr/extruder/${recipe_counter}/${output}_${amount}`);
+        recipe_counter++;
     }
 
     gears.forEach(gear => {
         let material = gear.replace("gear_", "");
-        createRecipe(material, 2, gear, 1, 'eternalores:mold_gear');
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(material, 4*i, gear, 1*i, 'eternalores:mold_gear', i);
+        }
     })
 
     foils.forEach(foil => {
         let material = foil.replace("_foil", "");
-        createRecipe(material, 1, foil, 1, 'eternalores:mold_foil');
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(material, 1*i, foil, 1*i, 'eternalores:mold_foil', i);
+        }
     })
 
     plates.forEach(plate => {
         let material = plate.replace("plate_", "");
-        createRecipe(material, 1, plate, 1, 'eternalores:mold_plate');
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(material, 1*i, plate, 1*i, 'eternalores:mold_plate', i);
+        }
     })
 
     rods.forEach(rod => {
         let material = rod.replace("rod_", "");
-        createRecipe(material, 1, rod, 2, 'eternalores:mold_rod');
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(material, 1*i, rod, 2*i, 'eternalores:mold_rod', i);
+        }
     })
 
     console.log(`[CatJS] Finished extruder recipes`);
