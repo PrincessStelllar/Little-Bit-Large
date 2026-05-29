@@ -44,10 +44,14 @@ MMREvents.machines(catalyst => {
                     "mcwlights:cross_lantern[hanging=false]"
                 ],
                 "c": [
-                    "modular_machinery_reborn:inputbus_tiny"
+                    "#modular_machinery_reborn:inputbus",
+                    "#modular_machinery_reborn:outputbus",
+                    "#modular_machinery_reborn:energyinputhatch"
                 ],
                 "d": [
-                    "modular_machinery_reborn:outputbus_tiny"
+                    "#modular_machinery_reborn:inputbus",
+                    "#modular_machinery_reborn:outputbus",
+                    "#modular_machinery_reborn:energyinputhatch"
                 ],
                 "e": [
                     "immersiveengineering:sheetmetal_constantan"
