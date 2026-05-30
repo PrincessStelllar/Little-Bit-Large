@@ -61,5 +61,32 @@
   "catalyst.mmr.tooltip.colider.gui": "This multiblock has visuals animations that breaks with Iris mod\nYou can disable Iris mod if you aren't using shaders\nIt doesn't break the machine, it's just visual!",
 
   "catalyst.mmr.tooltip.extruder.item": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
-  "catalyst.mmr.tooltip.extruder.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!"
+  "catalyst.mmr.tooltip.extruder.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
+
+  "catalyst.mmr.machine.primitive_alloy_maker": "&#B3552EPrimitive&r Alloy Maker",
+  "catalyst.mmr.machine.arboretum": "&#57f016Arboretum&r",
+  "catalyst.mmr.machine.personal_beacon": "Personal &#B57EDC<wiggle a=0.5 f=0.25 w=0.5><pulse base=0.75 a=0.25 f=0.5 w=1.0>Beacon</pulse></wiggle>&r",
+  "catalyst.mmr.machine.magical_apiary": "&#603b91<turb a=0.5 f=0.5><pulse base=1.0 a=2.0 f=1 w=0.25>Magical</pulse></turb>&r &#e6e019Apiary&r",
+  "catalyst.mmr.machine.apis_mutandis": "&#603b91<turb a=0.5 f=0.5><pulse base=1.0 a=2.0 f=1 w=0.25>Apis</pulse></turb> Mutandis",
+  "catalyst.mmr.machine.primitive_apiary": "&#B3552EPrimitive&r &#e6e019Apiary&r",
+  "catalyst.mmr.machine.colider": "<neon p=10 r=2 a=0.12><pulse base=0.75 a=1.0 f=1.0 w=0.6><fade a=0.6 f=1.0 w=0.6>Gravitational</fade></pulse></neon> &#ff0522Collider&r",
+  "catalyst.mmr.machine.extruder": "&#E1BA11Extruder&r",
+  "catalyst.mmr.machine.fisher": "&#05c0ffFisher&r",
+  "catalyst.mmr.machine.crystalline_fabricator": "<pulse base=0.75 a=1.0 f=1.0 w=1.0>Crystalline</pulse> Fabricator",
+  "catalyst.mmr.machine.geo_synthesizer": "<pulse base=0.75 a=1.0 f=1.0 w=1.0>Geo</pulse> Synthesizer",
+  "catalyst.mmr.machine.greenhouse": "&#05FF7CGreenhouse&r",
+  "catalyst.mmr.machine.data_extractor": "Data Extractor",
+  "catalyst.mmr.machine.igneus_extruder": "<grad from=#FFF700 to=#FF0000 hue=true f=0.4 sp=20.0 uni=true><pulse base=0.75 a=1.0 f=1.0 w=0.0>Igneous</pulse></grad> Extruder",
+  "catalyst.mmr.machine.primitive_extruder": "&#B3552EPrimitive&r <grad from=#FFF700 to=#FF0000 hue=true f=0.4 sp=20.0 uni=true><pulse base=0.75 a=1.0 f=1.0 w=0.0>Igneous</pulse></grad> Extruder",
+  "catalyst.mmr.machine.abyssal_pump": "Abyssal Pump",
+  "catalyst.mmr.machine.neutron_injector": "Neutron Injector",
+  "catalyst.mmr.machine.osmotic_consentrator": "Osmotic Consentrator",
+  "catalyst.mmr.machine.phytomorphic_synthesiszer": "Phytomorphic Synthesizer",
+  "catalyst.mmr.machine.head_drill_miner": "<grad from=#05C0FF to=#28FF05 hue=true f=0.5 sp=20.0 uni=true><pulse base=0.75 a=2.0 f=1.0 w=0.5>Head</pulse></grad> Drill Miner",
+  "catalyst.mmr.machine.celestial_forge": "&#6fff00<wave a=0.7 f=0.2 w=0.5>Celestial</wave>&r Forge",
+  "catalyst.mmr.machine.advanced_multismelter": "Advanced MultiSmelter",
+  "catalyst.mmr.machine.ender_furnace": "&#c200ffEnder&r Furnace",
+  "catalyst.mmr.machine.multismelter": "MultiSmelter",
+  "catalyst.mmr.machine.soul_furnace": "<grad from=#FF0000 to=#0003FF hue=false f=0.25 sp=50.0 uni=false>Soul</grad> Furnace",
+  "catalyst.mmr.machine.primitive_furnace": "&#B3552EPrimitive&r Furnace"
 }

@@ -5,7 +5,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:primitive_alloy")
         .color('#ff5d4737')
-        .name('Primitive Alloy Maker')
+        .name(Component.translatable("catalyst.mmr.machine.primitive_alloy_maker"))
         .structure(
             MMRStructureBuilder.create()
             .pattern([

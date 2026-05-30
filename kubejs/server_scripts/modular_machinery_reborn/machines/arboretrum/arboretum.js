@@ -12,11 +12,11 @@ MMREvents.machines(catalyst => {
          * #AlphaAlphaRedRedGreenGreenBlueBlue
          * color in int number format
          */
-        .color('#00131313')
+        .color('#ff1AFF00')
         /**
          * The name that the machine should display in the controller item and in the controller GUI -> default localized with the id of the creation
          */
-        .name('Arboretum')
+        .name(Component.translatable("catalyst.mmr.machine.arboretum"))
         /**
          * The multiblock definition
          */

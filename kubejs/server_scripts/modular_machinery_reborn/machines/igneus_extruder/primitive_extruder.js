@@ -1,7 +1,7 @@
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:primitive_extruder")
         .color('#ff66605f')
-        .name('Primitive Extruder')
+        .name(Component.translatable("catalyst.mmr.machine.primitive_extruder"))
         .structure(
             MMRStructureBuilder.create()
             .pattern([

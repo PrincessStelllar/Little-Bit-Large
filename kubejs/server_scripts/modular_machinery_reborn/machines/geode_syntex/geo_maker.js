@@ -5,7 +5,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:crystalline_fabricator")
         .color('#fffff9f9')
-        .name('Crystalline Fabricator')
+        .name(Component.translatable("catalyst.mmr.machine.crystalline_fabricator"))
         .structure(
             MMRStructureBuilder.create()
                 .pattern([

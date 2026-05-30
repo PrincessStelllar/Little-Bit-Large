@@ -1,7 +1,7 @@
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:primitive_apiary")
         .color('#fff4cc45')
-        .name('Basic Apiary')
+        .name(Component.translatable("catalyst.mmr.machine.primitive_apiary"))
         .structure(
             MMRStructureBuilder.create()
             .pattern([

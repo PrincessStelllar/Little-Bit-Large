@@ -5,7 +5,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:multismelter")
         .color('#0016161A')
-        .name('MultiSmelter')
+        .name(Component.translatable("catalyst.mmr.machine.multismelter"))
         .structure(
         MMRStructureBuilder.create()
         .pattern([

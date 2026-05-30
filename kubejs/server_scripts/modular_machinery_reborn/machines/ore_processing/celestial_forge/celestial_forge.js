@@ -5,7 +5,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:celestial_forge")
         .color('#FF6fff00')
-        .name('Celestial Forge')
+        .name(Component.translatable("catalyst.mmr.machine.celestial_forge"))
         .structure(
             MMRStructureBuilder.create()
                 .pattern([

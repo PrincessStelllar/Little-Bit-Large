@@ -16,7 +16,7 @@ MMREvents.machines(catalyst => {
         /**
          * The name that the machine should display in the controller item and in the controller GUI -> default localized with the id of the creation
          */
-        .name('Personal beacon')
+        .name(Component.translatable("catalyst.mmr.machine.personal_beacon"))
         /**
          * The multiblock definition
          */

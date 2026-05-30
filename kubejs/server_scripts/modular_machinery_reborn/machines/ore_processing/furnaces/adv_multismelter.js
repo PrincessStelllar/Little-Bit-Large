@@ -8,7 +8,7 @@ MMREvents.machines(catalyst => {
      */
     catalyst.create("mmr:advanced_multismelter")
         .color('#FF5E0000')
-        .name('Advanced MultiSmelter')
+        .name(Component.translatable("catalyst.mmr.machine.advanced_multismelter"))
         .structure(
         MMRStructureBuilder.create()
         .pattern([

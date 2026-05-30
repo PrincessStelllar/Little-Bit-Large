@@ -1,7 +1,7 @@
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:end_furnace")
         .color('#ff1f1b15')
-        .name('Ender Furnace')
+        .name(Component.translatable("catalyst.mmr.machine.ender_furnace"))
         .structure(
             MMRStructureBuilder.create()
             .pattern([

@@ -5,7 +5,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:data_extractor")
         .color('#00191919')
-        .name('Data extractor')
+        .name(Component.translatable("catalyst.mmr.machine.data_extractor"))
         .structure(
             MMRStructureBuilder.create()
                 .pattern([

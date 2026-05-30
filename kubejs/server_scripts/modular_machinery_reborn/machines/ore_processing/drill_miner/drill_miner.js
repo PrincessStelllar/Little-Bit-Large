@@ -5,7 +5,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:drill_miner")
         .color('#FF484949')
-        .name('Head Drill Miner')
+        .name(Component.translatable("catalyst.mmr.machine.head_drill_miner"))
         .structure(
             MMRStructureBuilder.create()
             .pattern([
