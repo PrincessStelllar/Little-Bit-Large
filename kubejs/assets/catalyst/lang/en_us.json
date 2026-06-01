@@ -1,6 +1,6 @@
 {
-  "catalyst.mmr.tooltip.primitive_alloy.item": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
-  "catalyst.mmr.tooltip.primitive_alloy.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
+  "catalyst.mmr.tooltip.primitive_alloy.item": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
+  "catalyst.mmr.tooltip.primitive_alloy.gui": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
   
   "catalyst.mmr.tooltip.personal_beacon.item": "It can only affect 1 player at the time based on the nametag's name",
   "catalyst.mmr.tooltip.personal_beacon.gui": "It can only affect 1 player at the time based on the nametag's name",
@@ -40,8 +40,8 @@
   "catalyst.mmr.tooltip.primitive_extruder.gui.1": "Needs to have a valid block placed 2 blocks below the controller to being able to work",
   "catalyst.mmr.tooltip.primitive_extruder.gui.2": "Voids items if the hatches are full!",
 
-  "catalyst.mmr.tooltip.celestial_forge.item": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....",
-  "catalyst.mmr.tooltip.celestial_forge.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more....",
+  "catalyst.mmr.tooltip.celestial_forge.item": "This machine has fake parallels, so it can do 1 recipe up to 256 recipes at the same time! Or more with real parallels....\n",
+  "catalyst.mmr.tooltip.celestial_forge.gui": "This machine has fake parallels, so it can do 1 recipe up to 256 recipes at the same time! Or more with real parallels....",
 
   "catalyst.mmr.tooltip.drill_miner.item": "This machine needs mobs inside to work!",
   "catalyst.mmr.tooltip.drill_miner.gui": "This machine needs mobs inside to work!",
@@ -52,16 +52,16 @@
   "catalyst.mmr.tooltip.nether_furnace.gui": "[Soul Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
   "catalyst.mmr.tooltip.end_furnace.item": "[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
   "catalyst.mmr.tooltip.end_furnace.gui": "[Ender Furnace] This machine has fake parallels, so it can do 1 recipe or 8 at the same time!",
-  "catalyst.mmr.tooltip.multismelter.item": "[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
-  "catalyst.mmr.tooltip.multismelter.gui": "[Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
-  "catalyst.mmr.tooltip.advanced_multismelter.item": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
-  "catalyst.mmr.tooltip.advanced_multismelter.gui": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe or 16 at the same time! Or more!",
+  "catalyst.mmr.tooltip.multismelter.item": "[Multismelter] This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time! Or more!",
+  "catalyst.mmr.tooltip.multismelter.gui": "[Multismelter] This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time! Or more!",
+  "catalyst.mmr.tooltip.advanced_multismelter.item": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time! Or more!",
+  "catalyst.mmr.tooltip.advanced_multismelter.gui": "[Advanced Multismelter] This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time! Or more!",
 
   "catalyst.mmr.tooltip.colider.item": "This multiblock has visuals animations that breaks with Iris mod\nYou can disable Iris mod if you aren't using shaders\nIt doesn't break the machine, it's just visual!",
   "catalyst.mmr.tooltip.colider.gui": "This multiblock has visuals animations that breaks with Iris mod\nYou can disable Iris mod if you aren't using shaders\nIt doesn't break the machine, it's just visual!",
 
-  "catalyst.mmr.tooltip.extruder.item": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
-  "catalyst.mmr.tooltip.extruder.gui": "This machine has fake parallels, so it can do 1 recipe or 16 at the same time!",
+  "catalyst.mmr.tooltip.extruder.item": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
+  "catalyst.mmr.tooltip.extruder.gui": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
 
   "catalyst.mmr.machine.primitive_alloy_maker": "&#B3552EPrimitive&r Alloy Maker",
   "catalyst.mmr.machine.arboretum": "&#57f016Arboretum&r",
