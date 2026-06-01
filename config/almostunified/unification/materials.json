@@ -10,7 +10,8 @@
     "immersiveengineering",
     "oritech",
     "create",
-    "powah"
+    "powah",
+    "energizedpower"
   ],
   "priority_overrides": {},
   "stone_variants": [
@@ -37,7 +38,8 @@
     "c:pellets/{material}",
     "c:plastics",
     "c:flours/{material}",
-    "c:silicon"
+    "c:silicon",
+    "c:wires"
   ],
   "ignored_tags": [],
   "ignored_items": [],
