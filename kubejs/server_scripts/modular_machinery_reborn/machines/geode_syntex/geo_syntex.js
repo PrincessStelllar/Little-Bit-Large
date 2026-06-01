@@ -25,9 +25,9 @@ MMREvents.machines(catalyst => {
                     "c": ["modular_machinery_reborn:casing_plain"],
                     "a": ["modular_machinery_reborn:casing_reinforced"],
                     "n": ["modular_machinery_reborn:casing_circuitry"],
-                    "f": ["modular_machinery_reborn:inputbus_ludicrous"],
-                    "g": ["modular_machinery_reborn:energyinputhatch_ultimate"],
-                    "h": ["modular_machinery_reborn:outputbus_ludicrous"],
+                    "f": ["#modular_machinery_reborn:inputbus"],
+                    "g": ["#modular_machinery_reborn:energyinputhatch"],
+                    "h": ["#modular_machinery_reborn:outputbus"],
                     "e": [
                         "#chipped:amethyst_block",
                         "ae2:quartz_block",

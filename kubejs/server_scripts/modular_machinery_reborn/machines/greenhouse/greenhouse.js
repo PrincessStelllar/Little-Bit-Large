@@ -33,8 +33,8 @@ MMREvents.machines(catalyst => {
         .keys({
             "a":[
                 "modular_machinery_reborn:casing_plain",
-                'modular_machinery_reborn:fluidinputhatch_tiny',
-                'modular_machinery_reborn:energyinputhatch_tiny',
+                '#modular_machinery_reborn:fluidinputhatch',
+                '#modular_machinery_reborn:energyinputhatch',
                 '#modular_machinery_reborn:itembus'
             ],
             "b":['#minecraft:stairs'],

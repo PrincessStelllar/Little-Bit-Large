@@ -286,7 +286,6 @@ MMREvents.machines(catalyst => {
                 .keys({
                     "a": ["minecraft:flowering_azalea_leaves"],
                     "b": ['chipped:fancy_redstone_lamp'],
-                    "c": ['#modular_machinery_reborn:parallelhatch'],
                     "d": ["minecraft:end_rod[facing=up]"],
                     "e": ["minecraft:nether_bricks"],
                     "f": ["minecraft:nether_brick_wall"],

@@ -90,7 +90,11 @@ MMREvents.machines(catalyst => {
             "G": ["oritech:superconductor", "oritech:superconductor_connection", 'energizedpower:energized_crystal_matrix_cable'],
             "H": ["oritech:superconductor", "oritech:superconductor_connection", 'energizedpower:energized_crystal_matrix_cable'],
             "I": ["oritech:superconductor", "oritech:superconductor_connection", 'energizedpower:energized_crystal_matrix_cable'],
-            "J": ["modular_machinery_reborn:energyinputhatch_ultimate"],
+            "J": [
+                "modular_machinery_reborn:energyinputhatch_ultimate",
+                "modular_machinery_reborn:energyinputhatch_huge",
+                "modular_machinery_reborn:energyinputhatch_ludicrous"
+            ],
             "K": ["oritech:superconductor", "oritech:superconductor_connection", 'energizedpower:energized_crystal_matrix_cable'],
             "L": ["oritech:superconductor", "oritech:superconductor_connection", 'energizedpower:energized_crystal_matrix_cable'],
             "M": ["oritech:superconductor", "oritech:superconductor_connection", 'energizedpower:energized_crystal_matrix_cable'],

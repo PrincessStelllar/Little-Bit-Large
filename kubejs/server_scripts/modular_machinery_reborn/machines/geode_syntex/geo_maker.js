@@ -26,7 +26,7 @@ MMREvents.machines(catalyst => {
                         "crystalix:crystalix_glass"
                     ],
                     "e": ["ae2:quartz_block"],
-                    "f": ["modular_machinery_reborn:energyinputhatch_ultimate"],
+                    "f": ["#modular_machinery_reborn:energyinputhatch"],
                     "g": ["chipped:rough_quartz_block"],
                     "h": ["chipped:curly_quartz_block_pillar[axis=y]"],
                     "i": ["chipped:bordered_obsidian"],
@@ -40,9 +40,9 @@ MMREvents.machines(catalyst => {
                     "o": ["ars_nouveau:sourcestone_large_bricks"],
                     "p": ["rechiseled:amethyst_block_bordered_diagonal_tiles_connecting"],
                     "q": ["ars_nouveau:sourcestone"],
-                    "r": ["modular_machinery_reborn:inputbus_tiny"],
+                    "r": ["#modular_machinery_reborn:inputbus"],
                     "s": ["minecraft:amethyst_block"],
-                    "t": ["modular_machinery_reborn:outputbus_tiny"]
+                    "t": ["#modular_machinery_reborn:outputbus"]
                 })
         )
 })

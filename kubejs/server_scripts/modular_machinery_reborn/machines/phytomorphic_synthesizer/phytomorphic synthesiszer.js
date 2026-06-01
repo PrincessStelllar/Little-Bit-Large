@@ -17,7 +17,8 @@ MMREvents.machines(catalyst => {
                     "a": ["modular_machinery_reborn:casing_plain",
                         '#modular_machinery_reborn:energyinputhatch',
                         '#modular_machinery_reborn:itembus',
-                        '#modular_machinery_reborn:fluidhatch'
+                        '#modular_machinery_reborn:fluidhatch',
+                        "eternalores:ultimatitanium_block"
                     ],
                     "b": ["mysticalagradditions:insanium_farmland"],
                     "c": ["mysticalagriculture:awakened_supremium_growth_accelerator"],
