@@ -544,6 +544,28 @@ ServerEvents.recipes(catalyst => {
         "magnesium_ingot"
     ];
 
+    let energized_plates = [
+        { input: 'energizedpower:advanced_alloy_ingot', output: 'energizedpower:advanced_alloy_plate' },
+        { input: 'energizedpower:energized_copper_ingot', output: 'energizedpower:energized_copper_plate' },
+        { input: 'energizedpower:energized_gold_ingot', output: 'energizedpower:energized_gold_plate' }
+    ];
+
+    let standard_wires = [
+        { material: 'iron', output: 'createaddition:iron_wire' },
+        { material: 'electrum', output: 'immersiveengineering:wire_electrum' },
+        { material: 'steel', output: 'immersiveengineering:wire_steel' },
+        { material: 'aluminum', output: 'immersiveengineering:wire_aluminum' },
+        { material: 'lead', output: 'immersiveengineering:wire_lead' },
+        { material: 'copper', output: 'immersiveengineering:wire_copper' },
+        { material: 'tin', output: 'energizedpower:tin_wire' },
+        { material: 'gold', output: 'energizedpower:gold_wire' }
+    ];
+
+    let energized_wires = [
+        { input: 'energizedpower:energized_copper_ingot', output: 'energizedpower:energized_copper_wire' },
+        { input: 'energizedpower:energized_gold_ingot', output: 'energizedpower:energized_gold_wire' }
+    ];
+
     let mod_id = "eternalores:";
     let machine_id = "mmr:extruder";
     let recipe_counter = 0;
@@ -559,7 +581,7 @@ ServerEvents.recipes(catalyst => {
     let energyIn = { x: 0, y: 4 };
     let progressArrow = { x: 55, y: 23 };
 
-    let time = 100;
+    let time = 75;
     let energy = 50;
 
     let baseRecipe = () => {
@@ -572,6 +594,8 @@ ServerEvents.recipes(catalyst => {
 
     let getItem = (material, amount) =>
     {
+        if(material.includes(':')) return Item.of(material, amount)
+
         let id = mod_id + "gem_" + material
         if(Item.exists(id)) return Item.of(id, amount)
         id = mod_id + material + "_ingot"
@@ -593,6 +617,8 @@ ServerEvents.recipes(catalyst => {
     }
 
     let getDust = (material) => {
+        if(material.includes(':')) return undefined
+
         let id = mod_id + material + "_small_dust"
         if(Item.exists(id)) return { item: Item.of(id, 3), is_small: true }
         id = mod_id + material + "_dust"
@@ -615,7 +641,7 @@ ServerEvents.recipes(catalyst => {
 
         recipe.requireItem(item, input_slots[0].x, input_slots[0].y);
         recipe.requireItem(Item.of(mold, 1), 0, input_slots[1].x, input_slots[1].y);
-        let output_id = mod_id + output
+        let output_id = output.includes(':') ? output : mod_id + output
         recipe.produceItem(Item.of(output_id, amount), output_slots[0].x,  output_slots[0].y)
 
         let dust = getDust(material)
@@ -632,7 +658,10 @@ ServerEvents.recipes(catalyst => {
         }
         else
         {
-            console.warn(`Incorrect dust for item ${material} for extruder!`)
+            if(!material.includes(':'))
+            {
+                console.warn(`Incorrect dust for item ${material} for extruder!`)
+            }
         }
 
         if(parallel > 1)
@@ -640,7 +669,7 @@ ServerEvents.recipes(catalyst => {
             recipe.hide()
         }
 
-        recipe.id(`catalyst:mmr/extruder/${recipe_counter}/${output}_${amount}`);
+        recipe.id(`catalyst:mmr/extruder/${recipe_counter}/${output.replace(':', '_')}_${amount}`);
         recipe_counter++;
     }
 
@@ -675,6 +704,27 @@ ServerEvents.recipes(catalyst => {
             createRecipe(material, 1*i, rod, 2*i, 'eternalores:mold_rod', i);
         }
     })
+
+    energized_plates.forEach(pair => {
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(pair.input, 1*i, pair.output, 1*i, 'eternalores:mold_plate', i);
+        }
+    });
+
+    standard_wires.forEach(wire => {
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(wire.material, 1*i, wire.output, 3*i, 'immersiveengineering:mold_wire', i);
+        }
+    });
+
+    energized_wires.forEach(wire => {
+        for(let i = 1; i < 17; i++)
+        {
+            createRecipe(wire.input, 1*i, wire.output, 3*i, 'immersiveengineering:mold_wire', i);
+        }
+    });
 
     console.log(`[CatJS] Finished extruder recipes`);
 })
