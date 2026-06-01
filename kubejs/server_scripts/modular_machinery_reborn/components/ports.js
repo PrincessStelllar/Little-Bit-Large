@@ -5,8 +5,6 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 
 ServerEvents.recipes(catalyst => {
     const mmr = 'modular_machinery_reborn:';
-    const mmr_mek = 'modular_machinery_reborn_mekanism:';
-    const mmr_ars = 'modular_machinery_reborn_ars:'
 
     // Helper function to create the shaped recipe
     // D = Input Port (Side), A = Center (Core), B = Top, C = Bottom
@@ -23,135 +21,6 @@ ServerEvents.recipes(catalyst => {
             C: bottom
         }).id(`catalyst:mmr/ports/${input.split(':')[1]}_to_${output.split(':')[1]}`);
     };
-
-    //Input bus
-    catalyst.shaped(Item.of("modular_machinery_reborn:inputbus_tiny"),
-        [
-            'ABA',
-            'BCB',
-            'ABA'
-        ],
-        {
-            B: "minecraft:mud_bricks",
-            A: "minecraft:bricks",
-            C: "minecraft:chest"
-        }
-    ).id(`catalyst:mmr/ports/tiny_input_bus`);
-
-    catalyst.shaped(Item.of("modular_machinery_reborn:outputbus_tiny"),
-        [
-            'ABA',
-            'BCB',
-            'ABA'
-        ],
-        {
-            A: "minecraft:mud_bricks",
-            B: "minecraft:bricks",
-            C: "minecraft:chest"
-        }
-    ).id(`catalyst:mmr/ports/tiny_output_bus`);
-    
-    //fluid hatches
-    catalyst.shaped(Item.of('modular_machinery_reborn:fluidinputhatch_tiny'),
-        [
-            'ACA',
-            'BEB',
-            'ADA'
-        ],
-        {
-            A: 'eternalores:plate_steel',
-            B: 'eternalores:plate_bronze',
-            C: 'utilitarian:fluid_hopper',
-            D: 'minecraft:bucket',
-            E: 'eternalores:signalum_foil'
-        }
-    ).id(`catalyst:mmr/ports/tiny_input_fluid_hatch`);
-
-    catalyst.shaped(Item.of('modular_machinery_reborn:fluidoutputhatch_tiny'),
-        [
-            'ADA',
-            'BEB',
-            'ACA'
-        ],
-        {
-            A: 'eternalores:plate_steel',
-            B: 'eternalores:plate_bronze',
-            C: 'utilitarian:fluid_hopper',
-            D: 'minecraft:bucket',
-            E: 'eternalores:signalum_foil'
-        }
-    ).id(`catalyst:mmr/ports/tiny_output_fluid_hatch`);
-
-    //item
-    // Input: Top = Hopper, Bottom = Chest | Output: Top = Chest, Bottom = Hopper
-    const itemTiers = [
-        { id: 'small',      next: 'normal',     upg: 'pipez:basic_upgrade' },
-        { id: 'normal',     next: 'reinforced', upg: 'pipez:basic_upgrade' },
-        { id: 'reinforced', next: 'big',        upg: 'pipez:improved_upgrade' },
-        { id: 'big',        next: 'huge',       upg: 'pipez:advanced_upgrade' },
-        { id: 'huge',       next: 'ludicrous',  upg: 'pipez:ultimate_upgrade' }
-    ];
-
-    itemTiers.forEach(t => {
-        createPort(`${mmr}inputbus_${t.id}`,  `${mmr}inputbus_${t.next}`,  t.upg, 'minecraft:hopper', '#c:chests');
-        createPort(`${mmr}outputbus_${t.id}`, `${mmr}outputbus_${t.next}`, t.upg, '#c:chests', 'minecraft:hopper');
-    });
-
-    //fluid
-    // Input: Top = Pipe, Bottom = Tank | Output: Top = Tank, Bottom = Pipe
-    const fluidTiers = [
-        { id: 'small',      next: 'normal',     upg: 'pipez:basic_upgrade',    pipe: 'mekanism:basic_mechanical_pipe',    tank: 'mekanism:basic_fluid_tank' },
-        { id: 'normal',     next: 'reinforced', upg: 'pipez:basic_upgrade',    pipe: 'mekanism:basic_mechanical_pipe',    tank: 'mekanism:basic_fluid_tank' },
-        { id: 'reinforced', next: 'big',        upg: 'pipez:improved_upgrade', pipe: 'mekanism:advanced_mechanical_pipe', tank: 'mekanism:advanced_fluid_tank' },
-        { id: 'big',        next: 'huge',       upg: 'pipez:improved_upgrade', pipe: 'mekanism:advanced_mechanical_pipe', tank: 'mekanism:advanced_fluid_tank' },
-        { id: 'huge',       next: 'ludicrous',  upg: 'pipez:advanced_upgrade', pipe: 'mekanism:elite_mechanical_pipe',    tank: 'mekanism:elite_fluid_tank' },
-        { id: 'ludicrous',  next: 'vacuum',     upg: 'pipez:ultimate_upgrade', pipe: 'mekanism:ultimate_mechanical_pipe', tank: 'mekanism:ultimate_fluid_tank' }
-    ];
-
-    fluidTiers.forEach(t => {
-        createPort(`${mmr}fluidinputhatch_${t.id}`,  `${mmr}fluidinputhatch_${t.next}`,  t.upg, t.pipe, t.tank);
-        createPort(`${mmr}fluidoutputhatch_${t.id}`, `${mmr}fluidoutputhatch_${t.next}`, t.upg, t.tank, t.pipe);
-    });
-
-    //chemical
-    // Base casing recipes
-    createPort(`${mmr}casing_plain`, `${mmr_mek}chemicalinputhatch_small`,  'pipez:gas_pipe', 'pipez:gas_pipe', 'pipez:gas_pipe');
-    createPort(`${mmr}casing_plain`, `${mmr_mek}chemicaloutputhatch_small`, 'pipez:gas_pipe', 'pipez:gas_pipe', 'pipez:gas_pipe');
-
-    // Input: Top = Tube, Bottom = Tank | Output: Top = Tank, Bottom = Tube
-    const chemTiers = [
-        { id: 'small',      next: 'normal',     upg: 'pipez:basic_upgrade',    tube: 'mekanism:basic_pressurized_tube',    tank: 'mekanism:basic_chemical_tank' },
-        { id: 'normal',     next: 'reinforced', upg: 'pipez:basic_upgrade',    tube: 'mekanism:basic_pressurized_tube',    tank: 'mekanism:basic_chemical_tank' },
-        { id: 'reinforced', next: 'big',        upg: 'pipez:improved_upgrade', tube: 'mekanism:advanced_pressurized_tube', tank: 'mekanism:advanced_chemical_tank' },
-        { id: 'big',        next: 'huge',       upg: 'pipez:improved_upgrade', tube: 'mekanism:advanced_pressurized_tube', tank: 'mekanism:advanced_chemical_tank' },
-        { id: 'huge',       next: 'ludicrous',  upg: 'pipez:advanced_upgrade', tube: 'mekanism:elite_pressurized_tube',    tank: 'mekanism:elite_chemical_tank' },
-        { id: 'ludicrous',  next: 'vacuum',     upg: 'pipez:ultimate_upgrade', tube: 'mekanism:ultimate_pressurized_tube', tank: 'mekanism:ultimate_chemical_tank' }
-    ];
-
-    chemTiers.forEach(t => {
-        createPort(`${mmr_mek}chemicalinputhatch_${t.id}`,  `${mmr_mek}chemicalinputhatch_${t.next}`,  t.upg, t.tube, t.tank);
-        createPort(`${mmr_mek}chemicaloutputhatch_${t.id}`, `${mmr_mek}chemicaloutputhatch_${t.next}`, t.upg, t.tank, t.tube);
-    });
-
-    //source
-    // Base casing recipes
-    createPort(`${mmr}casing_plain`, `${mmr_ars}sourceinputhatch_small`,  'ars_nouveau:source_gem_block', 'ars_nouveau:source_gem_block', 'ars_nouveau:source_gem_block');
-    createPort(`${mmr}casing_plain`, `${mmr_ars}sourceoutputhatch_small`, 'ars_nouveau:source_gem_block', 'ars_nouveau:source_gem_block', 'ars_nouveau:source_gem_block');
-
-    // Input: Top = Tube, Bottom = Tank | Output: Top = Tank, Bottom = Tube
-    const sourceTiers = [
-        { id: 'small',      next: 'normal',     upg: 'pipez:basic_upgrade',    tube: 'arseng:source_acceptor',    tank: 'ars_nouveau:source_jar' },
-        { id: 'normal',     next: 'reinforced', upg: 'pipez:basic_upgrade',    tube: 'arseng:source_acceptor',    tank: 'ars_nouveau:source_jar' },
-        { id: 'reinforced', next: 'big',        upg: 'pipez:improved_upgrade', tube: 'arseng:source_acceptor', tank: 'ars_nouveau:source_jar' },
-        { id: 'big',        next: 'huge',       upg: 'pipez:improved_upgrade', tube: 'arseng:source_acceptor', tank: 'ars_nouveau:source_jar' },
-        { id: 'huge',       next: 'ludicrous',  upg: 'pipez:advanced_upgrade', tube: 'arseng:source_acceptor',    tank: 'ars_nouveau:source_jar' },
-        { id: 'ludicrous',  next: 'vacuum',     upg: 'pipez:ultimate_upgrade', tube: 'arseng:source_acceptor', tank: 'ars_nouveau:source_jar' }
-    ];
-
-    sourceTiers.forEach(t => {
-        createPort(`${mmr_ars}sourceinputhatch_${t.id}`,  `${mmr_ars}sourceinputhatch_${t.next}`,  t.upg, t.tube, t.tank);
-        createPort(`${mmr_ars}sourceoutputhatch_${t.id}`, `${mmr_ars}sourceoutputhatch_${t.next}`, t.upg, t.tank, t.tube);
-    });
 
     //misc
     const miscRecipes = [
@@ -184,8 +53,7 @@ ServerEvents.recipes(catalyst => {
             }
         ).id(`catalyst:mmr/ports/dimensional_detector_detector`);
 
-    catalyst.shaped(
-            Item.of('modular_machinery_reborn:casing_gearbox'),
+    catalyst.shaped(Item.of('modular_machinery_reborn:casing_gearbox'),
             [
                 'ABA',
                 'BCB',
@@ -208,6 +76,19 @@ ServerEvents.recipes(catalyst => {
         B: 'minecraft:blue_dye',
         C: 'minecraft:blue_dye'
     }).id(`catalyst:mmr/ports/blueprint_output`);
+
+    catalyst.shaped(Item.of('modular_machinery_reborn:wrench'),
+        [
+            ' WD',
+            ' GW',
+            'W  '
+        ],
+        {
+            W: 'eternalores:rod_wrought_iron',
+            G: 'eternalores:gear_copper',
+            D: 'minecraft:orange_dye'
+        }
+    ).id(`catalyst:mmr/ports/wrench`);
 
     console.log("[CatJS] Added hatches and buses for MMR")
 });
