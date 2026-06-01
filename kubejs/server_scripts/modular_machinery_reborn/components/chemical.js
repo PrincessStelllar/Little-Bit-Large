@@ -1,6 +1,11 @@
+/* 
+This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
+*/
+
 ServerEvents.recipes(catalyst => {
 
-    // 1. Small Tier (Crafted from plain casing)
+    // Small tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_small'),
         [
             'BCB',
@@ -33,7 +38,7 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/small_output_chemical_hatch`);
 
-    // 2. Normal Tier (From Small)
+    // Normal tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_normal'),
         [
             'BCB',
@@ -66,7 +71,7 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/normal_output_chemical_hatch`);
 
-    // 3. Reinforced Tier (From Normal)
+    // Reinforced Tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_reinforced'),
         [
             'BCB',
@@ -99,7 +104,7 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/reinforced_output_chemical_hatch`);
 
-    // 4. Big Tier (From Reinforced)
+    // Big Tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_big'),
         [
             'BCB',
@@ -132,7 +137,7 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/big_output_chemical_hatch`);
 
-    // 5. Huge Tier (From Big)
+    // Huge Tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_huge'),
         [
             'BCB',
@@ -165,7 +170,7 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/huge_output_chemical_hatch`);
 
-    // 6. Ludicrous Tier (From Huge)
+    // Ludicrous Tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_ludicrous'),
         [
             'BCB',
@@ -198,7 +203,7 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/ludicrous_output_chemical_hatch`);
 
-    // 7. Vacuum Tier (From Ludicrous)
+    // Vacuum Tier
     catalyst.shaped(Item.of('modular_machinery_reborn_mekanism:chemicalinputhatch_vacuum'),
         [
             'BCB',
@@ -231,3 +236,8 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/vacuum_output_chemical_hatch`);
 })
+
+/* 
+This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
+*/

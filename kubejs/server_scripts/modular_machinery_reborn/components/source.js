@@ -1,3 +1,8 @@
+/* 
+This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
+*/
+
 ServerEvents.recipes(catalyst => {
 
     // 1. Small Tier (Crafted from Source Jar)
@@ -231,3 +236,8 @@ ServerEvents.recipes(catalyst => {
         }
     ).id(`catalyst:mmr/ports/vacuum_output_source_hatch`);
 })
+
+/* 
+This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
+*/
