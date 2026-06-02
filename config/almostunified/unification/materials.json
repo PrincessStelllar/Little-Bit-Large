@@ -39,7 +39,7 @@
     "c:plastics",
     "c:flours/{material}",
     "c:silicon",
-    "c:wires"
+    "c:wires/{material}"
   ],
   "ignored_tags": [],
   "ignored_items": [],
