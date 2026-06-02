@@ -2,8 +2,8 @@
   "catalyst.mmr.tooltip.primitive_alloy.item": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
   "catalyst.mmr.tooltip.primitive_alloy.gui": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
   
-  "catalyst.mmr.tooltip.personal_beacon.item": "It can only affect 1 player at the time based on the nametag's name",
-  "catalyst.mmr.tooltip.personal_beacon.gui": "It can only affect 1 player at the time based on the nametag's name",
+  "catalyst.mmr.tooltip.personal_beacon.item": "It can only affect 1 player at the time based on the nametag's name\nPositive effects are applied each tick, while negatives effects are affected at the end of the recipe with random time",
+  "catalyst.mmr.tooltip.personal_beacon.gui": "It can only affect 1 player at the time based on the nametag's name\nPositive effects are applied each tick, while negatives effects are affected at the end of the recipe with random time",
   
   "catalyst.mmr.tooltip.primitive_apiary.item.1": "Produces from time to time some honey",
   "catalyst.mmr.tooltip.primitive_apiary.item.2": "No need to add bees.",

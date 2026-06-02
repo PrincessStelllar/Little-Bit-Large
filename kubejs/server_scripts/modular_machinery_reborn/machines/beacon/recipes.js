@@ -255,7 +255,7 @@ ServerEvents.recipes(catalyst => {
             .progressData(ProgressData.create().x(64).y(20))
             .width(110)
             .height(60)
-            .requireEnergyPerTick(1000)
+            .requireEnergyPerTick(100000)
             .requireItem(Item.of("minecraft:name_tag"), 0, 20, 0)
             .requireItem(item, 40, 0)
             .requireItem(Item.of(effectData.secondary), 20, 20)
