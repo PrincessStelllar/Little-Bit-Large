@@ -1,4 +1,4 @@
-//priority: 20
+//priority: 21
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
@@ -145,66 +145,87 @@ ServerEvents.tags('item', catalyst => {
             'eternalores:catalyrium_dust'
         ]
     };
-
+    
     for(let tagName in tags)
     {
         catalyst.add(tagName, tags[tagName]);
     }
+
+    let _clusters = [
+        "pastel:topaz_cluster",
+        "pastel:citrine_cluster",
+        "pastel:onyx_cluster",
+        'pastel:moonstone_cluster',
+        "pastel:bismuth_cluster",
+        "pastel:malachite_cluster",
+        "pastel:azurite_cluster",
+        "pastel:bloodstone_cluster",
+        "pastel:coal_cluster",
+        "pastel:copper_cluster",
+        "pastel:iron_cluster",
+        "pastel:gold_cluster",
+        "pastel:lapis_cluster",
+        "pastel:redstone_cluster",
+        "pastel:diamond_cluster",
+        "pastel:emerald_cluster",
+        "pastel:prismarine_cluster",
+        "pastel:quartz_cluster",
+        "pastel:glowstone_cluster",
+        "pastel:netherite_scrap_cluster",
+        "pastel:echo_cluster",
+        "pastel:fluix_cluster",
+        "pastel:zinc_cluster",
+        "biomesoplenty:rose_quartz_cluster",
+        "extendedae:entro_cluster",
+        "justdirethings:time_crystal_cluster"
+    ];
+
+    _clusters.forEach(cluster => {
+        catalyst.add('c:clusters', cluster);
+        global.clusters.push(cluster)
+    })
+
+    let _buddings = [
+        'pastel:budding_topaz',
+        'pastel:budding_citrine',
+        'pastel:budding_onyx',
+        'pastel:budding_moonstone'
+    ]
+
+    _buddings.forEach(bud => {
+        catalyst.add("c:budding_blocks", bud)
+    })
+
+    let _storage = [
+        'minecraft:amethyst_block',
+        'pastel:topaz_block',
+        'pastel:citrine_block',
+        'pastel:onyx_block',
+        'pastel:moonstone_block'
+    ]
+
+    _storage.forEach(st => {
+        catalyst.add("geore:geore_blocks", st)
+    })
+
+    let buds = catalyst.get("c:clusters").getObjectIds();
+    buds.forEach(bud => {
+        global.budding_blocks.push(bud)
+        catalyst.add("catalyst:clusters", bud)
+    })
+
+    buds = catalyst.get('c:budding_blocks').getObjectIds();
+    buds.forEach(bud => {
+        global.clusters.push(bud)
+        catalyst.add('catalyst:budding_blocks', bud)
+    })
+
+    buds = catalyst.get("geore:geore_blocks").getObjectIds();
+    buds.forEach(bud => {
+        global.bud_storage.push(bud)
+        catalyst.add("catalyst:budding_storage", bud)
+    })
+
     console.log("[CatJS] Tags for Items has been added");
 
 })
-
-//block tags
-ServerEvents.tags('block', catalyst => {
-    //Geore
-    //lets Geore buds be acceled
-    catalyst.add("c:budding", "#c:budding_blocks")
-    //lets geore buds be moved
-    const buds = catalyst.get("c:budding_blocks").getObjectIds();
-    buds.forEach(bud => {
-        catalyst.remove('c:relocation_not_supported', bud);
-    });
-    catalyst.removeAll('productivebees:untickable')
-
-    //Fix for Boon of Earth enchant dropping non generated ores
-    catalyst.remove('c:ores_in_ground/stone', 'mekanism:fluorite_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'mekanism:osmium_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'mekanism:tin_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'mekanism:uranium_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'mekanism:lead_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'immersiveengineering:ore_lead')
-    catalyst.remove('c:ores_in_ground/stone', 'immersiveengineering:ore_aluminum')
-    catalyst.remove('c:ores_in_ground/stone', 'immersiveengineering:ore_silver')
-    catalyst.remove('c:ores_in_ground/stone', 'immersiveengineering:ore_uranium')
-    catalyst.remove('c:ores_in_ground/stone', 'railcraft:lead_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'railcraft:nickel_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'railcraft:sulfur_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'railcraft:silver_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'railcraft:tin_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'railcraft:zinc_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'xycraft:aluminum_ore_stone')
-    catalyst.remove('c:ores_in_ground/stone', 'energizedpower:tin_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'create:zinc_ore')
-    catalyst.remove('c:ores_in_ground/stone', 'eternalores:plutonium_ore_block')
-
-    global.recipesSeedToRemove.forEach(seedId => {
-        const seedName = seedId.split(':')[1].replace('_seeds', '');
-        const name = seedId + "_crop"
-        if(global.dontPlantSeeds.includes(seedName))
-        {
-            catalyst.add('c:dont_plant', name);
-        }
-            
-        catalyst.add('mysticalagriculture:crops', name);
-        catalyst.add('minecraft:crops', name);
-        catalyst.add('ae2:growth_acceleratable', name);
-        //catalyst.add('minecraft:sword_efficient', name);
-    });
-
-    console.log("[CatJS] Tags for items has been added");
-})
-
-/* 
-This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
-It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
-*/
