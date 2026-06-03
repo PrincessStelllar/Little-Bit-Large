@@ -223,7 +223,7 @@ ServerEvents.tags('item', catalyst => {
     buds = catalyst.get("geore:geore_blocks").getObjectIds();
     buds.forEach(bud => {
         global.bud_storage.push(bud)
-        catalyst.add("catalyst:budding_storage", bud)
+        catalyst.add("catalyst:budding_storages", bud)
     })
 
     console.log("[CatJS] Tags for Items has been added");

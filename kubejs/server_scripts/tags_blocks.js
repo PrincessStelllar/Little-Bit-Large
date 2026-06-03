@@ -50,7 +50,7 @@ ServerEvents.tags('block', catalyst => {
     })
 
     global.bud_storage.forEach(st => {
-        catalyst.add("catalyst:budding_storage", st)
+        catalyst.add("catalyst:budding_storages", st)
     })
 
     catalyst.removeAll('c:relocation_not_supported')
