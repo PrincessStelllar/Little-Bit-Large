@@ -6,9 +6,12 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 
 //block tags
 ServerEvents.tags('block', catalyst => {
-    global.clusters = []
-    global.budding_blocks = []
-    global.bud_storage = []
+    console.log("Before cleanup: " + global.clusters.size())
+    global.clusters.clear()
+    global.budding_blocks.clear();
+    global.bud_storage.clear();
+
+    console.log("After cleanup: " + global.clusters.size())
 
     let _clusters = [
         "minecraft:amethyst_cluster",
@@ -91,7 +94,7 @@ ServerEvents.tags('block', catalyst => {
     ];
 
     _clusters.forEach(cluster => {
-        global.clusters.push(cluster)
+        global.clusters.add(cluster)
     })
 
     global.clusters.forEach(cluster => {
@@ -166,7 +169,7 @@ ServerEvents.tags('block', catalyst => {
     ];
 
     _buddings.forEach(bud => {
-        global.budding_blocks.push(bud)
+        global.budding_blocks.add(bud)
     })
 
     global.budding_blocks.forEach(bud => {
@@ -234,7 +237,7 @@ ServerEvents.tags('block', catalyst => {
     ];
 
     _storage.forEach(st => {
-        global.bud_storage.push(st)
+        global.bud_storage.add(st)
     })
 
     global.bud_storage.forEach(st => {
