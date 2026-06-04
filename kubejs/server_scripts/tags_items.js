@@ -151,80 +151,20 @@ ServerEvents.tags('item', catalyst => {
         catalyst.add(tagName, tags[tagName]);
     }
 
-    let _clusters = [
-        "pastel:topaz_cluster",
-        "pastel:citrine_cluster",
-        "pastel:onyx_cluster",
-        'pastel:moonstone_cluster',
-        "pastel:bismuth_cluster",
-        "pastel:malachite_cluster",
-        "pastel:azurite_cluster",
-        "pastel:bloodstone_cluster",
-        "pastel:coal_cluster",
-        "pastel:copper_cluster",
-        "pastel:iron_cluster",
-        "pastel:gold_cluster",
-        "pastel:lapis_cluster",
-        "pastel:redstone_cluster",
-        "pastel:diamond_cluster",
-        "pastel:emerald_cluster",
-        "pastel:prismarine_cluster",
-        "pastel:quartz_cluster",
-        "pastel:glowstone_cluster",
-        "pastel:netherite_scrap_cluster",
-        "pastel:echo_cluster",
-        "pastel:fluix_cluster",
-        "pastel:zinc_cluster",
-        "biomesoplenty:rose_quartz_cluster",
-        "extendedae:entro_cluster",
-        "justdirethings:time_crystal_cluster"
-    ];
+    global.clusters.forEach(cluster => {
+        catalyst.add("c:clusters", cluster);
+        catalyst.add("catalyst:clusters", cluster);
+    });
 
-    _clusters.forEach(cluster => {
-        catalyst.add('c:clusters', cluster);
-        global.clusters.push(cluster)
-    })
+    global.budding_blocks.forEach(bud => {
+        catalyst.add("c:budding_blocks", bud);
+        catalyst.add("catalyst:budding_blocks", bud);
+    });
 
-    let _buddings = [
-        'pastel:budding_topaz',
-        'pastel:budding_citrine',
-        'pastel:budding_onyx',
-        'pastel:budding_moonstone'
-    ]
-
-    _buddings.forEach(bud => {
-        catalyst.add("c:budding_blocks", bud)
-    })
-
-    let _storage = [
-        'minecraft:amethyst_block',
-        'pastel:topaz_block',
-        'pastel:citrine_block',
-        'pastel:onyx_block',
-        'pastel:moonstone_block'
-    ]
-
-    _storage.forEach(st => {
-        catalyst.add("geore:geore_blocks", st)
-    })
-
-    let buds = catalyst.get("c:clusters").getObjectIds();
-    buds.forEach(bud => {
-        global.budding_blocks.push(bud)
-        catalyst.add("catalyst:clusters", bud)
-    })
-
-    buds = catalyst.get('c:budding_blocks').getObjectIds();
-    buds.forEach(bud => {
-        global.clusters.push(bud)
-        catalyst.add('catalyst:budding_blocks', bud)
-    })
-
-    buds = catalyst.get("geore:geore_blocks").getObjectIds();
-    buds.forEach(bud => {
-        global.bud_storage.push(bud)
-        catalyst.add("catalyst:budding_storages", bud)
-    })
+    global.bud_storage.forEach(st => {
+        catalyst.add("geore:geore_blocks", st);
+        catalyst.add("catalyst:budding_storages", st);
+    });
 
     console.log("[CatJS] Tags for Items has been added");
 
