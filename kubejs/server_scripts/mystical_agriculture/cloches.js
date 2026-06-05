@@ -48,11 +48,20 @@ ServerEvents.tags('item', catalyst => {
 ServerEvents.recipes(catalyst => {
     if(Platform.isLoaded('immersiveengineering'))
     {
+        let seeds = [
+            "cobalt", 
+            "lumium", 
+            "signalum", 
+            "rose_gold", 
+            "pig_iron", 
+            "enderium"
+        ]
+
         let crops = cropRegistry.getInstance().getCrops().filter(crop => 
                                                                  crop !== null && 
                                                                  crop !== undefined)
         crops.forEach(crop => {
-            if(!crop.isEnabled()) return;
+            if(!crop.isEnabled() && !seeds.includes(crop.getName())) return;
             catalyst.custom({
                 type: 'immersiveengineering:cloche',
                 results: [
@@ -67,7 +76,7 @@ ServerEvents.recipes(catalyst => {
                 soil: Ingredient.of((crop.getCruxBlock()) ?? (crop.getTier().getFarmland() === null ? 
                                                               "mysticalagradditions:insanium_farmland" : 
                                                               `#kubejs:farmland/${crop.getTier().getFarmland().getIdLocation().getPath().replace('_farmland', '')}`)).toJson(),
-                time: Math.min(75 + (100 * crop.getTier().getValue() * 0.75), 500),
+                time: Math.min(60 + (10 * crop.getTier().getValue() * 0.75), 200),
                 render: {
                     type: 'immersiveengineering:crop',
                     block: crop.getCropBlock().getId()

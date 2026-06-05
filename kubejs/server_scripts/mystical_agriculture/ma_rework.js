@@ -3,22 +3,22 @@
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
 */
-const $Mth = Java.loadClass("net.minecraft.util.Mth");
-const $ParticlesType = Java.loadClass("net.minecraft.core.particles.ParticleTypes");
-const $Block = Java.loadClass("net.minecraft.world.level.block.Block");
-const $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity");
-const $ItemStack = Java.loadClass("net.minecraft.world.item.ItemStack");
+let $Mth = Java.loadClass("net.minecraft.util.Mth");
+let $ParticlesType = Java.loadClass("net.minecraft.core.particles.ParticleTypes");
+let $Block = Java.loadClass("net.minecraft.world.level.block.Block");
+let $ItemEntity = Java.loadClass("net.minecraft.world.entity.item.ItemEntity");
+let $ItemStack = Java.loadClass("net.minecraft.world.item.ItemStack");
 let $AABB = Java.loadClass("net.minecraft.world.phys.AABB");
 let $CropRegistry = Java.loadClass('com.blakebr0.mysticalagriculture.registry.CropRegistry');
 
-const awaE = "mysticalagriculture:awakened_supremium_essence";
-const awaEB = "mysticalagriculture:awakened_supremium_block";
-const awaI = "mysticalagriculture:awakened_supremium_ingot";
-const awaG = "mysticalagriculture:awakened_supremium_gemstone";
-const awaIB = "mysticalagriculture:awakened_supremium_ingot_block";
-const awaGB = "mysticalagriculture:awakened_supremium_gemstone_block";
-const insa = "mysticalagradditions:insanium_essence"
-const conig = "mysticalagriculture:cognizant_dust"
+let awaE = "mysticalagriculture:awakened_supremium_essence";
+let awaEB = "mysticalagriculture:awakened_supremium_block";
+let awaI = "mysticalagriculture:awakened_supremium_ingot";
+let awaG = "mysticalagriculture:awakened_supremium_gemstone";
+let awaIB = "mysticalagriculture:awakened_supremium_ingot_block";
+let awaGB = "mysticalagriculture:awakened_supremium_gemstone_block";
+let insa = "mysticalagradditions:insanium_essence"
+let conig = "mysticalagriculture:cognizant_dust"
 
 ServerEvents.recipes(catalyst => {
 
@@ -89,7 +89,7 @@ ServerEvents.recipes(catalyst => {
         mod++;
     }
 
-    const getCleanName = (item) => item.includes(':') ? item.split(':')[1] : item;
+    let getCleanName = (item) => item.includes(':') ? item.split(':')[1] : item;
 
     function row(mats, output, count, type) {
         let pattern = (type === 0) ? ['A C', ' B ', '   '] : ['ABC', '   ', '   '];
@@ -136,15 +136,16 @@ ServerEvents.recipes(catalyst => {
         mod++;
     }
 
-    const seedsToFix = new Set(["cobalt", "lumium", "signalum", "rose_gold", "pig_iron", "enderium"]);
+    let seedsToFix = new Set(["cobalt", "lumium", "signalum", "rose_gold", "pig_iron", "enderium"]);
     
     $CropRegistry.getInstance().getCrops().forEach(crop => {
-        if(seedsToFix.has(crop.getName())) {
+        if(seedsToFix.has(crop.getName()))
+        {
             crop.setEnabled(true);
         }
     });
 
-    const metalSeeds = [
+    let metalSeeds = [
         ['enderium', 'eternalores', 'supremium', 4],
         ['cobalt', 'eternalores', 'imperium', 4],
         ['lumium', 'eternalores', 'imperium', 4],
@@ -154,10 +155,10 @@ ServerEvents.recipes(catalyst => {
     ];
 
     metalSeeds.forEach(([name, mod, tier, count]) => {
-        const ingot = `${mod}:${name}_ingot`;
-        const essence = `mysticalagriculture:${tier}_essence`;
-        const seed = `mysticalagriculture:${name}_seeds`;
-        const seedEssence = `mysticalagriculture:${name}_essence`;
+        let ingot = `${mod}:${name}_ingot`;
+        let essence = `mysticalagriculture:${tier}_essence`;
+        let seed = `mysticalagriculture:${name}_seeds`;
+        let seedEssence = `mysticalagriculture:${name}_essence`;
 
         infusion(seed, "mysticalagriculture:prosperity_seed_base", 
             [ingot, essence, ingot, essence, ingot, essence, ingot, essence], false);
@@ -170,7 +171,7 @@ ServerEvents.recipes(catalyst => {
     });
     console.log("[CatJS] MA ingots enable");
 
-    const seeds = [
+    let seeds = [
         ['mysticalagriculture:wood_seeds', '#minecraft:logs', 'mysticalagriculture:inferium_essence'],
         ['mysticalagriculture:rubber_seeds', '#c:rubber', 'mysticalagriculture:prudentium_essence'],
         ['mysticalagriculture:silicon_seeds', '#c:silicon', 'mysticalagriculture:prudentium_essence'],
@@ -204,7 +205,7 @@ ServerEvents.recipes(catalyst => {
     })
     console.log("[CatJS] MA seed recipe fixed");
 
-    const shapedRecipes = [
+    let shapedRecipes = [
         // Output, Pattern, Key, Count (optional, default 1)
         { out: 'mysticalagradditions:insanium_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagradditions:insanium_essence' } },
         { out: 'kubejs:mystical_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:mystical_essence' } },
@@ -244,7 +245,7 @@ ServerEvents.recipes(catalyst => {
     .id('catalyst:shapeless/insanium_essence_from_block');
 
     //Awakening Altar Recipes
-    const awakeningRecipes = [
+    let awakeningRecipes = [
         // Insanium Gear (Darkness + Magic)
         { out: "mysticalagradditions:insanium_apple", in: "mysticalagradditions:supremium_apple", ess: ["darkness", "magic", "darkness", "magic"], ing: [awaE, awaE, awaE, awaE] },
         { out: "mysticalagradditions:insanium_ingot", in: awaI, ess: ["darkness", "magic", "darkness", "magic"], ing: [awaE, awaG, awaE, awaG] },
@@ -273,7 +274,7 @@ ServerEvents.recipes(catalyst => {
     });
 
     //Infusion Altar Recipes
-    const infusionRecipes = [
+    let infusionRecipes = [
         // Seeds
         { out: "mysticalagriculture:mystical_seeds", in: "mysticalagriculture:inferium_seeds", ing: ["reliquary:mercy_cross", "reliquary:hero_medallion", "reliquary:infernal_chalice", "reliquary:glacial_staff", "reliquary:witherless_rose", "apotheosis:epic_material", "reliquary:fertile_lily_pad", "reliquary:aphrodite_potion"], bee: false },
         { out: "mysticalagriculture:darkness_seeds", in: "mysticalagriculture:obsidian_seeds", ing: ["minecraft:sculk", "minecraft:deepslate", "minecraft:sculk", "minecraft:crying_obsidian", "minecraft:sculk", "minecraft:deepslate", "minecraft:sculk", "minecraft:crying_obsidian"], bee: false },
@@ -317,8 +318,10 @@ ServerEvents.recipes(catalyst => {
     });
 
     //Geometric Pattern Recipes (Row/Diagonal/Square)
-    const geometricRecipes = [
+    let geometricRecipes = [
         // Rows
+        { type: 'row2', mats: ['mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence', 'mysticalagriculture:ice_essence'], out: 'minecraft:snowball', count: 12, mode: 0 },
+        { type: 'row2', mats: ['mysticalagriculture:sky_stone_essence', 'mysticalagriculture:sky_stone_essence', 'mysticalagriculture:sky_stone_essence'], out: 'ae2:sky_dust', count: 6, mode: 0 },
         { type: 'row2', mats: ["mysticalagriculture:arcane_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:arcane_essence"], out: "ars_nouveau:source_gem", count: 12, mode: 0 },
         { type: 'row', mats: ["mysticalagriculture:skeleton_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:skeleton_essence"], out: "ars_nouveau:wilden_horn", count: 4, mode: 0 },
         { type: 'row', mats: ["mysticalagriculture:prismarine_essence", "mysticalagriculture:arcane_essence", "mysticalagriculture:prismarine_essence"], out: "ars_nouveau:wilden_spike", count: 4, mode: 0 },
@@ -586,24 +589,24 @@ ServerEvents.recipes(catalyst => {
 
 });
 
-const farmlands = Item.getTypeList().filter(item => item.includes("farmland"))
-const not_plant = Item.getList().filter(item => item.hasTag('c:dont_plant'))
+let farmlands = Item.getTypeList().filter(item => item.includes("farmland"))
+let not_plant = Item.getList().filter(item => item.hasTag('c:dont_plant'))
 
-const filteredCrops = $CropRegistry.getInstance().getCrops() //all are mysticalagriculture now
+let filteredCrops = $CropRegistry.getInstance().getCrops() //all are mysticalagriculture now
     .filter(c => not_plant.some(i => i.id.split(':')[1] === `${c.getName()}_seeds`))
     .map(c => c.getName());
 
 //Disable player to place forbidden seeds for players, use machines
 farmlands.forEach(farmland => {
     BlockEvents.rightClicked(farmland, catalyst => {
-        const item = catalyst.item;
-        const player = catalyst.player;
+        let item = catalyst.item;
+        let player = catalyst.player;
 
         not_plant.forEach(e => {
             if(e === item.id)
             {
                 catalyst.getServer().scheduleInTicks(3, ctx => {
-                    const selected = player.inventory.getSelected();
+                    let selected = player.inventory.getSelected();
                     if(!selected.isEmpty())
                     {
                         selected.count--;
@@ -632,9 +635,9 @@ filteredCrops.forEach(crop => {
     JEI Recipe present in client_scripts/jei/recipe_viewer_add.js
 */
 BlockEvents.leftClicked("minecraft:obsidian", catalyst => {
-    const level = catalyst.level;
-    const pos = catalyst.getBlock().pos;
-    const crusher = level.getBlockState(pos)
+    let level = catalyst.level;
+    let pos = catalyst.getBlock().pos;
+    let crusher = level.getBlockState(pos)
     let base = level.getBlockState(pos.below(2))
 
     if (crusher.getBlock().id === "minecraft:obsidian" &&
