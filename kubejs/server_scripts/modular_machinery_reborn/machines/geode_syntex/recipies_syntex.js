@@ -1,20 +1,55 @@
-/* 
-This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+/* This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
 */
 let IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
 
 ServerEvents.recipes(catalyst => {
     catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", 1200)
-    .progressData(ProgressData.create().x(54).y(20))
-    .width(110)
-    .height(60)
-    .requireEnergy(10000, 0, 4)
-    .produceItem('1x minecraft:amethyst_shard', 90, 20)
+    .progressData(ProgressData.create().x(95).y(28))
+    .width(150)
+    .height(80)
+    .requireEnergyPerTick(20000, 0, 4)
     .requireFunctionOnEnd("geo_chooser")
-    .id("catalyst:mmr/geo_syntex")
+    .requireFunctionEachTick("geo_each")
+    .hide()
+    .id("catalyst:mmr/geo_syntex/real_recipe")
 
-    console.log("[CatJS] Geode multi recipe added")
+    let clustersTag = Ingredient.of('#catalyst:clusters').getItemIds().toArray();
+    
+    clustersTag.forEach(cluster => {
+        let bud = cluster.replace("_cluster", "").replace(":", ":budding_");
+        if(!Item.exists(bud)) return;
+        
+        if(cluster === "minecraft:amethyst_cluster") bud = "minecraft:budding_amethyst";
+        else if(cluster === "ae2:quartz_cluster") bud = "ae2:flawless_budding_quartz";
+        else if(cluster === "extendedae:entro_cluster") bud = "extendedae:entro_budding_fully";
+        else if(cluster === "justdirethings:time_crystal_cluster") bud = "justdirethings:time_crystal_budding_block";
+
+        catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", 1200)
+        .progressData(ProgressData.create().x(90).y(28))
+        .width(150)
+        .height(70)
+        .requireItem("minecraft:bedrock") 
+        .jei()
+        .requireEnergyPerTick(20000, 0, 7)
+        .requireItem(`1x ${cluster}`, 40, 10)
+        .requireItem(`1x ${cluster}`, 22, 28)
+        .requireItem(`1x ${bud}`, 40, 28)
+        .requireItem(`1x ${cluster}`, 58, 28)
+        .requireItem(`1x ${cluster}`, 40, 46)
+        .produceItem(Item.of(cluster, 1, {
+            "minecraft:lore": [
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.2", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.3", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.4", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.5", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.6", "italic": false }
+            ]
+        }), 125, 28)
+        .id(`catalyst:mmr/geo_syntex/${cluster.replace(":", "_")}`)
+    });
+
+    console.log("[CatJS] Geode multi recipe added (JEI Fake Cross + Real Hidden)");
 });
 
 MMREvents.extraTooltips(event => {
@@ -24,6 +59,7 @@ MMREvents.extraTooltips(event => {
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.3"))
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.4"))
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.5"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.item.6"))
 
     event.create("mmr:geo_syntex", 'gui')
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.1"))
@@ -31,91 +67,40 @@ MMREvents.extraTooltips(event => {
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.3"))
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.4"))
     .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.5"))
+    .add(Component.translatable("catalyst.mmr.tooltip.geo_syntex.gui.6"))
 })
 
 MMREvents.recipeFunction("geo_chooser", catalyst => {
     let controller = catalyst.machine;
     let level = catalyst.getTile().getLevel();
     let inputItems = controller.getItemsStored(IOType.INPUT);
-    let outputItems = catalyst.machine.getItemsStored(IOType.OUTPUT);
     let pos = catalyst.getTile().getBlockPos();
     let geoBonus = 0;
     let upgradeCount = 0;
     let facing = level.getBlock(pos).getProperties().get("facing")
     let centralPos;
 
-    for(let i = 0; i < outputItems.size(); i++)
-    {
-        let item = outputItems.get(i);
-        if(item && item.id == 'minecraft:amethyst_shard')
-        {
-            if(item.count >= 1)
-            {
-                item.count = item.count - 1;
-            }
-            break;
-        }
-    }
-
     switch(facing)
     {
-        case "north":
-            centralPos = pos.offset(0, 3, 3);
-            break;
-        case "south":
-            centralPos = pos.offset(0, 3, -3);
-            break;
-        case "east":
-            centralPos = pos.offset(-3, 3, 0);
-            break;
-        case "west":
-            centralPos = pos.offset(3, 3, 0);
-            break;
-        default:
-            catalyst.cancel();
-            return;
+        case "north": centralPos = pos.offset(0, 3, 3); break;
+        case "south": centralPos = pos.offset(0, 3, -3); break;
+        case "east": centralPos = pos.offset(-3, 3, 0); break;
+        case "west": centralPos = pos.offset(3, 3, 0); break;
+        default: catalyst.cancel(); return;
     }
-
-    let mineralTypes = [
-        {budding: "minecraft:budding_amethyst", cluster: "minecraft:amethyst_cluster", shard: "minecraft:amethyst_shard"},
-        {budding: "ae2:flawless_budding_quartz", cluster: "ae2:quartz_cluster", shard: "ae2:certus_quartz_crystal"},
-        {budding: "extendedae:entro_budding_fully", cluster: "extendedae:entro_cluster", shard: "extendedae:entro_crystal"},
-        {budding: "justdirethings:time_crystal_budding_block", cluster: "justdirethings:time_crystal_cluster", shard: "justdirethings:time_crystal"},
-        {budding: "geore:budding_copper", cluster: "geore:copper_cluster", shard: "geore:copper_shard"},
-        {budding: "geore:budding_coal", cluster: "geore:coal_cluster", shard: "geore:coal_shard"},
-        {budding: "geore:budding_diamond", cluster: "geore:diamond_cluster", shard: "geore:diamond_shard"},
-        {budding: "geore:budding_emerald", cluster: "geore:emerald_cluster", shard: "geore:emerald_shard"},
-        {budding: "geore:budding_gold", cluster: "geore:gold_cluster", shard: "geore:gold_shard"},
-        {budding: "geore:budding_iron", cluster: "geore:iron_cluster", shard: "geore:iron_shard"},
-        {budding: "geore:budding_lapis", cluster: "geore:lapis_cluster", shard: "geore:lapis_shard"},
-        {budding: "geore:budding_quartz", cluster: "geore:quartz_cluster", shard: "geore:quartz_shard"},
-        {budding: "geore:budding_redstone", cluster: "geore:redstone_cluster", shard: "geore:redstone_shard"},
-        {budding: "geore:budding_ancient_debris", cluster: "geore:ancient_debris_cluster", shard: "geore:ancient_debris_shard"},
-        {budding: "geore:budding_ruby", cluster: "geore:ruby_cluster", shard: "geore:ruby_shard"},
-        {budding: "geore:budding_sapphire", cluster: "geore:sapphire_cluster", shard: "geore:sapphire_shard"},
-        {budding: "geore:budding_topaz", cluster: "geore:topaz_cluster", shard: "geore:topaz_shard"},
-        {budding: "geore:budding_zinc", cluster: "geore:zinc_cluster", shard: "geore:zinc_shard"},
-        {budding: "geore:budding_uraninite", cluster: "geore:uraninite_cluster", shard: "geore:uraninite_shard"},
-        {budding: "geore:budding_uranium", cluster: "geore:uranium_cluster", shard: "geore:uranium_shard"},
-        {budding: "geore:budding_black_quartz", cluster: "geore:black_quartz_cluster", shard: "geore:black_quartz_shard"},
-        {budding: "geore:budding_monazite", cluster: "geore:monazite_cluster", shard: "geore:monazite_shard"},
-        {budding: "geore:budding_aluminum", cluster: "geore:aluminum_cluster", shard: "geore:aluminum_shard"},
-        {budding: "geore:budding_lead", cluster: "geore:lead_cluster", shard: "geore:lead_shard"},
-        {budding: "geore:budding_nickel", cluster: "geore:nickel_cluster", shard: "geore:nickel_shard"},
-        {budding: "geore:budding_osmium", cluster: "geore:osmium_cluster", shard: "geore:osmium_shard"},
-        {budding: "geore:budding_platinum", cluster: "geore:platinum_cluster", shard: "geore:platinum_shard"},
-        {budding: "geore:budding_silver", cluster: "geore:silver_cluster", shard: "geore:silver_shard"},
-        {budding: "geore:budding_tin", cluster: "geore:tin_cluster", shard: "geore:tin_shard"},
-        {budding: "geore:budding_tungsten", cluster: "geore:tungsten_cluster", shard: "geore:tungsten_shard"}
-    ];
 
     let centralBlock = level.getBlockState(centralPos).getBlock().getId();
-    let validMineral = mineralTypes.find(mineral => mineral.budding === centralBlock);
-    if(!validMineral)
+    
+    let validCluster = centralBlock.replace("budding_", "").replace("_block", "");
+    if(!validCluster.includes("cluster"))
     {
-        catalyst.cancel("Center block is not valid");
-        return;
+        validCluster = validCluster + "_cluster";
     }
+    
+    if(centralBlock === "minecraft:budding_amethyst") validCluster = "minecraft:amethyst_cluster";
+    else if(centralBlock.startsWith("ae2:")) validCluster = "ae2:quartz_cluster";
+    else if(centralBlock.startsWith("extendedae:")) validCluster = "extendedae:entro_cluster";
+    else if(centralBlock === "justdirethings:time_crystal_budding_block") validCluster = "justdirethings:time_crystal_cluster";
 
     let surroundingPositions = [
         centralPos.offset(1, 0, 0),
@@ -130,7 +115,7 @@ MMREvents.recipeFunction("geo_chooser", catalyst => {
     for(let surroundPos of surroundingPositions)
     {
         let block = level.getBlockState(surroundPos).getBlock().getId();
-        if(block == validMineral.cluster)
+        if(block == validCluster)
         {
             clusterCount++;
         }
@@ -138,7 +123,7 @@ MMREvents.recipeFunction("geo_chooser", catalyst => {
 
     if(clusterCount != 6)
     {
-        catalyst.cancel("Needs 6 clusters of " + validMineral.cluster);
+        catalyst.cancel("Needs 6 clusters of " + validCluster + " and the same type of budding");
         return;
     }
 
@@ -158,7 +143,7 @@ MMREvents.recipeFunction("geo_chooser", catalyst => {
     if(upgradeCount > 0) geoBonus += upgradeCount * 10;
     
     upgradeCount = 0;
-    for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
+    for(let i = 0; i < inputItems.size() && upgradeCount < 3; i++)
     {
         let item = inputItems.get(i);
         if(item && item.id == 'minecraft:budding_amethyst')
@@ -174,7 +159,7 @@ MMREvents.recipeFunction("geo_chooser", catalyst => {
     if(upgradeCount > 0) geoBonus += upgradeCount * 3;
     
     upgradeCount = 0;
-    for(let i = 0; i < inputItems.size() && upgradeCount < 4; i++)
+    for(let i = 0; i < inputItems.size() && upgradeCount < 1; i++)
     {
         let item = inputItems.get(i);
         if(item && item.id == 'minecraft:amethyst_cluster')
@@ -187,7 +172,7 @@ MMREvents.recipeFunction("geo_chooser", catalyst => {
             }
         }
     }
-    if(upgradeCount > 0) geoBonus += upgradeCount;
+    if(upgradeCount > 0) geoBonus += 16;
 
     if(geoBonus > 0)
     {
@@ -196,16 +181,80 @@ MMREvents.recipeFunction("geo_chooser", catalyst => {
 
         for(let i = 0; i < fullStacks; i++)
         {
-            let stack = Item.of(validMineral.shard, 64);
+            let stack = Item.of(validCluster, 64);
             catalyst.machine.addItem(stack);
         }
         
         if(remainder > 0)
         {
-            let stack = Item.of(validMineral.shard, remainder);
+            let stack = Item.of(validCluster, remainder);
             catalyst.machine.addItem(stack);
         }
     }
+});
+
+MMREvents.recipeFunction("geo_each", catalyst => {
+    let controller = catalyst.machine;
+    let level = catalyst.getTile().getLevel();
+    let pos = catalyst.getTile().getBlockPos();
+    let inputItems = controller.getItemsStored(IOType.INPUT);
+    let facing = level.getBlock(pos).getProperties().get("facing");
+    let centralPos;
+
+    switch(facing)
+    {
+        case "north": centralPos = pos.offset(0, 3, 3); break;
+        case "south": centralPos = pos.offset(0, 3, -3); break;
+        case "east": centralPos = pos.offset(-3, 3, 0); break;
+        case "west": centralPos = pos.offset(3, 3, 0); break;
+        default: catalyst.setBaseSpeed(0.0); return;
+    }
+
+    let centralBlock = level.getBlockState(centralPos).getBlock().getId();
+    
+    let validCluster = centralBlock.replace("budding_", "").replace("_block", "");
+    if(!validCluster.includes("cluster"))
+    {
+        validCluster = validCluster + "_cluster";
+    }
+    
+    if(centralBlock === "minecraft:budding_amethyst") validCluster = "minecraft:amethyst_cluster";
+    else if(centralBlock.startsWith("ae2:")) validCluster = "ae2:quartz_cluster";
+    else if(centralBlock.startsWith("extendedae:")) validCluster = "extendedae:entro_cluster";
+    else if(centralBlock === "justdirethings:time_crystal_budding_block") validCluster = "justdirethings:time_crystal_cluster";
+
+    let hasBudding = false;
+    let clusterCountInInventory = 0;
+
+    for (let i = 0; i < inputItems.size(); i++)
+    {
+        let item = inputItems.get(i);
+        if(item)
+        {
+            if(item.id == centralBlock)
+            {
+                hasBudding = true;
+            }
+            if(item.id == validCluster)
+            {
+                clusterCountInInventory += item.count;
+            }
+        }
+    }
+
+    let hasClusters = (clusterCountInInventory >= 6);
+    let speed = 1.0;
+
+    if(hasBudding && hasClusters)
+    {
+        speed = 4.0;
+    }
+    else if(hasBudding || hasClusters)
+    {
+        speed = 2.0;
+    }
+
+    catalyst.setBaseSpeed(speed);
 });
 /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.

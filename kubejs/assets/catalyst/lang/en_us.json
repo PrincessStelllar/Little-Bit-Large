@@ -29,11 +29,13 @@
   "catalyst.mmr.tooltip.geo_syntex.item.3": " - Amethyst Golem Charm: Produces 10 per item, max 4 items",
   "catalyst.mmr.tooltip.geo_syntex.item.4": " - Amethyst Budding: Produces 8 per item, max 3 items",
   "catalyst.mmr.tooltip.geo_syntex.item.5": " - Amethyst Cluster: Produces 16 per item, max 1 items",
+  "catalyst.mmr.tooltip.geo_syntex.item.6": "Using 6 clusters and a budding of the same type on an Input Bus will increase recipe speed",
   "catalyst.mmr.tooltip.geo_syntex.gui.1": "Needs to have the budding and clusters of the same type to be able to produce!",
   "catalyst.mmr.tooltip.geo_syntex.gui.2": "Needs some items to be able to produce:",
   "catalyst.mmr.tooltip.geo_syntex.gui.3": " - Amethyst Golem Charm: Produces 10 per item, max 4 items",
   "catalyst.mmr.tooltip.geo_syntex.gui.4": " - Amethyst Budding: Produces 8 per item, max 3 items",
   "catalyst.mmr.tooltip.geo_syntex.gui.5": " - Amethyst Cluster: Produces 16 per item, max 1 items",
+  "catalyst.mmr.tooltip.geo_syntex.gui.6": "Using 6 clusters and a budding of the same type on an Input Bus will increase recipe speed",
 
   "catalyst.mmr.tooltip.primitive_extruder.item.1": "Needs to have a valid block placed 2 blocks below the controller to being able to work",
   "catalyst.mmr.tooltip.primitive_extruder.item.2": "Voids items if the hatches are full!",
