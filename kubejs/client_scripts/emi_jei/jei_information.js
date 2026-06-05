@@ -8,7 +8,7 @@ RecipeViewerEvents.addInformation('item', catalyst => {
     catalyst.add('minecraft:reinforced_deepslate', [
         'Reinforced deepslate can be crafted with an in-world recipe. For more information on how to craft it, check out the Modular Machinery Reborn quests']);
 
-    catalyst.add('mysticalagriculture:flux_seeds', ["You can get them using the same process as Flux Network dust!"])
+    catalyst.add('mysticalagriculture:flux_seeds', ["You can get them using the same process as Flux Network dust using Redstone Seeds instead of Redstone dust!"])
 })
   /* 
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.

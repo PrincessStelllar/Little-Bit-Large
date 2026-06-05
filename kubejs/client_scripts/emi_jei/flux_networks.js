@@ -197,21 +197,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
             console.error("Error adding recipes to EMI: " + e)
         }
     }
-    const beecombs = [
-        "phil",
-        "allergy",
-        "sponge",
-        "sussy",
-        "sugarbag",
-        "ribbeet",
-        "water",
-        "pepto_bismol"
-    ]
-
-    beecombs.forEach(entry => {
-        let comb = Item.of('productivebees:configurable_comb', 1, { "productivebees:bee_type": `productivebees:${entry}`})
-        catalyst.add(comb);
-    })
+    
 })
 
 /* 
