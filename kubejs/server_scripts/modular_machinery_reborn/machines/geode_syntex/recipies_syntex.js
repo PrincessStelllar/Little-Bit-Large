@@ -22,6 +22,7 @@ ServerEvents.recipes(catalyst => {
     clustersTag.forEach(cluster => {
         let bud = cluster.replace("_cluster", "").replace(":", ":budding_");
         if(!Item.exists(bud)) return;
+        if(!Item.exists(cluster)) return;
         
         if(cluster === "minecraft:amethyst_cluster") bud = "minecraft:budding_amethyst";
         else if(cluster === "ae2:quartz_cluster") bud = "ae2:flawless_budding_quartz";
