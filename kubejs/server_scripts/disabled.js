@@ -25,6 +25,8 @@ ServerEvents.recipes(catalyst => {
         // Mekanism
         'mekanism:dimensional_stabilizer',
         'mekanism:upgrade_anchor',
+        {id: "eternalores:compat/mekanism/crusher/dusts/obsidian_var"},
+        {id: "mekanism:crushing/obsidian_to_dust"},
 
         // QuarryPlus
         'quarryplus:adv_quarry',
@@ -142,6 +144,7 @@ ServerEvents.recipes(catalyst => {
         "create:crafting/materials/andesite_alloy_from_zinc",
 
         "railcraft:world_spike",
+        'railcraft:personal_world_spike',
 
         //solar powah
         { output: "solargeneration:solar_panel_leadstone" },
@@ -156,7 +159,8 @@ ServerEvents.recipes(catalyst => {
         { output: "energizedpower:solar_panel_5" },
         { output: "solargeneration:solar_panel_advanced" },
         { output: "energizedpower:solar_panel_6" },
-        { output: "solargeneration:solar_panel_ultimate" }
+        { output: "solargeneration:solar_panel_ultimate" },
+        {id: "energizedpower:crafting/press_mold_maker"}
 
     ]
 
