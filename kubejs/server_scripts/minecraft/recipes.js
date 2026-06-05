@@ -11,7 +11,7 @@ ServerEvents.recipes(catalyst => {
         ],{
         S: 'minecraft:string',
         P: 'minecraft:paper',
-    })
+    }).id("catalyst:minecraft/name_tag_1")
 
     catalyst.shaped(Item.of("minecraft:name_tag", 3), 
         [
@@ -22,7 +22,42 @@ ServerEvents.recipes(catalyst => {
         S: 'minecraft:string',
         P: 'minecraft:paper',
         I: '#c:dyes/black'
-    })
+    }).id("catalyst:minecraft/name_tag_3")
+
+    catalyst.shaped(Item.of('minecraft:heavy_core', 1), 
+        [
+            "ROR",
+            "OSO",
+            "ROR"
+        ],
+        {
+            R: 'minecraft:breeze_rod',
+            O: 'minecraft:oxidized_copper_bulb',
+            S: 'minecraft:heart_of_the_sea'
+        }
+    ).id("catalyst:minecraft/heavy_core")
+
+    catalyst.shaped(Item.of('minecraft:crying_obsidian', 8), 
+        [
+            "OOO",
+            "ONO",
+            "OOO"
+        ],
+        {
+            N: 'farmersdelight:onion',
+            O: 'minecraft:obsidian',
+        }
+    ).id("catalyst:minecraft/crying_obsidian_8")
+
+    catalyst.shaped(Item.of('minecraft:crying_obsidian', 1), 
+        [
+            "ON ",
+        ],
+        {
+            N: 'farmersdelight:onion',
+            O: 'minecraft:obsidian',
+        }
+    ).id("catalyst:minecraft/crying_obsidian_1")
 
     console.log("[CatJS] Added minecraft recipes")
 })
