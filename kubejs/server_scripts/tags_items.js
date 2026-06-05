@@ -166,6 +166,8 @@ ServerEvents.tags('item', catalyst => {
         catalyst.add("catalyst:budding_storages", st);
     });
 
+    catalyst.add("productivebees:flowers/quarry", 'ae2:sky_dust')
+
     console.log("[CatJS] Tags for Items has been added");
 
 })
