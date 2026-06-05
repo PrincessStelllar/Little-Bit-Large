@@ -4,8 +4,8 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 let IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
 
 ServerEvents.recipes(catalyst => {
-    let time = 1200
-    let energy = 20000
+    let time = 600
+    let energy = 30000
 
     catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", time)
     .progressData(ProgressData.create().x(95).y(28))

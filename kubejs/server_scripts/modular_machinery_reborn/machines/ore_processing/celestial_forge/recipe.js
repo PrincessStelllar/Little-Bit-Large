@@ -85,6 +85,95 @@ ServerEvents.recipes(catalyst => {
         {input: 'xycraft_world:xychorium_ore_stone_light', output: 'xycraft_world:xychorium_gem_light', amount: 10},
         {input: 'xycraft_world:xychorium_ore_deepslate_light', output: 'xycraft_world:xychorium_gem_light', amount: 10},
         {input: 'xycraft_world:xychorium_ore_kivi_light', output: 'xycraft_world:xychorium_gem_light', amount: 10},
+
+        //MC shards and pastel
+        {input: 'minecraft:amethyst_cluster', output: 'minecraft:amethyst_shard', amount: 1},
+        {input: 'pastel:topaz_cluster', output: 'pastel:topaz_shard', amount: 1},
+        {input: 'pastel:citrine_cluster', output: 'pastel:citrine_shard', amount: 1},
+        {input: 'pastel:onyx_cluster', output: 'pastel:onyx_shard', amount: 1},
+        {input: 'pastel:moonstone_cluster', output: 'pastel:moonstone_shard', amount: 1},
+
+        //Geore Shards
+        {input: 'geore:coal_cluster', output: 'geore:coal_shard', amount: 1},
+        {input: 'geore:copper_cluster', output: 'geore:copper_shard', amount: 1},
+        {input: 'geore:diamond_cluster', output: 'geore:diamond_shard', amount: 1},
+        {input: 'geore:emerald_cluster', output: 'geore:emerald_shard', amount: 1},
+        {input: 'geore:gold_cluster', output: 'geore:gold_shard', amount: 1},
+        {input: 'geore:iron_cluster', output: 'geore:iron_shard', amount: 1},
+        {input: 'geore:lapis_cluster', output: 'geore:lapis_shard', amount: 1},
+        {input: 'geore:quartz_cluster', output: 'geore:quartz_shard', amount: 1},
+        {input: 'geore:redstone_cluster', output: 'geore:redstone_shard', amount: 1},
+        {input: 'geore:ancient_debris_cluster', output: 'geore:ancient_debris_shard', amount: 1},
+        {input: 'geore:ruby_cluster', output: 'geore:ruby_shard', amount: 1},
+        {input: 'geore:sapphire_cluster', output: 'geore:sapphire_shard', amount: 1},
+        {input: 'geore:topaz_cluster', output: 'geore:topaz_shard', amount: 1},
+        {input: 'geore:zinc_cluster', output: 'geore:zinc_shard', amount: 1},
+        {input: 'geore:uraninite_cluster', output: 'geore:uraninite_shard', amount: 1},
+        {input: 'geore:black_quartz_cluster', output: 'geore:black_quartz_shard', amount: 1},
+        {input: 'geore:monazite_cluster', output: 'geore:monazite_shard', amount: 1},
+        {input: 'geore:aluminum_cluster', output: 'geore:aluminum_shard', amount: 1},
+        {input: 'geore:lead_cluster', output: 'geore:lead_shard', amount: 1},
+        {input: 'geore:nickel_cluster', output: 'geore:nickel_shard', amount: 1},
+        {input: 'geore:osmium_cluster', output: 'geore:osmium_shard', amount: 1},
+        {input: 'geore:platinum_cluster', output: 'geore:platinum_shard', amount: 1},
+        {input: 'geore:silver_cluster', output: 'geore:silver_shard', amount: 1},
+        {input: 'geore:tin_cluster', output: 'geore:tin_shard', amount: 1},
+        {input: 'geore:tungsten_cluster', output: 'geore:tungsten_shard', amount: 1},
+        {input: 'geore:uranium_cluster', output: 'geore:uranium_shard', amount: 1},
+
+        //EternalOres
+        {input: 'eternalores:geore_apatite_cluster', output: 'eternalores:apatite_geoshard', amount: 1},
+        {input: 'eternalores:geore_ardite_cluster', output: 'eternalores:ardite_geoshard', amount: 1},
+        {input: 'eternalores:geore_beryllium_cluster', output: 'eternalores:beryllium_geoshard', amount: 1},
+        {input: 'eternalores:geore_catalyrium_cluster', output: 'eternalores:catalyrium_geoshard', amount: 1},
+        {input: 'eternalores:geore_cinnabar_cluster', output: 'eternalores:cinnabar_geoshard', amount: 1},
+        {input: 'eternalores:geore_cobalt_cluster', output: 'eternalores:cobalt_geoshard', amount: 1},
+        {input: 'eternalores:geore_fluorite_cluster', output: 'eternalores:fluorite_geoshard', amount: 1},
+        {input: 'eternalores:geore_gallium_cluster', output: 'eternalores:gallium_geoshard', amount: 1},
+        {input: 'eternalores:geore_garnet_cluster', output: 'eternalores:garnet_geoshard', amount: 1},
+        {input: 'eternalores:geore_pyrolite_cluster', output: 'eternalores:pyrolite_geoshard', amount: 1},
+        {input: 'eternalores:geore_peridot_cluster', output: 'eternalores:peridot_geoshard', amount: 1},
+        {input: 'eternalores:geore_pearl_cluster', output: 'eternalores:pearl_geoshard', amount: 1},
+        {input: 'eternalores:geore_onyx_cluster', output: 'eternalores:onyx_geoshard', amount: 1},
+        {input: 'eternalores:geore_obsidian_cluster', output: 'eternalores:obsidian_geoshard', amount: 1},
+        {input: 'eternalores:geore_niter_cluster', output: 'eternalores:niter_geoshard', amount: 1},
+        {input: 'eternalores:geore_necroticarite_cluster', output: 'eternalores:necroticarite_geoshard', amount: 1},
+        {input: 'eternalores:geore_jade_cluster', output: 'eternalores:jade_geoshard', amount: 1},
+        {input: 'eternalores:geore_iridium_cluster', output: 'eternalores:iridium_geoshard', amount: 1},
+        {input: 'eternalores:geore_sculkite_cluster', output: 'eternalores:sculkite_geoshard', amount: 1},
+        {input: 'eternalores:geore_tanzanite_cluster', output: 'eternalores:tanzanite_geoshard', amount: 1},
+        {input: 'eternalores:geore_titanium_cluster', output: 'eternalores:titanium_geoshard', amount: 1},
+        {input: 'eternalores:geore_ultimatitanium_cluster', output: 'eternalores:ultimatitanium_geoshard', amount: 1},
+        {input: 'eternalores:geore_zircon_cluster', output: 'eternalores:zircon_geoshard', amount: 1},
+
+        //AE2 and JDT
+        {input: 'justdirethings:time_crystal_cluster', output: 'justdirethings:time_crystal', amount: 1},
+        {input: 'ae2:quartz_cluster', output: 'ae2:certus_quartz_crystal', amount: 1},
+        {input: 'extendedae:entro_cluster', output: 'extendedae:entro_crystal', amount: 1},
+
+        //The rest of the clusters
+        {input: 'pastel:bismuth_cluster', output: 'pastel:bismuth_crystal', amount: 1},
+        {input: 'pastel:malachite_cluster', output: 'pastel:pure_malachite', amount: 1},
+        {input: 'pastel:azurite_cluster', output: 'pastel:pure_azurite', amount: 1},
+        {input: 'pastel:bloodstone_cluster', output: 'pastel:pure_bloodstone', amount: 1},
+        {input: 'pastel:coal_cluster', output: 'pastel:pure_coal', amount: 1},
+        {input: 'pastel:copper_cluster', output: 'pastel:pure_copper', amount: 1},
+        {input: 'pastel:iron_cluster', output: 'pastel:pure_iron', amount: 1},
+        {input: 'pastel:gold_cluster', output: 'pastel:pure_gold', amount: 1},
+        {input: 'pastel:lapis_cluster', output: 'pastel:pure_lapis', amount: 1},
+        {input: 'pastel:redstone_cluster', output: 'pastel:pure_redstone', amount: 1},
+        {input: 'pastel:diamond_cluster', output: 'pastel:pure_diamond', amount: 1},
+        {input: 'pastel:emerald_cluster', output: 'pastel:pure_emerald', amount: 1},
+        {input: 'pastel:prismarine_cluster', output: 'pastel:pure_prismarine', amount: 1},
+        {input: 'pastel:quartz_cluster', output: 'pastel:pure_quartz', amount: 1},
+        {input: 'pastel:glowstone_cluster', output: 'pastel:pure_glowstone', amount: 1},
+        {input: 'pastel:zinc_cluster', output: 'pastel:pure_zinc', amount: 1},
+        {input: 'pastel:netherite_scrap_cluster', output: 'pastel:pure_netherite_scrap', amount: 1},
+        {input: 'pastel:echo_cluster', output: 'pastel:pure_echo', amount: 1},
+        {input: 'pastel:fluix_cluster', output: 'ae2:fluix_crystal', amount: 1},
+        {input: 'biomesoplenty:rose_quartz_cluster', output: 'biomesoplenty:rose_quartz_chunk', amount: 1},
+
+        {input: 'pastel:pure_echo', output: 'minecraft:echo_shard', amount: 1}
     ];
 
     const blacklist = [
@@ -139,6 +228,7 @@ ServerEvents.recipes(catalyst => {
     };
 
     const getSmeltingResult = (inputId) => getRecipeOutput('minecraft:smelting', inputId);
+    const getBlastingResult = (inputId) => getRecipeOutput('minecraft:blasting', inputId);
     const getEnrichingResult = (inputId) => getRecipeOutput('mekanism:enriching', inputId);
     const getSqueezingResult = (inputId) => getRecipeOutput('integrateddynamics:squeezer', inputId);
     const getEnergizingResult = (inputId) => getRecipeOutput('powah:energizing', inputId);
@@ -162,6 +252,9 @@ ServerEvents.recipes(catalyst => {
 
         let smeltOutput = getSmeltingResult(inputId);
         if(smeltOutput && !smeltOutput.isEmpty()) return smeltOutput;
+
+        let blastingOutput = getBlastingResult(inputId);
+        if(blastingOutput && !blastingOutput.isEmpty()) return blastingOutput;
 
         let enriching = getEnrichingResult(inputId);
         if (enriching && !enriching.isEmpty()) return enriching;
@@ -324,6 +417,9 @@ ServerEvents.recipes(catalyst => {
     createRecipesForTag('#c:ores', 1);
     createRecipesForTag('#c:raw_materials', 1);
     createRecipesForTag('#geore:geore_shards', 1);
+    createRecipesForTag("#catalyst:clusters", 4)
+    createRecipesForTag('#pastel:pure_resources', 1);
+    createRecipesForTag('pastel:pure_echo', 1);
 
     console.log("[CatJS] Added Celestial Forges recipes")
 
