@@ -15,6 +15,18 @@ ServerEvents.recipes(catalyst => {
     
     }).id("catalyst:energized_power/cable_insulator");
 
+    catalyst.shaped(Item.of('energizedpower:press_mold_maker', 1),
+    [
+        "BBB",
+        "BSB",
+        "FFF"
+    ],{
+        B: 'minecraft:bricks',
+        F: 'minecraft:smooth_stone',
+        S: 'minecraft:wooden_shovel'
+    
+    }).id("catalyst:energized_power/press_mold_maker");
+
     console.log("[CatJS] Added Energized Power recipes")
 });
 
