@@ -84,6 +84,31 @@ ServerEvents.recipes(catalyst => {
         output: { count: 1, id: "expandedae:exp_pattern_provider" }
     }).id('catalyst:expandedae/exp_pattern_provider_from_advanced');
 
+    let press = (block, output) => {
+        catalyst.shaped(
+            Item.of(output, 1), 
+            [
+                'PBP',
+                'BFB', 
+                'PBP'
+            ],
+            {
+                P: 'eternalores:plate_cast_steel',
+                F: 'eternalores:cast_steel_foil',
+                B: block
+            }
+        ).id(`catalyst:ae2/${output.replace(':', '_')}`);
+    };
+
+    press('ae2:quartz_block', 'ae2:calculation_processor_press');
+    press('minecraft:diamond_block', 'ae2:engineering_processor_press');
+    press('minecraft:gold_block', 'ae2:logic_processor_press');
+    press('eternalores:silicon_block', 'ae2:silicon_press');
+    
+    press('ae2:singularity', 'advanced_ae:quantum_processor_press')
+    press('appflux:charged_redstone_block', 'appflux:energy_processor_press')
+    press('megacells:sky_steel_ingot', 'megacells:accumulation_processor_press')
+
     console.log("[CatJS] Added AE2 recipes")
 });
 
