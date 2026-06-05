@@ -4,11 +4,14 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 let IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
 
 ServerEvents.recipes(catalyst => {
-    catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", 1200)
+    let time = 1200
+    let energy = 20000
+
+    catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", time)
     .progressData(ProgressData.create().x(95).y(28))
     .width(150)
     .height(80)
-    .requireEnergyPerTick(20000, 0, 4)
+    .requireEnergyPerTick(energy, 0, 4)
     .requireFunctionOnEnd("geo_chooser")
     .requireFunctionEachTick("geo_each")
     .hide()
@@ -25,18 +28,18 @@ ServerEvents.recipes(catalyst => {
         else if(cluster === "extendedae:entro_cluster") bud = "extendedae:entro_budding_fully";
         else if(cluster === "justdirethings:time_crystal_cluster") bud = "justdirethings:time_crystal_budding_block";
 
-        catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", 1200)
+        catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", time)
         .progressData(ProgressData.create().x(90).y(28))
         .width(150)
         .height(70)
         .requireItem("minecraft:bedrock") 
         .jei()
-        .requireEnergyPerTick(20000, 0, 7)
-        .requireItem(`1x ${cluster}`, 40, 10)
-        .requireItem(`1x ${cluster}`, 22, 28)
-        .requireItem(`1x ${bud}`, 40, 28)
-        .requireItem(`1x ${cluster}`, 58, 28)
-        .requireItem(`1x ${cluster}`, 40, 46)
+        .requireEnergyPerTick(energy, 0, 7)
+        .requireItem(Item.of(cluster, 1), 40, 10)
+        .requireItem(Item.of(cluster, 1), 22, 28)
+        .requireItem(Item.of(bud, 1), 40, 28)
+        .requireItem(Item.of(cluster, 1), 58, 28)
+        .requireItem(Item.of(cluster, 1), 40, 46)
         .produceItem(Item.of(cluster, 1, {
             "minecraft:lore": [
                 { "translate": "catalyst.mmr.tooltip.geo_syntex.item.2", "italic": false },
