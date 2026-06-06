@@ -29,5 +29,6 @@ RecipeViewerEvents.addEntries("item", catalyst => {
 
     seeds.forEach(seed => {
         catalyst.add(Item.of(`mysticalagriculture:${seed}_seeds`))
+        catalyst.add(Item.of(`mysticalagriculture:${seed}_essence`))
     })
 })
