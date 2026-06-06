@@ -15,6 +15,8 @@ ServerEvents.recipes(catalyst => {
         'minecraft:mangrove_propagule': { log: 'minecraft:mangrove_log', leaves: 'minecraft:mangrove_leaves' },
         'minecraft:azalea': { log: 'minecraft:oak_log', leaves: 'minecraft:azalea_leaves' },
         'minecraft:flowering_azalea': { log: 'minecraft:oak_log', leaves: 'minecraft:flowering_azalea_leaves' },
+        'minecraft:crimson_fungus':{ log: 'minecraft:crimson_stem', leaves: 'minecraft:nether_wart_block'},
+        'minecraft:warped_fungus':{ log: 'minecraft:warped_stem', leaves: 'minecraft:warped_wart_block'},
 
         // Biomes O' Plenty
         'biomesoplenty:orange_maple_sapling': { log: 'biomesoplenty:maple_log', leaves: 'biomesoplenty:orange_maple_leaves' },
