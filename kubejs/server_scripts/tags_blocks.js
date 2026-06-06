@@ -93,15 +93,6 @@ ServerEvents.tags('block', catalyst => {
         "justdirethings:time_crystal_cluster"
     ];
 
-    _clusters.forEach(cluster => {
-        global.clusters.add(cluster)
-    })
-
-    global.clusters.forEach(cluster => {
-        catalyst.add("c:clusters", cluster)
-        catalyst.add("catalyst:clusters", cluster)
-    })
-
     let _buddings = [
         "minecraft:budding_amethyst",
         "geore:budding_coal",
@@ -168,17 +159,6 @@ ServerEvents.tags('block', catalyst => {
         "justdirethings:time_crystal_budding_block"
     ];
 
-    _buddings.forEach(bud => {
-        global.budding_blocks.add(bud)
-    })
-
-    global.budding_blocks.forEach(bud => {
-        catalyst.add("c:budding_blocks", bud)
-        catalyst.add("c:budding", bud)
-        catalyst.remove('create:non_movable', bud)
-        catalyst.add('catalyst:budding_blocks', bud)
-    })
-
     let _storage = [
         "geore:coal_block",
         "geore:copper_block",
@@ -236,11 +216,22 @@ ServerEvents.tags('block', catalyst => {
         "pastel:moonstone_block"
     ];
 
-    _storage.forEach(st => {
-        global.bud_storage.add(st)
+    _clusters.forEach(cluster => {
+        global.clusters.add(cluster)
+        catalyst.add("c:clusters", cluster)
+        catalyst.add("catalyst:clusters", cluster)
     })
 
-    global.bud_storage.forEach(st => {
+    _buddings.forEach(bud => {
+        global.budding_blocks.add(bud)
+        catalyst.add("c:budding_blocks", bud)
+        catalyst.add("c:budding", bud)
+        catalyst.remove('create:non_movable', bud)
+        catalyst.add('catalyst:budding_blocks', bud)
+    })
+
+    _storage.forEach(st => {
+        global.bud_storage.add(st)
         catalyst.add("geore:geore_blocks", st)
         catalyst.add("catalyst:budding_storages", st)
     })
