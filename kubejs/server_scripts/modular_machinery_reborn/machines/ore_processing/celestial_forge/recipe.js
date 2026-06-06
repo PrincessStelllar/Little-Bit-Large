@@ -94,6 +94,11 @@ ServerEvents.recipes(catalyst => {
         {input: 'pastel:moonstone_cluster', output: 'pastel:moonstone_shard', amount: 1},
 
         //Geore Shards
+        {input: 'geore:tungsten_shard', output: 'eternalores:tungsten_ingot', amount: 1},
+        {input: 'geore:monazite_shard', output: 'eternalores:gem_monazite', amount: 1},
+        {input: 'geore:topaz_shard', output: 'pastel:topaz_powder', amount: 1},
+
+        //Clusters
         {input: 'geore:coal_cluster', output: 'geore:coal_shard', amount: 1},
         {input: 'geore:copper_cluster', output: 'geore:copper_shard', amount: 1},
         {input: 'geore:diamond_cluster', output: 'geore:diamond_shard', amount: 1},
