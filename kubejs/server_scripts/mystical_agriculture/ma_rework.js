@@ -585,6 +585,48 @@ ServerEvents.recipes(catalyst => {
         processingTime: 1800
     }).id('catalyst:industrialforegoing/dissolution/industrial_seeds');
 
+    //Moss related
+    catalyst.shaped(Item.of('minecraft:moss_block', 32),
+    [
+        "AAA",
+        "ANA",
+        "AAA"
+    ],{
+        A: 'mysticalagriculture:nature_essence',
+        N: 'mysticalagriculture:stone_essence',
+    
+    }).id("catalyst:mystical_agriculture/moss_blocks");
+
+    catalyst.shaped(Item.of('minecraft:moss_carpet', 12),
+    [
+        "ANA",
+    ],{
+        A: 'mysticalagriculture:nature_essence',
+        N: 'mysticalagriculture:stone_essence',
+    
+    }).id("catalyst:mystical_agriculture/moss_carpets");
+
+    catalyst.shaped(Item.of('minecraft:azalea', 4),
+    [
+        "AAA",
+        " N "
+    ],{
+        A: 'mysticalagriculture:nature_essence',
+        N: 'mysticalagriculture:stone_essence',
+    
+    }).id("catalyst:mystical_agriculture/azalea");
+
+    catalyst.shaped(Item.of('minecraft:flowering_azalea', 4),
+    [
+        "ABA",
+        " N "
+    ],{
+        A: 'mysticalagriculture:nature_essence',
+        N: 'mysticalagriculture:stone_essence',
+        B: 'mysticalagriculture:dye_essence'
+    
+    }).id("catalyst:mystical_agriculture/flowering_azalea");
+
     console.log("[CatJS] Finished adding MA recipes")
 
 });
