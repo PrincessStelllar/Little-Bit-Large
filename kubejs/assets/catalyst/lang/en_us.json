@@ -90,5 +90,9 @@
   "catalyst.mmr.machine.ender_furnace": "<grad from=#c200ff to=#E5EF12 hue=false f=0.6 sp=20.0 uni=false>Ender</grad> Furnace",
   "catalyst.mmr.machine.multismelter": "<grad from=#FF0000 to=#FF7676 hue=true f=0.3 sp=20.0 uni=false>Multi</grad>Smelter",
   "catalyst.mmr.machine.soul_furnace": "<grad from=#FF0000 to=#0003FF hue=false f=0.25 sp=50.0 uni=false>Soul</grad> Furnace",
-  "catalyst.mmr.machine.primitive_furnace": "&#B3552EPrimitive&r Furnace"
+  "catalyst.mmr.machine.primitive_furnace": "&#B3552EPrimitive&r Furnace",
+
+
+  "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
+  "catalyst.create.limestone": "This block can be created using a Vanilla Cobblestone Generator with Lava and Honey from Create"
 }
