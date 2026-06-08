@@ -41,7 +41,8 @@
     "c:silicon",
     "c:wires/{material}",
     "c:small_dusts/{material}",
-    "c:fuels/bio"
+    "c:fuels/bio",
+    "c:dust_blocks/{material}"
   ],
   "ignored_tags": [],
   "ignored_items": [],

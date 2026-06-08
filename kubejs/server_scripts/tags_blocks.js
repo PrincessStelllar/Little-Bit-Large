@@ -274,6 +274,8 @@ ServerEvents.tags('block', catalyst => {
         //catalyst.add('minecraft:sword_efficient', name);
     });
 
+    catalyst.add('c:dust_blocks/uranium', 'oritech:uranium_dust_block')
+
     console.log("[CatJS] Tags for blocks has been added");
 })
 
