@@ -74,11 +74,12 @@ ServerEvents.recipes(catalyst => {
             ).id(`catalyst:create/log_${path}_to_stripped_version_${namespace}`)
             .damageIngredient(normal_axes, 4)
 
-            catalyst.shapeless(resultId, 
-                [ logId, unbreaking_axes ]
-            ).id(`catalyst:create/log_${path}_to_stripped_version_unbreaking_${namespace}`)
-            .damageIngredient(unbreaking_axes, 0)
-            .keepIngredient(unbreaking_axes)
+            let unbreakingRecipe = catalyst.shapeless(resultId, [ logId, unbreaking_axes ])
+                .id(`catalyst:create/log_${path}_to_stripped_version_unbreaking_${namespace}`);
+            
+            unbreaking_list.forEach(axeId => {
+                unbreakingRecipe.keepIngredient(axeId)
+            })
 
             catalyst.shapeless(resultId, 
                 [ logId, energy_axes ]
