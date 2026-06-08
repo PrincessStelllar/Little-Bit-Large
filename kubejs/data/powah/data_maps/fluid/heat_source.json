@@ -1,0 +1,10 @@
+{
+  "values": {
+    "#c:lava": {
+      "temperature": 1000
+    },
+    "kubejs:liquid_light": {
+      "temperature": 5000
+    }
+  }
+}
