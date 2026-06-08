@@ -75,6 +75,9 @@ ServerEvents.recipes(catalyst => {
         'oritech:crafting/assembleralt',
         'oritech:crafting/electricfurnacealt',
         'oritech:crafting/pulverizer',
+        {id: "oritech:foundry/alloy/electrum"},
+        {id: "oritech:compact/energizedpower/alloyfurance/oritech_electrum"},
+        {id: "oritech:crafting:alloy/electrum"},
 
         //geore
         /geore.*:allthemodium_.*/,
