@@ -40,7 +40,7 @@ MMREvents.machines(catalyst => {
                         "modular_machinery_reborn:casing_plain"
                     ],
                     "f": ["ars_nouveau:archwood_stairs[facing=north,half=bottom,shape=inner_right,waterlogged=false]"],
-                    "g": ["modular_machinery_reborn:casing_reinforced"],
+                    "g": ['ars_nouveau:smooth_sourcestone_large_bricks'],
                     "h": ["ars_nouveau:sourcestone_large_bricks"],
                     "i": ["#c:storage_blocks/honeycombs"],
                     "j": ["ars_nouveau:archwood_stairs[facing=north,half=bottom,shape=outer_right,waterlogged=false]"],
