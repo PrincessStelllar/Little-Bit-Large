@@ -59,9 +59,16 @@ ServerEvents.recipes(catalyst => {
         }
     ).id("catalyst:minecraft/crying_obsidian_1")
 
-    catalyst.shapeless(Item.of('minecraft:prismarine_shard', 4), 'minecraft:prismarine').id(`catalyst:minecraft/prismarine_to_shard`);
-    catalyst.shapeless(Item.of('minecraft:prismarine_crystals', 4), 'minecraft:sea_lantern').id(`catalyst:minecraft/sea_lantern_to_shards`);
+    catalyst.shapeless(Item.of('minecraft:prismarine_shard', 4), 'minecraft:prismarine')
+            .id(`catalyst:minecraft/prismarine_to_shard`);
+    catalyst.shapeless(Item.of('minecraft:prismarine_crystals', 4), 'minecraft:sea_lantern')
+            .id(`catalyst:minecraft/sea_lantern_to_shards`);
 
+    catalyst.shapeless(Item.of('craftingstation:crafting_station', 1), Item.of('craftingstation:crafting_station_slab', 2))
+            .id(`catalyst:minecraft/crafting_station_slab_to_station`);
+    catalyst.shapeless(Item.of('minecraft:crafting_table', 1), Item.of('craftingstation:crafting_station', 1))
+            .id(`catalyst:minecraft/crafting_station_to_block`);
+            
     console.log("[CatJS] Added minecraft recipes")
 })
 
