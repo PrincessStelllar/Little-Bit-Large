@@ -160,7 +160,28 @@ ServerEvents.recipes(catalyst => {
         { output: "solargeneration:solar_panel_advanced" },
         { output: "energizedpower:solar_panel_6" },
         { output: "solargeneration:solar_panel_ultimate" },
-        {id: "energizedpower:crafting/press_mold_maker"}
+        {id: "energizedpower:crafting/press_mold_maker"},
+        {id: "energizedpower:crafting/copper_plate"},
+        {id: "energizedpower:crafting/gold_plate"},
+        {id: "energizedpower:crafting/iron_plate"},
+        {id: "energizedpower:crafting/tin_plate"},
+
+        //IE
+        {id: "immersiveengineering:crafting/stick_aluminum"},
+        {id: "immersiveengineering:crafting/stick_iron"},
+        {id: "immersiveengineering:crafting/stick_netherite"},
+        {id: "immersiveengineering:crafting/stick_steel"},
+        {id: "immersiveengineering:crafting/plate_aluminum_hammering"},
+        {id: "immersiveengineering:crafting/plate_constantan_hammering"},
+        {id: "immersiveengineering:crafting/plate_copper_hammering"},
+        {id: "immersiveengineering:crafting/plate_electrum_hammering"},
+        {id: "immersiveengineering:crafting/plate_gold_hammering"},
+        {id: "immersiveengineering:crafting/plate_iron_hammering"},
+        {id: "immersiveengineering:crafting/plate_lead_hammering"},
+        {id: "immersiveengineering:crafting/plate_nickel_hammering"},
+        {id: "immersiveengineering:crafting/plate_silver_hammering"},
+        {id: "immersiveengineering:crafting/plate_steel_hammering"},
+        {id: "immersiveengineering:crafting/plate_uranium_hammering"},
 
     ]
 
