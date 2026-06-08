@@ -217,7 +217,7 @@ ServerEvents.recipes(catalyst => {
             id: 'create:andesite_alloy',
             count: 2
         }
-    })
+    }).id("catalyst:create/crafting/andesite_iron")
 
     catalyst.custom({
         type: 'minecraft:crafting_shaped',
@@ -232,9 +232,43 @@ ServerEvents.recipes(catalyst => {
         ],
         result: {
             id: 'create:andesite_alloy',
-            count: 2
+            count: 3
         }
-    })
+    }).id("catalyst:create/crafting/andesite_zinc")
+
+    catalyst.custom({
+        type: "create:mixing",
+        ingredients: [
+            {
+                item: "minecraft:andesite"
+            },
+            {
+                tag: "c:nuggets/iron"
+            }
+        ],
+        results: [
+            {
+                id: 'create:andesite_alloy_block'
+            }
+        ]
+    }).id("catalyst:create/mixing/andesite_iron")
+
+    catalyst.custom({
+        type: "create:mixing",
+        ingredients: [
+            {
+                item: "minecraft:andesite"
+            },
+            {
+                tag: "c:nuggets/zinc"
+            }
+        ],
+        results: [
+            {
+                id: "create:andesite_alloy"
+            }
+        ]
+    }).id("catalyst:create/mixing/andesite_zinc")
 
     //Item vault
     catalyst.shaped('2x create:item_vault', 
