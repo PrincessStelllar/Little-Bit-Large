@@ -41,7 +41,7 @@ ServerEvents.recipes(catalyst => {
         catalyst.custom({
             type: "productivebees:centrifuge",
             fluid: {
-                amount: 40,
+                amount: 400,
                 fluid: "productivebees:honey"
             },
             ingredient: {
@@ -54,6 +54,23 @@ ServerEvents.recipes(catalyst => {
             outputs: allOutputs,
             processingTime: 20
         }).id(`catalyst:productivebees/centrifuge/${beeId}_comb`);
+
+        catalyst.custom({
+            type: "productivebees:centrifuge",
+            fluid: {
+                amount: 100,
+                fluid: "productivebees:honey"
+            },
+            ingredient: {
+                type: "productivebees:component",
+                components: {
+                    "productivebees:bee_type": `productivebees:${beeId}`
+                },
+                items: "productivebees:configurable_honeycomb"
+            },
+            outputs: allOutputs,
+            processingTime: 20
+        }).id(`catalyst:productivebees/centrifuge/${beeId}_honeycomb`);
     };
     
     let skip = [
@@ -347,6 +364,44 @@ ServerEvents.recipes(catalyst => {
     // Pepto Bismol Bee
     centrifuge('pepto_bismol', [
         { chance: 1.0, item: { item: "productivebees:sugarbag_honeycomb" }, max: 4, min: 2 }
+    ]);
+
+    centrifuge('monazite', [
+        { chance: 1.0, item: { item: "eternalores:gem_monazite" }, max: 4, min: 1 }
+    ]);
+
+    centrifuge('stellarium', [
+        { chance: 0.05, item: { item: "eternalores:stellarium_ingot" }, max: 2, min: 1 }
+    ]);
+
+    centrifuge('biosteel', [
+        { chance: 1.0, item: { item: "eternalores:biosteel_ingot" }, max: 4, min: 1 }
+    ]);
+
+    centrifuge('chromium', [
+        { chance: 1.0, item: { item: "eternalores:chromium_ingot" }, max: 4, min: 1 }
+    ]);
+
+    centrifuge('beryllium', [
+        { chance: 1.0, item: { item: "eternalores:beryllium_ingot" }, max: 4, min: 1 }
+    ]);
+
+    centrifuge('silicon', [
+        { chance: 1.0, item: { item: "eternalores:silicon" }, max: 16, min: 4 }
+    ]);
+
+    centrifuge('graphite', [
+        { chance: 1.0, item: { item: "eternalores:graphite_ingot" }, max: 1, min: 1 }
+    ]);
+
+    centrifuge('coal', [
+        { chance: 0.6, item: { item: "minecraft:coal" }, max: 12, min: 1 },
+        { chance: 0.25, item: { item: "minecraft:charcoal" }, max: 8, min: 1 },
+        { chance: 0.125, item: { item: "eternalores:anthracite_coal" }, max: 4, min: 1 },
+        { chance: 0.125, item: { item: "eternalores:bituminous_coal" }, max: 4, min: 1 },
+        { chance: 0.075, item: { item: "eternalores:coke_coal" }, max: 4, min: 1 },
+        { chance: 0.075, item: { item: "eternalores:lignite_coal" }, max: 2, min: 1 },
+        { chance: 0.075, item: { item: "eternalores:peat_coal" }, max: 2, min: 1 }
     ]);
 
     console.log("[CatJS] Finished centrifuges recipes")

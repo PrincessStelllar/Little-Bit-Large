@@ -41,6 +41,8 @@ ServerEvents.recipes(catalyst => {
         { id: 'productivebees:tconstruct/cobalt_bee_no_tinker'},
         { id: 'productivebees:/centrifuge/honeycomb_fosilised_block'},
         { id: 'productivebees:/centrifuge/honeycomb_fosilised_block'},
+        { id: 'productivebees:/centrifuge/materials/honeycomb_silicon'},
+        { id: 'productivebees:/centrifuge/reactors/honeycomb_graphite'},
 
         // Advanced Peripherals
         { output: 'advancedperipherals:chunk_controller'},
