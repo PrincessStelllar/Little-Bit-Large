@@ -109,6 +109,110 @@ ServerEvents.recipes(catalyst => {
     press('appflux:charged_redstone_block', 'appflux:energy_processor_press')
     press('megacells:sky_steel_ingot', 'megacells:accumulation_processor_press')
 
+
+    catalyst.shapeless(Item.of('ae2:memory_card', 1), Item.of('ae2:memory_card', 1))
+            .id(`catalyst:ae2/memory_card_cleaner`);
+
+    catalyst.shaped(Item.of('kubejs:infinity_lava_cell'), [
+        'ABA',
+        'LAL',
+        'PCP'
+    ], {
+        A: 'ae2:cell_component_256k',
+        B: 'powah:blazing_crystal_block',
+        L: 'catalystcore:reinforced_glass',
+        P: 'eternalores:plate_obsidian',
+        C: 'eternalores:blaze_block' 
+    })
+    .id('catalyst:/ae2/lava/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_milk_cell'), [
+        'GBG',
+        'BKB',
+        'MMM'
+    ], {
+        M: 'eternalores:plate_aluminum',
+        G: 'minecraft:glass',
+        B: 'minecraft:milk_bucket',
+        K: 'ae2:cell_component_4k'
+    })
+    .id('catalyst:/ae2/milk/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_latex_cell'), [
+        'GFG',
+        'LKL',
+        'PCP'
+    ], {
+        G: 'ae2:quartz_vibrant_glass',
+        F: 'industrialforegoing:fluid_extractor',
+        L: '#minecraft:logs',
+        K: 'ae2:cell_component_64k',
+        P: 'eternalores:plate_iridium',
+        C: 'industrialforegoing:machine_frame_advanced'
+    })
+    .id('catalyst:/ae2/latex/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_sewage_cell'), [
+        'GSG',
+        'KCK',
+        'III'
+    ], {
+        G: 'ae2:quartz_vibrant_glass',
+        S: 'industrialforegoing:machine_frame_supreme',
+        K: 'megacells:cell_component_1m',
+        C: 'industrialforegoing:sewage_composter',
+        I: 'eternalores:plutonium_ingot'
+    })
+    .id('catalyst:/ae2/sewage/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_sludge_cell'), [
+        'GGG',
+        'KCK',
+        'DDD'
+    ], {
+        G: 'minecraft:glass',
+        K: 'ae2:cell_component_4k',
+        C: 'industrialforegoing:sludge_refiner',
+        D: 'minecraft:dirt'
+    })
+    .id('catalyst:/ae2/sludge/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_creosote_cell'), [
+        'GGG',
+        'CXC',
+        'CCC'
+    ], {
+        G: 'minecraft:glass',
+        C: 'immersiveengineering:cokebrick',
+        X: 'ae2:cell_component_1k'
+    })
+    .id('catalyst:/ae2/creosote/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_blood_cell'), [
+        'SBS',
+        'XCX',
+        'BBB'
+    ], {
+        S: 'evilcraft:blood_infusion_core',
+        B: 'evilcraft:dark_brick',
+        X: 'evilcraft:environmental_accumulation_core',
+        C: 'evilcraft:promise_tier_2'
+    })
+    .id('catalyst:/ae2/blood/inf_cell');
+
+    catalyst.shaped(Item.of('kubejs:infinity_fluid_xp_cell'), [
+        'GKG',
+        'KCK',
+        'JXJ'
+    ], {
+        G: 'sfm:xp_goop',
+        K: 'megacells:cell_component_1m',
+        C: 'enderio:xp_obelisk',
+        J: 'eternalores:plate_jade',
+        X: 'eternalores:plate_pyrolite'
+    })
+    .id('catalyst:/ae2/fluid_xp/inf_cell');
+
     console.log("[CatJS] Added AE2 recipes")
 });
 
