@@ -39,6 +39,8 @@ ServerEvents.recipes(catalyst => {
         // Productive Bees
         { id: 'productivebees:evilcraft/bloody_bee_2' },
         { id: 'productivebees:tconstruct/cobalt_bee_no_tinker'},
+        { id: 'productivebees:/centrifuge/honeycomb_fosilised_block'},
+        { id: 'productivebees:/centrifuge/honeycomb_fosilised_block'},
 
         // Advanced Peripherals
         { output: 'advancedperipherals:chunk_controller'},
@@ -77,7 +79,7 @@ ServerEvents.recipes(catalyst => {
         'oritech:crafting/pulverizer',
         {id: "oritech:foundry/alloy/electrum"},
         {id: "oritech:compact/energizedpower/alloyfurance/oritech_electrum"},
-        {id: "oritech:crafting:alloy/electrum"},
+        {id: "oritech:crafting/alloy/electrum"},
 
         //geore
         /geore.*:allthemodium_.*/,
@@ -146,8 +148,15 @@ ServerEvents.recipes(catalyst => {
         "create:crafting/materials/andesite_alloy",
         "create:crafting/materials/andesite_alloy_from_zinc",
 
+        {id: "create:mixing/andesite_alloy_from_zinc"},
+        {id: "create:mixing/andesite_alloy"},
+
+        //Railcraft
         "railcraft:world_spike",
         'railcraft:personal_world_spike',
+        {id: "railcraft:brass_ingot_crafted_with_ingots"},
+        {id: "railcraft:bronze_ingot_crafted_with_ingots"},
+        {id: "railcraft:invar_ingot_crafted_with_ingots"},
 
         //solar powah
         { output: "solargeneration:solar_panel_leadstone" },
@@ -185,6 +194,9 @@ ServerEvents.recipes(catalyst => {
         {id: "immersiveengineering:crafting/plate_silver_hammering"},
         {id: "immersiveengineering:crafting/plate_steel_hammering"},
         {id: "immersiveengineering:crafting/plate_uranium_hammering"},
+
+        //More red
+        {id: "morered:red_alloy_ingot"}
 
     ]
 
