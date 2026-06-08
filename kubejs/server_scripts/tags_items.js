@@ -48,6 +48,8 @@ ServerEvents.tags('item', catalyst => {
     catalyst.add('c:ingots/uranium', 'oritech:uranium_pellet')
     catalyst.add('c:nuggets/uranium', 'oritech:small_uranium_pellet')
     catalyst.add('c:small_dusts/plutonium', 'oritech:small_plutonium_dust')
+    catalyst.add('c:small_dusts/uranium', 'oritech:small_uranium_dust')
+    catalyst.add('c:dust_blocks/uranium', 'oritech:uranium_dust_block')
 
     //Mekanism
     catalyst.add('c:ingots/plutonium', 'mekanism:pellet_plutonium')

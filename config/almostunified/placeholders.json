@@ -52,6 +52,11 @@
     "amethyst",
     "wood",
     "redstone_alloy",
-    "plastic"
+    "plastic",
+    "biomass",
+    "bio",
+    "coal",
+    "charcoal",
+    "quartz"
   ]
 }
