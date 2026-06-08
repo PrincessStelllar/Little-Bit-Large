@@ -124,7 +124,7 @@ ServerEvents.recipes(catalyst => {
         P: 'eternalores:plate_obsidian',
         C: 'eternalores:blaze_block' 
     })
-    .id('catalyst:/ae2/lava/inf_cell');
+    .id('catalyst:ae2/lava/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_milk_cell'), [
         'GBG',
@@ -136,7 +136,7 @@ ServerEvents.recipes(catalyst => {
         B: 'minecraft:milk_bucket',
         K: 'ae2:cell_component_4k'
     })
-    .id('catalyst:/ae2/milk/inf_cell');
+    .id('catalyst:ae2/milk/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_latex_cell'), [
         'GFG',
@@ -150,7 +150,7 @@ ServerEvents.recipes(catalyst => {
         P: 'eternalores:plate_iridium',
         C: 'industrialforegoing:machine_frame_advanced'
     })
-    .id('catalyst:/ae2/latex/inf_cell');
+    .id('catalyst:ae2/latex/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_sewage_cell'), [
         'GSG',
@@ -163,7 +163,7 @@ ServerEvents.recipes(catalyst => {
         C: 'industrialforegoing:sewage_composter',
         I: 'eternalores:plutonium_ingot'
     })
-    .id('catalyst:/ae2/sewage/inf_cell');
+    .id('catalyst:ae2/sewage/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_sludge_cell'), [
         'GGG',
@@ -175,7 +175,7 @@ ServerEvents.recipes(catalyst => {
         C: 'industrialforegoing:sludge_refiner',
         D: 'minecraft:dirt'
     })
-    .id('catalyst:/ae2/sludge/inf_cell');
+    .id('catalyst:ae2/sludge/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_creosote_cell'), [
         'GGG',
@@ -186,7 +186,7 @@ ServerEvents.recipes(catalyst => {
         C: 'immersiveengineering:cokebrick',
         X: 'ae2:cell_component_1k'
     })
-    .id('catalyst:/ae2/creosote/inf_cell');
+    .id('catalyst:ae2/creosote/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_blood_cell'), [
         'SBS',
@@ -198,7 +198,7 @@ ServerEvents.recipes(catalyst => {
         X: 'evilcraft:environmental_accumulation_core',
         C: 'evilcraft:promise_tier_2'
     })
-    .id('catalyst:/ae2/blood/inf_cell');
+    .id('catalyst:ae2/blood/inf_cell');
 
     catalyst.shaped(Item.of('kubejs:infinity_fluid_xp_cell'), [
         'GKG',
@@ -211,7 +211,7 @@ ServerEvents.recipes(catalyst => {
         J: 'eternalores:plate_jade',
         X: 'eternalores:plate_pyrolite'
     })
-    .id('catalyst:/ae2/fluid_xp/inf_cell');
+    .id('catalyst:ae2/fluid_xp/inf_cell');
 
     console.log("[CatJS] Added AE2 recipes")
 });
