@@ -94,5 +94,14 @@
 
 
   "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
-  "catalyst.create.limestone": "This block can be created using a Vanilla Cobblestone Generator with Lava and Honey from Create"
+  "catalyst.create.limestone": "This block can be created using a Vanilla Cobblestone Generator with Lava and Honey from Create",
+
+  "catalyst.extendedae.lava": "Infinite Lava Cell",
+  "catalyst.extendedae.milk": "Infinite Milk Cell",
+  "catalyst.extendedae.latex": "Infinite Latex Cell",
+  "catalyst.extendedae.sewage": "Infinite Sewage Cell",
+  "catalyst.extendedae.sludge": "Infinite Sludge Cell",
+  "catalyst.extendedae.creosote": "Infinite Creosote Cell",
+  "catalyst.extendedae.blood": "Infinite Blood Cell",
+  "catalyst.extendedae.fluid_xp": "Infinite Liquid XP Cell"
 }
