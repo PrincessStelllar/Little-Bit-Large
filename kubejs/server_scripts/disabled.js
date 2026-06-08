@@ -198,7 +198,12 @@ ServerEvents.recipes(catalyst => {
         {id: "immersiveengineering:crafting/plate_uranium_hammering"},
 
         //More red
-        {id: "morered:red_alloy_ingot"}
+        {id: "morered:red_alloy_ingot"},
+
+        //pneumaticcraft
+        {id: "appliedpneumatics:amadron/singularity_to_emerald"},
+        {id: "appliedpneumatics:amadron/fluix_crystal_to_emerald"},
+        {id: "appliedpneumatics:amadron/certus_quartz_crystal_to_emerald"}
 
     ]
 
