@@ -56,7 +56,7 @@ ServerEvents.recipes((catalyst) => {
     // Arboretum
     registerController(
         "mmr:arboretum",
-        plainCasing,
+        'chipped:quartz_block_bricks',
         '#minecraft:saplings',
         'industrialforegoing:plant_sower'
     );
@@ -64,9 +64,17 @@ ServerEvents.recipes((catalyst) => {
     // Apis Mutandis
     registerController(
         "mmr:apis_mutandis",
-        plainCasing,
+        'ars_nouveau:smooth_sourcestone_large_bricks',
         '#c:storage_blocks/honeycombs',
         'ars_nouveau:arcane_core'
+    );
+
+    //primitive apiary
+    registerController(
+        "mmr:primitive_apiary",
+        "#minecraft:logs",
+        '#minecraft:leaves',
+        '#minecraft:flowers'
     );
 
     // Advanced Apiary
@@ -88,7 +96,7 @@ ServerEvents.recipes((catalyst) => {
     // Neutron Injector
     registerController(
         "mmr:neutron_injector",
-        plainCasing,
+        'eternalores:antimatter_block',
         '#c:storage_blocks/steel',
         'mekanism:solar_neutron_activator'
     );
@@ -106,7 +114,7 @@ ServerEvents.recipes((catalyst) => {
         "mmr:geo_syntex",
         plainCasing,
         'minecraft:amethyst_cluster',
-        'mysticalagriculture:awakened_supremium_growth_accelerator'
+        'ars_nouveau:amethyst_golem_charm'
     );
 
     // Crystalline Fabricator (Maker)
@@ -120,7 +128,7 @@ ServerEvents.recipes((catalyst) => {
     //Head drill
     registerController(
         "mmr:drill_miner",
-        plainCasing,
+        'industrialforegoing:machine_frame_supreme',
         'catalystcore:reinforced_glass',
         'industrialforegoing:fluid_laser_base'
     );
@@ -141,6 +149,23 @@ ServerEvents.recipes((catalyst) => {
         'minecraft:blast_furnace'
     );
 
+    //Soul
+    registerController(
+        "mmr:nether_furnace",
+        'create:cut_scorchia_bricks',
+        'minecraft:smoker',
+        'minecraft:soul_soil'
+    );
+
+    //Ender
+    registerController(
+        "mmr:end_furnace",
+        'minecraft:end_stone_bricks',
+        'minecraft:blast_furnace',
+        'minecraft:dragon_egg'
+    );
+
+    //Multismelter
     registerController(
         "mmr:multismelter",
         plainCasing,
@@ -148,9 +173,10 @@ ServerEvents.recipes((catalyst) => {
         'minecraft:blast_furnace'
     );
 
+    //advanced multismelter
     registerController(
         "mmr:advanced_multismelter",
-        plainCasing,
+        'replication:replica_block',
         'ironfurnaces:netherite_furnace',
         'minecraft:blast_furnace'
     );
@@ -158,10 +184,79 @@ ServerEvents.recipes((catalyst) => {
     //Beacon
     registerController(
         "mmr:personal_beacon",
-        plainCasing,
+        reinforcedCasing,
         'minecraft:beacon',
-        reinforcedCasing
+        'industrialforegoing:machine_frame_supreme'
     );
+
+    //Alloy maker
+    registerController(
+        "mmr:primitive_alloy",
+        'minecraft:mud_bricks',
+        'minecraft:mud_bricks',
+        'minecraft:campfire'
+    );
+
+    //Igneous extruders
+    registerController(
+        "mmr:igneus_extruder",
+        'immersiveengineering:steel_scaffolding_standard',
+        'create:railway_casing',
+        'minecraft:stone'
+    );
+
+    //Primitive Igenous extruder
+    registerController(
+        "mmr:primitive_extruder",
+        'minecraft:sand',
+        'minecraft:stone',
+        'minecraft:iron_pickaxe'
+    );
+
+    //greenhouse
+    registerController(
+        "mmr:greenhouse",
+        'cookingforblockheads:sink',
+        'mysticalagriculture:mystical_fertilizer',
+        '#minecraft:hoes'
+    );
+
+    //fisher
+    registerController(
+        "mmr:fisher",
+        'minecraft:water_bucket',
+        '#minecraft:fishes',
+        '#c:rods/fishing'
+    );
+
+    //colider
+    registerController(
+        "mmr:colider",
+        'energizedpower:reinforced_advanced_machine_frame',
+        'oritech:accelerator_controller',
+        'oritech:heisenberg_compensator'
+    );
+
+    //extruder
+    catalyst.shaped(
+        Item.of(getController("mmr:extruder")),
+        [
+            'ABC',
+            'DEF',
+            'GHI'
+        ],
+        {
+            A: 'eternalores:mold_gear',
+            C: 'eternalores:mold_plate',
+            G: 'eternalores:mold_rod',
+            I: 'eternalores:mold_foil',
+            B: 'eternalores:netherite_gem_cutter',
+            D: 'eternalores:cobalt_wire_cutter',
+            F: 'eternalores:cobalt_hammer',
+            H: 'eternalores:advanced_prospector',
+            E: 'create:mechanical_saw'
+        }
+    ).id(`catalyst:mmr/controller/extruder`);
 
     console.log("[CatJS] Added MMR controllers")
 
