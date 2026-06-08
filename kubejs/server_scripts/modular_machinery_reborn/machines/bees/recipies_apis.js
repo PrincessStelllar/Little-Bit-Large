@@ -8,7 +8,7 @@ let IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
 let $Integer = Java.loadClass("java.lang.Integer");
 let $String = Java.loadClass("java.lang.String");
 
-const allBees = [
+let allBees = [
 
     ["dye", 1, "minecraft:red_dye"],
     ["lumber", 1, "minecraft:oak_log"],
@@ -450,7 +450,15 @@ const allBees = [
     ["oritech\/adamant", 2, "oritech:adamant_block"],
     ["oritech\/fluxite", 2, "oritech:fluxite_block"],
     ["oritech\/sheol_fire", 2, "oritech:still_sheol_fire_bucket"],
-    ["oritech\/prometheum", 2, "oritech:prometheum_ingot"]
+    ["oritech\/prometheum", 2, "oritech:prometheum_ingot"],
+    //eternalores
+    ["monazite", 2, 'eternalores:monazite_block'],
+    ["stellarium", 2, 'eternalores:stellarium_block'],
+    ["biosteel", 2, 'eternalores:biosteel_block'],
+    ["chromium", 2, 'eternalores:chromium_block'],
+    ["beryllium", 2, 'eternalores:beryllium_block'],
+    ["silicon", 2, 'eternalores:silicon_block'],
+    ["graphite", 2, 'eternalores:graphite_block'],
 ];
 
 ServerEvents.recipes(catalyst => {
@@ -458,25 +466,127 @@ ServerEvents.recipes(catalyst => {
     let debug = false
     if(debug)
     {
-        let beeTypes = new Set(allBees.map(bee => bee[0].includes("\/") ? bee[0].split("\/")[1] : bee[0]));
-        $BeeProvider.INSTANCE.getData().forEach((key, value) =>{
-            try
+        let checkCondition = (conditionJson) => {
+            let type = conditionJson.get("type").getAsString();
+
+            if(type.includes("mod_loaded"))
             {
-                let type = String(key).split(":")[1];
-                if(!beeTypes.has(type))
+                let modId = conditionJson.get("modid").getAsString();
+                return Platform.isLoaded(modId);
+            }
+
+            if(type.includes("tag_empty"))
+            {
+                let tag = conditionJson.get("tag").getAsString();
+                let ingredient = Ingredient.of('#' + tag);
+                let ids = ingredient.getItemIds();
+
+                if(ids.isEmpty()) return true;
+
+                for(let id of ids)
                 {
-                    console.log(`[CatJS] New bee detected: ${type}`)
+                    let idStr = id.toString();
+                    if(idStr !== "minecraft:air" && 
+                    idStr !== "minecraft:barrier" && 
+                    idStr !== "" && 
+                    !Item.of(idStr).isEmpty())
+                    {
+                        return false; 
+                    }
+                }
+
+                return true;
+            }
+
+            if(type.includes("item_exists"))
+            {
+                let item = conditionJson.get("item").getAsString();
+                return !Item.of(item).isEmpty();
+            }
+
+            if(type.includes("not"))
+            {
+                let innerCondition = conditionJson.get("value").getAsJsonObject();
+                return !checkCondition(innerCondition);
+            }
+
+            if(type.includes("and"))
+            {
+                let values = conditionJson.getAsJsonArray("values");
+                for(let i = 0; i < values.size(); i++)
+                {
+                    if(!checkCondition(values.get(i).getAsJsonObject()))
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }
+
+            if(type.includes("or"))
+            {
+                let values = conditionJson.getAsJsonArray("values");
+                for(let i = 0; i < values.size(); i++)
+                {
+                    if(checkCondition(values.get(i).getAsJsonObject()))
+                    {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
+            return true;
+        };
+
+        let isBeeValid = (json) => {
+            if (!json.has("conditions")) return true;
+
+            let conditions = json.getAsJsonArray("conditions");
+            for(let i = 0; i < conditions.size(); i++)
+            {
+                let condition = conditions.get(i).getAsJsonObject();
+                if(!checkCondition(condition))
+                {
+                    return false;
                 }
             }
-            catch(error)
+            return true;
+        };
+
+        let resources = catalyst.resourceManager.listResources("productivebees", loc => {
+            return loc.getNamespace() === "productivebees" && loc.getPath().endsWith(".json");
+        });
+
+        resources.forEach((location, resource) => {
+            try {
+                let reader = resource.openAsReader();
+                let json = JsonParser.parseReader(reader).getAsJsonObject();
+                reader.close();
+
+                if(isBeeValid(json))
+                {
+                    let path = location.getPath();
+                    let pathNoJson = path.replace(".json", "");
+                    let beeId = pathNoJson.substring(pathNoJson.lastIndexOf('/') + 1);
+
+                    let beeExists = allBees.some(beeEntry => beeEntry[0] === beeId);
+
+                    if(!beeExists)
+                    {
+                        console.log(`[CatJS] New bee detected: ${beeId}`);
+                    }
+                }
+            } 
+            catch(e)
             {
-                
+                console.error(`[CatJS] Error processing bee, please report it ${location}: ${e}`);
             }
-        })
+        });
     }
 
-    const time = 200; //ticks
-    const multiplier = 20
+    let time = 200; //ticks
+    let multiplier = 20
     allBees.forEach(bee => {
         
         let [keyword, beeType, ingredients] = bee;
