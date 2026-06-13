@@ -508,6 +508,19 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:energizing/uranium_block_6')
 
+    catalyst.shaped(Item.of('powah:dielectric_paste', 64),
+    [
+        "AAA",
+        "EEA",
+        "NNC"
+    ],{
+        C: 'minecraft:clay',
+        A: 'eternalores:carbon_blend',
+        E: 'eternalores:energetic_blend',
+        N: 'eternalores:nether_blend'
+    
+    }).id("catalyst:powah/dielectric_paste");
+
     console.log("[CatJS] Powah Recipes");
 })
 
