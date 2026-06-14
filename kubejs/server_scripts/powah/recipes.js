@@ -516,7 +516,7 @@ ServerEvents.recipes(catalyst => {
     ],{
         C: 'minecraft:clay',
         A: 'eternalores:carbon_blend',
-        E: 'eternalores:energetic_blend',
+        E: 'eternalores:basalt_dust',
         N: 'eternalores:nether_blend'
     
     }).id("catalyst:powah/dielectric_paste");

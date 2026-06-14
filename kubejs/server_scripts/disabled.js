@@ -205,10 +205,6 @@ ServerEvents.recipes(catalyst => {
         {id: "appliedpneumatics:amadron/fluix_crystal_to_emerald"},
         {id: "appliedpneumatics:amadron/certus_quartz_crystal_to_emerald"},
 
-        //Powah!
-        {id: "powah:crafting/dielectric_paste_2"},
-        {id: "powah:crafting/dielectric_paste"}
-
     ]
 
     recipesToRemove.forEach(recipe => {
