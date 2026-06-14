@@ -36,7 +36,6 @@
     "c:storage_blocks/{material}",
     "c:wires/{material}",
     "c:pellets/{material}",
-    "c:plastics",
     "c:flours/{material}",
     "c:silicon",
     "c:wires/{material}",

@@ -32,7 +32,7 @@ ServerEvents.tags('item', catalyst => {
     catalyst.add('c:rubber', 'industrialforegoing:dryrubber')
 
     //Plastic tag
-    catalyst.add('c:plastics', 'pneumaticcraft:plastic')
+    catalyst.add('c:plates/plastic', 'industrialforegoing:plastic')
     catalyst.add('c:plates/plastic', 'pneumaticcraft:plastic')
 
     //Eternal Ores
