@@ -19,6 +19,21 @@ ServerEvents.recipes(catalyst => {
         }
     ).id('catalyst:eternalores/catalyrium_dust')
 
+    catalyst.shaped(Item.of('eternalores:shadow_blend', 3),
+        [
+            'KKK',
+            'CEO',
+            'SS '
+        ],
+        {
+            S: 'eternalores:shadowsteel_dust',
+            O: 'eternalores:onyx_dust',
+            E: 'eternalores:endergetic_blend',
+            C: 'eternalores:cobalt_dust',
+            K: 'eternalores:sculk_dust'
+        }
+    ).id('catalyst:eternalores/shadow_blend')
+
     console.log("[CatJS] Added EternalOres recipes")
 })
 
