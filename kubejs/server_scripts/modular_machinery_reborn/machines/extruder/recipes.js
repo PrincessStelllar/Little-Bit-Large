@@ -685,7 +685,7 @@ ServerEvents.recipes(catalyst => {
         let material = foil.replace("_foil", "");
         for(let i = 1; i < 17; i++)
         {
-            createRecipe(material, 1*i, foil, 1*i, 'eternalores:mold_foil', i);
+            createRecipe(material, 2*i, foil, 2*i, 'eternalores:mold_foil', i);
         }
     })
 
