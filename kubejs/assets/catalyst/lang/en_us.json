@@ -91,6 +91,7 @@
   "catalyst.mmr.machine.multismelter": "<grad from=#FF0000 to=#FF7676 hue=true f=0.3 sp=20.0 uni=false>Multi</grad>Smelter",
   "catalyst.mmr.machine.soul_furnace": "<grad from=#FF0000 to=#0003FF hue=false f=0.25 sp=50.0 uni=false>Soul</grad> Furnace",
   "catalyst.mmr.machine.primitive_furnace": "&#B3552EPrimitive&r Furnace",
+  "catalyst.mmr.machine.fission": "Ultimate &#E31F5C<glitch f=0.005 j=0.015 b=0.003 s=0.01><pulse base=0.75 a=1.0 f=1.0 w=1.0>Fission</pulse></glitch>&r Reactor",
 
 
   "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
