@@ -4,7 +4,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 */
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:fission")
-        .color('#FF999693')
+        .color('#FFE31F5C')
         .name(Component.translatable("catalyst.mmr.machine.fission"))
         .structure(
             MMRStructureBuilder.create()
