@@ -3,14 +3,16 @@ This script is property of Catalyst Studios for use in the modpack Little Bit La
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
 */
 ServerEvents.recipes(catalyst => {
-    catalyst.shaped(Item.of("catalystcore:reinforced_glass", 1), 
+    catalyst.shaped(Item.of("catalystcore:reinforced_glass", 2), 
         [
-            "ABA",
-            "B B",
-            "ABA"
+            "IOI",
+            "LGL",
+            "IOI"
         ],{
-        A: 'minecraft:obsidian',
-        B: 'minecraft:glass',
+        I: 'eternalores:plate_iridium',
+        O: 'eternalores:gem_obsidian',
+        L: 'eternalores:lead_block',
+        G: 'ae2:quartz_vibrant_glass'
     }).id("catalyst:reinforced_glass");
 
     catalyst.shapeless('catalystcore:elemental_fire_crystal', 
