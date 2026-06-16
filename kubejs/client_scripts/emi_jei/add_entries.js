@@ -31,4 +31,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
         catalyst.add(Item.of(`mysticalagriculture:${seed}_seeds`))
         catalyst.add(Item.of(`mysticalagriculture:${seed}_essence`))
     })
+
+    catalyst.add('create:refined_radiance_casing')
+    catalyst.add('create:shadow_steel_casing')
 })

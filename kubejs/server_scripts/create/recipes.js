@@ -333,6 +333,39 @@ ServerEvents.recipes(catalyst => {
     })
     .id("catalyst:create/eggs_haunted")
 
+    catalyst.shaped('create:shadow_steel_casing', 
+        [
+            "PFP",
+            "PCP",
+            "PFP"
+        ], {
+            P: 'eternalores:shadowsteel_ingot',
+            C: 'create:railway_casing',
+            F: 'eternalores:shadowsteel_foil'
+        }
+    )
+    .id("catalyst:create/shadow_steel_casing")
+
+    catalyst.shaped('create:refined_radiance_casing', 
+        [
+            "NC ",
+        ], {
+            N: 'morered:not_gate',
+            C: 'create:shadow_steel_casing',
+        }
+    )
+    .id("catalyst:create/refined_radiance_casing")
+
+    catalyst.shaped('create:shadow_steel_casing', 
+        [
+            "NC ",
+        ], {
+            N: 'morered:not_gate',
+            C: 'create:refined_radiance_casing',
+        }
+    )
+    .id("catalyst:create/shadow_steel_casing_inverted")
+
     console.log("[CatJS] Finished Create changes")
 })
 
