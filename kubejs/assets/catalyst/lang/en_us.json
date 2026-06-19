@@ -93,6 +93,7 @@
   "catalyst.mmr.machine.primitive_furnace": "&#B3552EPrimitive&r Furnace",
   "catalyst.mmr.machine.fission": "Ultimate &#E31F5C<glitch f=0.005 j=0.015 b=0.003 s=0.01><pulse base=0.75 a=1.0 f=1.0 w=1.0>Fission</pulse></glitch>&r Reactor",
   "catalyst.mmr.machine.vat": "Bacterial <grad from=#276BE1 to=#27E1C1 hue=true f=0.5 sp=30.0 uni=true><fade a=0.3 f=1.0 w=2.0><pulse base=0.75 a=2.0 f=1.0 w=0.0><neon p=10 r=2 a=0.11>Echo</neon></pulse></fade></grad> Vat",
+  "catalyst.mmr.machine.space": "Space Elevator",
 
 
   "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
