@@ -501,17 +501,18 @@ ServerEvents.recipes(catalyst => {
 
     // Activated seeds
     catalyst.custom({
-        type: "powah:energizing",
-        energy: 20000000,
+        type: 'powah:energizing',
         ingredients: [
-            { item: "kubejs:reinforced_seeds" },
-            { item: "powah:nitro_crystal_block" },
-            { item: "powah:nitro_crystal_block" },
-            { item: "powah:uraninite_block" },
-            { item: "powah:uraninite_block" }
+            Ingredient.of("kubejs:reinforced_seeds"),
+            Ingredient.of("powah:nitro_crystal_block"),
+            Ingredient.of("powah:nitro_crystal_block"),
+            Ingredient.of('#c:storage_blocks/uraninite'),
+            Ingredient.of('#c:storage_blocks/uraninite'),
         ],
-        result: { count: 1, id: "kubejs:activated_seeds" }
-    }).id('catalyst:powah/energizing/activated_seeds');
+        energy: 20000000,
+        result: Item.of("kubejs:activated_seeds", 1)
+    })
+    .id('catalyst:powah/energizing/activated_seeds')
 
     // Technology seeds
     catalyst.custom({
