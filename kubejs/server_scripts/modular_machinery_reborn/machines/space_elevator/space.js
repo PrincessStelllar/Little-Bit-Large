@@ -4,7 +4,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 */
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:space")
-        .color('#FF08C4CF')
+        .color('#FFaa7daa')
         .name(Component.translatable("catalyst.mmr.machine.space"))
         .structure(
             MMRStructureBuilder.create()
@@ -37,7 +37,9 @@ MMREvents.machines(catalyst => {
                     "eternalores:pearl_block"
                 ],
                 "b": [
-                    "modular_machinery_reborn:casing_reinforced"
+                    "modular_machinery_reborn:casing_reinforced",
+                    '#modular_machinery_reborn:energyhatch',
+                    '#modular_machinery_reborn:itembus'
                 ],
                 "c": [
                     "eternalores:sculkite_block"
@@ -68,6 +70,13 @@ MMREvents.machines(catalyst => {
                 ]
             })
         )
+        // .sound("running", {
+        //     ambient: "minecraft:entity.generic.explode",
+        //     interaction: {
+        //         volume: 100,
+        //         pitch: 1
+        //     }
+        // })
         
 })
 
