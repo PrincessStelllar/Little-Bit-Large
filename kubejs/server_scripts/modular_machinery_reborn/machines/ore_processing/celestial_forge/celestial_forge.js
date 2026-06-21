@@ -310,7 +310,10 @@ MMREvents.machines(catalyst => {
                     "z": ['modular_machinery_reborn:casing_reinforced'],
                     "A": ["modular_machinery_reborn:dimensional_detector"],
                     "B": ["#modular_machinery_reborn:itembus"],
-                    "C": ["#modular_machinery_reborn:parallelhatch"],
+                    "C": [
+                        "#modular_machinery_reborn:parallelhatch",
+                        'minecraft:polished_blackstone_bricks'
+                    ],
                     "D": ["chipped:fine_coal_block_pillar"],
                     "E": ["chipped:tiny_layered_coal_block_slabs"],
                     "F": [
