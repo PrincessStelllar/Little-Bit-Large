@@ -280,6 +280,7 @@ ServerEvents.recipes(catalyst => {
         let crystal = getPriorityItem(`#c:crystals/${materialName}`);
         if(crystal && !crystal.isEmpty()) return crystal;
 
+        console.warn(`Error on Celestial Forge: ${inputId} and ${materialName}. Please report this error`)
         return Item.of("minecraft:stone", 1, {lore: {text:"Please report this error"}});
     };
 

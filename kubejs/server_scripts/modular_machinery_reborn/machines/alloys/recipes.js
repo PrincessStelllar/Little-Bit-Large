@@ -443,7 +443,7 @@ ServerEvents.recipes(event => {
                 { id: "eternalores:steel_ingot", count: 2 },
                 { id: "minecraft:sculk", count: 2 },
                 { id: "eternalores:gem_necroticarite", count: 2},
-                { id: "eternalores:endstone_dust", count: 2},
+                { id: "eternalores:end_stone_dust", count: 2},
                 { id: "eternalores:enderium_ingot", count: 1}
             ]
         },

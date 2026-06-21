@@ -21,7 +21,7 @@ ServerEvents.recipes(catalyst => {
     });
 
     storages.forEach(block => {
-        let budding = block.replace("_block", "").replace(":", ":budding_");
+        let budding = block.replace("_block", "").replace(":", ":budding_").replace("_geore", "");
         
         if(block === "ae2:quartz_block") budding = "ae2:flawless_budding_quartz";
         else if(block === "extendedae:entro_block") budding = "extendedae:entro_budding_fully";
