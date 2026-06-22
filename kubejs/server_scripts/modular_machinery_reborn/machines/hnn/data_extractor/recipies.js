@@ -293,6 +293,14 @@ ServerEvents.recipes(catalyst => {
     */
 });
 
+MMREvents.extraTooltips(event => {
+    event.create("mmr:data_extractor", 'item')
+    .add(Component.translatable("catalyst.mmr.tooltip.data_extractor.item"))
+
+    event.create("mmr:data_extractor", 'gui')
+    .add(Component.translatable("catalyst.mmr.tooltip.data_extractor.gui"))
+})
+
 /*
 This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.

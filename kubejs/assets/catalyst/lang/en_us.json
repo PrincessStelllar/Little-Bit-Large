@@ -65,6 +65,9 @@
   "catalyst.mmr.tooltip.extruder.item": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
   "catalyst.mmr.tooltip.extruder.gui": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
 
+  "catalyst.mmr.tooltip.data_extractor.item": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
+  "catalyst.mmr.tooltip.data_extractor.gui": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
+
   "catalyst.mmr.machine.primitive_alloy_maker": "&#B3552EPrimitive&r Alloy Maker",
   "catalyst.mmr.machine.arboretum": "&#57f016Arboretum&r",
   "catalyst.mmr.machine.personal_beacon": "Personal &#B57EDC<wiggle a=0.5 f=0.25 w=0.5><pulse base=0.75 a=0.25 f=0.5 w=1.0>Beacon</pulse></wiggle>&r",
