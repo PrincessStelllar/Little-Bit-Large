@@ -367,6 +367,53 @@ ServerEvents.recipes(catalyst => {
     .id("catalyst:create/shadow_steel_casing_inverted")
 
     console.log("[CatJS] Finished Create changes")
+
+    catalyst.custom({
+        type: "create:mixing",
+        heat_requirement: "superheated",
+        ingredients: [
+            { item: "catalystcore:lava_orb" },
+            {
+                type: "neoforge:single",
+                amount: 1000,
+                fluid: "minecraft:water"
+            }
+        ],
+        results: [
+            { id: "kubejs:liquid_light", amount: 500 },
+            { id: "catalystcore:lava_orb" }
+        ]
+    }).id("catalyst:create/orb_to_light");
+
+    catalyst.custom({
+        type: "create:mixing",
+        heat_requirement: "superheated",
+        ingredients: [
+            { item: 'catalystcore:end_core' },
+            {
+                type: "neoforge:single",
+                amount: 1000,
+                fluid: "minecraft:water"
+            }
+        ],
+        results: [
+            { id: "kubejs:liquid_darkness", amount: 500 },
+            { id: 'catalystcore:end_core' }
+        ]
+    }).id("catalyst:create/orb_to_dark");
+
+    catalyst.custom({
+        type: "create:mixing",
+        ingredients: [
+            { item: 'catalystcore:water_orb' }
+        ],
+        results: [
+            { id: "minecraft:water", amount: 4000 },
+            { id: 'catalystcore:water_orb' }
+        ]
+    }).id("catalyst:create/orb_to_water");
+
+    console.log("[CatJS] Adding mixers")
 })
 
 
