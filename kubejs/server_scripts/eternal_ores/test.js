@@ -1,12 +1,16 @@
-// KubeJS Script - Check existence of Eternal Ores items
-// Place in kubejs/server_scripts/check_items.js
-
+/* This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
+*/
 ServerEvents.recipes(event => {
-    const MOD = 'eternalores';
-    console.info(`[${MOD}] Checking item existence...`);
+    let disabled = true;
+    if(disabled) return;
 
-    function warnIfMissing(itemId) {
-        if (!Item.exists(itemId)) {
+    const MOD = 'eternalores';
+    console.info(`[CatJS-${MOD}] Checking item existence...`);
+
+    let warnIfMissing = (itemId) => {
+        if(!Item.exists(itemId))
+        {
             console.warn(`Missing item: ${itemId}`);
         }
     }
@@ -164,3 +168,7 @@ ServerEvents.recipes(event => {
 
     console.info(`[${MOD}] Item check completed.`);
 });
+
+/* This script is property of Catalyst Studios for use in the modpack Little Bit Large. It is under the All Rights Reserved license.
+It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
+*/
