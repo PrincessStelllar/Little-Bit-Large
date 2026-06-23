@@ -43,6 +43,18 @@ ServerEvents.recipes(catalyst => {
         .produceFluid(Fluid.of("mekanism:superheated_sodium", 10000), outputX, outputY3)
         .id(`catalyst:mmr/fission/2`)
 
+    catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:fission", 75)
+        .progressData(ProgressData.create().x(arrowX).y(arrowY))
+        .width(110)
+        .height(76)
+        .requireChemical("10000x mekanism:spent_nuclear_waste", inputX, inputY1)
+        .requireChemical(`1000x mekanism:fissile_fuel`, inputX, inputY2)
+        .produceEnergyPerTick(20000, energyX, energyY)
+        .produceItem(Item.of('eternalores:missing_ingot', 1), 0.6, outputX, outputY1)
+        .produceChemical(`10000x mekanism:nuclear_waste`, outputX, outputY2)
+        .produceItem(Item.of('eternalores:crystal_ultimatitanium', 1), 0.5, outputX, outputY3)
+        .id(`catalyst:mmr/fission/3`)
+
     console.log("[CatJS] Added Nuclear Fission recipes");
 });
 

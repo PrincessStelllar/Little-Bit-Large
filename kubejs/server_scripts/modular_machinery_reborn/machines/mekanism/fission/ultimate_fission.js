@@ -24,8 +24,9 @@ MMREvents.machines(catalyst => {
                     "mekanismgenerators:fission_reactor_casing"
                 ],
                 "b": [
-                    '#modular_machinery_reborn:fluidoutputhatch',
-                    '#modular_machinery_reborn:energyoutputhatch'
+                    '#modular_machinery_reborn:fluidhatch',
+                    '#modular_machinery_reborn:energyoutputhatch',
+                    '#modular_machinery_reborn_mekanism:chemicalhatch'
                 ],
                 "c": [
                     "catalystcore:reinforced_glass"
@@ -34,13 +35,19 @@ MMREvents.machines(catalyst => {
                     "mekanismgenerators:fission_fuel_assembly"
                 ],
                 "e": [
-                    '#modular_machinery_reborn_mekanism:chemicaloutputhatch'
+                    '#modular_machinery_reborn:fluidhatch',
+                    '#modular_machinery_reborn:energyoutputhatch',
+                    '#modular_machinery_reborn_mekanism:chemicalhatch'
                 ],
                 "f": [
-                    '#modular_machinery_reborn:fluidinputhatch'
+                    '#modular_machinery_reborn:fluidhatch',
+                    '#modular_machinery_reborn:energyoutputhatch',
+                    '#modular_machinery_reborn_mekanism:chemicalhatch'
                 ],
                 "g": [
-                    '#modular_machinery_reborn_mekanism:chemicalinputhatch'
+                    '#modular_machinery_reborn:fluidhatch',
+                    '#modular_machinery_reborn:energyoutputhatch',
+                    '#modular_machinery_reborn_mekanism:chemicalhatch'
                 ],
                 "h": [
                     '#modular_machinery_reborn:outputbus'
