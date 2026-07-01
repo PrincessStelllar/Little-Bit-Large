@@ -7,6 +7,8 @@ let $BeeProvider = Java.loadClass("cy.jdkdigital.productivebees.setup.BeeReloadL
 let IOType = Java.loadClass("es.degrassi.mmreborn.common.machine.IOType");
 let $Integer = Java.loadClass("java.lang.Integer");
 let $String = Java.loadClass("java.lang.String");
+let SizedFluidIngredient = Java.loadClass("net.neoforged.neoforge.fluids.crafting.SizedFluidIngredient")
+let TagKey = Java.loadClass("net.minecraft.tags.TagKey")
 
 let allBees = [
 
@@ -585,6 +587,9 @@ ServerEvents.recipes(catalyst => {
         });
     }
 
+    let honey_tag = TagKey.create(BuiltInRegistries.FLUID.key(), ResourceLocation.fromNamespaceAndPath("c", "honey"));
+    let honey = SizedFluidIngredient.of(honey_tag, 1000);
+
     let time = 200; //ticks
     let multiplier = 20
     allBees.forEach(bee => {
@@ -618,7 +623,7 @@ ServerEvents.recipes(catalyst => {
             .requireEnergy(20000, 0, 4)
             .requireItem(`minecraft:bee_spawn_egg`, 25, 0)
             .requireItem(`${1*multiplier}x ${ingredients}`, 25, 20)
-            .requireFluid('1000x productivebees:honey', 25, 40)
+            .requireFluid(honey, 25, 40)
             .produceItem(`productivebees:spawn_egg_${keyword}_bee`, 90, 20)
             .id(`catalyst:mmr/api_mutandis/${keyword}`)
         }
@@ -633,7 +638,7 @@ ServerEvents.recipes(catalyst => {
                 .requireEnergy(20000, 0, 4)
                 .requireItem(`minecraft:bee_spawn_egg`, 25, 0)
                 .requireItem(`${1*multiplier}x ${ingredients}`, 25, 20)
-                .requireFluid('1000x productivebees:honey', 25, 40)
+                .requireFluid(honey, 25, 40)
                 .produceItem(inputEgg, 90, 20)
                 .id(`catalyst:mmr/api_mutandis/${keyword}`)
             }
@@ -650,7 +655,7 @@ ServerEvents.recipes(catalyst => {
                         .requireEnergy(20000, 0, 4)
                         .requireItem(`minecraft:bee_spawn_egg`, 25, 0)
                         .requireItem(`${1*multiplier}x ${ingredients}`, 25, 20)
-                        .requireFluid('1000x productivebees:honey', 25, 40)
+                        .requireFluid(honey, 25, 40)
                         .produceItem(inputEgg, 90, 20)
                         .id(`catalyst:mmr/api_mutandis/${keyword}`)
                     }
@@ -676,9 +681,17 @@ ServerEvents.recipes(catalyst => {
         .requireEnergy(30000, 0, 4)
         .requireItem(`minecraft:honeycomb`, 25, 0)
         .requireItem(`${1*multiplier}x minecraft:honeycomb_block`, 25, 20)
-        .requireFluid('1000x productivebees:honey', 25, 40)
+        .requireFluid(honey, 25, 40)
         .produceItem('minecraft:bee_spawn_egg', 90, 20)
         .id(`catalyst:mmr/api_mutandis/normal_bee_vanilla`)
+
+    catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:apis_mutandis", 1)
+    .progressData(ProgressData.create().x(54).y(20))
+    .width(110)
+    .height(60)
+    .requireFluid(Fluid.of("productivebees:honey", 1000), 25, 20)
+    .produceFluid(Fluid.of("create:honey", 1000), 80, 20)
+    .id("catalyst:mmr/api_mutandis/honey_conversion")
 
     console.log("[CatJS] Added Apis Mutandis recipes");
 

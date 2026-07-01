@@ -18,6 +18,43 @@ ServerEvents.recipes(catalyst => {
     }).id("catalyst:prod_bees/cobalt_bee");
 
     console.log("[CatJS] Added Productive Bees recipes")
+
+    catalyst.forEachRecipe({ type: 'productivebees:centrifuge' }, recipe => {
+        let recipe_json = recipe.json;
+
+        if(recipe_json.has('fluid'))
+        {
+            let fluid_element = recipe_json.get('fluid');
+            
+            if(fluid_element.isJsonPrimitive())
+            {
+                if(fluid_element.getAsString() === 'productivebees:honey')
+                {
+                    recipe_json.addProperty('fluid', 'create:honey');
+                }
+            }
+            else if(fluid_element.isJsonObject())
+            {
+                let fluid_obj = fluid_element.getAsJsonObject();
+                if(fluid_obj.has('fluid'))
+                {
+                    let fluid_id = fluid_obj.get('fluid').getAsString();
+                    if(fluid_id === 'productivebees:honey')
+                    {
+                        fluid_obj.addProperty('fluid', 'create:honey');
+                    }
+                }
+            }
+        }
+        else
+        {
+            let new_fluid_obj = JsonParser.parseString('{"fluid": "create:honey", "amount": 100}').getAsJsonObject();
+            
+            recipe_json.add('fluid', new_fluid_obj);
+        }
+    });
+
+    console.log("[CatJS] Changes to the Fluids of centrifuge")
 });
 
 /* 

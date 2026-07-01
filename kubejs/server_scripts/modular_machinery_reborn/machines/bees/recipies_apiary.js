@@ -25,6 +25,8 @@ let JsonParser = Java.loadClass('com.google.gson.JsonParser');
 
 ServerEvents.recipes(catalyst => {
 
+    let honey_tag = TagKey.create(BuiltInRegistries.FLUID.key(), ResourceLocation.fromNamespaceAndPath("c", "honey"));
+    let honey = SizedFluidIngredient.of(honey_tag, 1000);
     /**
      * @param {string} beeId - The ID suffix of the bee (e.g., 'phil' for 'productivebees:phil').
      * @param {Array} resultItems - Array of output objects { chance, item: {item/tag: id}, max, min }.
@@ -42,7 +44,7 @@ ServerEvents.recipes(catalyst => {
             type: "productivebees:centrifuge",
             fluid: {
                 amount: 400,
-                fluid: "productivebees:honey"
+                fluid: "create:honey"
             },
             ingredient: {
                 type: "productivebees:component",
@@ -59,7 +61,7 @@ ServerEvents.recipes(catalyst => {
             type: "productivebees:centrifuge",
             fluid: {
                 amount: 100,
-                fluid: "productivebees:honey"
+                fluid: "create:honey"
             },
             ingredient: {
                 type: "productivebees:component",
@@ -224,7 +226,7 @@ ServerEvents.recipes(catalyst => {
                 .width(110)
                 .height(60)
                 .requireEnergyPerTick(20000, 0, 4)
-                .requireFluid('1000x productivebees:honey', 25, 40)
+                .requireFluid(honey, 25, 40)
                 .requireItem(inputEgg, 0, 25, 0)
                 .requireItem(`32x minecraft:honeycomb`, 25, 20)
                 .produceItem(outputComb, 90, 0)
@@ -240,7 +242,7 @@ ServerEvents.recipes(catalyst => {
                 .width(110)
                 .height(60)
                 .requireEnergy(20000, 0, 4)
-                .requireFluid('1000x productivebees:honey', 25, 40)
+                .requireFluid(honey, 25, 40)
                 .requireItem(inputEgg, 0, 25, 0)
                 .requireItem(`32x minecraft:honeycomb`, 25, 20)
                 .produceItem('1x minecraft:rotten_flesh', 90, 0)
@@ -255,7 +257,7 @@ ServerEvents.recipes(catalyst => {
                     .progressData(ProgressData.create().x(54).y(20))
                     .width(110).height(60)
                     .requireEnergy(ENERGY_COST, 0, 4)
-                    .requireFluid('1000x productivebees:honey', 25, 40)
+                    .requireFluid(honey, 25, 40)
                     .requireItem(inputEgg, 0, 25, 0)
                     .requireItem('32x minecraft:honeycomb', 25, 20)
                     .produceItem('1x minecraft:stone', 90, 0)
@@ -307,7 +309,7 @@ ServerEvents.recipes(catalyst => {
         .width(110)
         .height(60)
         .requireEnergy(20000, 0, 4)
-        .requireFluid('1000x productivebees:honey', 25, 40)
+        .requireFluid(honey, 25, 40)
         .requireItem(`1x ${recipe.beeType}`, 0, 25, 0)
         .requireItem(`32x minecraft:honeycomb`, 25, 20)
         .requireFunctionEachTick("apiary_recipe_each")
