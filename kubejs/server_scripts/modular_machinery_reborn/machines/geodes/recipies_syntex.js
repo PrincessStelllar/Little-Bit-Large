@@ -16,18 +16,27 @@ ServerEvents.recipes(catalyst => {
     .requireFunctionEachTick("geo_each")
     .hide()
     .id("catalyst:mmr/geo_syntex/real_recipe")
-
-    let clustersTag = Ingredient.of('#catalyst:clusters').getItemIds().toArray();
     
-    clustersTag.forEach(cluster => {
-        let bud = cluster.replace("_cluster", "").replace(":", ":budding_");
-        if(!Item.exists(bud)) return;
-        if(!Item.exists(cluster)) return;
-        
+    Ingredient.of('#catalyst:clusters').getItemIds().toArray().forEach(cluster => {
+        let bud = cluster.replace("_cluster", "").replace(":", ":budding_").replace("geore_", "");
+
         if(cluster === "minecraft:amethyst_cluster") bud = "minecraft:budding_amethyst";
         else if(cluster === "ae2:quartz_cluster") bud = "ae2:flawless_budding_quartz";
         else if(cluster === "extendedae:entro_cluster") bud = "extendedae:entro_budding_fully";
         else if(cluster === "justdirethings:time_crystal_cluster") bud = "justdirethings:time_crystal_budding_block";
+
+        if(!Item.exists(bud))
+        {
+            if(bud.includes("pastel:") || bud.includes("biomesoplenty:")) return;
+            console.warn(`[CatJS] Bud ${bud} doesn't exists!`);
+            return;
+        }
+
+        if(!Item.exists(cluster))
+        {
+            console.warn(`[CatJS] Cluster ${cluster} doesn't exists!`);
+            return;
+        }
 
         catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:geo_syntex", time)
         .progressData(ProgressData.create().x(90).y(28))
@@ -41,15 +50,7 @@ ServerEvents.recipes(catalyst => {
         .requireItem(Item.of(bud, 1), 40, 28)
         .requireItem(Item.of(cluster, 1), 58, 28)
         .requireItem(Item.of(cluster, 1), 40, 46)
-        .produceItem(Item.of(cluster, 1, {
-            "minecraft:lore": [
-                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.2", "italic": false },
-                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.3", "italic": false },
-                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.4", "italic": false },
-                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.5", "italic": false },
-                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.6", "italic": false }
-            ]
-        }), 125, 28)
+        .produceItem(Item.of(cluster, 1), 125, 28)
         .id(`catalyst:mmr/geo_syntex/${cluster.replace(":", "_")}`)
     });
 

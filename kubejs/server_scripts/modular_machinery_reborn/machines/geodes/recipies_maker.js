@@ -32,7 +32,7 @@ ServerEvents.recipes(catalyst => {
         .progressData(ProgressData.create().x(54).y(20))
         .width(110)
         .height(60)
-        .requireEnergy(10000, 0, 4)
+        .requireEnergyPerTick(100000, 0, 4)
         .requireItem(Item.of(block, 32), 25, 20)
         .produceItem(Item.of(budding, 1), 90, 20)
         .id(`catalyst:mmr/crystalline_fabricator/${budding.replace(":", "_")}`)
