@@ -85,7 +85,7 @@ RecipeViewerEvents.addEntries("item", catalyst => {
                 if(!cruxItem) return null
                 if(!soilBlock) return null
                 let blockId = $BuiltInRegistries.BLOCK.getKey(soilBlock).toString()
-                if(blockId == "minecraft:air" || blockId == "kubejs:magical_farmland") return null;
+                if(blockId == "minecraft:air" || blockId == "catalystcore:magical_farmland") return null;
                 
                 let seedStack = new $ItemStack(seedItem)
                 let soilStack = new $ItemStack(soilBlock)

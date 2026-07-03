@@ -113,7 +113,7 @@ ServerEvents.recipes(catalyst => {
     catalyst.shapeless(Item.of('ae2:memory_card', 1), Item.of('ae2:memory_card', 1))
             .id(`catalyst:ae2/memory_card_cleaner`);
 
-    catalyst.shaped(Item.of('kubejs:infinity_lava_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_lava_cell'), [
         'ABA',
         'LAL',
         'PCP'
@@ -126,7 +126,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/lava/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_milk_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_milk_cell'), [
         'GBG',
         'BKB',
         'MMM'
@@ -138,7 +138,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/milk/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_latex_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_latex_cell'), [
         'GFG',
         'LKL',
         'PCP'
@@ -152,7 +152,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/latex/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_sewage_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_sewage_cell'), [
         'GSG',
         'KCK',
         'III'
@@ -165,7 +165,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/sewage/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_sludge_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_sludge_cell'), [
         'GGG',
         'KCK',
         'DDD'
@@ -177,7 +177,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/sludge/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_creosote_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_creosote_cell'), [
         'GGG',
         'CXC',
         'CCC'
@@ -188,7 +188,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/creosote/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_blood_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_blood_cell'), [
         'SBS',
         'XCX',
         'BBB'
@@ -200,7 +200,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id('catalyst:ae2/blood/inf_cell');
 
-    catalyst.shaped(Item.of('kubejs:infinity_fluid_xp_cell'), [
+    catalyst.shaped(Item.of('catalystcore:infinity_fluid_xp_cell'), [
         'GKG',
         'KCK',
         'JXJ'

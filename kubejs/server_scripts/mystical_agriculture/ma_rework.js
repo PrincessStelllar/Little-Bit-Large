@@ -208,9 +208,9 @@ ServerEvents.recipes(catalyst => {
     let shapedRecipes = [
         // Output, Pattern, Key, Count (optional, default 1)
         { out: 'mysticalagradditions:insanium_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagradditions:insanium_essence' } },
-        { out: 'kubejs:mystical_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:mystical_essence' } },
-        { out: 'kubejs:magical_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:magic_essence' } },
-        { out: 'kubejs:technology_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:technology_essence' } },
+        { out: 'catalystcore:mystical_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:mystical_essence' } },
+        { out: 'catalystcore:magical_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:magic_essence' } },
+        { out: 'catalystcore:technology_block', p: ['AAA', 'AAA', 'AAA'], k: { A: 'mysticalagriculture:technology_essence' } },
         { out: 'evilcraft:bucket_blood', p: [' A ', ' B ', '   '], k: { A: "mysticalagriculture:dark_gem_essence", B: "minecraft:bucket" } },
         { out: 'evilcraft:bucket_poison', p: ['   ', ' B ', ' A '], k: { A: "mysticalagriculture:dark_gem_essence", B: "minecraft:bucket" } },
         { out: 'evilcraft:vengeance_essence', p: ['AAA', 'ABA', 'AAA'], k: { A: "mysticalagriculture:mystical_essence", B: "mysticalagriculture:dark_gem_essence" } },
@@ -266,7 +266,7 @@ ServerEvents.recipes(catalyst => {
         { out: "mysticalagriculture:sculk_seeds", in: "mysticalagriculture:darkness_seeds", ess: ["darkness", "darkness", "darkness", "darkness"], ing: ["minecraft:sculk", "minecraft:echo_shard", "minecraft:sculk", "minecraft:sculk_catalyst"] },
 
         //Creative Essence (bee one is below)
-        { out: "mysticalagradditions:creative_essence", in: "mysticalagriculture:insanium_seeds", ess: ["darkness", "magic", "mystical", "technology"], ing: ["kubejs:technology_block", "kubejs:technology_block", "kubejs:technology_block", "kubejs:technology_block"] },
+        { out: "mysticalagradditions:creative_essence", in: "mysticalagriculture:insanium_seeds", ess: ["darkness", "magic", "mystical", "technology"], ing: ["catalystcore:technology_block", "catalystcore:technology_block", "catalystcore:technology_block", "catalystcore:technology_block"] },
     ];
 
     awakeningRecipes.forEach(r => {
@@ -282,10 +282,10 @@ ServerEvents.recipes(catalyst => {
         { out: "mysticalagriculture:prudentium_seeds", in: "mysticalagriculture:inferium_seeds", ing: ["mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence"], bee: false },
         { out: "mysticalagriculture:tertium_seeds", in: "mysticalagriculture:prudentium_seeds", ing: [awaEB, "mysticalagriculture:supremium_essence", awaEB, "mysticalagriculture:supremium_essence", awaEB, "mysticalagriculture:supremium_essence", awaEB, "mysticalagriculture:supremium_essence"], bee: false },
         { out: "mysticalagriculture:imperium_seeds", in: "mysticalagriculture:tertium_seeds", ing: ["mysticalagradditions:insanium_block", awaE, "mysticalagradditions:insanium_block", awaE, "mysticalagradditions:insanium_block", awaE, "mysticalagradditions:insanium_block", awaE], bee: false },
-        { out: "mysticalagriculture:supremium_seeds", in: "mysticalagriculture:imperium_seeds", ing: ["kubejs:mystical_block", insa, "kubejs:mystical_block", insa, "kubejs:mystical_block", insa, "kubejs:mystical_block", insa], bee: false },
-        { out: "mysticalagriculture:supremium_seeds", in: "mysticalagriculture:imperium_seeds", ing: ["kubejs:magical_block", insa, "kubejs:magical_block", insa, "kubejs:magical_block", insa, "kubejs:magical_block", insa], bee: false },
-        { out: "mysticalagriculture:insanium_seeds", in: "mysticalagriculture:supremium_seeds", ing: ["kubejs:technology_block", "mysticalagriculture:mystical_essence", "kubejs:technology_block", "mysticalagriculture:mystical_essence", "kubejs:technology_block", "mysticalagriculture:mystical_essence", "kubejs:technology_block", "mysticalagriculture:mystical_essence"], bee: false },
-        { out: "mysticalagriculture:insanium_seeds", in: "mysticalagriculture:supremium_seeds", ing: ["kubejs:technology_block", "mysticalagriculture:magic_essence", "kubejs:technology_block", "mysticalagriculture:magic_essence", "kubejs:technology_block", "mysticalagriculture:magic_essence", "kubejs:technology_block", "mysticalagriculture:magic_essence"], bee: false },
+        { out: "mysticalagriculture:supremium_seeds", in: "mysticalagriculture:imperium_seeds", ing: ["catalystcore:mystical_block", insa, "catalystcore:mystical_block", insa, "catalystcore:mystical_block", insa, "catalystcore:mystical_block", insa], bee: false },
+        { out: "mysticalagriculture:supremium_seeds", in: "mysticalagriculture:imperium_seeds", ing: ["catalystcore:magical_block", insa, "catalystcore:magical_block", insa, "catalystcore:magical_block", insa, "catalystcore:magical_block", insa], bee: false },
+        { out: "mysticalagriculture:insanium_seeds", in: "mysticalagriculture:supremium_seeds", ing: ["catalystcore:technology_block", "mysticalagriculture:mystical_essence", "catalystcore:technology_block", "mysticalagriculture:mystical_essence", "catalystcore:technology_block", "mysticalagriculture:mystical_essence", "catalystcore:technology_block", "mysticalagriculture:mystical_essence"], bee: false },
+        { out: "mysticalagriculture:insanium_seeds", in: "mysticalagriculture:supremium_seeds", ing: ["catalystcore:technology_block", "mysticalagriculture:magic_essence", "catalystcore:technology_block", "mysticalagriculture:magic_essence", "catalystcore:technology_block", "mysticalagriculture:magic_essence", "catalystcore:technology_block", "mysticalagriculture:magic_essence"], bee: false },
         { out: "mysticalagriculture:entro_seeds", in: "mysticalagriculture:fluix_seeds", ing: ["extendedae:entro_ingot", "mysticalagriculture:imperium_essence", "extendedae:entro_ingot", "mysticalagriculture:imperium_essence", "extendedae:entro_ingot", "mysticalagriculture:imperium_essence", "extendedae:entro_ingot", "mysticalagriculture:imperium_essence"], bee: false },
         { out: "mysticalagriculture:prosperity_seeds", in: "mysticalagriculture:inferium_seeds", ing: ["mysticalagriculture:prosperity_shard", "mysticalagriculture:tertium_essence", "mysticalagriculture:prosperity_shard", "mysticalagriculture:tertium_essence", "mysticalagriculture:prosperity_shard", "mysticalagriculture:tertium_essence", "mysticalagriculture:prosperity_shard", "mysticalagriculture:tertium_essence"], bee: false },
         { out: "mysticalagriculture:salt_seeds", in: "mysticalagriculture:prosperity_seed_base", ing: ["mekanism:salt", "mysticalagriculture:inferium_essence", "mekanism:salt", "mysticalagriculture:inferium_essence", "mekanism:salt", "mysticalagriculture:inferium_essence", "mekanism:salt", "mysticalagriculture:inferium_essence"], bee: false },
@@ -307,10 +307,10 @@ ServerEvents.recipes(catalyst => {
         { out: "prudentium", in: "inferium", ing: ["mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence", "mysticalagriculture:supremium_block", "mysticalagriculture:imperium_essence"], bee: true },
         { out: "tertium", in: "prudentium", ing: [awaEB, "mysticalagriculture:supremium_essence", awaEB, "mysticalagriculture:supremium_essence", awaEB, "mysticalagriculture:supremium_essence", awaEB, "mysticalagriculture:supremium_essence"], bee: true },
         { out: "imperium", in: "tertium", ing: ["mysticalagradditions:insanium_block", awaE, "mysticalagradditions:insanium_block", awaE, "mysticalagradditions:insanium_block", awaE, "mysticalagradditions:insanium_block", awaE], bee: true },
-        { out: "supremium", in: "imperium", ing: ["kubejs:mystical_block", insa, "kubejs:mystical_block", insa, "kubejs:mystical_block", insa, "kubejs:mystical_block", insa], bee: true },
-        { out: "supremium", in: "imperium", ing: ["kubejs:magical_block", insa, "kubejs:magical_block", insa, "kubejs:magical_block", insa, "kubejs:magical_block", insa], bee: true },
-        { out: "insanium", in: "supremium", ing: ["kubejs:technology_block", "mysticalagriculture:mystical_essence", "kubejs:technology_block", "mysticalagriculture:mystical_essence", "kubejs:technology_block", "mysticalagriculture:mystical_essence", "kubejs:technology_block", "mysticalagriculture:mystical_essence"], bee: true },
-        { out: "insanium", in: "supremium", ing: ["kubejs:technology_block", "mysticalagriculture:magic_essence", "kubejs:technology_block", "mysticalagriculture:magic_essence", "kubejs:technology_block", "mysticalagriculture:magic_essence", "kubejs:technology_block", "mysticalagriculture:magic_essence"], bee: true },
+        { out: "supremium", in: "imperium", ing: ["catalystcore:mystical_block", insa, "catalystcore:mystical_block", insa, "catalystcore:mystical_block", insa, "catalystcore:mystical_block", insa], bee: true },
+        { out: "supremium", in: "imperium", ing: ["catalystcore:magical_block", insa, "catalystcore:magical_block", insa, "catalystcore:magical_block", insa, "catalystcore:magical_block", insa], bee: true },
+        { out: "insanium", in: "supremium", ing: ["catalystcore:technology_block", "mysticalagriculture:mystical_essence", "catalystcore:technology_block", "mysticalagriculture:mystical_essence", "catalystcore:technology_block", "mysticalagriculture:mystical_essence", "catalystcore:technology_block", "mysticalagriculture:mystical_essence"], bee: true },
+        { out: "insanium", in: "supremium", ing: ["catalystcore:technology_block", "mysticalagriculture:magic_essence", "catalystcore:technology_block", "mysticalagriculture:magic_essence", "catalystcore:technology_block", "mysticalagriculture:magic_essence", "catalystcore:technology_block", "mysticalagriculture:magic_essence"], bee: true },
     ];
 
     infusionRecipes.forEach(r => {
@@ -400,7 +400,7 @@ ServerEvents.recipes(catalyst => {
             },
             "items": "productivebees:spawn_egg_configurable_bee"
         },
-        ingredients: Array(4).fill({ item: "kubejs:technology_block" }),
+        ingredients: Array(4).fill({ item: "catalystcore:technology_block" }),
         result: { id: "mysticalagradditions:creative_essence" }
     }).id('catalyst:mysticalagriculture/awakening/creative_essence');
 
@@ -461,22 +461,22 @@ ServerEvents.recipes(catalyst => {
         type: "mekanism:metallurgic_infusing",
         chemical_input: { amount: 100, tag: "mekanism:redstone" },
         item_input: { count: 1, item: "mysticalagriculture:inferium_seeds" },
-        output: { count: 1, id: "kubejs:enriched_seeds" },
+        output: { count: 1, id: "catalystcore:enriched_seeds" },
         per_tick_usage: true
     }).id('catalyst:mekanism/infusing/enriched_seeds');
 
     // Powered seeds
     catalyst.custom({
         type: "ae2:charger",
-        ingredient: { item: "kubejs:enriched_seeds" },
-        result: { count: 1, id: "kubejs:powered_seeds" }
+        ingredient: { item: "catalystcore:enriched_seeds" },
+        result: { count: 1, id: "catalystcore:powered_seeds" }
     }).id('catalyst:ae2/charger/powered_seeds');
 
     // Ethereal seeds
     catalyst.custom({
         type: "industrialforegoing:dissolution_chamber",
         input: [
-            { item: "kubejs:powered_seeds" },
+            { item: "catalystcore:powered_seeds" },
             { item: "minecraft:redstone_block" },
             { item: "minecraft:redstone_block" },
             { item: "minecraft:redstone_block" },
@@ -486,7 +486,7 @@ ServerEvents.recipes(catalyst => {
             { tag: "c:ingots/steel" }
         ],
         inputFluid: { amount: 2000, fluid: "industrialforegoing:ether_gas" },
-        output: { count: 1, id: "kubejs:ethereal_seeds" },
+        output: { count: 1, id: "catalystcore:ethereal_seeds" },
         processingTime: 1800
     }).id('catalyst:industrialforegoing/dissolution/ethereal_seeds');
 
@@ -494,23 +494,23 @@ ServerEvents.recipes(catalyst => {
     catalyst.custom({
         type: "integrateddynamics:mechanical_drying_basin",
         input_fluid: { id: "integrateddynamics:liquid_chorus", amount: 1000 },
-        input_item: { item: "kubejs:ethereal_seeds" },
+        input_item: { item: "catalystcore:ethereal_seeds" },
         duration: 300,
-        output_item: { id: "kubejs:reinforced_seeds" }
+        output_item: { id: "catalystcore:reinforced_seeds" }
     }).id('catalyst:integrateddynamics/drying/reinforced_seeds');
 
     // Activated seeds
     catalyst.custom({
         type: 'powah:energizing',
         ingredients: [
-            Ingredient.of("kubejs:reinforced_seeds"),
+            Ingredient.of("catalystcore:reinforced_seeds"),
             Ingredient.of("powah:nitro_crystal_block"),
             Ingredient.of("powah:nitro_crystal_block"),
             Ingredient.of('#c:storage_blocks/uraninite'),
             Ingredient.of('#c:storage_blocks/uraninite'),
         ],
         energy: 20000000,
-        result: Item.of("kubejs:activated_seeds", 1)
+        result: Item.of("catalystcore:activated_seeds", 1)
     })
     .id('catalyst:powah/energizing/activated_seeds')
 
@@ -519,7 +519,7 @@ ServerEvents.recipes(catalyst => {
         type: "mekanism:nucleosynthesizing",
         chemical_input: { amount: 20, chemical: "mekanism:antimatter" },
         duration: 1000,
-        item_input: { count: 1, item: "kubejs:activated_seeds" },
+        item_input: { count: 1, item: "catalystcore:activated_seeds" },
         output: { count: 1, id: "mysticalagriculture:technology_seeds" },
         per_tick_usage: false
     }).id('catalyst:mekanism/nucleosynthesizing/technology_seeds');

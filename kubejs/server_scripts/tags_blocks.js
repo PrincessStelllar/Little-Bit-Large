@@ -6,13 +6,6 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 
 //block tags
 ServerEvents.tags('block', catalyst => {
-    console.log("Before cleanup: " + global.clusters.size())
-    global.clusters.clear()
-    global.budding_blocks.clear();
-    global.bud_storage.clear();
-
-    console.log("After cleanup: " + global.clusters.size())
-
     let _clusters = [
         "minecraft:amethyst_cluster",
         "geore:coal_cluster",
@@ -217,13 +210,11 @@ ServerEvents.tags('block', catalyst => {
     ];
 
     _clusters.forEach(cluster => {
-        global.clusters.add(cluster)
         catalyst.add("c:clusters", cluster)
         catalyst.add("catalyst:clusters", cluster)
     })
 
     _buddings.forEach(bud => {
-        global.budding_blocks.add(bud)
         catalyst.add("c:budding_blocks", bud)
         catalyst.add("c:budding", bud)
         catalyst.remove('create:non_movable', bud)
@@ -231,7 +222,6 @@ ServerEvents.tags('block', catalyst => {
     })
 
     _storage.forEach(st => {
-        global.bud_storage.add(st)
         catalyst.add("geore:geore_blocks", st)
         catalyst.add("catalyst:budding_storages", st)
     })

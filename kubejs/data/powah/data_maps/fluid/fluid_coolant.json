@@ -3,7 +3,7 @@
     "#c:water": {
       "temperature": 0
     },
-    "kubejs:liquid_darkness": {
+    "catalystcore:liquid_darkness": {
       "temperature": -35
     }
   }

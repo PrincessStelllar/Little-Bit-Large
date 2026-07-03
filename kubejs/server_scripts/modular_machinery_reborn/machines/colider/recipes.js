@@ -2084,7 +2084,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "eternalores:universium_foil", count: 1, chance: 1.0 },
             ],
             fluid_input: [
-                { id: "kubejs:liquid_light", count: 10000, chance: 1.0 },
+                { id: "catalystcore:liquid_light", count: 10000, chance: 1.0 },
             ],
             fluid_output: [],
             energy_out: 10000000
@@ -2100,7 +2100,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "eternalores:eternity_foil", count: 1, chance: 1.0 },
             ],
             fluid_input: [
-                { id: "kubejs:liquid_darkness", count: 10000, chance: 1.0 },
+                { id: "catalystcore:liquid_darkness", count: 10000, chance: 1.0 },
             ],
             fluid_output: [],
             energy_out: 10000000

@@ -380,7 +380,7 @@ ServerEvents.recipes(catalyst => {
             }
         ],
         results: [
-            { id: "kubejs:liquid_light", amount: 500 },
+            { id: "catalystcore:liquid_light", amount: 500 },
             { id: "catalystcore:lava_orb" }
         ]
     }).id("catalyst:create/orb_to_light");
@@ -397,7 +397,7 @@ ServerEvents.recipes(catalyst => {
             }
         ],
         results: [
-            { id: "kubejs:liquid_darkness", amount: 500 },
+            { id: "catalystcore:liquid_darkness", amount: 500 },
             { id: 'catalystcore:end_core' }
         ]
     }).id("catalyst:create/orb_to_dark");

@@ -37,10 +37,10 @@ ServerEvents.tags('item', catalyst => {
     {
         for(let t = 0; t <= i; t++)
         {
-            catalyst.add(`kubejs:farmland/${farmlandTiersFiltered[t].getIdLocation().getPath().replace('_farmland', '')}`, farmlandTiersFiltered[i].getId())
+            catalyst.add(`catalyst:farmland/${farmlandTiersFiltered[t].getIdLocation().getPath().replace('_farmland', '')}`, farmlandTiersFiltered[i].getId())
         }
     }
-    catalyst.add(`kubejs:farmland/${farmlandTiersFiltered[farmlandTiersFiltered.length-1].getIdLocation().getPath().replace('_farmland', '')}`, farmlandTiersFiltered[farmlandTiersFiltered.length-1].getId())
+    catalyst.add(`catalyst:farmland/${farmlandTiersFiltered[farmlandTiersFiltered.length-1].getIdLocation().getPath().replace('_farmland', '')}`, farmlandTiersFiltered[farmlandTiersFiltered.length-1].getId())
     console.log("[CatJS] Tags for the MA farmland");
 })
 
@@ -75,7 +75,7 @@ ServerEvents.recipes(catalyst => {
                 input: Ingredient.of(crop.getSeedsItem()).toJson(),
                 soil: Ingredient.of((crop.getCruxBlock()) ?? (crop.getTier().getFarmland() === null ? 
                                                               "mysticalagradditions:insanium_farmland" : 
-                                                              `#kubejs:farmland/${crop.getTier().getFarmland().getIdLocation().getPath().replace('_farmland', '')}`)).toJson(),
+                                                              `#catalyst:farmland/${crop.getTier().getFarmland().getIdLocation().getPath().replace('_farmland', '')}`)).toJson(),
                 time: Math.min(60 + (10 * crop.getTier().getValue() * 0.75), 200),
                 render: {
                     type: 'immersiveengineering:crop',
