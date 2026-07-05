@@ -31,7 +31,44 @@ ServerEvents.recipes( catalyst => {
         ]
     ).id('catalyst:evilcraft/dark_gem_crushed_hammer')
 
-    console.log("[CatJS] Added general changed evilcraft")
+    catalyst.shaped('evilcraft:blood_orb_empty', [
+        'GGG',
+        'GOG',
+        'GGG'
+    ],
+    {
+        G: 'evilcraft:dark_gem',
+        O: 'minecraft:obsidian'
+    })
+    .id("catalyst:evilcraft/blood_orb_empty");
+
+    catalyst.shapeless('evilcraft:origins_of_darkness', ['minecraft:book', 'evilcraft:dark_gem'])
+    .id("catalyst:evilcraft/origins_of_darkness");
+
+    catalyst.shaped('evilcraft:dark_tank', [
+        'DSD',
+        'SGS',
+        'DSD'
+    ],
+    {
+        D: 'evilcraft:dark_gem',
+        S: 'minecraft:iron_ingot',
+        G: 'minecraft:glass'
+    })
+    .id("catalyst:evilcraft/dark_tank");
+
+    catalyst.shaped('evilcraft:blood_extractor', [
+        '  I',
+        ' G ',
+        'G  '
+    ],
+    {
+        I: 'minecraft:iron_ingot',
+        G: 'evilcraft:dark_gem'
+    })
+    .id("catalyst:evilcraft/blood_extractor");
+
+    console.log("[CatJS] Added recipes evilcraft")
 })
 
 /* 

@@ -4,7 +4,7 @@ It cannot be used or modified outside of Catalyst Studios without explicit permi
 */
 MMREvents.machines(catalyst => {
     catalyst.create("mmr:vampire")
-        .color('#FFaa7daa')
+        .color('#FFfb3f2b')
         .name(Component.translatable("catalyst.mmr.machine.vampire"))
         .structure(
             MMRStructureBuilder.create()
@@ -49,13 +49,13 @@ MMREvents.machines(catalyst => {
                     '#modular_machinery_reborn:itembus'
                 ],
                 "g": [
-                    "evilcraft:dark_brick_stairs[facing=east,half=bottom,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "h": [
-                    "evilcraft:dark_brick_stairs[facing=west,half=bottom,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "i": [
-                    "evilcraft:dark_brick_stairs[facing=south,half=bottom,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "j": [
                     "minecraft:nether_brick_slab[type=bottom]"
@@ -64,49 +64,49 @@ MMREvents.machines(catalyst => {
                     "minecraft:nether_bricks"
                 ],
                 "l": [
-                    "evilcraft:dark_brick_stairs[facing=north,half=bottom,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "n": [
-                    "chipped:iron_bowl_soul_lantern[hanging=false]"
+                    "chipped:iron_bowl_soul_lantern"
                 ],
                 "o": [
-                    "evilcraft:undead_fence[east=false,north=false,south=false,west=false]"
+                    "evilcraft:undead_fence"
                 ],
                 "p": [
-                    "mcwlights:soul_double_street_lamp[facing=south,lit=true,part=base,powered=false]"
+                    "mcwlights:soul_double_street_lamp"
                 ],
                 "q": [
-                    "mcwlights:soul_double_street_lamp[facing=north,lit=true,part=base,powered=false]"
+                    "mcwlights:soul_double_street_lamp"
                 ],
                 "r": [
                     'catalystcore:liquid_blood'
                 ],
                 "s": [
-                    "evilcraft:dark_brick_stairs[facing=north,half=top,shape=outer_left]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "t": [
-                    "evilcraft:dark_brick_stairs[facing=north,half=top,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "u": [
-                    "evilcraft:dark_brick_stairs[facing=east,half=top,shape=outer_left]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "v": [
-                    "evilcraft:dark_brick_stairs[facing=west,half=top,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "w": [
-                    "evilcraft:dark_brick_stairs[facing=east,half=top,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "x": [
-                    "evilcraft:dark_brick_stairs[facing=west,half=top,shape=outer_left]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "y": [
-                    "evilcraft:dark_brick_stairs[facing=south,half=top,shape=straight]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "z": [
-                    "evilcraft:dark_brick_stairs[facing=south,half=top,shape=outer_left]"
+                    "evilcraft:dark_brick_stairs"
                 ],
                 "A": [
-                    "chipped:wooden_cage_soul_lantern[hanging=false]"
+                    "chipped:wooden_cage_soul_lantern"
                 ],
                 "B": [
                     "mcwlights:golden_chain[axis=y]"

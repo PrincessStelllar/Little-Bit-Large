@@ -56,6 +56,20 @@ ServerEvents.recipes(catalyst => {
     })
     .id("catalyst:reinforced_bottle");
 
+    catalyst.shaped(Item.of('catalystcore:liquid_blood_bucket', 1), [
+        "ESE",
+        "FBF",
+        "SAS"
+    ],
+    {
+        E: 'mysticalagriculture:earth_seeds',
+        S: 'enderio:soularium_block',
+        F: 'ars_nouveau:fire_essence',
+        B: 'evilcraft:bucket_blood',
+        A: 'ars_nouveau:abjuration_essence'
+    })
+    .id("catalyst:vampire/liquid_blood_bucket");
+
     console.log("[CatJS] Added Cat Base recipes")
     
     catalyst.shaped(Item.of('catalystcore:nether_core', 1), [

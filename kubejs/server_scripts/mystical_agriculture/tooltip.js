@@ -54,7 +54,7 @@ ItemEvents.modifyTooltips(catalyst => {
 
                 if(biome)
                 {
-                    text.insert(2, Text.of("Needs biome to grow on ").append(Text.of("farmland").green()).append(": "));
+                    text.insert(2, Text.of("Needs biome to grow on ").append(Text.of("farmland").green()));
                     text.removeLine(3);
                 }
 
@@ -90,7 +90,7 @@ ItemEvents.modifyTooltips(catalyst => {
         ['enriched_copper'],
         ['prosperity'],
         ['xychorium'],
-        ['dark_gem',   { biome: true }],
+        ['dark_gem'],
         ['entro'],
         ['flux',       { noPlant: true }],
         ['sculk',      { tier: 'mag', noPlant: true }],
