@@ -9,28 +9,19 @@ MMREvents.machines(catalyst => {
         .structure(
             MMRStructureBuilder.create()
             .pattern([
-                ["aaabbbcbbbaaa","adabeeceebada","aaabeeceebaaa","bbbieeceeibbb","beeeccccceeeb","beeechchceeeb","ccccccccccccc","beeechchceeeb","beeeccccceeeb","bbbfeeceegbbb","aaabeeceebaaa","adabeeceebada","aaabbbcbbbaaa","             ","             ","             ","             "],
-                ["     bmb     ","             ","             ","             ","    hhhhh    ","b   hjhjh   b","b   hhhhh   b","b   hjhjh   b","    hhhhh    ","             ","             ","             ","     bbb     ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","    h   h    ","      h      ","     hhh     ","      h      ","    h   h    ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","    h   h    ","     hhh     ","     hhh     ","     hhh     ","    h   h    ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","     ccc     ","     ccc     ","     ccc     ","             ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","     ccc     ","     ccc     ","     ccc     ","             ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","      c      ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","      j      ","     jcj     ","      j      ","             ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","     hhh     ","    hhhhh    ","   hhhhhhh   ","   hhhchhh   ","   hhhhhhh   ","    hhhhh    ","     hhh     ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","    kkkkk    ","    kkkkk    ","    kkkkk    ","    kkkkk    ","    kkkkk    ","             ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","    kkkkk    ","    k   k    ","    k   k    ","    k   k    ","    kkkkk    ","     kkk     ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","    kkkkk    ","    k   k    ","    k j k    ","    k   k    ","    kkkkk    ","     kkk     ","             ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","    kkkkk    ","    kkkkk    ","    kkkkk    ","    kkkkk    ","    kkkkk    ","     kkk     ","     kkk     ","             ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","             ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","             ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","             ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","     kkk     ","             ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","     kkk     ","      k      ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","     kkk     ","     kkk     ","      k      ","             "],
-                ["             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","             ","      k      ","     kkk     ","      k      "]
+                ["aaabbbcbbbaaa","adabeeceebada","aaabeeceebaaa","bbbieeceeibbb","beeeccccceeeb","beeechchceeeb","ccccccccccccc","beeechchceeeb","beeeccccceeeb","bbbfeeceegbbb","aaabeeceebaaa","adabeeceebada","aaabbbcbbbaaa"],
+                ["j    bmb    j","             ","             ","             ","    hhhhh    ","b   hkhkh   b","b   hhhhh   b","b   hkhkh   b","    hhhhh    ","             ","             ","             ","j    bbb    j"],
+                ["             ","             ","             ","             ","    h   h    ","      h      ","     hhh     ","      h      ","    h   h    ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","    h   h    ","     hhh     ","     hhh     ","     hhh     ","    h   h    ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","    j   j    ","     ccc     ","     ccc     ","     ccc     ","    j   j    ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","             ","     ccc     ","     ccc     ","     ccc     ","             ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","             ","             ","      c      ","             ","             ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","             ","      k      ","     kck     ","      k      ","             ","             ","             ","             ","             "],
+                ["             ","             ","             ","     hhh     ","    hhhhh    ","   hhhhhhh   ","   hhhchhh   ","   hhhhhhh   ","    hhhhh    ","     hhh     ","             ","             ","             "],
+                ["             ","             ","             ","             ","      e      ","     kek     ","    eecee    ","     kek     ","      e      ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","             ","      c      ","     ccc     ","      c      ","             ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","     ccc     ","    cecec    ","    cckcc    ","    cecec    ","     ccc     ","             ","             ","             ","             "],
+                ["             ","             ","             ","             ","             ","             ","      l      ","             ","             ","             ","             ","             ","             "]
             ])
             .keys({
                 "a": [
@@ -63,10 +54,13 @@ MMREvents.machines(catalyst => {
                     "chipped:warning_black_concrete"
                 ],
                 "j": [
-                    "minecraft:sea_lantern"
+                    "immersiveengineering:cagelamp"
                 ],
                 "k": [
-                    "eternalores:cast_steel_block"
+                    "minecraft:sea_lantern"
+                ],
+                "l": [
+                    "mmr_cosmetics:sculk_cannon"
                 ]
             })
         )
