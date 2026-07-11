@@ -50,6 +50,8 @@ StartupEvents.registry('fluid', catalyst => {
     registerLiquid('Darkness')
     registerLiquid('Light')
     registerLiquid('Blood')
+    registerLiquid('Phyto Oil')
+    registerLiquid('Gunk')
 })
 
 /* 

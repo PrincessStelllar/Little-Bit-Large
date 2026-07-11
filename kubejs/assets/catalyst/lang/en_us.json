@@ -127,6 +127,16 @@
   "item.catalystcore.liquid_blood_bucket": "Living Blood Bucket",
   "fluid.catalystcore.liquid_blood": "Living Blood",
 
+  "fluid_type.catalystcore.liquid_phyto_oil": "Phyto Oil",
+  "block.catalystcore.liquid_phyto_oil": "Phyto Oil",
+  "item.catalystcore.liquid_phyto_oil_bucket": "Phyto Oil Bucket",
+  "fluid.catalystcore.liquid_phyto_oil": "Phyto Oil",
+
+  "fluid_type.catalystcore.liquid_gunk": "Gunk",
+  "block.catalystcore.liquid_gunk": "Gunk",
+  "item.catalystcore.liquid_gunk_bucket": "Gunk Bucket",
+  "fluid.catalystcore.liquid_gunk": "Gunk",
+
   "item.catalystcore.incomplete_containment_ingot": "Incomplete Containment Ingot",
   "item.catalystcore.incomplete_imperfect_ingot": "Incomplete Imperfect Ingot",
 
