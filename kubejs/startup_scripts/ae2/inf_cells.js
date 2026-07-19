@@ -3,7 +3,7 @@ This script is property of Catalyst Studios for use in the modpack Little Bit La
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
 */
 
-StartupEvents.registry('item', event => {
+StartupEvents.registry('item', catalyst => {
 
     const fluids = [
         'minecraft:lava',
@@ -20,7 +20,7 @@ StartupEvents.registry('item', event => {
         let name = id.split(':')[1];
         let cell_id = `infinity_${name}_cell`;
 
-        event.create(`catalystcore:${cell_id}`, 'extendedae:custom_infinity_cell')
+        catalyst.create(`catalystcore:${cell_id}`, 'extendedae:custom_infinity_cell')
             .displayName(Component.translatable(`catalyst.extendedae.${name}`))
             .texture('extendedae:item/infinity_cell')
             .fluidType(id)
