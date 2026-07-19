@@ -24,7 +24,7 @@ ServerEvents.recipes(catalyst => {
     const first_group = [
         { input: 'replication:replica_ingot', output: 'eternalores:cosmic_matter_nugget' },
         { input: 'replication:replica_block', output: 'eternalores:cosmic_matter_ingot' },
-        { input: 'eternalores:compressed_replica_1x', output: 'eternalores:cosmic_matter_block' }
+        { input: 'eternalores:compressed_replica_block_1x', output: 'eternalores:cosmic_matter_block' }
     ];
     const dust_first = 'eternalores:stellarium_small_dust';
 

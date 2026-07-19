@@ -28,7 +28,7 @@ ServerEvents.recipes(catalyst => {
         {
             C: 'eternalores:gear_etherium',
             P: 'modular_machinery_reborn:parallel_hatch_basic',
-            E: 'eternalores:compressed_replica_2x'
+            E: 'eternalores:compressed_replica_block_2x'
         }
     ).id(`catalyst:mmr/ports/medium_parallel_hatch`);
 

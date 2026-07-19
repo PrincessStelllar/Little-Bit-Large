@@ -2129,7 +2129,7 @@ ServerEvents.recipes(catalyst => {
                 { id: 'eternalores:onyx_block', count: 6, chance: 1.0 },
                 { id: 'eternalores:sculkite_ingot', count: 4, chance: 1.0 },
                 { id: 'minecraft:netherite_block', count: 2, chance: 1.0 },
-                { id: 'eternalores:compressed_nitro_crystal_1x', count: 1, chance: 1.0 }
+                { id: 'eternalores:compressed_nitro_crystal_block_1x', count: 1, chance: 1.0 }
             ],
             fluid_input: [],
             fluid_output: [],
@@ -2141,14 +2141,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_4", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_2", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2161,14 +2161,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_8", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_4", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2181,14 +2181,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_16", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_8", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2201,14 +2201,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_32", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_16", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2221,14 +2221,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_64", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_32", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2241,14 +2241,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_128", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_64", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2261,14 +2261,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_256", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_128", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2281,14 +2281,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_512", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_256", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2301,14 +2301,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_1k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_512", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2321,14 +2321,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_2k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_1k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2341,14 +2341,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_4k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_2k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2361,14 +2361,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_8k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_4k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2381,14 +2381,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_16k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_8k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2401,14 +2401,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_32k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_16k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2421,14 +2421,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_64k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_32k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2441,14 +2441,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_128k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_64k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2461,14 +2461,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_256k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_128k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2481,14 +2481,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_512k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_256k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -2501,14 +2501,14 @@ ServerEvents.recipes(catalyst => {
             outputs: [
                 { id: "expandedae:exp_crafting_accelerator_1m", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 0.3 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 0.1 }
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 0.1 }
             ],
             inputs: [
                 { id: "eternalores:plate_diamond", count: 9, chance: 1.0 },
                 { id: "expandedae:exp_crafting_accelerator_512k", count: 1, chance: 1.0 },
                 { id: "ae2:quartz_block", count: 4, chance: 1.0 },
-                { id: "eternalores:compressed_fluix_2x", count: 1, chance: 1.0 },
-                { id: "eternalores:compressed_redstone_2x", count: 2, chance: 1.0 },
+                { id: "eternalores:compressed_fluix_block_2x", count: 1, chance: 1.0 },
+                { id: "eternalores:compressed_redstone_block_2x", count: 2, chance: 1.0 },
                 { id: "eternalores:silicon_block", count: 9, chance: 1.0 }
             ],
             fluid_input: [{ id: "minecraft:water", count: 100000, chance: 1.0 }],
@@ -4031,7 +4031,7 @@ ServerEvents.recipes(catalyst => {
             recipe.produceEnergyPerTick(rs.energy_out);
         }
 
-        recipe.jei();
+        recipe.jei(); //Indica que estamos construyendo la paguina de JEI, pero la receta es la de arriba
             
         let inputIdx = 0;
             

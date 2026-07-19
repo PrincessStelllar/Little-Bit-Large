@@ -53,11 +53,11 @@ ServerEvents.recipes(catalyst => {
     catalyst.custom({
         type: 'powah:energizing',
         ingredients: [
-            Ingredient.of('eternalores:compressed_iron_1x'),
-            Ingredient.of('eternalores:compressed_gold_1x')
+            Ingredient.of('eternalores:compressed_iron_block_1x'),
+            Ingredient.of('eternalores:compressed_gold_block_1x')
         ],
         energy: 378000,
-        result: Item.of('eternalores:compressed_energized_steel_1x', 1)
+        result: Item.of('eternalores:compressed_energized_steel_block_1x', 1)
     })
     .id('catalyst:energizing/compressed_energized_steel_block')
 
