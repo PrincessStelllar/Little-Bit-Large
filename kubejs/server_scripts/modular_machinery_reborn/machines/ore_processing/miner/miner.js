@@ -37,7 +37,9 @@ MMREvents.machines(catalyst => {
                     '#modular_machinery_reborn:energyinputhatch',
                     '#modular_machinery_reborn:fluidhatch',
                     '#modular_machinery_reborn:itembus',
-                    'modular_machinery_reborn:dimensional_detector'
+                    'modular_machinery_reborn:dimensional_detector',
+                    '#modular_machinery_reborn:parallelhatch',
+                    'eternalores:pig_iron_block'
                 ],
                 "e": [
                     "minecraft:cobbled_deepslate_slab[type=bottom]"

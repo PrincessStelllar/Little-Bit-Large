@@ -68,6 +68,9 @@
   "catalyst.mmr.tooltip.data_extractor.item": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
   "catalyst.mmr.tooltip.data_extractor.gui": "This machine has fake parallels, so it can do 1 recipe up to 16 recipes at the same time!",
 
+  "catalyst.mmr.tooltip.miner.item": "Using stone, deepslate, netherrack, end stone, sand, calcite, kivi or blackslag as input will generate a random amount of ores.\nAlternatively, use an empty bucket to generate fluids.\nSome ores have dimension restrictions, but everything works in the Mining Dimension.\nWater, Liquid Darkness and Phyto Oil increase resource output (in that order).\nWhile active, it produces random junk, 2 types of fluids and some items.",
+  "catalyst.mmr.tooltip.miner.gui": "Using stone, deepslate, netherrack, end stone, sand, calcite, kivi or blackslag as input will generate a random amount of ores.\nAlternatively, use an empty bucket to generate fluids.\nSome ores have dimension restrictions, but everything works in the Mining Dimension.\nWater, Liquid Darkness and Phyto Oil increase resource output (in that order).\nWhile active, it produces random junk, 2 types of fluids and some items.",
+
   "catalyst.mmr.machine.primitive_alloy_maker": "&#B3552EPrimitive&r Alloy Maker",
   "catalyst.mmr.machine.arboretum": "&#57f016Arboretum&r",
   "catalyst.mmr.machine.personal_beacon": "Personal &#B57EDC<wiggle a=0.5 f=0.25 w=0.5><pulse base=0.75 a=0.25 f=0.5 w=1.0>Beacon</pulse></wiggle>&r",
@@ -98,7 +101,7 @@
   "catalyst.mmr.machine.vat": "Bacterial <grad from=#276BE1 to=#27E1C1 hue=true f=0.5 sp=30.0 uni=true><fade a=0.3 f=1.0 w=2.0><pulse base=0.75 a=2.0 f=1.0 w=0.0><neon p=10 r=2 a=0.11>Echo</neon></pulse></fade></grad> Vat",
   "catalyst.mmr.machine.space": "<grad from=#276BE1 to=#27E1C1 hue=true f=0.5 sp=30.0 uni=true><fade a=0.5 f=1.5 w=2.0><pulse base=0.75 a=2.0 f=1.0 w=0.0><neon p=10 r=2 a=0.11>Sculkite</neon></pulse></fade></grad> Conquer Propulsor: <wiggle a=1.0 f=0.15 w=0.5><grad from=#000000 to=#FFFFFF hue=true f=0.5 sp=50.0 uni=true>Space</grad></wiggle> Elevator",
   "catalyst.mmr.machine.vampire": "&#ea3232<pulse base=0.75 a=1.0 f=2.0 w=0.0><fade a=0.3 f=1.0 w=0.0>Vampire</fade></pulse>&r's Well",
-  "catalyst.mmr.machine.miner": "Deep Miner",
+  "catalyst.mmr.machine.miner": "Deep &#e69986Miner&r",
 
   "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
   "catalyst.create.limestone": "This block can be created using a Vanilla Cobblestone Generator with Lava and Honey from Create",

@@ -561,3 +561,11 @@ ServerEvents.recipes(catalyst => {
 
     console.log("[CatJS] All Miner recipes added :D");
 });
+
+MMREvents.extraTooltips(catalyst => {
+    catalyst.create("mmr:miner", 'item')
+        .add(Component.translatable("catalyst.mmr.tooltip.miner.item"))
+
+    catalyst.create("mmr:miner", 'gui')
+        .add(Component.translatable("catalyst.mmr.tooltip.miner.gui"))
+})
