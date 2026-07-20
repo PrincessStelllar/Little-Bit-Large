@@ -205,6 +205,12 @@ ServerEvents.recipes(catalyst => {
         {id: "appliedpneumatics:amadron/fluix_crystal_to_emerald"},
         {id: "appliedpneumatics:amadron/certus_quartz_crystal_to_emerald"},
 
+        //Xycraft
+        {id: "xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_raw_ore"},
+        {id: "xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_raw_block"},
+        {id: "xycraft_machines:compat/mek/processing/aluminum/slurry/dirty/from_ore"},
+        {id: "xycraft_machines:compat/mek/processing/aluminum/slurry/clean"},
+
     ]
 
     recipesToRemove.forEach(recipe => {
