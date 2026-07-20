@@ -36,7 +36,8 @@ MMREvents.machines(catalyst => {
                     "modular_machinery_reborn:casing_plain",
                     '#modular_machinery_reborn:energyinputhatch',
                     '#modular_machinery_reborn:fluidhatch',
-                    '#modular_machinery_reborn:itembus'
+                    '#modular_machinery_reborn:itembus',
+                    'modular_machinery_reborn:dimensional_detector'
                 ],
                 "e": [
                     "minecraft:cobbled_deepslate_slab[type=bottom]"
