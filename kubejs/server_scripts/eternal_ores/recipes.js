@@ -34,6 +34,18 @@ ServerEvents.recipes(catalyst => {
         }
     ).id('catalyst:eternalores/shadow_blend')
 
+    Ingredient.of('#c:pebbles').getItemIds().forEach(id => {
+        catalyst.shaped(Item.of(id.replace("eternalores", "minecraft").replace("_pebble", ""), 1),
+            [
+                'KK',
+                'KK',
+            ],
+            {
+                K: id
+            }
+        ).id(`catalyst:eternalores/pebbles/${id.replace(":", "_")}`)
+    });
+
     console.log("[CatJS] Added EternalOres recipes")
 })
 
