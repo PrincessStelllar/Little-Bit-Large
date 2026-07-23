@@ -208,6 +208,7 @@ StartupEvents.init(catalyst => {
                 },
                 register: function()
                 {
+                    global.recipesSeedToRemove.push(`mysticalagriculture:${_idStr}`)
                     let id = $ResourceLocation.parse('mysticalagriculture:'+ _idStr)
                     let tier = getTier(_tierId)
                     let type = getType(_typeId)
@@ -260,7 +261,6 @@ StartupEvents.init(catalyst => {
                     {
                         if(registryInstance.getCropById(id) != null)
                         {
-                            global.recipesSeedToRemove.push(`mysticalagriculture:${_idStr}`)
                             if(_dontPlant) global.dontPlantSeeds.push(_idStr)
                             console.info(`[CatJS] Registered Custom Crop: ${idStr}`)
                         }
