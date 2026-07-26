@@ -4102,14 +4102,6 @@ ServerEvents.recipes(catalyst => {
     console.log("[CatJS] Finished Colider recipes");
 });
 
-MMREvents.extraTooltips(event => {
-    event.create("mmr:colider", 'item')
-    .add(Component.translatable("catalyst.mmr.tooltip.colider.item"))
-
-    event.create("mmr:colider", 'gui')
-    .add(Component.translatable("catalyst.mmr.tooltip.colider.gui"))
-})
-
 MMREvents.recipeFunction("starting", catalyst => {
     let tile = catalyst.getTile();
     let level = tile.getLevel();
