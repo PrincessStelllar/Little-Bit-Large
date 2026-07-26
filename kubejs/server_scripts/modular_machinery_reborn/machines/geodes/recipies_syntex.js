@@ -18,6 +18,11 @@ ServerEvents.recipes(catalyst => {
     .id("catalyst:mmr/geo_syntex/real_recipe")
     
     Ingredient.of('#catalyst:clusters').getItemIds().toArray().forEach(cluster => {
+        if(cluster.includes("allthemodium" || cluster.includes("unobtainium") || cluster.includes("vibranium")))
+        {
+            return;
+        }
+
         let bud = cluster.replace("_cluster", "").replace(":", ":budding_").replace("geore_", "");
 
         if(cluster === "minecraft:amethyst_cluster") bud = "minecraft:budding_amethyst";
@@ -50,7 +55,15 @@ ServerEvents.recipes(catalyst => {
         .requireItem(Item.of(bud, 1), 40, 28)
         .requireItem(Item.of(cluster, 1), 58, 28)
         .requireItem(Item.of(cluster, 1), 40, 46)
-        .produceItem(Item.of(cluster, 1), 125, 28)
+        .produceItem(Item.of(cluster, 1, {
+            "minecraft:lore": [
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.2", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.3", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.4", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.5", "italic": false },
+                { "translate": "catalyst.mmr.tooltip.geo_syntex.item.6", "italic": false }
+            ]
+        }), 125, 28)
         .id(`catalyst:mmr/geo_syntex/${cluster.replace(":", "_")}`)
     });
 
