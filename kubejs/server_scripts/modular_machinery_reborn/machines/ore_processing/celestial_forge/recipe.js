@@ -153,7 +153,7 @@ ServerEvents.recipes(catalyst => {
 
         //AE2 and JDT
         {input: 'justdirethings:time_crystal_cluster', output: 'justdirethings:time_crystal', amount: 1},
-        {input: 'ae2:quartz_cluster', output: 'ae2:certus_quartz_crystal', amount: 1},
+        {input: 'ae2:quartz_cluster', output: 'eternalores:gem_certus_quartz', amount: 1},
         {input: 'extendedae:entro_cluster', output: 'extendedae:entro_crystal', amount: 1},
 
         //The rest of the clusters
@@ -175,7 +175,7 @@ ServerEvents.recipes(catalyst => {
         {input: 'pastel:zinc_cluster', output: 'pastel:pure_zinc', amount: 1},
         {input: 'pastel:netherite_scrap_cluster', output: 'pastel:pure_netherite_scrap', amount: 1},
         {input: 'pastel:echo_cluster', output: 'pastel:pure_echo', amount: 1},
-        {input: 'pastel:fluix_cluster', output: 'ae2:fluix_crystal', amount: 1},
+        {input: 'pastel:fluix_cluster', output: 'eternalores:gem_fluix', amount: 1},
         {input: 'biomesoplenty:rose_quartz_cluster', output: 'biomesoplenty:rose_quartz_chunk', amount: 1},
 
         {input: 'pastel:pure_echo', output: 'minecraft:echo_shard', amount: 1}

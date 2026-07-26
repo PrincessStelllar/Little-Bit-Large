@@ -44,7 +44,7 @@ ServerEvents.recipes(catalyst => {
                 'AFA'
             ],
             {
-                A: 'modular_machinery_reborn:modularium',
+                A: 'eternalores:modularium_ingot',
                 B: 'minecraft:deepslate',
                 C: 'eternalores:ender_pearl_block',
                 D: 'modular_machinery_reborn:casing_reinforced',

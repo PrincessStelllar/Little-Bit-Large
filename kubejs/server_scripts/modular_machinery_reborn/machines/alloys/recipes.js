@@ -578,7 +578,7 @@ ServerEvents.recipes(event => {
             inputs: [
                 { id: "ae2:sky_stone_block", count: 1 },
                 { id: "eternalores:steel_ingot", count: 1 },
-                { id: "ae2:certus_quartz_crystal", count: 1}
+                { id: "eternalores:gem_certus_quartz", count: 1}
             ]
         },
         {
@@ -587,7 +587,7 @@ ServerEvents.recipes(event => {
             inputs: [
                 { id: "ae2:sky_stone_block", count: 1 },
                 { id: "eternalores:bronze_ingot", count: 1 },
-                { id: "ae2:certus_quartz_crystal", count: 1}
+                { id: "eternalores:gem_certus_quartz", count: 1}
             ]
         },
         {
@@ -596,7 +596,7 @@ ServerEvents.recipes(event => {
             inputs: [
                 { id: "ae2:sky_stone_block", count: 1 },
                 { id: "eternalores:osmium_ingot", count: 1 },
-                { id: "ae2:certus_quartz_crystal", count: 1}
+                { id: "eternalores:gem_certus_quartz", count: 1}
             ]
         }
     ];

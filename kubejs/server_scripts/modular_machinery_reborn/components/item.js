@@ -204,7 +204,7 @@ ServerEvents.recipes(catalyst => {
             'ADA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:plate_shadowsteel',
             C: 'eternalores:ultimatitanium_foil',
             D: 'eternalores:ultimatitanium_foil',
@@ -221,7 +221,7 @@ ServerEvents.recipes(catalyst => {
         ],
         {
             A: 'eternalores:plate_shadowsteel',
-            B: 'modular_machinery_reborn:modularium',
+            B: 'eternalores:modularium_ingot',
             C: 'eternalores:ultimatitanium_foil',
             D: 'eternalores:ultimatitanium_foil',
             E: 'minecraft:chest',

@@ -104,6 +104,8 @@
   "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
   "catalyst.create.limestone": "This block can be created using a Vanilla Cobblestone Generator with Lava and Honey from Create",
 
+  "catalyst.eo.unify": "This item can be converted 1:1 in a Crafting Grid to get the new material",
+
   "catalyst.extendedae.lava": "Infinite Lava Cell",
   "catalyst.extendedae.milk": "Infinite Milk Cell",
   "catalyst.extendedae.latex": "Infinite Latex Cell",

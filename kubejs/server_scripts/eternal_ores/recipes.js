@@ -34,20 +34,32 @@ ServerEvents.recipes(catalyst => {
         }
     ).id('catalyst:eternalores/shadow_blend')
 
-    Ingredient.of('#c:pebbles').getItemIds().forEach(id => {
-        catalyst.shaped(Item.of(id.replace("eternalores", "minecraft").replace("_pebble", ""), 1),
-            [
-                'KK',
-                'KK',
-            ],
-            {
-                K: id
-            }
-        ).id(`catalyst:eternalores/pebbles/${id.replace(":", "_")}`)
-    });
+    catalyst.shapeless(Item.of('eternalores:gem_certus_quartz', 1), [
+        'ae2:certus_quartz_crystal'
+    ])
+    .id("catalyst:gem_certus_quartz");
+
+    catalyst.shapeless(Item.of('eternalores:gem_fluix', 1), [
+        "ae2:fluix_crystal"
+    ])
+    .id("catalyst:gem_fluix");
+
+    catalyst.shapeless(Item.of('eternalores:modularium_ingot', 1), [
+        "modular_machinery_reborn:modularium"
+    ])
+    .id("catalyst:modularium_ingot");
 
     console.log("[CatJS] Added EternalOres recipes")
 })
+
+ItemEvents.modifyTooltips(catalyst => {
+
+    catalyst.add('ae2:certus_quartz_crystal', Component.translatable("catalyst.eo.unify"))
+    catalyst.add("ae2:fluix_crystal", Component.translatable("catalyst.eo.unify"))
+    catalyst.add("modular_machinery_reborn:modularium", Component.translatable("catalyst.eo.unify"))
+
+    console.log("[CatJS] Added tooltip to EO unification items")
+});
 
 
 /* 

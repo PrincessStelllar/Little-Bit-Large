@@ -3,7 +3,7 @@ This script is property of Catalyst Studios for use in the modpack Little Bit La
 It cannot be used or modified outside of Catalyst Studios without explicit permission from Catalyst Studios.
 */
 RecipeViewerEvents.addInformation('item', catalyst => {
-    catalyst.add('modular_machinery_reborn:modularium', [
+    catalyst.add('eternalores:modularium_ingot', [
         'Modularium is crafted with an in-world recipe. For more information on how to craft it, check out the Modular Machinery Reborn quests']);
     catalyst.add('minecraft:reinforced_deepslate', [
         'Reinforced deepslate can be crafted with an in-world recipe. For more information on how to craft it, check out the Modular Machinery Reborn quests']);

@@ -209,7 +209,7 @@ ServerEvents.recipes(catalyst => {
             'ADA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:plate_shadowsteel',
             C: 'utilitarian:fluid_hopper',
             D: 'minecraft:bucket',
@@ -225,7 +225,7 @@ ServerEvents.recipes(catalyst => {
             'ACA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:plate_shadowsteel',
             C: 'utilitarian:fluid_hopper',
             D: 'minecraft:bucket',

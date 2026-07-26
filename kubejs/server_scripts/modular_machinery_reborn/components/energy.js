@@ -211,7 +211,7 @@ ServerEvents.recipes(catalyst => {
             'ADA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:rod_shadowsteel',
             C: 'eternalores:ultimatitanium_foil',
             D: 'energizedpower:solar_panel_6',
@@ -227,7 +227,7 @@ ServerEvents.recipes(catalyst => {
             'ACA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:rod_shadowsteel',
             C: 'eternalores:ultimatitanium_foil',
             D: 'energizedpower:solar_panel_6',

@@ -159,7 +159,7 @@ BlockEvents.rightClicked('justdirethings:gooblock_tier3', catalyst => {
                 let x = catalyst.block.x;
                 let y = catalyst.block.y + 2; // 2 blocks above the center block
                 let z = catalyst.block.z;
-                summonEntities(catalyst, "modular_machinery_reborn:modularium", 8, x, y, z)
+                summonEntities(catalyst, "eternalores:modularium_ingot", 8, x, y, z)
 
                 // Consume the Netherite Upgrade Smithing Template item
                 catalyst.player.getMainHandItem().count -= 64;
@@ -259,7 +259,7 @@ BlockEvents.rightClicked('justdirethings:gooblock_tier4', catalyst => {
                 let x = catalyst.block.x;
                 let y = catalyst.block.y + 2; // 2 blocks above the center block
                 let z = catalyst.block.z;
-                summonEntities(catalyst, "modular_machinery_reborn:modularium", 72, x, y, z)
+                summonEntities(catalyst, "eternalores:modularium_ingot", 72, x, y, z)
 
                 // Consume the Netherite Upgrade Smithing Template item
                 catalyst.player.getMainHandItem().count -= 64;

@@ -1237,7 +1237,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "ae2:cell_component_256k", count: 1, chance: 1.0 },
                 { id: "ae2:sky_dust", count: 4, chance: 1.0 },
                 { id: "megacells:sky_steel_ingot", count: 1, chance: 1.0 },
-                { id: "ae2:fluix_crystal", count: 10, chance: 1.0 },
+                { id: "eternalores:gem_fluix", count: 10, chance: 1.0 },
                 { id: "ae2:quartz_vibrant_glass", count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -1252,7 +1252,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "megacells:cell_component_1m", count: 1, chance: 1.0 },
                 { id: "ae2:sky_dust", count: 4, chance: 1.0 },
                 { id: "megacells:sky_steel_ingot", count: 1, chance: 1.0 },
-                { id: "ae2:fluix_crystal", count: 10, chance: 1.0 },
+                { id: "eternalores:gem_fluix", count: 10, chance: 1.0 },
                 { id: "ae2:quartz_vibrant_glass", count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -1267,7 +1267,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "megacells:cell_component_4m", count: 1, chance: 1.0 },
                 { id: "ae2:sky_dust", count: 4, chance: 1.0 },
                 { id: "megacells:sky_steel_ingot", count: 1, chance: 1.0 },
-                { id: "ae2:fluix_crystal", count: 10, chance: 1.0 },
+                { id: "eternalores:gem_fluix", count: 10, chance: 1.0 },
                 { id: "ae2:quartz_vibrant_glass", count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -1282,7 +1282,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "megacells:cell_component_16m", count: 1, chance: 1.0 },
                 { id: "ae2:sky_dust", count: 4, chance: 1.0 },
                 { id: "megacells:sky_steel_ingot", count: 1, chance: 1.0 },
-                { id: "ae2:fluix_crystal", count: 10, chance: 1.0 },
+                { id: "eternalores:gem_fluix", count: 10, chance: 1.0 },
                 { id: "ae2:quartz_vibrant_glass", count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -1297,7 +1297,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "megacells:cell_component_64m", count: 1, chance: 1.0 },
                 { id: "ae2:sky_dust", count: 4, chance: 1.0 },
                 { id: "megacells:sky_steel_ingot", count: 1, chance: 1.0 },
-                { id: "ae2:fluix_crystal", count: 10, chance: 1.0 },
+                { id: "eternalores:gem_fluix", count: 10, chance: 1.0 },
                 { id: "ae2:quartz_vibrant_glass", count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -1312,7 +1312,7 @@ ServerEvents.recipes(catalyst => {
                 { id: "ae2:cell_component_256k", count: 1, chance: 1.0 },
                 { id: "ae2:sky_dust", count: 4, chance: 1.0 },
                 { id: "advanced_ae:quantum_alloy", count: 1, chance: 1.0 },
-                { id: "ae2:fluix_crystal", count: 10, chance: 1.0 },
+                { id: "eternalores:gem_fluix", count: 10, chance: 1.0 },
                 { id: "ae2:quartz_vibrant_glass", count: 1, chance: 1.0 }
             ],
             fluid_input: [],
@@ -2124,7 +2124,7 @@ ServerEvents.recipes(catalyst => {
         {
             time: 200,
             energy: 2500000,
-            outputs: [{ id: "modular_machinery_reborn:modularium", count: 192, chance: 1.0 }],
+            outputs: [{ id: "eternalores:modularium_ingot", count: 192, chance: 1.0 }],
             inputs: [
                 { id: 'eternalores:onyx_block', count: 6, chance: 1.0 },
                 { id: 'eternalores:sculkite_ingot', count: 4, chance: 1.0 },
@@ -2519,7 +2519,7 @@ ServerEvents.recipes(catalyst => {
             time: 150,
             energy: 200000,
             outputs: [{ id: "ae2:charged_certus_quartz_crystal", count: 128, chance: 1.0 }],
-            inputs: [{ id: "ae2:certus_quartz_crystal", count: 128, chance: 1.0 }],
+            inputs: [{ id: "eternalores:gem_certus_quartz", count: 128, chance: 1.0 }],
             fluid_input: [],
             fluid_output: [],
             energy_out: 0
@@ -3165,7 +3165,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:experience_disperser{\"relics:data\":{abilities:{abilities:{dispersion:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{distribution_ratio:{initialQuality:9},player_xp_ratio:{initialQuality:8},same_item_bonus:{initialQuality:3}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:experience_bottle", count: 64, chance: 1.0 },
@@ -3183,7 +3183,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:chorus_staff{\"relics:chorus_staff/charge\":4,\"relics:data\":{abilities:{abilities:{blink:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{cooldown:{initialQuality:2},distance:{initialQuality:6},max_charge:{initialQuality:5}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:experience_disperser{\"relics:data\":{abilities:{abilities:{dispersion:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{distribution_ratio:{initialQuality:9},player_xp_ratio:{initialQuality:8},same_item_bonus:{initialQuality:3}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },
@@ -3202,7 +3202,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:leafy_mantle{\"relics:data\":{abilities:{abilities:{camouflage:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{absorption:{initialQuality:1},cooldown:{initialQuality:7},heal:{initialQuality:8}}},revival:{lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{damage:{initialQuality:7},heal:{initialQuality:2},paralysis:{initialQuality:10},radius:{initialQuality:10}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:spore_blossom", count: 4, chance: 1.0 },
@@ -3220,7 +3220,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:springy_boot{\"relics:data\":{abilities:{abilities:{bounce:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage:{initialQuality:5},damage_modifier:{initialQuality:8},power:{},radius:{initialQuality:8},stun:{initialQuality:7}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:slime_block", count: 16, chance: 1.0 },
@@ -3238,7 +3238,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:kinetic_belt{\"relics:data\":{abilities:{abilities:{gliding:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage:{initialQuality:1},efficiency:{initialQuality:3},resistance:{initialQuality:5}}},slots:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{amount:{initialQuality:9}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:springy_boot{\"relics:data\":{abilities:{abilities:{bounce:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage:{initialQuality:5},damage_modifier:{initialQuality:8},power:{},radius:{initialQuality:8},stun:{initialQuality:7}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },
@@ -3256,7 +3256,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:reflective_necklace{\"relics:data\":{abilities:{abilities:{reflection:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{bounces:{initialQuality:3},chance:{initialQuality:9},damage:{initialQuality:4},lifetime:{initialQuality:6},piercings:{initialQuality:4},stun:{initialQuality:7}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:tinted_glass", count: 32, chance: 1.0 },
@@ -3274,7 +3274,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:jellyfish_necklace{\"relics:data\":{abilities:{abilities:{regeneration:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{max_health:{},regeneration:{}}},shock:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{bounces:{initialQuality:6},cooldown:{},damage:{initialQuality:9},damage_modifier:{initialQuality:8},distance:{initialQuality:1},duration:{initialQuality:7},knockback:{initialQuality:10},paralysis:{initialQuality:9},radius:{initialQuality:1},rings:{initialQuality:9}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:reflective_necklace{\"relics:data\":{abilities:{abilities:{reflection:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{bounces:{initialQuality:3},chance:{initialQuality:9},damage:{initialQuality:4},lifetime:{initialQuality:6},piercings:{initialQuality:4},stun:{initialQuality:7}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },
@@ -3293,7 +3293,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:midnight_mantle{\"relics:data\":{abilities:{abilities:{constellation:{lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{constellation_radius:{initialQuality:7},explosion_damage:{initialQuality:3},explosion_radius:{initialQuality:7},star_chance:{initialQuality:10},star_lifetime:{initialQuality:6},stun_duration:{initialQuality:7},tremor_duration:{initialQuality:6}}},invisibility:{lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{brightness:{initialQuality:10},cooldown:{initialQuality:8},damage:{}}},phase:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{attack_damage:{initialQuality:4},attack_speed:{initialQuality:9},duration:{initialQuality:1},health_regeneration:{initialQuality:10},max_health:{initialQuality:4},modifier:{}}},starfall:{lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{bounce_chance:{initialQuality:10},chance:{initialQuality:7},damage:{initialQuality:10},radius:{initialQuality:3},stun:{initialQuality:2}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:leafy_mantle{\"relics:data\":{abilities:{abilities:{camouflage:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{absorption:{initialQuality:1},cooldown:{initialQuality:7},heal:{initialQuality:8}}},revival:{lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{damage:{initialQuality:7},heal:{initialQuality:2},paralysis:{initialQuality:10},radius:{initialQuality:10}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },
@@ -3312,7 +3312,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:roller_skate{\"relics:data\":{abilities:{abilities:{skating:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage:{initialQuality:8},ignite:{initialQuality:5},resistance:{initialQuality:1},speed:{initialQuality:7},step_height:{initialQuality:3}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:iron_block", count: 4, chance: 1.0 },
@@ -3330,7 +3330,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:clot_of_time{\"relics:data\":{abilities:{abilities:{rewind:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialQuality:1}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:clock", count: 16, chance: 1.0 },
@@ -3348,7 +3348,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:piglin_mask{\"relics:data\":{abilities:{abilities:{barter:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{items_count:{initialQuality:3},trades:{initialQuality:8}}},looting:{lock:{breaks:0},points:0,research:{links:{},researched:0b},stats:{attack_damage:{initialQuality:7},attack_speed:{initialQuality:7},chance:{initialQuality:1},duration:{},health:{initialQuality:7}}},neutrality:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:gold_block", count: 16, chance: 1.0 },
@@ -3366,7 +3366,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:chef_hat{\"relics:data\":{abilities:{abilities:{satiety:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{chance:{initialQuality:4},healing:{initialQuality:8}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:golden_apple", count: 8, chance: 1.0 },
@@ -3384,7 +3384,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:rider_flute{\"relics:data\":{abilities:{abilities:{stable:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{heal:{initialQuality:2},max_slots:{initialQuality:3},resistance:{initialQuality:2}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "minecraft:saddle", count: 2, chance: 1.0 },
@@ -3402,7 +3402,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:ring_of_the_seven_deadly_sins{\"relics:data\":{abilities:{abilities:{envy:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{incoming_damage_multiplier:{initialQuality:10},outgoing_damage_multiplier:{initialQuality:5}}},gluttony:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{early_multiplier:{initialQuality:2},late_multiplier:{initialQuality:2}}},greed:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{chance:{initialQuality:6},looting:{initialQuality:9},luck:{initialQuality:2}}},lust:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{amount:{initialQuality:5},time:{initialQuality:5}}},pride:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{multiplier:{initialQuality:5}}},sloth:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{speed:{initialQuality:9},time:{initialQuality:7}}},wrath:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{early_multiplier:{initialQuality:2},late_multiplier:{initialQuality:9},window:{initialQuality:5}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:clot_of_time{\"relics:data\":{abilities:{abilities:{rewind:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{time:{initialQuality:1}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },
@@ -3421,7 +3421,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:sphere_of_self_sacrifice{\"relics:data\":{abilities:{abilities:{sacrifice:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{resistance:{initialQuality:7},stacks:{}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:ring_of_the_seven_deadly_sins{\"relics:data\":{abilities:{abilities:{envy:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{incoming_damage_multiplier:{initialQuality:10},outgoing_damage_multiplier:{initialQuality:5}}},gluttony:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{early_multiplier:{initialQuality:2},late_multiplier:{initialQuality:2}}},greed:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{chance:{initialQuality:6},looting:{initialQuality:9},luck:{initialQuality:2}}},lust:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{amount:{initialQuality:5},time:{initialQuality:5}}},pride:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{multiplier:{initialQuality:5}}},sloth:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{speed:{initialQuality:9},time:{initialQuality:7}}},wrath:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{early_multiplier:{initialQuality:2},late_multiplier:{initialQuality:9},window:{initialQuality:5}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },
@@ -3439,7 +3439,7 @@ ServerEvents.recipes(catalyst => {
             energy: 100000000,
             outputs: [{ id: "relics:hunting_belt{\"relics:data\":{abilities:{abilities:{pack:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{damage_modifier:{initialQuality:3},pet_radius:{initialQuality:10},resistance_per_pet:{initialQuality:6},revival_cost:{initialQuality:6}}},slots:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{amount:{initialQuality:10}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 }],
             inputs: [
-                { id: "modular_machinery_reborn:modularium", count: 64, chance: 1.0 },
+                { id: "eternalores:modularium_ingot", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_sanguis_vivus", count: 64, chance: 1.0 },
                 { id: "eternalores:gem_jade", count: 64, chance: 1.0 },
                 { id: "relics:rider_flute{\"relics:data\":{abilities:{abilities:{stable:{lock:{breaks:5},points:0,research:{links:{},researched:0b},stats:{heal:{initialQuality:2},max_slots:{initialQuality:3},resistance:{initialQuality:2}}}},synergies:{}},leveling:{},statistic:{}}}", count: 1, chance: 1.0 },

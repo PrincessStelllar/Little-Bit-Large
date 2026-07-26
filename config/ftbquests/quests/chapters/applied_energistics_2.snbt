@@ -45,7 +45,7 @@
 				id: "35C32631AAFE2B86"
 				item: {
 					count: 1
-					id: "ae2:certus_quartz_crystal"
+					id: "eternalores:gem_certus_quartz"
 				}
 				type: "item"
 			}]
@@ -91,7 +91,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: {
-				id: "ae2:certus_quartz_crystal"
+				id: "eternalores:gem_certus_quartz"
 			}
 			id: "6B50E447E97394A8"
 			progression_mode: "linear"
@@ -193,7 +193,7 @@
 			]
 			hide_until_deps_complete: true
 			icon: {
-				id: "ae2:fluix_crystal"
+				id: "eternalores:gem_fluix"
 			}
 			id: "638AA96CA3E3787D"
 			rewards: [{
@@ -547,7 +547,7 @@
 									priceMultiplier: 0.05f
 									sell: {
 										count: 4
-										id: "ae2:certus_quartz_crystal"
+										id: "eternalores:gem_certus_quartz"
 									}
 									xp: 10
 								}
@@ -588,7 +588,7 @@
 									priceMultiplier: 0.05f
 									sell: {
 										count: 4
-										id: "ae2:fluix_crystal"
+										id: "eternalores:gem_fluix"
 									}
 									xp: 14
 								}
@@ -2834,7 +2834,7 @@
 				{
 					count: 32L
 					id: "6BC4F56C80150FB2"
-					item: { count: 1, id: "ae2:fluix_crystal" }
+					item: { count: 1, id: "eternalores:gem_fluix" }
 					type: "item"
 				}
 				{
@@ -3470,7 +3470,7 @@
 				id: "413CD0FC80FA21CE"
 				item: {
 					count: 1
-					id: "ae2:certus_quartz_crystal"
+					id: "eternalores:gem_certus_quartz"
 				}
 				type: "item"
 			}]

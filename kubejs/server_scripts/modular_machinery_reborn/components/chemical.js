@@ -178,7 +178,7 @@ ServerEvents.recipes(catalyst => {
             'ADA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:plate_shadowsteel',
             C: 'mekanism:elite_pressurized_tube',
             D: 'mekanism:elite_chemical_tank',
@@ -194,7 +194,7 @@ ServerEvents.recipes(catalyst => {
             'ACA'
         ],
         {
-            A: 'modular_machinery_reborn:modularium',
+            A: 'eternalores:modularium_ingot',
             B: 'eternalores:plate_shadowsteel',
             C: 'mekanism:elite_pressurized_tube',
             D: 'mekanism:elite_chemical_tank',
