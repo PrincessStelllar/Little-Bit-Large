@@ -34,7 +34,7 @@ MMREvents.machines(catalyst => {
                     "chipped:ancient_waxed_oxidized_copper"
                 ],
                 "b": [
-                    "modular_machinery_reborn:outputbus_ludicrous"
+                    "#modular_machinery_reborn:outputbus"
                 ],
                 "c": [
                     "eternalores:quartz_enriched_copper_block"
@@ -66,7 +66,7 @@ MMREvents.machines(catalyst => {
                     "#modular_machinery_reborn:energyinputhatch"
                 ],
                 "l": [
-                    "modular_machinery_reborn:inputbus_ludicrous"
+                    "#modular_machinery_reborn:inputbus"
                 ]
             })
         )

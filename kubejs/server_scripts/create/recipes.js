@@ -366,6 +366,43 @@ ServerEvents.recipes(catalyst => {
     )
     .id("catalyst:create/shadow_steel_casing_inverted")
 
+    catalyst.shaped(Item.of('create:crushing_wheel', 8), [
+        "PAP",
+        "AGA",
+        "PAP"
+    ],
+    {
+        P: 'eternalores:plate_eternal_dark',
+        A: 'eternalores:plate_andesite',
+        G: 'eternalores:gear_andesite'
+    })
+    .id("catalyst:crushing_wheel");
+
+    catalyst.shaped(Item.of('create:crushing_wheel', 8), [
+        "PAP",
+        "AGA",
+        "PAP"
+    ],
+    {
+        P: 'eternalores:plate_eternal_light',
+        A: 'eternalores:plate_andesite',
+        G: 'eternalores:gear_andesite'
+    })
+    .id("catalyst:crushing_wheel_light");
+
+    catalyst.shaped(Item.of('create:crushing_wheel', 1), [
+        "BPB",
+        "PGP",
+        "APA"
+    ],
+    {
+        B: 'create_new_age:basic_motor_extension',
+        P: 'eternalores:plate_diamond',
+        G: 'eternalores:gear_andesite',
+        A: 'create_new_age:advanced_motor'
+    })
+    .id("catalyst:crushing_wheel_no_mechanical_crafting");
+
     console.log("[CatJS] Finished Create changes")
 
     catalyst.custom({
