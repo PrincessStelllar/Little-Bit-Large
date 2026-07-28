@@ -70,6 +70,27 @@ ServerEvents.recipes(catalyst => {
     })
     .id("catalyst:vampire/liquid_blood_bucket");
 
+    catalyst.shaped(Item.of('catalystcore:liquid_phyto_oil_bucket', 1), [
+        " C ",
+        " B ",
+        "   "
+    ],
+    {
+        C: 'eternalores:compressed_biomass_block_4x',
+        B: 'minecraft:bucket'
+    })
+    .id("catalyst:liquid_phyto_oil_bucket");
+
+    catalyst.shaped(Item.of('eternalores:biomass', 200), [
+        "   ",
+        " L ",
+        "   "
+    ],
+    {
+        L: 'catalystcore:liquid_gunk_bucket'
+    })
+    .id("catalyst:biomass_from_junk");
+
     console.log("[CatJS] Added Cat Base recipes")
     
     catalyst.shaped(Item.of('catalystcore:nether_core', 1), [
@@ -265,6 +286,23 @@ ServerEvents.recipes(catalyst => {
     ).id("catalyst:ars/personal_beacon/darkness_crystal")
 
     console.log("[CatJS] Added Cat Crystals recipes")
+
+    catalyst.shaped(Item.of('mmr_cosmetics:sculk_cannon', 1), [
+        "RAS",
+        "RBC",
+        "RDR"
+    ],
+    {
+        R: 'minecraft:reinforced_deepslate',
+        A: 'minecraft:redstone_lamp',
+        S: 'create:schematicannon',
+        B: 'eternalores:sculkite_gem',
+        C: 'minecraft:redstone_block',
+        D: 'minecraft:sculk_shrieker'
+    })
+    .id("catalyst:sculk_cannon");
+
+    console.log("[CatJS] Added Cat Multiblock recipes")
 
     catalyst.shaped(Item.of('catalystcore:spirit_agglomeratio', 1), [
         'GSG',

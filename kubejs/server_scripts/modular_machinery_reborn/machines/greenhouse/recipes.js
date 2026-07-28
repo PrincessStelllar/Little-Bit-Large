@@ -60,11 +60,11 @@ ServerEvents.recipes(event => {
     },
     {
         id: "minecraft:melon_seeds",
-        time: 220,
+        time: 90,
         energyPerTick: 8,
         fluid: { id: "minecraft:water", amount: 150 },
         outputs: [
-            { id: "minecraft:melon_seeds", count: 2, chance: 1.0 },
+            { id: "minecraft:melon_seeds", count: 5, chance: 1.0 },
             { id: "minecraft:melon_slice", count: 6, chance: 0.8 },
             { id: "minecraft:melon", count: 3, chance: 0.5 }
         ]
