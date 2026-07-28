@@ -100,6 +100,7 @@
   "catalyst.mmr.machine.vampire": "&#ea3232<pulse base=0.75 a=1.0 f=2.0 w=0.0><fade a=0.3 f=1.0 w=0.0>Vampire</fade></pulse>&r's Well",
   "catalyst.mmr.machine.miner": "Deep &#e69986Miner&r",
   "catalyst.mmr.machine.hourglass": "Inter<turb a=0.7 f=0.8><rainb f=0.25 w=60.0>Stellar</rainb></turb> Hourglass of <grad from=#0dc4ec to=#25ec0d hue=true f=0.3 sp=20.0 uni=false>Gems</grad>",
+  "catalyst.mmr.machine.macerator": "&#f08411Macerator&r",
 
   "catalyst.create.scoria": "This block can be created using a Vanilla Cobblestone Generator with Lava and Chocolate from Create",
   "catalyst.create.limestone": "This block can be created using a Vanilla Cobblestone Generator with Lava and Honey from Create",
