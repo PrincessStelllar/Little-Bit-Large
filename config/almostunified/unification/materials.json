@@ -12,7 +12,8 @@
     "create",
     "powah",
     "enderio",
-    "energizedpower"
+    "energizedpower",
+    "modular_machinery_reborn"
   ],
   "priority_overrides": {},
   "stone_variants": [
@@ -65,10 +66,7 @@
   ],
   "ignored_recipe_ids": [
     "eternalores:crushing/ore_proc/.*",
-    "eternalores:compat/enderio/sag_milling/ore_proc/.*",
-    ".*catalyst:gem_fluix.*",
-    ".*catalyst:gem_certus_quartz.*",
-    ".*catalyst:modularium_ingot.*"
+    "eternalores:compat/enderio/sag_milling/ore_proc/.*"
   ],
   "recipe_viewer_hiding": true,
   "loot_unification": true,

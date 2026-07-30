@@ -38,6 +38,8 @@ ServerEvents.tags('item', catalyst => {
     //Eternal Ores
     catalyst.add('c:dusts/plutonium', 'eternalores:plutonium_dust')
     catalyst.add('c:pellets/plutonium', 'eternalores:plutonium_ingot')
+    catalyst.add('c:ingots', 'modular_machinery_reborn:modularium')
+    catalyst.add('c:ingots/modularium', 'modular_machinery_reborn:modularium')
 
     //Oritech 
     catalyst.remove('c:ingots/steel', 'oritech:biosteel_ingot')
