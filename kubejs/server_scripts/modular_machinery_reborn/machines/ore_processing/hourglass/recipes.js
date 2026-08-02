@@ -681,15 +681,12 @@ MMREvents.recipeFunction("starting_nebula", catalyst => {
                     parseFloat(catalyst.get(5)),
                     parseFloat(catalyst.get(6)),
                     parseFloat(catalyst.get(7))
-                ];
-                
-                let recipeTime = parseInt(catalyst.get(8));
-                targetBE.recipeTime = recipeTime; 
+                ]; 
             }
 
-            if(size > 8)  targetBE.customRadius = parseFloat(catalyst.get(9));
-            if(size > 9)  targetBE.customStrength = parseFloat(catalyst.get(10));
-            if(size > 10) targetBE.transitionTicks = parseInt(catalyst.get(11));
+            if(size > 8)  targetBE.customRadius = parseFloat(catalyst.get(8));
+            if(size > 9)  targetBE.customStrength = parseFloat(catalyst.get(9));
+            if(size > 10) targetBE.transitionTicks = parseInt(catalyst.get(10));
 
             targetBE.setChanged();
             level.sendBlockUpdated(targetPos, targetState, targetState, 3);

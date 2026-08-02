@@ -27,7 +27,7 @@ MMREvents.machines(catalyst => {
                         "modular_machinery_reborn:inputbus_tiny",
                         'modular_machinery_reborn:outputbus_tiny'
                     ],
-                    "f": ["immersiveengineering:coke"],
+                    "f": ["eternalores:coke_coal_block"],
                     "g": ["minecraft:campfire[lit=true]"],
                     "h": ["minecraft:mud_brick_slab[type=top]"],
                     "i": ["minecraft:iron_trapdoor[half=top]"]

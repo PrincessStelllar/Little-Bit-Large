@@ -81,7 +81,7 @@ ServerEvents.recipes(catalyst => {
     })
     .id("catalyst:liquid_phyto_oil_bucket");
 
-    catalyst.shaped(Item.of('eternalores:biomass', 200), [
+    catalyst.shaped(Item.of('eternalores:biomass', 64), [
         "   ",
         " L ",
         "   "

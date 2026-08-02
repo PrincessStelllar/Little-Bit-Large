@@ -22,10 +22,9 @@ MMREvents.machines(catalyst => {
                     "b": ["chipped:rough_quartz_block"],
                     "c": ["modular_machinery_reborn:casing_plain"],
                     "d": [
-                        "glassential:obsidian_glass",
-                        "crystalix:crystalix_glass"
+                        "glassential:obsidian_glass"
                     ],
-                    "e": ["ae2:quartz_block"],
+                    "e": ['eternalores:certus_quartz_block'],
                     "f": ["#modular_machinery_reborn:energyinputhatch"],
                     "g": ["chipped:rough_quartz_block"],
                     "h": ["chipped:curly_quartz_block_pillar[axis=y]"],
@@ -33,8 +32,7 @@ MMREvents.machines(catalyst => {
                     "j": ["chipped:pillar_obsidian_bricks"],
                     "k": ["ae2:quartz_vibrant_glass"],
                     "l": [
-                        "glassential:obsidian_glass",
-                        "crystalix:crystalix_glass"
+                        "glassential:obsidian_glass"
                     ],
                     "n": ["chisel:steelframe/glass"],
                     "o": ["ars_nouveau:sourcestone_large_bricks"],

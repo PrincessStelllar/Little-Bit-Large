@@ -43,7 +43,7 @@ MMREvents.machines(catalyst => {
                     "l": ["ars_nouveau:archwood_planks"],
                     "n": ["#c:storage_blocks/honeycombs"],
                     "o": ["minecraft:honey_block"],
-                    "p": ["ars_nouveau:source_gem_block"],
+                    "p": ['eternalores:source_block'],
                     "q": ["modular_machinery_reborn:casing_firebox"],
                     "r": ["modular_machinery_reborn:casing_reinforced"],
                     "s": ["#c:storage_blocks/honeycombs"],

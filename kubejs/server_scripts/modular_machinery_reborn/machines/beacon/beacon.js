@@ -627,7 +627,7 @@ MMREvents.machines(catalyst => {
                 "p":["occultism:otherrock_stairs[facing=west+half=bottom+shape=straight]"],
                 "q":["minecraft:netherite_block"],
                 "r":["occultism:otherrock_stairs[facing=east+half=bottom+shape=straight]"],
-                "s":["ars_nouveau:source_gem_block"],
+                "s":['eternalores:source_block'],
                 "t":["occultism:otherrock_stairs[facing=south+half=bottom+shape=outer_right]"],
                 "u":["occultism:otherrock_stairs[facing=west+half=bottom+shape=inner_left]"],
                 "v":["occultism:otherrock_stairs[facing=east+half=bottom+shape=inner_right]"],

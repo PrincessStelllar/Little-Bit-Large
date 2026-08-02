@@ -168,7 +168,7 @@ ServerEvents.recipes(catalyst => {
 
     let recipe = catalyst.recipes.modular_machinery_reborn.machine_recipe("mmr:primitive_furnace", 400)
             .requireItem("minecraft:coal_block", 5, 10) 
-            .produceItem("immersiveengineering:coke", 60, 10)
+            .produceItem('eternalores:coke_coal_block', 60, 10)
             .id(`catalyst:mmr/primitive_furnace/coke_special_recipe`)
     addFurnaceRequirements(recipe);
 

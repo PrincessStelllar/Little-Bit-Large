@@ -70,7 +70,7 @@ MMREvents.machines(catalyst => {
                     "J": ["ars_additions:sourcestone_wall"],
                     "K": ["ars_additions:sourcestone_magelight_lantern[hanging=false,level=0,waterlogged=false]"],
                     "L": ["ars_additions:golden_lantern[hanging=false,waterlogged=false]"],
-                    "M": ["ars_nouveau:source_gem_block"],
+                    "M": ['eternalores:source_block'],
                     "N": ["ars_additions:sourcestone_wall"],
                     "O": ["ars_additions:sourcestone_wall"],
                     "P": ["ars_additions:sourcestone_wall"],
